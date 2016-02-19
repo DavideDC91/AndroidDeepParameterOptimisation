@@ -1,0 +1,176 @@
+***************************** log file *****************************
+
+**** android udpate ****
+Updated project.properties
+Updated local.properties
+Updated file ./build.xml
+Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
+
+**** ant debug ****
+Buildfile: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 24.4.1
+ [checkenv] Installed at /Users/Davide/Library/Android/sdk
+
+-setup:
+     [echo] Project Name: android-timetracker
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for android-timetracker...
+[gettarget] Project Target:   Android 6.0
+[gettarget] API level:        23
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for android-timetracker...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] No changes in the AndroidManifest files.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/res
+   [crunch] To destination dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [aapt] No changed resources or assets. android-timetracker.ap_ remains untouched
+
+-package:
+[apkbuilder] No changes. No need to create apk.
+
+-post-package:
+
+-do-debug:
+ [zipalign] Run cancelled: no changes to input file /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-debug-unaligned.apk
+     [echo] Debug Package: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-debug.apk
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+**** adb install ****
+2634 KB/s (123928 bytes in 0.045s)
+	pkg: /data/local/tmp/android-timetracker-debug-unaligned.apk
+Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
+
+**** adb dumpsys meminfo ****
+Applications Memory Usage (kB):
+Uptime: 58756330 Realtime: 264596015
+
+** MEMINFO in pid 10805 [com.markuspage.android.atimetracker] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     2463     2432        0        0     4176     3471       88
+  Dalvik Heap     2347     1676        0        0     9960     9824      136
+ Dalvik Other     1700     1544        0        0                           
+        Stack      152      152        0        0                           
+       Ashmem      128      128        0        0                           
+    Other dev        4        0        4        0                           
+     .so mmap     2319      440      904        0                           
+    .apk mmap      138        0       36        0                           
+    .ttf mmap      317        0      296        0                           
+    .dex mmap      891       44      112        0                           
+   Other mmap       38        4        8        0                           
+      Unknown       96       96        0        0                           
+        TOTAL    10593     6516     1360        0    14136    13295      224
+ 
+ Objects
+               Views:      178         ViewRootImpl:        3
+         AppContexts:        3           Activities:        1
+              Assets:        2        AssetManagers:        2
+       Local Binders:       16        Proxy Binders:       24
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:      116
+  PAGECACHE_OVERFLOW:       32          MALLOC_SIZE:       62
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4       24             49       13/36/10  /data/data/com.markuspage.android.atimetracker/databases/timetracker.db
+
+**** adb dumpsys cpuinfo ****
+Load: 4.74 / 4.71 / 4.66
+CPU usage from 6116ms to 248ms ago with 99% awake:
+  25% 10805/com.markuspage.android.atimetracker: 20% user + 4.7% kernel / faults: 3651 minor
+  10% 10772/uiautomator: 10% user + 0.3% kernel / faults: 919 minor
+  9.7% 571/system_server: 6.3% user + 3.4% kernel / faults: 309 minor
+  8.3% 177/surfaceflinger: 3.5% user + 4.7% kernel / faults: 5908 minor
+  2% 180/mediaserver: 0.5% user + 1.5% kernel
+  1.7% 770/com.google.android.inputmethod.latin: 1.7% user + 0% kernel / faults: 45 minor
+  0.2% 863/com.android.launcher: 0.2% user + 0% kernel / faults: 306 minor
+  1.1% 629/com.android.systemui: 1% user + 0.1% kernel / faults: 124 minor
+  1% 213/adbd: 0.1% user + 0.8% kernel / faults: 17 minor
+  0.8% 188/mpdecision: 0% user + 0.8% kernel
+  0.5% 87/msmfb_commit_th: 0% user + 0.5% kernel
+  0.5% 134/dbs_sync/1: 0% user + 0.5% kernel
+  0.5% 7448/kworker/u:4: 0% user + 0.5% kernel
+  0.3% 133/dbs_sync/0: 0% user + 0.3% kernel
+  0.3% 208/sensors.qcom: 0.1% user + 0.1% kernel
+  0.3% 7845/kworker/0:0: 0% user + 0.3% kernel
+  0.3% 7846/kworker/u:0: 0% user + 0.3% kernel
+  0.3% 10854/kworker/1:1: 0% user + 0.3% kernel
+  0% 27/msm_slim_ctrl_r: 0% user + 0% kernel
+  0% 139/mmcqd/0: 0% user + 0% kernel
+  0% 160/jbd2/mmcblk0p30: 0% user + 0% kernel
+  0.1% 10647/logcat: 0% user + 0.1% kernel
+ +0% 10885/kworker/0:2: 0% user + 0% kernel
+ +0% 10889/app_process: 0% user + 0% kernel
+ +0% 10901/migration/2: 0% user + 0% kernel
+ +0% 10902/kworker/2:0: 0% user + 0% kernel
+ +0% 10903/ksoftirqd/2: 0% user + 0% kernel
+ +0% 10904/kworker/2:1: 0% user + 0% kernel
+0% TOTAL: 0% user + 0% kernel
