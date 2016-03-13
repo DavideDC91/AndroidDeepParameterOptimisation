@@ -23,7 +23,7 @@ public class MoreTest {
 		File classpathRoot = new File(System.getProperty("user.dir"));
 		File appDir = new File(classpathRoot, "../../../");
 		//File app = new File(appDir, "Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker.apk");
-		File app = new File(appDir, "Documents/workspace/android-timetracker/bin/android-timetracker-debug.apk");
+		File app = new File(appDir, "Documents/workspace/android-timetracker/bin/android-timetracker-instrumented.apk");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName","0ac20634");
 		capabilities.setCapability("platformVersion", "4.4");
@@ -39,7 +39,7 @@ public class MoreTest {
 	public static void tearDown() throws Exception {
 		driver.quit();
 	}
-	/**
+
 	@Test
 	public void changeDateTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -150,7 +150,7 @@ public class MoreTest {
 		WebElement done = driver.findElementById("button1");
 		done.click();
 	}
-	**/
+
 	@Test
 	public void settingsTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -163,8 +163,26 @@ public class MoreTest {
 		more.click();
 		WebElement cdr = driver.findElement(By.name("Settings"));
 		cdr.click();
-		
-		
+		WebElement e = driver.findElement(By.name("12/24 hour mode"));
+		e.click();
+		WebElement e1 = driver.findElement(By.name("Multiple concurrently running tasks"));
+		e1.click();
+		WebElement e2 = driver.findElement(By.name("Sound"));
+		e2.click();
+		WebElement e3 = driver.findElement(By.name("Vibrate"));
+		e3.click();
+		WebElement e4 = driver.findElement(By.name("Font size"));
+		e4.click();
+		WebElement e5 = driver.findElement(By.name("Time display"));
+		e5.click();
+		WebElement e6 = driver.findElement(By.name("Week start day"));
+		e6.click();
+		WebElement e7 = driver.findElement(By.name("Monday"));
+		e7.click();
+		WebElement e8 = driver.findElement(By.name("Round report times"));
+		e8.click();
+		WebElement e9 = driver.findElement(By.name("No"));
+		e9.click();
 		WebElement done = driver.findElementById("pref_accept");
 		done.click();
 	}

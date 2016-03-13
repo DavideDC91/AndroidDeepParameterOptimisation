@@ -25,14 +25,14 @@ public class TaskTest {
 		File classpathRoot = new File(System.getProperty("user.dir"));
 		File appDir = new File(classpathRoot, "../../../");
 		//File app = new File(appDir, "Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker.apk");
-		File app = new File(appDir, "Documents/workspace/android-timetracker/bin/android-timetracker-debug.apk");
+		File app = new File(appDir, "Documents/workspace/android-timetracker/bin/android-timetracker-instrumented.apk");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName","0ac20634");
 		capabilities.setCapability("platformVersion", "4.4");
 		capabilities.setCapability("app", app.getAbsolutePath());
 		capabilities.setCapability("appPackage", "com.markuspage.android.atimetracker");
 		capabilities.setCapability("appActivity", ".Tasks");
-		//capabilities.setCapability("noReset", false);
+		capabilities.setCapability("noReset", true);
 		//capabilities.setCapability("fullReset", false);
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4725/wd/hub"), capabilities);
 	}
@@ -42,7 +42,7 @@ public class TaskTest {
 	public static void tearDown() throws Exception {
 		driver.quit();
 	}
-/**
+
 	@Test
 	public void addTaskTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -151,5 +151,6 @@ public class TaskTest {
 		WebElement confirm1 = driver.findElementById("button1");
 		confirm1.click();
 	}
-**/
+
+	
 }

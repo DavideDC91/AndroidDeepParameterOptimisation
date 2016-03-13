@@ -21,7 +21,7 @@ public class ReportTest {
 		File classpathRoot = new File(System.getProperty("user.dir"));
 		File appDir = new File(classpathRoot, "../../../");
 		//File app = new File(appDir, "Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker.apk");
-		File app = new File(appDir, "Documents/workspace/android-timetracker/bin/android-timetracker-debug.apk");
+		File app = new File(appDir, "Documents/workspace/android-timetracker/bin/android-timetracker-instrumented.apk");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName","0ac20634");
 		capabilities.setCapability("platformVersion", "4.4");
@@ -37,7 +37,7 @@ public class ReportTest {
 	public static void tearDown() throws Exception {
 		driver.quit();
 	}
-/**	
+
 	@Test
 	public void showReportTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -93,5 +93,5 @@ public class ReportTest {
 		ok2.click();
 		driver.navigate().back();
 	}
-	**/
+
 }
