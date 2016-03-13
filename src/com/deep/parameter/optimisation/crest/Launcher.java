@@ -6,6 +6,8 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
+import com.deep.parameter.optimisation.crest.test.TaskTest;
+
 public class Launcher {
 	private static FileOutputStream testReport;
 	private static long testFailed=0;
@@ -13,7 +15,7 @@ public class Launcher {
 	private static String workingDirectory,pkg,mainActivity,device;
 	private static final String androidPath = "/Users/Davide/Library/";
 	public static void main(String[] args) throws Exception {
-
+		/**
 		File log = new File("log");
 		FileWriter fileWriter = new FileWriter(log);
 		fileWriter.append("***************************** log file *****************************\n");	
@@ -24,7 +26,7 @@ public class Launcher {
 		//mainActivity = args[2];
 		device = args[3];
 		Launcher obj = new Launcher();
-		
+	
 		ProcessBuilder pb = new ProcessBuilder(androidPath+"Android/sdk/tools/android", "update", "project", "--target", "1", "--path", "./", "--name", workingDirectory);
 		String output = obj.executeCommand(pb, workingDirectory);
 		fileWriter.append("\n**** android udpate ****\n"+output);
@@ -35,7 +37,7 @@ public class Launcher {
 		fileWriter.append("\n**** ant debug ****\n"+output);
 		fileWriter.flush();
 		
-		pb = new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "install", "-reinstall", "./bin/"+workingDirectory+"-debug-unaligned.apk");
+		pb = new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "install", "-reinstall", "./bin/"+workingDirectory+"-debug.apk");
 		output = obj.executeCommand(pb, workingDirectory);
 		fileWriter.append("\n**** adb install ****\n"+output);
 		fileWriter.flush();
@@ -44,7 +46,7 @@ public class Launcher {
 		//output = obj.executeCommand(pb, workingDirectory, log);
 		//System.out.println(output);
 		
-		
+	
 		testReport = new FileOutputStream("TestFail");
 		List<Class<?>> classes = ClassFinder.find("com.deep.parameter.optimisation.crest.test");
 		for (Class testCase : classes)
@@ -66,11 +68,17 @@ public class Launcher {
 		cpuUsed = cpuUsed[2].split(" ");
 
 		System.out.println("Failed Test: "+testFailed +"\n");
-		System.out.println(cpuUsed[3].split("/")[0]+"Kb "+cpuUsed[4]+" User "+cpuUsed[7]+" System\n");
+		System.out.println(cpuUsed[3].split("/")[0]+" ms "+cpuUsed[4]+" User "+cpuUsed[7]+" System\n");
 
 		System.out.println(memoryUsed[0]+"\n"+memoryUsed[4]+"\n"+memoryUsed[5]+"\n"+memoryUsed[6]+"\n"+memoryUsed[7]+"\n");
 		fileWriter.close();
-
+**/
+		List<Class<?>> classes = ClassFinder.find("com.deep.parameter.optimisation.crest.test");
+		for (Class testCase : classes)
+		{
+			runTestCase(testCase);
+		}
+	
 	}
 
 	private String executeCommand(ProcessBuilder pb, String workingDirectory) throws IOException {
@@ -100,10 +108,10 @@ public class Launcher {
 	private static void runTestCase(Class testCase)
 	{
 		Result result = JUnitCore.runClasses(testCase);
-		PrintStream file = new PrintStream(testReport);
+		//PrintStream file = new PrintStream(testReport);
 		for (Failure failure : result.getFailures())
 		{
-			file.println(failure.toString());
+			//file.println(failure.toString());
 			testFailed++;
 		}
 	}
