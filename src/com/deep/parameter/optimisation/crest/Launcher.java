@@ -6,7 +6,6 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-import com.deep.parameter.optimisation.crest.test.TaskTest;
 
 public class Launcher {
 	private static FileOutputStream testReport;
@@ -72,48 +71,18 @@ public class Launcher {
 
 		System.out.println(memoryUsed[0]+"\n"+memoryUsed[4]+"\n"+memoryUsed[5]+"\n"+memoryUsed[6]+"\n"+memoryUsed[7]+"\n");
 		fileWriter.close();
-**/
+
 		List<Class<?>> classes = ClassFinder.find("com.deep.parameter.optimisation.crest.test");
 		for (Class testCase : classes)
 		{
 			runTestCase(testCase);
 		}
+	**/
+		AppManager dc= new AppManager("android-timetracker", "com.markuspage.android.atimetracker", "0ac20634");
+		dc.setUp();
+		dc.calculateCoverage();
+	}
+
 	
-	}
-
-	private String executeCommand(ProcessBuilder pb, String workingDirectory) throws IOException {
-
-		StringBuffer output = new StringBuffer();
-		pb.directory(new File(workingDirectory));
-		pb.redirectErrorStream(true);
-		//pb.redirectOutput(Redirect.appendTo(log));
-		Process p = pb.start();
-		try {
-			//p = Runtime.getRuntime().exec(command, null, new File(workingDirectory));
-			p.waitFor();
-			BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
-			String line = "";			
-			while ((line = reader.readLine())!= null) {
-				output.append(line + "\n");
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		return output.toString();
-
-	}
-	
-	private static void runTestCase(Class testCase)
-	{
-		Result result = JUnitCore.runClasses(testCase);
-		//PrintStream file = new PrintStream(testReport);
-		for (Failure failure : result.getFailures())
-		{
-			//file.println(failure.toString());
-			testFailed++;
-		}
-	}
 
 }

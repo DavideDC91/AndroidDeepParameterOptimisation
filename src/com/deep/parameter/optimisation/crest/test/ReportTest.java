@@ -21,11 +21,11 @@ public class ReportTest {
 		File classpathRoot = new File(System.getProperty("user.dir"));
 		File appDir = new File(classpathRoot, "../../../");
 		//File app = new File(appDir, "Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker.apk");
-		File app = new File(appDir, "Documents/workspace/android-timetracker/bin/android-timetracker-instrumented.apk");
+		//File app = new File(appDir, "Documents/workspace/android-timetracker/bin/android-timetracker-instrumented.apk");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName","0ac20634");
 		capabilities.setCapability("platformVersion", "4.4");
-		capabilities.setCapability("app", app.getAbsolutePath());
+		//capabilities.setCapability("app", app.getAbsolutePath());
 		capabilities.setCapability("appPackage", "com.markuspage.android.atimetracker");
 		capabilities.setCapability("appActivity", ".Tasks");
 		capabilities.setCapability("noReset", true);
