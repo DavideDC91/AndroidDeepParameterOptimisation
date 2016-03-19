@@ -16,7 +16,7 @@ public class Logger {
 
 	public void writeLog(String cmd, String text){
 		try {
-			writer.append("\n**** "+cmd+" ****\n\n"+text);
+			writer.append("\n\n**** "+cmd+" ****\n\n"+text);
 			writer.flush();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

@@ -78,9 +78,41 @@ public class Launcher {
 			runTestCase(testCase);
 		}
 	**/
+		//AppManager dc= new AppManager("android-timetracker", "com.markuspage.android.atimetracker", "0ac20634");
+		//dc.setUp();
+		//dc.calculateCoverage();
+		CommandManager cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", "0ac20634", "shell", "dumpsys", "cpuinfo", "com.markuspage.android.atimetracker"));
+		String output = cmd.executeCommand("android-timetracker");
+		//System.out.println(output);
+		/**
+				
+		String[] lines = output.split(System.getProperty("line.separator"));
+		String cpuInfo = "";
+		for(int i=0; i<lines.length;i++){
+			if(lines[i].contains("com.markuspage.android.atimetracker")){
+				cpuInfo = lines[i];
+			}
+		}
+		System.out.println(cpuInfo);
+		cpuUsed = cpuInfo.split(" ");
+		System.out.println(cpuUsed[2] +"AAAAA" + cpuUsed[3].split("/")[0]+" ms "+cpuUsed[4]+" User "+cpuUsed[7]+" System\n");
+	
+		cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", "0ac20634", "shell", "dumpsys", "meminfo", "com.markuspage.android.atimetracker"));
+		output = cmd.executeCommand("android-timetracker");
+		String[] lines = output.split(System.getProperty("line.separator"));
+		String memInfo = "";
+		for(int i=0; i<lines.length;i++){
+			if(lines[i].contains("Native Heap")){
+				memInfo = lines[i];
+			}
+		}
+		System.out.println(output);
+		System.out.println(memInfo);
+		memoryUsed = memInfo.split("\\s+");;
+		System.out.println(memoryUsed[7]+memoryUsed[8]+memoryUsed[9]);
+**/
 		AppManager dc= new AppManager("android-timetracker", "com.markuspage.android.atimetracker", "0ac20634");
-		dc.setUp();
-		dc.calculateCoverage();
+		dc.mutationAnalysis();
 	}
 
 	
