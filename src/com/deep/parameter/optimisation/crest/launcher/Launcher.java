@@ -5,13 +5,19 @@ import static java.nio.file.StandardOpenOption.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
+import com.deep.parameter.optimisation.crest.beans.Mutant;
 import com.deep.parameter.optimisation.crest.manager.AppManager;
 import com.deep.parameter.optimisation.crest.manager.CommandManager;
+import com.deep.parameter.optimisation.crest.manager.MutantsAnalyzer;
 
 
 public class Launcher {
@@ -118,10 +124,11 @@ public class Launcher {
 		memoryUsed = memInfo.split("\\s+");;
 		System.out.println(memoryUsed[7]+memoryUsed[8]+memoryUsed[9]);
 		 **/
-		AppManager dc= new AppManager("android-timetracker", "com.markuspage.android.atimetracker", "0ac20634");
+		//AppManager dc= new AppManager("android-timetracker", "com.markuspage.android.atimetracker", "0ac20634");
 		//dc.setUp();
 		//dc.calculateCoverage();
 		//dc.mutationAnalysis();
+		/**
 		Path file = Paths.get("./CSVExporter.smali");
 	    Path p = Paths.get("./aaa.smali");
 		try (InputStream in = Files.newInputStream(file);
@@ -142,10 +149,31 @@ public class Launcher {
 		} catch (IOException x) {
 			System.err.println(x);
 		}
+	    **/
+		DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH.mm.ss");
+		Date date = new Date();
+		String report_dir_name = "Report " + dateFormat.format(date);
+		File reports_dir = new File("Reports");
+		reports_dir.mkdir();
+		File report_dir = new File("Reports/"+report_dir_name);
+		report_dir.mkdirs();
 		
+		AppManager dc= new AppManager("android-timetracker", "com.markuspage.android.atimetracker", "0ac20634", "Reports/"+report_dir_name);
+		//dc.setUp();
+		//dc.calculateCoverage();
+		//dc.mutationAnalysis();
 		
-
-	    
+		ArrayList<Mutant> m = new ArrayList<>();
+		Mutant m1 = new Mutant("android-timetracker-instrumented_2.apk");
+		m1.setCpu_time(2000);
+		m1.setHeap_alloc(2000);
+		m.add(m1);
+		m1 = new Mutant("android-timetracker-instrumented_3787.apk");
+		m1.setCpu_time(3000);
+		m1.setHeap_alloc(3000);
+		m.add(m1);
+		MutantsAnalyzer ma = new MutantsAnalyzer(m,"android-timetracker", "com.markuspage.android.atimetracker","Reports/"+report_dir_name );
+		ma.generateSmaliFile();
 	}
 
 

@@ -1,14 +1,24 @@
 package com.deep.parameter.optimisation.crest.beans;
 
+import java.util.ArrayList;
+
 public class Mutant {
+	private ArrayList<Alteration> alts;
 	private String apk_name;
 	private long cpu_time, heap_size, heap_alloc, heap_free;
 	private double cpu_pct, user_pct, system_pct;
 
 	public Mutant(String name){
 		apk_name = name;
+		alts = new ArrayList<>();
 	}
 
+	public void addAlteration(Alteration alt){
+		alts.add(alt);
+	}
+	public Alteration getAlteration(int i){
+		return alts.get(i);
+	}
 	public String getApk_name() {
 		return apk_name;
 	}

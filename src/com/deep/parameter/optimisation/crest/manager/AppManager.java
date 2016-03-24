@@ -3,13 +3,12 @@ package com.deep.parameter.optimisation.crest.manager;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
-
 import com.deep.parameter.optimisation.crest.beans.Mutant;
 import com.deep.parameter.optimisation.crest.utilities.Logger;
 
 public class AppManager {
 
-	private String dir, apk, pkg, device;
+	private String dir, apk, pkg, device, report_dir;
 	private Logger log, survived_mutants_log, killed_mutants_log;
 	private CommandManager cmd;
 	private TestManager tl;
@@ -17,15 +16,16 @@ public class AppManager {
 	private ArrayList<Mutant> survived_mutants, killed_mutants;
 	private static final String androidPath = "/Users/Davide/Library/";
 
-	public AppManager(String directory, String pkg, String device){
+	public AppManager(String directory, String pkg, String device, String report_dir){
 		this.dir = directory;
 		this.apk = directory+"-instrumented.apk";
 		this.pkg = pkg;
 		this.device = device;
-		log = new Logger("DeviceConfiguration");
-		survived_mutants_log = new Logger("SurvivedMutants");
-		killed_mutants_log = new Logger("KilledMutants");
-		tl = new TestManager("com.deep.parameter.optimisation.crest.test");
+		this.report_dir = report_dir;
+		log = new Logger(report_dir+"/DeviceConfiguration");
+		survived_mutants_log = new Logger(report_dir+"/SurvivedMutants");
+		killed_mutants_log = new Logger(report_dir+"/KilledMutants");
+		tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir);
 	}
 
 	public void setUp(){
@@ -59,14 +59,19 @@ public class AppManager {
 		}
 	}
 
-	public void resetApp(String directory){
+	public void resetApp(String directory, boolean mutations){
 		String output;
 		cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "uninstall", pkg ));
 		try {
 			output = cmd.executeCommand(dir);
 			log.writeLog("adb uninstall", output);
-			cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "install", "-reinstall", "./"+directory+"/"+apk));
-			output = cmd.executeCommand(dir);
+			if(mutations){
+				cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "install", "-reinstall", "./"+apk));
+				output = cmd.executeCommand("mutants");
+			} else {
+				cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "install", "-reinstall", "./"+directory+"/"+apk));
+				output = cmd.executeCommand(dir);
+			}
 			log.writeLog("adb install", output);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -78,7 +83,7 @@ public class AppManager {
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		try {
-			resetApp("bin");
+			resetApp("bin",false);
 			tl.executeTest("Original apk");
 			cpu_info = getCpuInfo();
 			memory_used = getMemInfo().split("\\s+");
@@ -124,12 +129,12 @@ public class AppManager {
 		killed_mutants = new ArrayList<>();
 		try {
 			cmd = new CommandManager(new ProcessBuilder("ls"));
-			output = cmd.executeCommand(dir+"/mutants");
+			output = cmd.executeCommand("mutants");
 			log.writeLog("ls", output);
 			apk_mutants = output.split("\n");
 			for(int i=0;i<apk_mutants.length;i++){
 				apk=apk_mutants[i];
-				resetApp("mutants");
+				resetApp("mutants",true);
 				TimeUnit.SECONDS.sleep(10);	
 				tl.executeTest(apk);
 				cpu_info = getCpuInfo();
@@ -159,7 +164,7 @@ public class AppManager {
 	}
 
 	private String getCpuInfo(){
-		CommandManager cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", "0ac20634", "shell", "dumpsys", "cpuinfo", "com.markuspage.android.atimetracker"));
+		CommandManager cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "shell", "dumpsys", "cpuinfo", pkg));
 		String output;
 		String cpu_info = "";
 		try {
@@ -182,7 +187,7 @@ public class AppManager {
 	}
 
 	private String getMemInfo(){
-		CommandManager 	cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", "0ac20634", "shell", "dumpsys", "meminfo", "com.markuspage.android.atimetracker"));
+		CommandManager 	cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "shell", "dumpsys", "meminfo", pkg));
 		String output;
 		String mem_info = "";
 		try {

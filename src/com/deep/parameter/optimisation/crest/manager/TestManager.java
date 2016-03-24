@@ -15,10 +15,10 @@ public class TestManager {
 	private static long test_failed;
 	private Logger log;
 
-	public TestManager(String pkg){
+	public TestManager(String pkg, String report_dir){
 		classes = ClassFinder.find(pkg);
 		test_failed = 0;
-		log = new Logger("TestFailed");
+		log = new Logger(report_dir+"/TestFailed");
 	}
 
 	public void executeTest(String apk){
