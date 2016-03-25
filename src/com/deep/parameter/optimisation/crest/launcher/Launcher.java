@@ -168,7 +168,7 @@ public class Launcher {
 		m1.setCpu_time(2000);
 		m1.setHeap_alloc(2000);
 		m.add(m1);
-		m1 = new Mutant("android-timetracker-instrumented_3787.apk");
+		m1 = new Mutant("android-timetracker-instrumented_4676.apk");
 		m1.setCpu_time(3000);
 		m1.setHeap_alloc(3000);
 		m.add(m1);
