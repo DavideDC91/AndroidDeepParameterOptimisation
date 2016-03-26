@@ -1,6 +1,10 @@
 package com.deep.parameter.optimisation.crest.manager;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import com.deep.parameter.optimisation.crest.beans.Mutant;
 import com.deep.parameter.optimisation.crest.utilities.Logger;
@@ -18,7 +22,10 @@ public class AppManager {
 	private TestManager tl;
 	private Mutant original;
 	private ArrayList<Mutant> survived_mutants, killed_mutants;
-	private static final String androidPath = "/Users/Davide/Library/";
+	private static String android_path = "";
+	private static String adb_path = "";
+	private static String ant_path = "";
+	private static String emma_path = "";
 
 	/**
 	 * Constructor of the class
@@ -37,6 +44,7 @@ public class AppManager {
 		survived_mutants_log = new Logger(report_dir+"/SurvivedMutants");
 		killed_mutants_log = new Logger(report_dir+"/KilledMutants");
 		tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir);
+		loadPath();
 	}
 
 	/**
@@ -45,20 +53,20 @@ public class AppManager {
 	 */
 	public void setUp(){
 		String output;
-		cmd = new CommandManager(new ProcessBuilder("/usr/local/apache-ant/bin/ant", "clean"));
+		cmd = new CommandManager(new ProcessBuilder(ant_path, "clean"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("ant clean", output);
 		if(!output.contains("SUCCESSFUL")) System.out.println("ant clean FAILED");
 		else{
-			cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/tools/android", "update", "project", "--target", "1", "--path", "./", "--name", dir));
+			cmd = new CommandManager(new ProcessBuilder(android_path, "update", "project", "--target", "1", "--path", "./", "--name", dir));
 			output = cmd.executeCommand(dir);
 			log.writeLog("android update", output);
-			cmd = new CommandManager(new ProcessBuilder("/usr/local/apache-ant/bin/ant", "instrument"));
+			cmd = new CommandManager(new ProcessBuilder(ant_path, "instrument"));
 			output = cmd.executeCommand(dir);
 			log.writeLog("ant instrument", output);
 			if(!output.contains("SUCCESSFUL")) System.out.println("ant instrument FAILED");
 			else {
-				cmd = new CommandManager(new ProcessBuilder("/usr/local/apache-ant/bin/ant", "installi"));
+				cmd = new CommandManager(new ProcessBuilder(ant_path, "installi"));
 				output = cmd.executeCommand(dir);
 				log.writeLog("ant installi", output);
 				if(!output.contains("SUCCESSFUL")) System.out.println("ant installi FAILED");
@@ -76,14 +84,14 @@ public class AppManager {
 	 */
 	public void resetApp(String directory, boolean mutations){
 		String output;
-		cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "uninstall", pkg ));
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "uninstall", pkg ));
 		output = cmd.executeCommand(dir);
 		log.writeLog("adb uninstall", output);
 		if(mutations){
-			cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "install", "-reinstall", "./"+apk));
+			cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "install", "-reinstall", "./"+apk));
 			output = cmd.executeCommand("mutants");
 		} else {
-			cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "install", "-reinstall", "./"+directory+"/"+apk));
+			cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "install", "-reinstall", "./"+directory+"/"+apk));
 			output = cmd.executeCommand(dir);
 		}
 		log.writeLog("adb install", output);
@@ -113,16 +121,16 @@ public class AppManager {
 		} else {
 			survived_mutants_log.writeLog("Original apk", original.toString());
 		}
-		cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "shell", "am", "broadcast", "-a", "com.qa.emma.COLLECT_COVERAGE"));
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "shell", "am", "broadcast", "-a", "com.qa.emma.COLLECT_COVERAGE"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("adb broadcast", output);
-		cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "push", "/mnt/sdcard/coverage.ec"));
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "push", "/mnt/sdcard/coverage.ec"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("adb push", output);
-		cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "pull", "/mnt/sdcard/coverage.ec"));
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "pull", "/mnt/sdcard/coverage.ec"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("adb pull", output);
-		cmd = new CommandManager(new ProcessBuilder("java", "-cp", androidPath+"Android/sdk//tools/lib/emma.jar", "emma", "report", "-r", "html", "-sourcepath", "src", "-in", "bin/coverage.em,coverage.ec"));
+		cmd = new CommandManager(new ProcessBuilder("java", "-cp", emma_path, "emma", "report", "-r", "html", "-sourcepath", "src", "-in", "bin/coverage.em,coverage.ec"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("java emma report", output);
 		System.out.println("coverage calculated");
@@ -183,7 +191,7 @@ public class AppManager {
 	 * @return cpu information
 	 */
 	private String getCpuInfo(){
-		CommandManager cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "shell", "dumpsys", "cpuinfo", pkg));
+		CommandManager cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "dumpsys", "cpuinfo", pkg));
 		String output;
 		String cpu_info = "";
 		output = cmd.executeCommand(dir);
@@ -205,7 +213,7 @@ public class AppManager {
 	 * @return memory information
 	 */
 	private String getMemInfo(){
-		CommandManager 	cmd = new CommandManager(new ProcessBuilder(androidPath+"Android/sdk/platform-tools/adb", "-s", device, "shell", "dumpsys", "meminfo", pkg));
+		CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "dumpsys", "meminfo", pkg));
 		String output;
 		String mem_info = "";
 		output = cmd.executeCommand(dir);
@@ -218,6 +226,32 @@ public class AppManager {
 			}
 		}
 		return mem_info;
+	}
+	
+	/**
+	 * This method loads the path from the config file
+	 */
+	private void loadPath(){
+		Properties prop = new Properties();
+		InputStream input = null;
+		try {
+			input = new FileInputStream("config.properties");
+			prop.load(input);			
+			android_path = prop.getProperty("android_path");
+			adb_path = prop.getProperty("adb_path");
+			ant_path = prop.getProperty("ant_path");
+			emma_path = prop.getProperty("emma_path");
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		} finally {
+			if (input != null) {
+				try {
+					input.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 
 }

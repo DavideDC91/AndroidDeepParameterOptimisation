@@ -1,6 +1,7 @@
 package com.deep.parameter.optimisation.crest.manager;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -8,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Properties;
 
 import com.deep.parameter.optimisation.crest.beans.Alteration;
 import com.deep.parameter.optimisation.crest.beans.Mutant;
@@ -23,7 +25,7 @@ public class MutantsAnalyzer {
 
 	private String dir, pkg, report_dir, original_path;
 	private ArrayList<String> files;
-	private static final String apktool_path = "/usr/local/Cellar/apktool/2.0.3/bin/apktool";
+	private static String apktool_path = "";
 	private ArrayList<Mutant> mutants;
 	private Logger log;
 	private CommandManager cmd;
@@ -47,6 +49,7 @@ public class MutantsAnalyzer {
 			original_path=original_path + pkg_splitted[i]+"/";
 		}
 		files = new ArrayList<>();
+		loadPath();
 	}
 
 	/**
@@ -73,6 +76,7 @@ public class MutantsAnalyzer {
 		}
 		ReportGenerator rg = new ReportGenerator(mutants);
 		rg.generateHtmlReport(report_dir);
+		System.out.println("Report generated");
 	}
 
 	/**
@@ -108,6 +112,29 @@ public class MutantsAnalyzer {
 			}
 		}
 		return m;
+	}
+	
+	/**
+	 * This method loads the path from the config file
+	 */
+	private void loadPath(){
+		Properties prop = new Properties();
+		InputStream input = null;
+		try {
+			input = new FileInputStream("config.properties");
+			prop.load(input);			
+			apktool_path = prop.getProperty("apktool_path");
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		} finally {
+			if (input != null) {
+				try {
+					input.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 
 }
