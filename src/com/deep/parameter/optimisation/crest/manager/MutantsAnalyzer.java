@@ -14,6 +14,11 @@ import com.deep.parameter.optimisation.crest.beans.Mutant;
 import com.deep.parameter.optimisation.crest.utilities.Logger;
 import com.deep.parameter.optimisation.crest.utilities.ReportGenerator;
 
+/**
+ * This Class Allows to analyze the mutants survived and gets the difference with the Original apk
+ * @author Davide
+ *
+ */
 public class MutantsAnalyzer {
 
 	private String dir, pkg, report_dir, original_path;
@@ -23,6 +28,13 @@ public class MutantsAnalyzer {
 	private Logger log;
 	private CommandManager cmd;
 
+	/**
+	 * Constructor of the class
+	 * @param m survived mutants
+	 * @param directory directory of the original apk
+	 * @param pkg package of the app
+	 * @param report_dir path to the reports directory
+	 */
 	public MutantsAnalyzer(ArrayList<Mutant> m, String directory, String pkg, String report_dir){
 		this.mutants = m;
 		this.dir = directory;
@@ -37,34 +49,37 @@ public class MutantsAnalyzer {
 		files = new ArrayList<>();
 	}
 
+	/**
+	 * This method allows to decode the apks and get the smali files
+	 */
 	public void generateSmaliFile(){
 		String output;
-		try {
-			cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", dir+"-instrumented.apk"));
-			output = cmd.executeCommand(dir+"/bin");
-			log.writeLog("apktool d", output);
-			cmd = new CommandManager(new ProcessBuilder("ls"));
-			output = cmd.executeCommand(original_path);
-			String[] lines = output.split(System.getProperty("line.separator"));
-			for(int i=0; i<lines.length;i++){
-				if(!lines[i].contains("$")){
-					files.add(lines[i]);
-				}
-			}
-			for(int j=0;j<mutants.size();j++){
-				cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", mutants.get(j).getApk_name()));
-				output = cmd.executeCommand("mutants");
-				log.writeLog("apktool d "+mutants.get(j).getApk_name(), output);
-				mutants.set(j, findDiff(mutants.get(j)));
-			}
-			ReportGenerator rg = new ReportGenerator(mutants);
-			rg.generatoHtmlReport(report_dir);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", dir+"-instrumented.apk"));
+		output = cmd.executeCommand(dir+"/bin");
+		log.writeLog("apktool d", output);
+		cmd = new CommandManager(new ProcessBuilder("ls"));
+		output = cmd.executeCommand(original_path);
+		String[] lines = output.split(System.getProperty("line.separator"));
+		for(int i=0; i<lines.length;i++){
+			//if(!lines[i].contains("$")){
+				files.add(lines[i]);
+			//}
 		}
+		for(int j=0;j<mutants.size();j++){
+			cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", mutants.get(j).getApk_name()));
+			output = cmd.executeCommand("mutants");
+			log.writeLog("apktool d "+mutants.get(j).getApk_name(), output);
+			mutants.set(j, findDiff(mutants.get(j)));
+		}
+		ReportGenerator rg = new ReportGenerator(mutants);
+		rg.generateHtmlReport(report_dir);
 	}
 
+	/**
+	 * This method allows to find the differences between the mutants and the orginal apk
+	 * @param m mutant to analyze
+	 * @return mutant with alteration saved
+	 */
 	public Mutant findDiff(Mutant m){
 		String[] pkg_splitted = this.pkg.split("\\.");
 		String path = "mutants/"+m.getApk_name().replace(".apk", "")+"/smali/";
