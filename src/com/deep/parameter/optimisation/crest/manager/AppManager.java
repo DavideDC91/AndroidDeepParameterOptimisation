@@ -133,14 +133,19 @@ public class AppManager {
 			log.writeLog("ls", output);
 			apk_mutants = output.split("\n");
 			for(int i=0;i<apk_mutants.length;i++){
+				if(apk_mutants[i].contains(".apk")){
 				apk=apk_mutants[i];
 				resetApp("mutants",true);
-				TimeUnit.SECONDS.sleep(10);	
+				TimeUnit.SECONDS.sleep(10);
+				long startTime = System.nanoTime();
 				tl.executeTest(apk);
+				long endTime = System.nanoTime();
 				cpu_info = getCpuInfo();
 				memory_used = getMemInfo().split("\\s+");
+				long duration = (endTime - startTime)/1000000;
 				cpu_used = cpu_info.split(" ");
 				mutant = new Mutant(apk);
+				mutant.setExecution_time(duration);
 				mutant.setCpu_pct(Double.parseDouble(cpu_used[2]));
 				mutant.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 				mutant.setUser_pct(Double.parseDouble(cpu_used[4]));
@@ -155,8 +160,11 @@ public class AppManager {
 					survived_mutants.add(mutant);
 					survived_mutants_log.writeLog("Mutant "+(i+1), mutant.toString());
 				}
+				}
 			}
 			System.out.println("mutation analysis done");
+			MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, pkg,report_dir );
+			ma.generateSmaliFile();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

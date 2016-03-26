@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import com.deep.parameter.optimisation.crest.beans.Alteration;
 import com.deep.parameter.optimisation.crest.beans.Mutant;
 import com.deep.parameter.optimisation.crest.utilities.Logger;
+import com.deep.parameter.optimisation.crest.utilities.ReportGenerator;
 
 public class MutantsAnalyzer {
 
@@ -55,8 +56,9 @@ public class MutantsAnalyzer {
 				output = cmd.executeCommand("mutants");
 				log.writeLog("apktool d "+mutants.get(j).getApk_name(), output);
 				mutants.set(j, findDiff(mutants.get(j)));
-				System.out.println(mutants.get(j).getAlteration(0).getFile()+" "+mutants.get(j).getAlteration(0).getLine()+" "+mutants.get(j).getAlteration(0).getLine_number());
 			}
+			ReportGenerator rg = new ReportGenerator(mutants);
+			rg.generatoHtmlReport(report_dir);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -70,25 +72,25 @@ public class MutantsAnalyzer {
 			path=path + pkg_splitted[i]+"/";
 		}
 		for(int j=0;j<files.size();j++){
-		Path mutant_path = Paths.get("./"+path+"/"+files.get(j));
-		Path original_path = Paths.get(this.original_path+"/"+files.get(j));
-		try {
-			InputStream in = Files.newInputStream(mutant_path);
-			InputStream original_in = Files.newInputStream(original_path);
-			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-			BufferedReader original_reader = new BufferedReader(new InputStreamReader(original_in));
-			String line = null;
-			String original_line = null;
-			long line_number=0;
-			while (((line = reader.readLine()) != null)&&(original_line = original_reader.readLine()) != null) {
-				line_number++;
-				if(!line.equals(original_line)){
-					m.addAlteration(new Alteration(files.get(j), line, line_number));
+			Path mutant_path = Paths.get("./"+path+"/"+files.get(j));
+			Path original_path = Paths.get(this.original_path+"/"+files.get(j));
+			try {
+				InputStream in = Files.newInputStream(mutant_path);
+				InputStream original_in = Files.newInputStream(original_path);
+				BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+				BufferedReader original_reader = new BufferedReader(new InputStreamReader(original_in));
+				String line = null;
+				String original_line = null;
+				long line_number=0;
+				while (((line = reader.readLine()) != null)&&(original_line = original_reader.readLine()) != null) {
+					line_number++;
+					if(!line.equals(original_line)){
+						m.addAlteration(new Alteration(files.get(j), line, original_line, line_number));
+					}
 				}
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 		}
 		return m;
 	}

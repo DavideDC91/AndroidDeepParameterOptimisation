@@ -14,10 +14,12 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
+import com.deep.parameter.optimisation.crest.beans.Alteration;
 import com.deep.parameter.optimisation.crest.beans.Mutant;
 import com.deep.parameter.optimisation.crest.manager.AppManager;
 import com.deep.parameter.optimisation.crest.manager.CommandManager;
 import com.deep.parameter.optimisation.crest.manager.MutantsAnalyzer;
+import com.deep.parameter.optimisation.crest.utilities.ReportGenerator;
 
 
 public class Launcher {
@@ -159,21 +161,39 @@ public class Launcher {
 		report_dir.mkdirs();
 		
 		AppManager dc= new AppManager("android-timetracker", "com.markuspage.android.atimetracker", "0ac20634", "Reports/"+report_dir_name);
-		//dc.setUp();
-		//dc.calculateCoverage();
-		//dc.mutationAnalysis();
-		
+		dc.setUp();
+		dc.calculateCoverage();
+		dc.mutationAnalysis();
+		/**
 		ArrayList<Mutant> m = new ArrayList<>();
 		Mutant m1 = new Mutant("android-timetracker-instrumented_2.apk");
 		m1.setCpu_time(2000);
 		m1.setHeap_alloc(2000);
+		m1.setCpu_pct(2000);
+		m1.setExecution_time(2000);
+		m1.setHeap_free(2000);
+		m1.setHeap_size(2000);
+		m1.setSystem_pct(100);
+		m1.setUser_pct(100);
+		m1.addAlteration(new Alteration("CSVExporter.smali", "const/4 v0, 0x6", "const/4 v0, 0x5", 18));
+		m1.addAlteration(new Alteration("CSVExporter.smali", "const/4 v0, 0x6", "const/4 v0, 0x5", 12228));
 		m.add(m1);
 		m1 = new Mutant("android-timetracker-instrumented_4676.apk");
 		m1.setCpu_time(3000);
 		m1.setHeap_alloc(3000);
+		m1.setCpu_pct(3000);
+		m1.setExecution_time(3000);
+		m1.setHeap_free(3000);
+		m1.setHeap_size(3000);
+		m1.setSystem_pct(3000);
+		m1.setUser_pct(3000);
+		m1.addAlteration(new Alteration("CSVExporter.smali", "const/4 v0, 0x6", "const/4 v0, 0x5", 200));
 		m.add(m1);
-		MutantsAnalyzer ma = new MutantsAnalyzer(m,"android-timetracker", "com.markuspage.android.atimetracker","Reports/"+report_dir_name );
-		ma.generateSmaliFile();
+		//MutantsAnalyzer ma = new MutantsAnalyzer(m,"android-timetracker", "com.markuspage.android.atimetracker","Reports/"+report_dir_name );
+		//ma.generateSmaliFile();
+		**/
+		
+		
 	}
 
 
