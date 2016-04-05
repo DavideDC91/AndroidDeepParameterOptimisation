@@ -19,13 +19,14 @@ import static java.nio.file.StandardOpenOption.*;
  */
 public class ReportGenerator {
 
-	ArrayList<Mutant> mutants;
-
+	private ArrayList<Mutant> mutants;
+	private Mutant original;
 	/**
 	 * Constructor Method of the class
 	 * @param m Mutants to show in the report
 	 */
-	public ReportGenerator(ArrayList<Mutant> m){
+	public ReportGenerator(ArrayList<Mutant> m, Mutant original){
+		this.original = original;
 		mutants = new ArrayList<>();
 		mutants = m;
 	}
@@ -35,7 +36,38 @@ public class ReportGenerator {
 	 * @param path path where save the report
 	 */
 	public void generateHtmlReport(String path){
+
 		String s = "<style>" +
+				" table { " +
+				" border-collapse: collapse; " +
+				"}" +
+				" table, td, th {" +
+				" border: 1px solid black;" +
+				"}" +
+				"</style><table>" +
+				"<tr>" +
+				"<th >Original name</th>" +
+				"<th>Execution time (ms)</th>" +
+				"<th>Cpu Time (ms)</th>" +
+				"<th>Cpu pct (%)</th>" +
+				"<th>User pct (%)</th>" +
+				"<th>System pct (%)</th>" +
+				"<th>Heap size (Kb)</th>" +
+				"<th>Heap allocated (Kb)</th>" +
+				"<th>Heap free (Kb)</th>" +
+				"<tr>"+
+				"<td  align='center'>"+ original.getApk_name() +"</td>" +
+				"<td  align='center'>"+ original.getExecution_time() +"</td>" +
+				"<td  align='center'>"+ original.getCpu_time() +"</td>" +
+				"<td  align='center'>"+ original.getCpu_pct() +"</td>" +
+				"<td  align='center'>"+ original.getUser_pct() +"</td>" +
+				"<td  align='center'>"+ original.getSystem_pct() +"</td>" +
+				"<td  align='center'>"+ original.getHeap_size() +"</td>" +
+				"<td  align='center'>"+ original.getHeap_alloc() +"</td>" +
+				"<td  align='center'>"+ original.getHeap_free() +"</td>" +
+				"</tr>" +
+				"</table> <br>";
+		s += "<style>" +
 				" table { " +
 				" border-collapse: collapse; " +
 				"}" +
@@ -54,6 +86,7 @@ public class ReportGenerator {
 				"<th>Heap allocated (Kb)</th>" +
 				"<th>Heap free (Kb)</th>" +
 				"<th>File</th>" +
+				"<th>Type</th>" +
 				"<th>Original</th>" +
 				"<th>Mutated</th>" +
 				"<th>Line</th>" +
@@ -72,6 +105,7 @@ public class ReportGenerator {
 						"<td  align='center'>"+ m.getHeap_alloc() +"</td>" +
 						"<td  align='center'>"+ m.getHeap_free() +"</td>" +
 						"<td  align='center'>"+ a.getFile() +"</td>" +
+						"<td  align='center'>"+ a.getAlteration_type() +"</td>" +
 						"<td  align='center'>"+ a.getOriginalLine() +"</td>" +
 						"<td  align='center'>"+ a.getMutatedLine() +"</td>" +
 						"<td  align='center'>"+ a.getLine_number() +"</td>" +

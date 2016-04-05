@@ -1,21 +1,25 @@
 package com.deep.parameter.optimisation.crest.manager;
 
+import static java.nio.file.StandardOpenOption.*;
+
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Properties;
 
 import com.deep.parameter.optimisation.crest.beans.Alteration;
 import com.deep.parameter.optimisation.crest.beans.Mutant;
 import com.deep.parameter.optimisation.crest.utilities.Logger;
 import com.deep.parameter.optimisation.crest.utilities.ReportGenerator;
-
 /**
  * This Class Allows to analyze the mutants survived and gets the difference with the Original apk
  * @author Davide
@@ -29,6 +33,7 @@ public class MutantsAnalyzer {
 	private ArrayList<Mutant> mutants;
 	private Logger log;
 	private CommandManager cmd;
+	private Mutant original;
 
 	/**
 	 * Constructor of the class
@@ -37,11 +42,12 @@ public class MutantsAnalyzer {
 	 * @param pkg package of the app
 	 * @param report_dir path to the reports directory
 	 */
-	public MutantsAnalyzer(ArrayList<Mutant> m, String directory, String pkg, String report_dir){
+	public MutantsAnalyzer(ArrayList<Mutant> m, String directory, String pkg, String report_dir, Mutant original){
 		this.mutants = m;
 		this.dir = directory;
 		this.pkg = pkg;
 		this.report_dir = report_dir;
+		this.original = original;
 		log = new Logger(report_dir+"/AnalyzerLogger");
 		String[] pkg_splitted = this.pkg.split("\\.");
 		original_path = dir+"/bin/"+dir+"-instrumented/smali/";
@@ -65,7 +71,7 @@ public class MutantsAnalyzer {
 		String[] lines = output.split(System.getProperty("line.separator"));
 		for(int i=0; i<lines.length;i++){
 			//if(!lines[i].contains("$")){
-				files.add(lines[i]);
+			files.add(lines[i]);
 			//}
 		}
 		for(int j=0;j<mutants.size();j++){
@@ -74,8 +80,9 @@ public class MutantsAnalyzer {
 			log.writeLog("apktool d "+mutants.get(j).getApk_name(), output);
 			mutants.set(j, findDiff(mutants.get(j)));
 		}
-		ReportGenerator rg = new ReportGenerator(mutants);
-		rg.generateHtmlReport(report_dir);
+		alterateOriginal();
+		//ReportGenerator rg = new ReportGenerator(mutants, original);
+		//rg.generateHtmlReport(report_dir);
 		System.out.println("Report generated");
 	}
 
@@ -104,7 +111,14 @@ public class MutantsAnalyzer {
 				while (((line = reader.readLine()) != null)&&(original_line = original_reader.readLine()) != null) {
 					line_number++;
 					if(!line.equals(original_line)){
-						m.addAlteration(new Alteration(files.get(j), line, original_line, line_number));
+						String alteration_type= null;
+						if(line.contains("const")) alteration_type= "ICR";
+						else if(((line.contains("if-nez"))||(line.contains("if-eqz")))&&((original_line.contains("if-nez"))||(original_line.contains("if-eqz")))) alteration_type= "LCR";
+						else if((line.contains("if-eq"))||(line.contains("if-ne"))||(line.contains("if-lt"))||(line.contains("if-ge"))||(line.contains("if-gt"))||(line.contains("if-le"))) alteration_type= "ROR";
+						else if((line.contains("add-"))||(line.contains("rsub-"))||(line.contains("sub-"))||(line.contains("div-"))||(line.contains("mul-"))||(line.contains("rem-"))) alteration_type= "AOR";
+						else if(line.contains("not-")||(line.contains("neg-"))) alteration_type= "UOI";
+						else if(line.contains("return")) alteration_type= "RVR";
+						m.addAlteration(new Alteration(files.get(j), line, original_line, line_number,alteration_type));
 					}
 				}
 			} catch (IOException e) {
@@ -113,7 +127,42 @@ public class MutantsAnalyzer {
 		}
 		return m;
 	}
-	
+
+	private void alterateOriginal(){
+		ArrayList<Alteration> alts = new ArrayList<>();
+		for(int j=0;j<mutants.size();j++){
+			alts.addAll(mutants.get(j).getAllAlteration());
+		}
+		Collections.sort(alts);
+		for(int i=0;i<files.size();i++){
+			for(int z=0;z<alts.size();z++){
+				if(alts.get(z).getFile().equals(files.get(i))){
+					try{
+						Path new_file = Paths.get(this.original_path+"/new_file.smali");
+						Path original_file = Paths.get(this.original_path+"/"+files.get(i));
+						InputStream in = Files.newInputStream(original_file);
+						BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+						OutputStream out = new BufferedOutputStream(Files.newOutputStream(new_file, CREATE));
+						String line = null;
+						long line_number=0;
+						System.out.println(alts.get(z).getFile());
+						while ((line = reader.readLine()) != null){
+							line_number++;
+							line=line+"\n";
+							byte data[] = line.getBytes();
+							out.write(data, 0, data.length);
+							out.flush();
+						}
+						out.close();
+						System.out.println(line_number);
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}
+	}
+
 	/**
 	 * This method loads the path from the config file
 	 */

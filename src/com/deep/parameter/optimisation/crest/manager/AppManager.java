@@ -6,6 +6,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import com.deep.parameter.optimisation.crest.beans.Alteration;
 import com.deep.parameter.optimisation.crest.beans.Mutant;
 import com.deep.parameter.optimisation.crest.utilities.Logger;
 
@@ -104,11 +106,15 @@ public class AppManager {
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		resetApp("bin",false);
+		long startTime = System.nanoTime();
 		tl.executeTest("Original apk");
+		long endTime = System.nanoTime();
 		cpu_info = getCpuInfo();
 		memory_used = getMemInfo().split("\\s+");
+		long duration = (endTime - startTime)/1000000;
 		cpu_used = cpu_info.split(" ");
 		original = new Mutant(apk);
+		original.setExecution_time(duration);
 		original.setCpu_pct(Double.parseDouble(cpu_used[2]));
 		original.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 		original.setUser_pct(Double.parseDouble(cpu_used[4]));
@@ -141,11 +147,12 @@ public class AppManager {
 	 * @throws InterruptedException
 	 */
 	public void mutationAnalysis() throws InterruptedException{
+		survived_mutants = new ArrayList<>();
+		/**
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		String[] apk_mutants;
 		Mutant mutant;
-		survived_mutants = new ArrayList<>();
 		killed_mutants = new ArrayList<>();
 		cmd = new CommandManager(new ProcessBuilder("ls"));
 		output = cmd.executeCommand("mutants");
@@ -156,6 +163,7 @@ public class AppManager {
 				apk=apk_mutants[i];
 				resetApp("mutants",true);
 				TimeUnit.SECONDS.sleep(10);
+				System.out.println("Launching "+apk +" ...");
 				long startTime = System.nanoTime();
 				tl.executeTest(apk);
 				long endTime = System.nanoTime();
@@ -181,8 +189,17 @@ public class AppManager {
 				}
 			}
 		}
+		**/
+		// ELIMINARE 
+		Mutant prova = new Mutant("android-timetracker-instrumented_1092.apk");
+		prova.setExecution_time(213501);
+		prova.setCpu_time(11088);
+		//prova.addAlteration(new Alteration("Report.smali", "const/4 v2, 0x5", "const/4 v2, 0x4", 1719, "ICR"));
+		survived_mutants.add(prova);
+		// ELIMINARE
+		
 		System.out.println("mutation analysis done");
-		MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, pkg,report_dir );
+		MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, pkg,report_dir, original);
 		ma.generateSmaliFile();
 	}
 

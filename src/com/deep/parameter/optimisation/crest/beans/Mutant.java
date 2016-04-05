@@ -1,6 +1,7 @@
 package com.deep.parameter.optimisation.crest.beans;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 /**
  * This class is the bean that represent the mutants

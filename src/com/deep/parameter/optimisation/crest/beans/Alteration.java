@@ -1,12 +1,14 @@
 package com.deep.parameter.optimisation.crest.beans;
 
+import org.apache.commons.lang3.builder.CompareToBuilder;
+
 /**
  * The alteration class represent a single alteration of a single mutant
  * @author Davide
  *
  */
-public class Alteration {
-	private String file, original_line, mutated_line;
+public class Alteration implements Comparable<Alteration> {
+	private String file, original_line, mutated_line, alteration_type;
 	private long line_number;
 
 	/**
@@ -15,13 +17,30 @@ public class Alteration {
 	 * @param line the line alterated
 	 * @param line_number the line number alterated
 	 */
-	public Alteration(String file, String mutated_line,String original_line, long line_number){
+	public Alteration(String file, String mutated_line,String original_line, long line_number, String alteration_type){
 		this.file = file;
 		this.mutated_line = mutated_line;
 		this.original_line = original_line;
 		this.line_number = line_number;
+		this.alteration_type = alteration_type;
 	}
 
+	/**
+	 * This method allows to get the alteration type of the file alterated
+	 * @return
+	 */
+	public String getAlteration_type() {
+		return alteration_type;
+	}
+
+	/**
+	 * This method allows to set the alteration type of the file alterated
+	 * @return
+	 */
+	public void setAlteration_type(String alteration_type) {
+		this.alteration_type = alteration_type;
+	}
+	
 	/**
 	 * This method allows to get the name of the file alterated
 	 * @return
@@ -84,5 +103,11 @@ public class Alteration {
 	 */
 	public void setLine_number(long line_number) {
 		this.line_number = line_number;
+	}
+
+	@Override
+	public int compareTo(Alteration o) {
+		// TODO Auto-generated method stub
+		return Long.compare(this.line_number, o.getLine_number());
 	}
 }

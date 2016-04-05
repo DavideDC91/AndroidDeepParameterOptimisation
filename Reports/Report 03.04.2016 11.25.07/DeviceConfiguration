@@ -1,0 +1,126 @@
+
+
+**** ls ****
+
+android-timetracker-instrumented_2025.apk
+android-timetracker-instrumented_4640.apk
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+4294 KB/s (277335 bytes in 0.063s)
+	pkg: /data/local/tmp/android-timetracker-instrumented_2025.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 4.99 / 4.56 / 4.53
+CPU usage from 16374ms to 8061ms ago:
+  16% 572/system_server: 12% user + 4.2% kernel / faults: 11922 minor
+  16% 6948/uiautomator: 15% user + 1.2% kernel / faults: 2568 minor
+  0.4% 969/com.google.android.gms: 0.3% user + 0.1% kernel / faults: 419 minor
+  0.3% 873/com.android.launcher: 0.1% user + 0.1% kernel / faults: 582 minor
+  0.3% 2115/com.google.android.googlequicksearchbox:search: 0.3% user + 0% kernel / faults: 189 minor
+  0.6% 178/surfaceflinger: 0.4% user + 0.2% kernel / faults: 7204 minor
+  1.3% 265/adbd: 0.2% user + 1% kernel / faults: 67 minor
+  1.3% 7069/kworker/u:5: 0% user + 1.3% kernel
+  0.9% 189/mpdecision: 0% user + 0.9% kernel
+  0% 139/mmcqd/0: 0% user + 0% kernel
+  0.4% 260/sensors.qcom: 0.1% user + 0.3% kernel
+  0.2% 628/com.android.systemui: 0.2% user + 0% kernel
+  0% 699/android.process.acore: 0% user + 0% kernel / faults: 21 minor
+  0% 775/com.google.android.inputmethod.latin: 0% user + 0% kernel / faults: 31 minor
+  0% 856/com.android.nfc: 0% user + 0% kernel / faults: 75 minor
+  0% 1778/com.google.android.apps.plus: 0% user + 0% kernel / faults: 60 minor
+  0% 2429/io.appium.unlock: 0% user + 0% kernel / faults: 764 minor
+  0.2% 6738/kworker/0:2: 0% user + 0.2% kernel
+  0.2% 6893/logcat: 0% user + 0.2% kernel
+  0% 87/msmfb_commit_th: 0% user + 0% kernel
+  0.1% 133/dbs_sync/0: 0% user + 0.1% kernel
+  0.1% 134/dbs_sync/1: 0% user + 0.1% kernel
+  0% 135/dbs_sync/2: 0% user + 0% kernel
+  0% 161/jbd2/mmcblk0p30: 0% user + 0% kernel
+  0% 1277/com.android.vending: 0% user + 0% kernel / faults: 5 minor
+  0% 1899/com.google.process.gapps: 0% user + 0% kernel / faults: 11 minor
+  0% 2057/com.android.musicfx: 0% user + 0% kernel / faults: 17 minor
+  0% 2076/com.android.defcontainer: 0% user + 0% kernel / faults: 39 minor
+  0% 2100/com.google.android.gms.drive: 0% user + 0% kernel / faults: 11 minor
+  0% 2137/com.android.keychain: 0% user + 0% kernel / faults: 17 minor
+  0% 2150/com.google.android.partnersetup: 0% user + 0% kernel / faults: 24 minor
+  0% 2188/com.android.documentsui: 0% user + 0% kernel / faults: 13 minor
+  0% 4084/kworker/u:0: 0% user + 0% kernel
+  0% 4441/kworker/u:3: 0% user + 0% kernel
+  0% 6796/com.google.android.apps.docs: 0% user + 0% kernel / faults: 40 minor
+  0% 6852/kworker/0:1: 0% user + 0% kernel
+0.1% TOTAL: 0.1% user + 0% kernel + 0% iowait + 0% softirq
+
+
+**** dumpsys memInfo ****
+
+No process found for: com.markuspage.android.atimetracker
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+4445 KB/s (277335 bytes in 0.060s)
+	pkg: /data/local/tmp/android-timetracker-instrumented_4640.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 5.22 / 4.63 / 4.56
+CPU usage from 12738ms to 7065ms ago:
+  67% 873/com.android.launcher: 64% user + 2.9% kernel / faults: 4148 minor
+  32% 6948/uiautomator: 30% user + 1.5% kernel / faults: 4690 minor
+  19% 572/system_server: 16% user + 3.1% kernel / faults: 8620 minor
+  16% 265/adbd: 1.4% user + 15% kernel / faults: 68 minor
+  7.4% 6893/logcat: 2.1% user + 5.2% kernel / faults: 4 minor
+  2.8% 969/com.google.android.gms: 2.6% user + 0.1% kernel / faults: 420 minor
+  0.9% 2115/com.google.android.googlequicksearchbox:search: 0.8% user + 0.1% kernel / faults: 163 minor
+  0.8% 189/mpdecision: 0% user + 0.8% kernel
+  0.2% 856/com.android.nfc: 0.2% user + 0% kernel / faults: 111 minor
+  0.7% 6852/kworker/0:1: 0% user + 0.7% kernel
+  0.7% 7171/kworker/1:1: 0% user + 0.7% kernel
+  0.2% 139/mmcqd/0: 0% user + 0.2% kernel
+  0.3% 260/sensors.qcom: 0.1% user + 0.1% kernel
+  0.1% 699/android.process.acore: 0.1% user + 0% kernel / faults: 15 minor
+  0.1% 1778/com.google.android.apps.plus: 0.1% user + 0% kernel / faults: 52 minor
+  0.1% 2076/com.android.defcontainer: 0.1% user + 0% kernel / faults: 48 minor
+  0.1% 2188/com.android.documentsui: 0% user + 0.1% kernel / faults: 22 minor
+  0.1% 133/dbs_sync/0: 0% user + 0.1% kernel
+  0.1% 134/dbs_sync/1: 0% user + 0.1% kernel
+  0% 161/jbd2/mmcblk0p30: 0% user + 0% kernel
+  0% 172/healthd: 0% user + 0% kernel
+  0% 178/surfaceflinger: 0% user + 0% kernel
+  0% 186/bridgemgrd: 0% user + 0% kernel
+  0% 261/sdcard: 0% user + 0% kernel
+  0% 628/com.android.systemui: 0% user + 0% kernel
+  0% 775/com.google.android.inputmethod.latin: 0% user + 0% kernel / faults: 24 minor
+  0% 841/com.android.phone: 0% user + 0% kernel / faults: 21 minor
+  0% 1899/com.google.process.gapps: 0% user + 0% kernel / faults: 6 minor
+  0% 2057/com.android.musicfx: 0% user + 0% kernel / faults: 18 minor
+  0% 2137/com.android.keychain: 0% user + 0% kernel / faults: 16 minor
+  0% 2150/com.google.android.partnersetup: 0% user + 0% kernel / faults: 19 minor
+  0% 4441/kworker/u:3: 0% user + 0% kernel
+  0% 6737/flush-179:0: 0% user + 0% kernel
+  0% 6796/com.google.android.apps.docs: 0% user + 0% kernel / faults: 34 minor
+  0% 7069/kworker/u:5: 0% user + 0% kernel
+ +0% 7254/kworker/1:2: 0% user + 0% kernel
+26% TOTAL: 20% user + 4.9% kernel + 0.4% iowait
+
+
+**** dumpsys memInfo ****
+
+No process found for: com.markuspage.android.atimetracker

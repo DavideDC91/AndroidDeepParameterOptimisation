@@ -1,0 +1,838 @@
+
+
+**** Original apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** Original apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** Original apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_501.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_501.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_501.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_506.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_506.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_506.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_507.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** failure number: 1 ****
+
+com.deep.parameter.optimisation.crest.test.MoreTest: A new session could not be created. (Original error: com.markuspage.android.atimetracker/.Tasks never started. Current: com.android.launcher/com.android.launcher2.Launcher) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.46 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+
+**** android-timetracker-instrumented_507.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** failure number: 2 ****
+
+com.deep.parameter.optimisation.crest.test.ReportTest: A new session could not be created. (Original error: com.markuspage.android.atimetracker/.Tasks never started. Current: com.android.launcher/com.android.launcher2.Launcher) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.81 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+
+**** android-timetracker-instrumented_507.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 3 ****
+
+com.deep.parameter.optimisation.crest.test.TaskTest: A new session could not be created. (Original error: com.markuspage.android.atimetracker/.Tasks never started. Current: com.android.launcher/com.android.launcher2.Launcher) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.77 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+
+**** android-timetracker-instrumented_508.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** failure number: 1 ****
+
+backupTest(com.deep.parameter.optimisation.crest.test.MoreTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 480 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 5a3eb738-6f3a-4542-ad30-f48e57a98b17
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 2 ****
+
+helpTest(com.deep.parameter.optimisation.crest.test.MoreTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 45 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 5a3eb738-6f3a-4542-ad30-f48e57a98b17
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 3 ****
+
+settingsTest(com.deep.parameter.optimisation.crest.test.MoreTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 5a3eb738-6f3a-4542-ad30-f48e57a98b17
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 4 ****
+
+exportCSVTest(com.deep.parameter.optimisation.crest.test.MoreTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 5a3eb738-6f3a-4542-ad30-f48e57a98b17
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 5 ****
+
+changeDateTest(com.deep.parameter.optimisation.crest.test.MoreTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 5a3eb738-6f3a-4542-ad30-f48e57a98b17
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 6 ****
+
+restoreBackupTest(com.deep.parameter.optimisation.crest.test.MoreTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 52 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 5a3eb738-6f3a-4542-ad30-f48e57a98b17
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** android-timetracker-instrumented_508.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** failure number: 7 ****
+
+com.deep.parameter.optimisation.crest.test.ReportTest: A new session could not be created. (Original error: com.markuspage.android.atimetracker/.Tasks never started. Current: com.android.launcher/com.android.launcher2.Launcher) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.29 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+
+**** android-timetracker-instrumented_508.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 8 ****
+
+com.deep.parameter.optimisation.crest.test.TaskTest: A new session could not be created. (Original error: com.markuspage.android.atimetracker/.Tasks never started. Current: com.android.launcher/com.android.launcher2.Launcher) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.56 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+
+**** android-timetracker-instrumented_509.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** failure number: 1 ****
+
+com.deep.parameter.optimisation.crest.test.MoreTest: A new session could not be created. (Original error: com.markuspage.android.atimetracker/.Tasks never started. Current: com.android.launcher/com.android.launcher2.Launcher) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.79 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+
+**** android-timetracker-instrumented_509.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** failure number: 2 ****
+
+com.deep.parameter.optimisation.crest.test.ReportTest: A new session could not be created. (Original error: com.markuspage.android.atimetracker/.Tasks never started. Current: com.android.launcher/com.android.launcher2.Launcher) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.65 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+
+**** android-timetracker-instrumented_509.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 3 ****
+
+com.deep.parameter.optimisation.crest.test.TaskTest: A new session could not be created. (Original error: com.markuspage.android.atimetracker/.Tasks never started. Current: com.android.launcher/com.android.launcher2.Launcher) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.77 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+
+**** android-timetracker-instrumented_510.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_510.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_510.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_515.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_515.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_515.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_516.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_516.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_516.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_517.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_517.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_517.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_518.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_518.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_518.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_519.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_519.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_519.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_520.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_520.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_520.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_525.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_525.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_525.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_530.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_530.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_530.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_531.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_531.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_531.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_532.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_532.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_532.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_537.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_537.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_537.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_538.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_538.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_538.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 1 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.75 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: ff740c71-3afa-4f5f-bbeb-4cca35ab2db9
+
+**** android-timetracker-instrumented_539.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_539.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_539.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 1 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.70 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: e163a262-e21e-43e3-a148-b85f7b840468
+
+**** android-timetracker-instrumented_540.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_540.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_540.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 1 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.78 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 0f7d21ec-a362-41a7-8652-6736f53ef393
+
+**** android-timetracker-instrumented_541.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_541.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_541.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 1 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.71 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 8f949ac2-9ae1-43e4-806e-a742af6200a2
+
+**** android-timetracker-instrumented_542.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_542.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_542.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_543.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_543.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_543.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_544.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_544.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_544.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_545.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_545.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_545.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 1 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.68 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: f51db928-2b78-404d-a372-bb091ec00730
+
+**** android-timetracker-instrumented_546.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_546.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_546.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 1 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.68 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: f9e79f43-db87-4e4d-af0f-1dd0a8b3eb1b
+
+**** android-timetracker-instrumented_547.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_547.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_547.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 1 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.74 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 6bc38cce-1584-4e11-af0a-88ee7c7194e0
+
+**** android-timetracker-instrumented_548.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_548.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_548.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_549.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_549.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_549.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_550.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_550.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_550.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_555.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_555.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_555.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_556.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_556.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_556.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_557.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_557.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_557.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_558.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_558.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_558.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_559.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_559.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_559.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_560.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_560.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_560.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_565.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_565.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_565.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_570.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_570.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_570.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_575.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_575.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_575.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_576.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_576.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_576.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_577.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_577.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_577.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_578.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_578.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_578.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 1 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.66 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: def6b953-eacf-49f9-8a37-184b9e0ffcf2
+
+**** android-timetracker-instrumented_579.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_579.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_579.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_584.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_584.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_584.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_589.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_589.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_589.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_590.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_590.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_590.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_595.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_595.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_595.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_596.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_596.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_596.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 1 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.67 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: d4d32046-414e-49be-a9c6-fa013787c81e
+
+**** android-timetracker-instrumented_597.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_597.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_597.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** android-timetracker-instrumented_598.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** android-timetracker-instrumented_598.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** android-timetracker-instrumented_598.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
