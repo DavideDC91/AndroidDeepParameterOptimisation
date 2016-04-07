@@ -1,0 +1,92 @@
+
+
+**** android-timetracker-instrumented-0.apk Class: com.deep.parameter.optimisation.crest.test.MoreTest ****
+
+
+
+**** failure number: 1 ****
+
+changeDateTest(com.deep.parameter.optimisation.crest.test.MoreTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12.21 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 96501466-3cb2-4875-a514-3565591ece0b
+
+**** failure number: 2 ****
+
+restoreBackupTest(com.deep.parameter.optimisation.crest.test.MoreTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 71 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 96501466-3cb2-4875-a514-3565591ece0b
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** android-timetracker-instrumented-0.apk Class: com.deep.parameter.optimisation.crest.test.ReportTest ****
+
+
+
+**** failure number: 3 ****
+
+com.deep.parameter.optimisation.crest.test.ReportTest: A new session could not be created. (Original error: com.markuspage.android.atimetracker/.Tasks never started. Current: com.android.launcher/com.android.launcher2.Launcher) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.58 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+
+**** android-timetracker-instrumented-0.apk Class: com.deep.parameter.optimisation.crest.test.TaskTest ****
+
+
+
+**** failure number: 4 ****
+
+removeTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 489 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 614b9ae6-ae4b-4f28-a916-aa13567c1c19
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 5 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 143 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 614b9ae6-ae4b-4f28-a916-aa13567c1c19
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 6 ****
+
+addTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 56 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 614b9ae6-ae4b-4f28-a916-aa13567c1c19
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 7 ****
+
+updateTaskTest(com.deep.parameter.optimisation.crest.test.TaskTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'MacBook-Pro-di-Davide.local', ip: '10.99.169.94', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0ac20634, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, platformVersion=4.4, platformName=Android, deviceName=0ac20634}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 614b9ae6-ae4b-4f28-a916-aa13567c1c19
+*** Element info: {Using=class name, value=android.widget.ImageButton}

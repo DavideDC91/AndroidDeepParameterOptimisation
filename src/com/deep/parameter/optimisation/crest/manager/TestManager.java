@@ -24,10 +24,10 @@ public class TestManager {
 	 * @param pkg package of the Test
 	 * @param report_dir path where save the test report
 	 */
-	public TestManager(String pkg, String report_dir){
+	public TestManager(String pkg, String report_dir, String fileName){
 		classes = ClassFinder.find(pkg);
 		test_failed = 0;
-		log = new Logger(report_dir+"/TestFailed");
+		log = new Logger(report_dir+"/"+fileName);
 	}
 
 	/**

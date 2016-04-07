@@ -122,4 +122,84 @@ public class ReportGenerator {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * This method generate a Html report
+	 * @param path path where save the report
+	 */
+	public void generateHtmlAlteratedReport(String path){
+
+		String s = "<style>" +
+				" table { " +
+				" border-collapse: collapse; " +
+				"}" +
+				" table, td, th {" +
+				" border: 1px solid black;" +
+				"}" +
+				"</style><table>" +
+				"<tr>" +
+				"<th >Original name</th>" +
+				"<th>Execution time (ms)</th>" +
+				"<th>Cpu Time (ms)</th>" +
+				"<th>Cpu pct (%)</th>" +
+				"<th>User pct (%)</th>" +
+				"<th>System pct (%)</th>" +
+				"<th>Heap size (Kb)</th>" +
+				"<th>Heap allocated (Kb)</th>" +
+				"<th>Heap free (Kb)</th>" +
+				"<tr>"+
+				"<td  align='center'>"+ original.getApk_name() +"</td>" +
+				"<td  align='center'>"+ original.getExecution_time() +"</td>" +
+				"<td  align='center'>"+ original.getCpu_time() +"</td>" +
+				"<td  align='center'>"+ original.getCpu_pct() +"</td>" +
+				"<td  align='center'>"+ original.getUser_pct() +"</td>" +
+				"<td  align='center'>"+ original.getSystem_pct() +"</td>" +
+				"<td  align='center'>"+ original.getHeap_size() +"</td>" +
+				"<td  align='center'>"+ original.getHeap_alloc() +"</td>" +
+				"<td  align='center'>"+ original.getHeap_free() +"</td>" +
+				"</tr>" +
+				"</table> <br>";
+		s += "<style>" +
+				" table { " +
+				" border-collapse: collapse; " +
+				"}" +
+				" table, td, th {" +
+				" border: 1px solid black;" +
+				"}" +
+				"</style><table>" +
+				"<tr>" +
+				"<th >Mutant name</th>" +
+				"<th>Execution time (ms)</th>" +
+				"<th>Cpu Time (ms)</th>" +
+				"<th>Cpu pct (%)</th>" +
+				"<th>User pct (%)</th>" +
+				"<th>System pct (%)</th>" +
+				"<th>Heap size (Kb)</th>" +
+				"<th>Heap allocated (Kb)</th>" +
+				"<th>Heap free (Kb)</th>" +
+				"</tr>";
+
+		for(Mutant m: mutants){
+				s += "<tr>"+
+						"<td  align='center'>"+ m.getApk_name() +"</td>" +
+						"<td  align='center'>"+ m.getExecution_time() +"</td>" +
+						"<td  align='center'>"+ m.getCpu_time() +"</td>" +
+						"<td  align='center'>"+ m.getCpu_pct() +"</td>" +
+						"<td  align='center'>"+ m.getUser_pct() +"</td>" +
+						"<td  align='center'>"+ m.getSystem_pct() +"</td>" +
+						"<td  align='center'>"+ m.getHeap_size() +"</td>" +
+						"<td  align='center'>"+ m.getHeap_alloc() +"</td>" +
+						"<td  align='center'>"+ m.getHeap_free() +"</td>" +
+						"</tr>";
+		}
+		s+= "</table>";
+		byte data[] = s.getBytes();
+		Path p = Paths.get(path+"/AlteratedReport.html");
+		try (OutputStream out = new BufferedOutputStream(
+				Files.newOutputStream(p, CREATE))) {
+			out.write(data, 0, data.length);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }

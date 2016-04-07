@@ -15,6 +15,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import com.deep.parameter.optimisation.crest.beans.Alteration;
 import com.deep.parameter.optimisation.crest.beans.Mutant;
@@ -27,10 +28,10 @@ import com.deep.parameter.optimisation.crest.utilities.ReportGenerator;
  */
 public class MutantsAnalyzer {
 
-	private String dir, pkg, report_dir, original_path;
+	private String dir, pkg, report_dir, original_path, device;
 	private ArrayList<String> files;
-	private static String apktool_path = "";
-	private ArrayList<Mutant> mutants;
+	private static String apktool_path = "", tool_path="", adb_path = "";
+	private ArrayList<Mutant> mutants, new_versions, new_versions_survived;
 	private Logger log;
 	private CommandManager cmd;
 	private Mutant original;
@@ -42,12 +43,14 @@ public class MutantsAnalyzer {
 	 * @param pkg package of the app
 	 * @param report_dir path to the reports directory
 	 */
-	public MutantsAnalyzer(ArrayList<Mutant> m, String directory, String pkg, String report_dir, Mutant original){
+	public MutantsAnalyzer(ArrayList<Mutant> m, String directory, String pkg, String report_dir, Mutant original, String device){
 		this.mutants = m;
+		this.device = device;
 		this.dir = directory;
 		this.pkg = pkg;
 		this.report_dir = report_dir;
 		this.original = original;
+		new_versions_survived = new ArrayList<>();
 		log = new Logger(report_dir+"/AnalyzerLogger");
 		String[] pkg_splitted = this.pkg.split("\\.");
 		original_path = dir+"/bin/"+dir+"-instrumented/smali/";
@@ -80,12 +83,99 @@ public class MutantsAnalyzer {
 			log.writeLog("apktool d "+mutants.get(j).getApk_name(), output);
 			mutants.set(j, findDiff(mutants.get(j)));
 		}
-		alterateOriginal();
-		//ReportGenerator rg = new ReportGenerator(mutants, original);
-		//rg.generateHtmlReport(report_dir);
-		System.out.println("Report generated");
+		ReportGenerator rg = new ReportGenerator(mutants, original);
+		rg.generateHtmlReport(report_dir);
+		executeAlterated();
+		System.out.println("Reports generated");
 	}
 
+	private void executeAlterated(){
+		String output,cpu_info;
+		String[] cpu_used,memory_used;
+		TestManager tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "NewVersionsFailed");
+		new_versions = new ArrayList<>();
+		for(int i=0;i<10;i++){
+		alterate(5+((i+1)*5));
+		compileApk(i);
+		resetApp(new_versions.get(i).getApk_name());
+		CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
+		output = cmd.executeCommand(dir);
+		while(!output.contains(device)){
+			System.out.println("sono entrato");
+			try {
+				TimeUnit.SECONDS.sleep(20);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
+			output = cmd.executeCommand(dir);
+		}
+		System.out.println("Launching "+new_versions.get(i).getApk_name() +" ...");
+		long startTime = System.nanoTime();
+		tl.executeTest(new_versions.get(i).getApk_name());
+		long endTime = System.nanoTime();
+		cpu_info = getCpuInfo();
+		memory_used = getMemInfo().split("\\s+");
+		long duration = (endTime - startTime)/1000000;
+		if(tl.getTestFailed()==0){
+			cpu_used = cpu_info.split(" ");
+			new_versions.get(i).setExecution_time(duration);
+			new_versions.get(i).setCpu_pct(Double.parseDouble(cpu_used[2]));
+			new_versions.get(i).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
+			new_versions.get(i).setUser_pct(Double.parseDouble(cpu_used[4]));
+			new_versions.get(i).setSystem_pct(Double.parseDouble(cpu_used[7]));
+			new_versions.get(i).setHeap_size(Long.parseLong(memory_used[7]));
+			new_versions.get(i).setHeap_alloc(Long.parseLong(memory_used[8]));
+			new_versions.get(i).setHeap_free(Long.parseLong(memory_used[9]));
+			new_versions_survived.add(new_versions.get(i));
+		}
+		}
+		ReportGenerator rg = new ReportGenerator(new_versions_survived, original);
+		rg.generateHtmlAlteratedReport(report_dir);
+	}
+	
+	/**
+	 * Method that allows to get cpu information from the device
+	 * @return cpu information
+	 */
+	private String getCpuInfo(){
+		String output;
+		String cpu_info = "";
+		CommandManager cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "dumpsys", "cpuinfo", pkg));
+		output = cmd.executeCommand(dir);
+		log.writeLog("dumpsys cpuinfo", output);
+		String[] lines = output.split(System.getProperty("line.separator"));
+		for(int i=0; i<lines.length;i++){
+			if(lines[i].contains(pkg)){
+				cpu_info = lines[i];
+				break;
+			}
+		}
+		cpu_info = cpu_info.replace("%", "");
+		return cpu_info;
+	}
+
+	/**
+	 * Method that allows to get memory information from the device
+	 * @return memory information
+	 */
+	private String getMemInfo(){
+		CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "dumpsys", "meminfo", pkg));
+		String output;
+		String mem_info = "";
+		output = cmd.executeCommand(dir);
+		log.writeLog("dumpsys memInfo", output);
+		String[] lines = output.split(System.getProperty("line.separator"));
+		for(int i=0; i<lines.length;i++){
+			if(lines[i].contains("Native Heap")){
+				mem_info = lines[i];
+				break;
+			}
+		}
+		return mem_info;
+	}
+	
 	/**
 	 * This method allows to find the differences between the mutants and the orginal apk
 	 * @param m mutant to analyze
@@ -128,7 +218,8 @@ public class MutantsAnalyzer {
 		return m;
 	}
 
-	private void alterateOriginal(){
+	private void alterate(int deep){
+		String output;
 		ArrayList<Alteration> alts = new ArrayList<>();
 		for(int j=0;j<mutants.size();j++){
 			alts.addAll(mutants.get(j).getAllAlteration());
@@ -144,17 +235,31 @@ public class MutantsAnalyzer {
 						BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 						OutputStream out = new BufferedOutputStream(Files.newOutputStream(new_file, CREATE));
 						String line = null;
+						String new_line = null;
 						long line_number=0;
-						System.out.println(alts.get(z).getFile());
 						while ((line = reader.readLine()) != null){
 							line_number++;
-							line=line+"\n";
-							byte data[] = line.getBytes();
+							if(line_number==alts.get(z).getLine_number()){
+								if(alts.get(z).getAlteration_type().equals("ICR")){
+									String[] var = line.split("\\s+");
+									int value = Integer.parseInt(var[3].replace("0x", ""), 16);  
+									value += deep;
+									String hex = Integer.toHexString(value);
+									new_line ="    const/16 "+var[2]+" 0x"+hex;
+								}
+							} else {
+								new_line = line;
+							}
+							new_line = new_line+"\n";
+							byte data[]= new_line.getBytes();
 							out.write(data, 0, data.length);
 							out.flush();
 						}
 						out.close();
-						System.out.println(line_number);
+						cmd = new CommandManager(new ProcessBuilder("rm",files.get(i)));
+						output = cmd.executeCommand(original_path);
+						cmd = new CommandManager(new ProcessBuilder("mv","new_file.smali",files.get(i)));
+						output = cmd.executeCommand(original_path);
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
@@ -163,6 +268,33 @@ public class MutantsAnalyzer {
 		}
 	}
 
+	private void compileApk(int n){
+		String output;
+		cmd = new CommandManager(new ProcessBuilder(apktool_path, "b", original.getApk_name().replace(".apk", "")));
+		output = cmd.executeCommand(dir+"/bin/");
+		log.writeLog("apktool b", output);
+		cmd = new CommandManager(new ProcessBuilder("java", "-jar", "signapk.jar", "certificate.pem", "key.pk8", tool_path+
+				"/"+dir+"/bin/"+original.getApk_name().replace(".apk", "")+
+				"/dist/"+original.getApk_name(), tool_path+"/SignApk/"+dir+"-instrumented-"+n+".apk"));
+		output = cmd.executeCommand("SignApk");
+		log.writeLog("Sign apk ", output);
+		new_versions.add(new Mutant(dir+"-instrumented-"+n+".apk"));
+	}
+	
+	/**
+	 * Method that allows to reset the app on the device, unistall and install.
+	 * @param directory directory of the app
+	 */
+	public void resetApp(String apk){
+		String output;
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "uninstall", pkg ));
+		output = cmd.executeCommand(dir);
+		log.writeLog("adb uninstall", output);
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "install", "-reinstall", "./"+apk));
+		output = cmd.executeCommand("SignApk");
+		log.writeLog("adb install", output);
+	}
+	
 	/**
 	 * This method loads the path from the config file
 	 */
@@ -173,6 +305,8 @@ public class MutantsAnalyzer {
 			input = new FileInputStream("config.properties");
 			prop.load(input);			
 			apktool_path = prop.getProperty("apktool_path");
+			tool_path = prop.getProperty("tool_path");
+			adb_path = prop.getProperty("adb_path");
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		} finally {

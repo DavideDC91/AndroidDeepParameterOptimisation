@@ -45,7 +45,7 @@ public class AppManager {
 		log = new Logger(report_dir+"/DeviceConfiguration");
 		survived_mutants_log = new Logger(report_dir+"/SurvivedMutants");
 		killed_mutants_log = new Logger(report_dir+"/KilledMutants");
-		tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir);
+		tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "TestFailed");
 		loadPath();
 	}
 
@@ -106,6 +106,7 @@ public class AppManager {
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		resetApp("bin",false);
+		restart();
 		long startTime = System.nanoTime();
 		tl.executeTest("Original apk");
 		long endTime = System.nanoTime();
@@ -114,17 +115,17 @@ public class AppManager {
 		long duration = (endTime - startTime)/1000000;
 		cpu_used = cpu_info.split(" ");
 		original = new Mutant(apk);
-		original.setExecution_time(duration);
-		original.setCpu_pct(Double.parseDouble(cpu_used[2]));
-		original.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
-		original.setUser_pct(Double.parseDouble(cpu_used[4]));
-		original.setSystem_pct(Double.parseDouble(cpu_used[7]));
-		original.setHeap_size(Long.parseLong(memory_used[7]));
-		original.setHeap_alloc(Long.parseLong(memory_used[8]));
-		original.setHeap_free(Long.parseLong(memory_used[9]));
 		if(tl.getTestFailed()!=0){
 			killed_mutants_log.writeLog("Original apk", original.toString());
 		} else {
+			original.setExecution_time(duration);
+			original.setCpu_pct(Double.parseDouble(cpu_used[2]));
+			original.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
+			original.setUser_pct(Double.parseDouble(cpu_used[4]));
+			original.setSystem_pct(Double.parseDouble(cpu_used[7]));
+			original.setHeap_size(Long.parseLong(memory_used[7]));
+			original.setHeap_alloc(Long.parseLong(memory_used[8]));
+			original.setHeap_free(Long.parseLong(memory_used[9]));
 			survived_mutants_log.writeLog("Original apk", original.toString());
 		}
 		cmd = new CommandManager(new ProcessBuilder(adb_path, "shell", "am", "broadcast", "-a", "com.qa.emma.COLLECT_COVERAGE"));
@@ -142,13 +143,30 @@ public class AppManager {
 		System.out.println("coverage calculated");
 	}
 
+	private void restart(){
+		String output;
+		CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
+		output = cmd.executeCommand(dir);
+		while(!output.contains(device)){
+			System.out.println("sono entrato");
+			try {
+				TimeUnit.SECONDS.sleep(20);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
+			output = cmd.executeCommand(dir);
+		}
+	}	
+
 	/**
 	 * Method that allows to execute the mutation analysis and get the survived and killed mutants
 	 * @throws InterruptedException
 	 */
 	public void mutationAnalysis() throws InterruptedException{
 		survived_mutants = new ArrayList<>();
-		/**
+		
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		String[] apk_mutants;
@@ -162,7 +180,7 @@ public class AppManager {
 			if(apk_mutants[i].contains(".apk")){
 				apk=apk_mutants[i];
 				resetApp("mutants",true);
-				TimeUnit.SECONDS.sleep(10);
+				restart();
 				System.out.println("Launching "+apk +" ...");
 				long startTime = System.nanoTime();
 				tl.executeTest(apk);
@@ -189,17 +207,21 @@ public class AppManager {
 				}
 			}
 		}
-		**/
-		// ELIMINARE 
+		 /**
+		// ELIMINARE
+		//original = new Mutant(apk);
 		Mutant prova = new Mutant("android-timetracker-instrumented_1092.apk");
 		prova.setExecution_time(213501);
 		prova.setCpu_time(11088);
 		//prova.addAlteration(new Alteration("Report.smali", "const/4 v2, 0x5", "const/4 v2, 0x4", 1719, "ICR"));
 		survived_mutants.add(prova);
-		// ELIMINARE
-		
+		prova = new Mutant("android-timetracker-instrumented_1094.apk");
+		prova.setExecution_time(211641);
+		prova.setCpu_time(29681);
+		survived_mutants.add(prova);
+		// ELIMINARE**/
 		System.out.println("mutation analysis done");
-		MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, pkg,report_dir, original);
+		MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, pkg,report_dir, original, device);
 		ma.generateSmaliFile();
 	}
 
@@ -214,7 +236,6 @@ public class AppManager {
 		output = cmd.executeCommand(dir);
 		log.writeLog("dumpsys cpuinfo", output);
 		String[] lines = output.split(System.getProperty("line.separator"));
-
 		for(int i=0; i<lines.length;i++){
 			if(lines[i].contains(pkg)){
 				cpu_info = lines[i];
@@ -244,7 +265,7 @@ public class AppManager {
 		}
 		return mem_info;
 	}
-	
+
 	/**
 	 * This method loads the path from the config file
 	 */

@@ -1,0 +1,179 @@
+
+
+**** ant clean ****
+
+Buildfile: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 24.4.1
+ [checkenv] Installed at /Users/Davide/Library/Android/sdk
+
+-setup:
+     [echo] Project Name: android-timetracker
+  [gettype] Project Type: Application
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin
+   [delete] Deleting directory /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/gen
+[getlibpath] Library dependencies:
+[getlibpath] No Libraries
+   [subant] No sub-builds to iterate on
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+
+**** android update ****
+
+Updated project.properties
+Updated local.properties
+Updated file ./build.xml
+Updated file ./proguard-project.txt
+
+
+**** ant instrument ****
+
+Buildfile: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 24.4.1
+ [checkenv] Installed at /Users/Davide/Library/Android/sdk
+
+-setup:
+     [echo] Project Name: android-timetracker
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for android-timetracker...
+[gettarget] Project Target:   Android 2.3.3
+[gettarget] API level:        10
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin
+    [mkdir] Created dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/res
+    [mkdir] Created dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/rsObj
+    [mkdir] Created dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/rsLibs
+    [mkdir] Created dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/gen
+    [mkdir] Created dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/classes
+    [mkdir] Created dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for android-timetracker...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'instrument'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 13 source files to /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/classes
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] 3 warnings
+     [echo] Instrumenting classes from /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/classes...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/classes
+      [dex] input: /Users/Davide/Library/Android/sdk/tools/support/annotations.jar
+      [dex] input: /Users/Davide/Library/Android/sdk/tools/lib/emma_device.jar
+      [dex] Pre-Dexing /Users/Davide/Library/Android/sdk/tools/support/annotations.jar -> annotations-a9c9a24a1a1926abbce3e6a42abb22fa.jar
+      [dex] Pre-Dexing /Users/Davide/Library/Android/sdk/tools/lib/emma_device.jar -> emma_device-abcde31713c4d92928da21cbec14041c.jar
+      [dex] Converting compiled files and external libraries into /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/classes.dex...
+       [dx] Merged dex #1 (38 defs/87.8KiB)
+       [dx] Merged dex #2 (2 defs/1.1KiB)
+       [dx] Merged dex #3 (297 defs/327.2KiB)
+       [dx] Result is 337 defs/500.2KiB. Took 0.2s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/res
+   [crunch] /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/res/drawable/ic_check_mark_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] To destination dir: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/res
+   [crunch] Processing image to cache: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/res/drawable/ic_check_mark_dark.png => /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/res/drawable/ic_check_mark_dark.png
+   [crunch]   (processed image to cache entry /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/res/drawable/ic_check_mark_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/res/drawable/icon.png => /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/res/drawable/icon.png
+   [crunch]   (processed image to cache entry /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/res/drawable/icon.png: 92% size of source)
+   [crunch] Crunched 2 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating android-timetracker-instrumented-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented.apk
+[propertyfile] Creating new property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+
+instrument:
+ [zipalign] Run cancelled: no changes to input file /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented-unaligned.apk
+     [echo] Instrumented Package: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented.apk
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+
+
+**** ant installi ****
+
+Buildfile: /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+install:
+     [echo] Installing /Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented.apk onto default emulator or device...
+     [exec] 2532 KB/s (276739 bytes in 0.106s)
+     [exec] 	pkg: /data/local/tmp/android-timetracker-instrumented.apk
+     [exec] Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
+
+installi:
+
+BUILD SUCCESSFUL
+Total time: 1 second

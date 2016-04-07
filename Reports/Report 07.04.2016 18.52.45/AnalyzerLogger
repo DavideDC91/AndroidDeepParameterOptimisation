@@ -1,0 +1,251 @@
+
+
+**** apktool d ****
+
+I: Using Apktool 2.0.3 on android-timetracker-instrumented.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /Users/Davide/Library/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d android-timetracker-instrumented_1092.apk ****
+
+I: Using Apktool 2.0.3 on android-timetracker-instrumented_1092.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /Users/Davide/Library/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d android-timetracker-instrumented_1093.apk ****
+
+I: Using Apktool 2.0.3 on android-timetracker-instrumented_1093.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /Users/Davide/Library/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d android-timetracker-instrumented_1094.apk ****
+
+I: Using Apktool 2.0.3 on android-timetracker-instrumented_1094.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /Users/Davide/Library/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.0.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building resources...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+4274 KB/s (275940 bytes in 0.063s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-0.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 5.72 / 2.33 / 0.87
+CPU usage from 15579ms to 9977ms ago:
+  63% 846/com.android.launcher: 60% user + 3% kernel / faults: 1024 minor
+  52% 212/sdcard: 45% user + 6.7% kernel
+  43% 969/android.process.media: 32% user + 11% kernel / faults: 2123 minor
+  28% 2658/uiautomator: 25% user + 3.2% kernel / faults: 4851 minor
+  15% 216/adbd: 0.5% user + 14% kernel / faults: 106 minor
+  6.6% 2601/logcat: 2.5% user + 4.1% kernel
+  4.8% 572/system_server: 3.3% user + 1.4% kernel / faults: 201 minor
+  0.8% 19/kworker/0:1: 0% user + 0.8% kernel
+  0.7% 189/mpdecision: 0.1% user + 0.5% kernel
+  0.7% 1271/kworker/1:0: 0% user + 0.7% kernel
+  0.3% 181/mediaserver: 0.1% user + 0.1% kernel
+  0.3% 211/sensors.qcom: 0% user + 0.3% kernel
+  0% 5/kworker/u:0: 0% user + 0% kernel
+  0.1% 135/dbs_sync/2: 0% user + 0.1% kernel
+  0.1% 139/mmcqd/0: 0% user + 0.1% kernel
+  0.1% 141/kworker/u:5: 0% user + 0.1% kernel
+  0.1% 178/surfaceflinger: 0.1% user + 0% kernel
+  0.1% 628/com.android.systemui: 0.1% user + 0% kernel / faults: 7 minor
+  0% 1980/com.google.android.apps.maps: 0% user + 0% kernel / faults: 16 minor
+ +0% 2748/migration/2: 0% user + 0% kernel
+ +0% 2749/kworker/2:0: 0% user + 0% kernel
+ +0% 2750/ksoftirqd/2: 0% user + 0% kernel
+ +0% 2751/kworker/2:1: 0% user + 0% kernel
+-49% TOTAL: -38.-7% user + -10.-3% kernel
+
+
+**** dumpsys memInfo ****
+
+No process found for: com.markuspage.android.atimetracker
+
+
+**** apktool b ****
+
+I: Using Apktool 2.0.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+4472 KB/s (275941 bytes in 0.060s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-1.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 5.76 / 2.29 / 0.85
+CPU usage from 24730ms to 1335ms ago:
+  50% 210/sdcard: 43% user + 6.7% kernel
+  46% 886/com.android.launcher: 43% user + 2.3% kernel / faults: 4466 minor
+  44% 963/android.process.media: 34% user + 10% kernel / faults: 9272 minor
+  14% 214/adbd: 1.4% user + 12% kernel / faults: 531 minor
+  6.9% 562/system_server: 5% user + 1.9% kernel / faults: 7083 minor
+  1.7% 178/surfaceflinger: 0.9% user + 0.7% kernel / faults: 10012 minor
+  0.8% 19/kworker/0:1: 0% user + 0.8% kernel
+  0.7% 189/mpdecision: 0.1% user + 0.6% kernel
+  0.4% 181/mediaserver: 0.2% user + 0.2% kernel
+  0.4% 257/kworker/1:1: 0% user + 0.4% kernel
+  0.3% 5/kworker/u:0: 0% user + 0.3% kernel
+  0.3% 207/sensors.qcom: 0% user + 0.2% kernel
+  0.2% 179/zygote: 0.2% user + 0% kernel / faults: 561 minor
+  0.2% 647/com.android.systemui: 0% user + 0.1% kernel / faults: 63 minor
+  0.1% 108/kworker/u:3: 0% user + 0.1% kernel
+  0.1% 135/dbs_sync/1: 0% user + 0.1% kernel
+  0% 141/kworker/u:4: 0% user + 0% kernel
+  0% 87/msmfb_commit_th: 0% user + 0% kernel
+  0% 134/dbs_sync/0: 0% user + 0% kernel
+  0% 136/dbs_sync/2: 0% user + 0% kernel
+  0% 140/mmcqd/0: 0% user + 0% kernel
+  0% 645/kworker/1:2: 0% user + 0% kernel
+  0% 2/kthreadd: 0% user + 0% kernel
+  0% 27/msm_slim_ctrl_r: 0% user + 0% kernel
+  0% 59/kworker/u:1: 0% user + 0% kernel
+  0% 137/dbs_sync/3: 0% user + 0% kernel
+  0% 148/ueventd: 0% user + 0% kernel
+  0% 154/flush-179:0: 0% user + 0% kernel
+  0% 172/healthd: 0% user + 0% kernel
+  0% 173/servicemanager: 0% user + 0% kernel
+  0% 186/bridgemgrd: 0% user + 0% kernel / faults: 33 minor
+  0% 2002/com.google.android.apps.maps: 0% user + 0% kernel / faults: 19 minor
+  0% 2455/com.android.defcontainer: 0% user + 0% kernel / faults: 48 minor
+ +0% 2660/logcat: 0% user + 0% kernel
+ +0% 2717/uiautomator: 0% user + 0% kernel
+39% TOTAL: 30% user + 8.8% kernel + 0.3% iowait + 0% softirq
+
+
+**** dumpsys memInfo ****
+
+No process found for: com.markuspage.android.atimetracker
+
+
+**** apktool b ****
+
+I: Using Apktool 2.0.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+4797 KB/s (275938 bytes in 0.056s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-2.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 5.82 / 2.31 / 0.86
+CPU usage from 10112ms to 3945ms ago with 99% awake:
+  69% 892/com.android.launcher: 67% user + 2.2% kernel / faults: 869 minor
+  49% 214/sdcard: 44% user + 4.7% kernel
+  44% 973/android.process.media: 32% user + 12% kernel / faults: 2563 minor
+  30% 2685/uiautomator: 28% user + 1.7% kernel / faults: 1300 minor
+  17% 218/adbd: 2.1% user + 15% kernel / faults: 124 minor
+  7.1% 2628/logcat: 1.4% user + 5.6% kernel
+  5.9% 567/system_server: 4.7% user + 1.2% kernel / faults: 333 minor
+  0.8% 19/kworker/0:1: 0% user + 0.8% kernel
+  0.8% 533/kworker/1:2: 0% user + 0.8% kernel
+  0.6% 189/mpdecision: 0% user + 0.6% kernel
+  0.6% 2776/kworker/2:1: 0% user + 0.6% kernel
+  0.3% 213/sensors.qcom: 0.1% user + 0.1% kernel
+  0% 133/dbs_sync/0: 0% user + 0% kernel
+  0% 134/dbs_sync/1: 0% user + 0% kernel
+  0% 135/dbs_sync/2: 0% user + 0% kernel
+  0.1% 139/mmcqd/0: 0% user + 0.1% kernel
+  0% 141/kworker/u:5: 0% user + 0% kernel
+  0% 653/com.android.systemui: 0% user + 0% kernel / faults: 2 minor
+65% TOTAL: 51% user + 13% kernel + 0% iowait
+
+
+**** dumpsys memInfo ****
+
+No process found for: com.markuspage.android.atimetracker
