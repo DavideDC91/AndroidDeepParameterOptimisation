@@ -30,6 +30,7 @@ public class MutantsAnalyzer {
 
 	private String dir, pkg, report_dir, original_path, device;
 	private ArrayList<String> files;
+	private ArrayList<Alteration> alts;
 	private static String apktool_path = "", tool_path="", adb_path = "";
 	private ArrayList<Mutant> mutants, new_versions, new_versions_survived;
 	private Logger log;
@@ -94,47 +95,133 @@ public class MutantsAnalyzer {
 		String[] cpu_used,memory_used;
 		TestManager tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "NewVersionsFailed");
 		new_versions = new ArrayList<>();
+		int version_number= 0;
 		for(int i=0;i<10;i++){
-		alterate(5+((i+1)*5));
-		compileApk(i);
-		resetApp(new_versions.get(i).getApk_name());
-		CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
-		output = cmd.executeCommand(dir);
-		while(!output.contains(device)){
-			System.out.println("sono entrato");
-			try {
-				TimeUnit.SECONDS.sleep(20);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			System.out.println("Numero alte da fare " + i);
+			alts = new ArrayList<>();
+			for(int j=0;j<mutants.size();j++){
+				alts.addAll(mutants.get(j).getAllAlteration());
 			}
-			cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
-			output = cmd.executeCommand(dir);
-		}
-		System.out.println("Launching "+new_versions.get(i).getApk_name() +" ...");
-		long startTime = System.nanoTime();
-		tl.executeTest(new_versions.get(i).getApk_name());
-		long endTime = System.nanoTime();
-		cpu_info = getCpuInfo();
-		memory_used = getMemInfo().split("\\s+");
-		long duration = (endTime - startTime)/1000000;
-		if(tl.getTestFailed()==0){
-			cpu_used = cpu_info.split(" ");
-			new_versions.get(i).setExecution_time(duration);
-			new_versions.get(i).setCpu_pct(Double.parseDouble(cpu_used[2]));
-			new_versions.get(i).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
-			new_versions.get(i).setUser_pct(Double.parseDouble(cpu_used[4]));
-			new_versions.get(i).setSystem_pct(Double.parseDouble(cpu_used[7]));
-			new_versions.get(i).setHeap_size(Long.parseLong(memory_used[7]));
-			new_versions.get(i).setHeap_alloc(Long.parseLong(memory_used[8]));
-			new_versions.get(i).setHeap_free(Long.parseLong(memory_used[9]));
-			new_versions_survived.add(new_versions.get(i));
-		}
+			Collections.sort(alts);
+			for(int u=0;u<files.size();u++){
+				for(int z=0;z<alts.size();z++){
+					if(alts.get(z).getFile().equals(files.get(u))){
+						System.out.println("Numero alter " + z);
+						alterate((i+1),alts.get(z),files.get(u),z);
+						if(!alts.get(z).isFinal_val()){
+							compileApk(version_number);
+							resetApp(new_versions.get(version_number).getApk_name());
+							CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
+							output = cmd.executeCommand(dir);
+							while(!output.contains(device)){
+								try {
+									TimeUnit.SECONDS.sleep(20);
+								} catch (InterruptedException e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
+								}
+								cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
+								output = cmd.executeCommand(dir);
+							}
+							System.out.println("Launching "+new_versions.get(version_number).getApk_name() +" ...");
+							long startTime = System.nanoTime();
+							tl.executeTest(new_versions.get(version_number).getApk_name());
+							long endTime = System.nanoTime();
+							cpu_info = getCpuInfo();
+							memory_used = getMemInfo().split("\\s+");
+							long duration = (endTime - startTime)/1000000;
+							if(tl.getTestFailed()==0){
+								cpu_used = cpu_info.split(" ");
+								new_versions.get(version_number).setExecution_time(duration);
+								new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2]));
+								new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
+								new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
+								new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
+								new_versions.get(version_number).setHeap_size(Long.parseLong(memory_used[7]));
+								new_versions.get(version_number).setHeap_alloc(Long.parseLong(memory_used[8]));
+								new_versions.get(version_number).setHeap_free(Long.parseLong(memory_used[9]));
+								new_versions_survived.add(new_versions.get(version_number));
+							} else {
+								alts.get(z).setFinal_val(true);
+								alts.get(z).setVal(i-1);
+							}
+							version_number++;
+						}
+					}
+				}
+			}
 		}
 		ReportGenerator rg = new ReportGenerator(new_versions_survived, original);
 		rg.generateHtmlAlteratedReport(report_dir);
 	}
-	
+
+	private void alterate(int deep, Alteration alt, String file, int alt_num){
+		String output;
+		try{
+			Path new_file = Paths.get(this.original_path+"/new_file.smali");
+			Path original_file = Paths.get(this.original_path+"/"+file);
+			InputStream in = Files.newInputStream(original_file);
+			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+			OutputStream out = new BufferedOutputStream(Files.newOutputStream(new_file, CREATE));
+			String line = null;
+			String new_line = null;
+			long line_number=0;
+			while ((line = reader.readLine()) != null){
+				line_number++;
+				if(line_number==alt.getLine_number()){
+					if(alt.getAlteration_type().equals("ICR")){
+						String t = "0x";
+						String t_mutated = "0x";
+						String t_original = "0x";
+						String[] var = line.split("\\s+");
+						String[] mut_var = alt.getMutatedLine().split("\\s+");
+						String[] ori_var = alt.getOriginalLine().split("\\s+");
+						if(var[3].contains("-0x")){
+							t="-0x";
+						}
+						if(mut_var[3].contains("-0x")){
+							t_mutated="-0x";
+						}
+						if(ori_var[3].contains("-0x")){
+							t_original="-0x";
+						}
+						int value_mutated = Integer.parseInt(mut_var[3].replace(t_mutated, ""), 16);
+						int value_original = Integer.parseInt(ori_var[3].replace(t_original, ""), 16);
+						int val = Integer.parseInt(var[3].replace(t_original, ""), 16);
+						if(alt.isFinal_val()){
+							deep = alt.getVal();
+						}
+						if(value_mutated>value_original){
+							value_original += deep;
+						} else {
+							value_original -= deep;
+						}
+						if(value_original<0){
+							value_original = 0;
+							alts.get(alt_num).setFinal_val(true);
+						} 
+						String hex = Integer.toHexString(value_original);
+						new_line ="    "+var[1]+" "+var[2]+" "+t+hex;
+						System.out.println(alt.getOriginalLine() +" - "+alt.getMutatedLine()+" - "+new_line);
+					}
+				} else {
+					new_line = line;
+				}
+				new_line = new_line+"\n";
+				byte data[]= new_line.getBytes();
+				out.write(data, 0, data.length);
+				out.flush();
+			}
+			out.close();
+			cmd = new CommandManager(new ProcessBuilder("rm",file));
+			output = cmd.executeCommand(original_path);
+			cmd = new CommandManager(new ProcessBuilder("mv","new_file.smali",file));
+			output = cmd.executeCommand(original_path);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 	/**
 	 * Method that allows to get cpu information from the device
 	 * @return cpu information
@@ -175,7 +262,7 @@ public class MutantsAnalyzer {
 		}
 		return mem_info;
 	}
-	
+
 	/**
 	 * This method allows to find the differences between the mutants and the orginal apk
 	 * @param m mutant to analyze
@@ -218,56 +305,6 @@ public class MutantsAnalyzer {
 		return m;
 	}
 
-	private void alterate(int deep){
-		String output;
-		ArrayList<Alteration> alts = new ArrayList<>();
-		for(int j=0;j<mutants.size();j++){
-			alts.addAll(mutants.get(j).getAllAlteration());
-		}
-		Collections.sort(alts);
-		for(int i=0;i<files.size();i++){
-			for(int z=0;z<alts.size();z++){
-				if(alts.get(z).getFile().equals(files.get(i))){
-					try{
-						Path new_file = Paths.get(this.original_path+"/new_file.smali");
-						Path original_file = Paths.get(this.original_path+"/"+files.get(i));
-						InputStream in = Files.newInputStream(original_file);
-						BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-						OutputStream out = new BufferedOutputStream(Files.newOutputStream(new_file, CREATE));
-						String line = null;
-						String new_line = null;
-						long line_number=0;
-						while ((line = reader.readLine()) != null){
-							line_number++;
-							if(line_number==alts.get(z).getLine_number()){
-								if(alts.get(z).getAlteration_type().equals("ICR")){
-									String[] var = line.split("\\s+");
-									int value = Integer.parseInt(var[3].replace("0x", ""), 16);  
-									value += deep;
-									String hex = Integer.toHexString(value);
-									new_line ="    const/16 "+var[2]+" 0x"+hex;
-								}
-							} else {
-								new_line = line;
-							}
-							new_line = new_line+"\n";
-							byte data[]= new_line.getBytes();
-							out.write(data, 0, data.length);
-							out.flush();
-						}
-						out.close();
-						cmd = new CommandManager(new ProcessBuilder("rm",files.get(i)));
-						output = cmd.executeCommand(original_path);
-						cmd = new CommandManager(new ProcessBuilder("mv","new_file.smali",files.get(i)));
-						output = cmd.executeCommand(original_path);
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-				}
-			}
-		}
-	}
-
 	private void compileApk(int n){
 		String output;
 		cmd = new CommandManager(new ProcessBuilder(apktool_path, "b", original.getApk_name().replace(".apk", "")));
@@ -280,7 +317,7 @@ public class MutantsAnalyzer {
 		log.writeLog("Sign apk ", output);
 		new_versions.add(new Mutant(dir+"-instrumented-"+n+".apk"));
 	}
-	
+
 	/**
 	 * Method that allows to reset the app on the device, unistall and install.
 	 * @param directory directory of the app
@@ -294,7 +331,7 @@ public class MutantsAnalyzer {
 		output = cmd.executeCommand("SignApk");
 		log.writeLog("adb install", output);
 	}
-	
+
 	/**
 	 * This method loads the path from the config file
 	 */

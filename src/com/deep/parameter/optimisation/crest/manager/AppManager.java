@@ -166,7 +166,7 @@ public class AppManager {
 	 */
 	public void mutationAnalysis() throws InterruptedException{
 		survived_mutants = new ArrayList<>();
-		
+		/**
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		String[] apk_mutants;
@@ -207,19 +207,23 @@ public class AppManager {
 				}
 			}
 		}
-		 /**
+		**/
 		// ELIMINARE
-		//original = new Mutant(apk);
+		original = new Mutant(apk);
 		Mutant prova = new Mutant("android-timetracker-instrumented_1092.apk");
 		prova.setExecution_time(213501);
 		prova.setCpu_time(11088);
-		//prova.addAlteration(new Alteration("Report.smali", "const/4 v2, 0x5", "const/4 v2, 0x4", 1719, "ICR"));
+		survived_mutants.add(prova);
+		prova = new Mutant("android-timetracker-instrumented_1093.apk");
+		prova.setExecution_time(211640);
+		prova.setCpu_time(29680);
 		survived_mutants.add(prova);
 		prova = new Mutant("android-timetracker-instrumented_1094.apk");
 		prova.setExecution_time(211641);
 		prova.setCpu_time(29681);
 		survived_mutants.add(prova);
 		// ELIMINARE**/
+		
 		System.out.println("mutation analysis done");
 		MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, pkg,report_dir, original, device);
 		ma.generateSmaliFile();

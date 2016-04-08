@@ -1,7 +1,5 @@
 package com.deep.parameter.optimisation.crest.beans;
 
-import org.apache.commons.lang3.builder.CompareToBuilder;
-
 /**
  * The alteration class represent a single alteration of a single mutant
  * @author Davide
@@ -9,6 +7,24 @@ import org.apache.commons.lang3.builder.CompareToBuilder;
  */
 public class Alteration implements Comparable<Alteration> {
 	private String file, original_line, mutated_line, alteration_type;
+	private int val;
+	private boolean final_val = false;
+	public int getVal() {
+		return val;
+	}
+
+	public void setVal(int val) {
+		this.val = val;
+	}
+
+	public boolean isFinal_val() {
+		return final_val;
+	}
+
+	public void setFinal_val(boolean final_val) {
+		this.final_val = final_val;
+	}
+
 	private long line_number;
 
 	/**
