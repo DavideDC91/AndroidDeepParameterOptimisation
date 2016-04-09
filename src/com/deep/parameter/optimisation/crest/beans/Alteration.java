@@ -8,7 +8,15 @@ package com.deep.parameter.optimisation.crest.beans;
 public class Alteration implements Comparable<Alteration> {
 	private String file, original_line, mutated_line, alteration_type;
 	private int val;
-	private boolean final_val = false;
+	private boolean final_val = false, stop_change = false;
+	public boolean isStop_change() {
+		return stop_change;
+	}
+
+	public void setStop_change(boolean stop_change) {
+		this.stop_change = stop_change;
+	}
+
 	public int getVal() {
 		return val;
 	}

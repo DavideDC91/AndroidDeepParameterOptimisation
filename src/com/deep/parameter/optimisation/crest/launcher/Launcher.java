@@ -22,7 +22,7 @@ public class Launcher {
 		report_dir.mkdirs();
 		AppManager dc= new AppManager("android-timetracker", "com.markuspage.android.atimetracker", "0ac20634", "Reports/"+report_dir_name);
 		dc.setUp();
-		//dc.calculateCoverage();
+		dc.calculateCoverage();
 		dc.mutationAnalysis();
 		}
 }

@@ -1,0 +1,665 @@
+
+
+**** apktool d ****
+
+I: Using Apktool 2.0.3 on android-timetracker-instrumented.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /Users/Davide/Library/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d android-timetracker-instrumented_1092.apk ****
+
+I: Using Apktool 2.0.3 on android-timetracker-instrumented_1092.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /Users/Davide/Library/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d android-timetracker-instrumented_1093.apk ****
+
+I: Using Apktool 2.0.3 on android-timetracker-instrumented_1093.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /Users/Davide/Library/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d android-timetracker-instrumented_1094.apk ****
+
+I: Using Apktool 2.0.3 on android-timetracker-instrumented_1094.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /Users/Davide/Library/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.0.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building resources...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1549 KB/s (275938 bytes in 0.173s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-0.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 5.99 / 3.42 / 1.39
+CPU usage from 10256ms to 2312ms ago:
+  44% 3001/com.markuspage.android.atimetracker: 40% user + 3.7% kernel / faults: 860 minor
+  27% 2964/uiautomator: 24% user + 2.6% kernel / faults: 3680 minor
+  10% 559/system_server: 8.3% user + 2.5% kernel / faults: 152 minor
+  6% 178/surfaceflinger: 3.2% user + 2.7% kernel / faults: 7810 minor
+  1.5% 777/com.google.android.inputmethod.latin: 1.5% user + 0% kernel / faults: 249 minor 1 major
+  0.8% 181/mediaserver: 0.3% user + 0.5% kernel
+  0.7% 189/mpdecision: 0% user + 0.7% kernel
+  0.7% 615/com.android.systemui: 0.6% user + 0.1% kernel / faults: 106 minor
+  0.6% 107/kworker/u:2: 0% user + 0.6% kernel
+  0.6% 215/adbd: 0% user + 0.6% kernel
+  0.5% 134/dbs_sync/1: 0% user + 0.5% kernel
+  0.5% 141/kworker/u:5: 0% user + 0.5% kernel
+  0.3% 19/kworker/0:1: 0% user + 0.3% kernel
+  0.3% 133/dbs_sync/0: 0% user + 0.3% kernel
+  0.3% 210/sensors.qcom: 0.1% user + 0.2% kernel
+  0.2% 59/kworker/u:1: 0% user + 0.2% kernel
+  0.2% 87/msmfb_commit_th: 0% user + 0.2% kernel
+  0.2% 633/kworker/1:2: 0% user + 0.2% kernel
+  0.2% 2910/logcat: 0.2% user + 0% kernel
+  0% 727/wpa_supplicant: 0% user + 0% kernel
+7.1% TOTAL: 5.6% user + 0.9% kernel + 0.5% iowait + 0% softirq
+
+
+**** dumpsys memInfo ****
+
+Applications Memory Usage (kB):
+Uptime: 227363 Realtime: 227354
+
+** MEMINFO in pid 3001 [com.markuspage.android.atimetracker] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     3673     3652        0        0     6956     5708      719
+  Dalvik Heap     2598     2296        0        0    10360    10045      315
+ Dalvik Other     2136     2024        0        0                           
+        Stack       84       84        0        0                           
+    Other dev     3628     3608        4        0                           
+     .so mmap     1441      392       16        0                           
+    .apk mmap      162        0       28        0                           
+    .ttf mmap       23        0        0        0                           
+    .dex mmap     1083       64      344        0                           
+   Other mmap       66        4        0        0                           
+     Graphics     7040     7040        0        0                           
+           GL    12132    12132        0        0                           
+      Unknown       88       88        0        0                           
+        TOTAL    34154    31384      392        0    17316    15753     1034
+ 
+ Objects
+               Views:      167         ViewRootImpl:        2
+         AppContexts:        4           Activities:        2
+              Assets:        2        AssetManagers:        2
+       Local Binders:       14        Proxy Binders:       27
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:      110
+  PAGECACHE_OVERFLOW:       28          MALLOC_SIZE:       62
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4       24             49        47/22/8  /data/data/com.markuspage.android.atimetracker/databases/timetracker.db
+ 
+ Asset Allocations
+    zip:/data/app/com.markuspage.android.atimetracker-1.apk:/resources.arsc: 59K
+
+
+**** apktool b ****
+
+I: Using Apktool 2.0.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+4072 KB/s (275939 bytes in 0.066s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-1.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 5.61 / 3.34 / 1.4
+CPU usage from 10393ms to 5378ms ago:
+  39% 2982/com.markuspage.android.atimetracker: 35% user + 4.1% kernel / faults: 724 minor
+  22% 2952/uiautomator: 21% user + 1.5% kernel / faults: 2039 minor
+  11% 560/system_server: 8.3% user + 3.5% kernel / faults: 156 minor
+  9.5% 178/surfaceflinger: 6.5% user + 2.9% kernel / faults: 8054 minor
+  3.5% 782/com.google.android.inputmethod.latin: 3.1% user + 0.3% kernel / faults: 1485 minor 5 major
+  2.1% 643/com.android.systemui: 1.9% user + 0.1% kernel / faults: 133 minor
+  1.7% 181/mediaserver: 0% user + 1.7% kernel
+  0.7% 108/kworker/u:3: 0% user + 0.7% kernel
+  0.7% 189/mpdecision: 0.1% user + 0.5% kernel
+  0.5% 141/kworker/u:5: 0% user + 0.5% kernel
+  0.5% 217/adbd: 0% user + 0.5% kernel
+  0.3% 4/kworker/0:0: 0% user + 0.3% kernel
+  0.3% 87/msmfb_commit_th: 0% user + 0.3% kernel
+  0.3% 133/dbs_sync/0: 0% user + 0.3% kernel
+  0.3% 134/dbs_sync/1: 0% user + 0.3% kernel
+  0.3% 209/sensors.qcom: 0% user + 0.3% kernel
+  0.1% 2904/logcat: 0% user + 0.1% kernel
+  0.1% 3031/kworker/1:2: 0.1% user + 0% kernel
+35% TOTAL: 26% user + 5.5% kernel + 3.7% iowait
+
+
+**** dumpsys memInfo ****
+
+Applications Memory Usage (kB):
+Uptime: 247978 Realtime: 247973
+
+** MEMINFO in pid 2982 [com.markuspage.android.atimetracker] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     3724     3704        0        0     6944     5699      752
+  Dalvik Heap     2584     2280        0        0    10360    10044      316
+ Dalvik Other     2225     2116        0        0                           
+        Stack       84       84        0        0                           
+    Other dev     3692     3672        4        0                           
+     .so mmap     1449      392       20        0                           
+    .apk mmap      163        0       32        0                           
+    .ttf mmap       21        0        0        0                           
+    .dex mmap     1093       64      344        0                           
+   Other mmap       81        4       28        0                           
+     Graphics     7040     7040        0        0                           
+           GL    12132    12132        0        0                           
+      Unknown       88       88        0        0                           
+        TOTAL    34376    31576      428        0    17304    15743     1068
+ 
+ Objects
+               Views:      167         ViewRootImpl:        2
+         AppContexts:        4           Activities:        2
+              Assets:        2        AssetManagers:        2
+       Local Binders:       14        Proxy Binders:       27
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:      110
+  PAGECACHE_OVERFLOW:       28          MALLOC_SIZE:       62
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4       24             49        47/22/8  /data/data/com.markuspage.android.atimetracker/databases/timetracker.db
+ 
+ Asset Allocations
+    zip:/data/app/com.markuspage.android.atimetracker-1.apk:/resources.arsc: 59K
+
+
+**** apktool b ****
+
+I: Using Apktool 2.0.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3749 KB/s (275939 bytes in 0.071s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-2.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 5.85 / 3.37 / 1.39
+CPU usage from 10346ms to 5236ms ago:
+  41% 2963/com.markuspage.android.atimetracker: 36% user + 4.8% kernel / faults: 842 minor
+  23% 2929/uiautomator: 21% user + 1.9% kernel / faults: 2030 minor
+  12% 567/system_server: 8.4% user + 4.1% kernel / faults: 156 minor
+  10% 178/surfaceflinger: 5.8% user + 4.5% kernel / faults: 8074 minor
+  4.6% 779/com.google.android.inputmethod.latin: 4.1% user + 0.5% kernel / faults: 975 minor 6 major
+  1.7% 652/com.android.systemui: 1.7% user + 0% kernel / faults: 168 minor
+  1.5% 181/mediaserver: 0.3% user + 1.1% kernel
+  0.9% 189/mpdecision: 0% user + 0.9% kernel
+  0.7% 59/kworker/u:1: 0% user + 0.7% kernel
+  0.7% 214/adbd: 0% user + 0.7% kernel
+  0.5% 135/dbs_sync/1: 0% user + 0.5% kernel
+  0.5% 141/kworker/u:4: 0% user + 0.5% kernel
+  0.3% 19/kworker/0:1: 0% user + 0.3% kernel
+  0.3% 134/dbs_sync/0: 0% user + 0.3% kernel
+  0.3% 201/sensors.qcom: 0% user + 0.3% kernel
+  0% 2/kthreadd: 0% user + 0% kernel
+  0.1% 87/msmfb_commit_th: 0% user + 0.1% kernel
+  0% 136/dbs_sync/2: 0% user + 0% kernel
+  0% 137/dbs_sync/3: 0% user + 0% kernel
+  0.1% 140/mmcqd/0: 0% user + 0.1% kernel
+  0.1% 243/kworker/1:0: 0% user + 0.1% kernel
+  0.1% 2876/logcat: 0% user + 0.1% kernel
+10% TOTAL: 7.7% user + 1.7% kernel + 0.8% iowait
+
+
+**** dumpsys memInfo ****
+
+Applications Memory Usage (kB):
+Uptime: 242518 Realtime: 242512
+
+** MEMINFO in pid 2963 [com.markuspage.android.atimetracker] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     3697     3676        0        0     6916     5694      729
+  Dalvik Heap     2575     2272        0        0    10356     9978      378
+ Dalvik Other     2213     2104        0        0                           
+        Stack       84       84        0        0                           
+    Other dev     3628     3608        4        0                           
+     .so mmap     1441      392       16        0                           
+    .apk mmap      165        0       32        0                           
+    .ttf mmap       23        0        0        0                           
+    .dex mmap     1095       64      344        0                           
+   Other mmap       66        4        0        0                           
+     Graphics     7040     7040        0        0                           
+           GL    12132    12132        0        0                           
+      Unknown       88       88        0        0                           
+        TOTAL    34247    31464      396        0    17272    15672     1107
+ 
+ Objects
+               Views:      167         ViewRootImpl:        2
+         AppContexts:        4           Activities:        2
+              Assets:        2        AssetManagers:        2
+       Local Binders:       14        Proxy Binders:       25
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:      110
+  PAGECACHE_OVERFLOW:       28          MALLOC_SIZE:       62
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4       24             49        47/22/8  /data/data/com.markuspage.android.atimetracker/databases/timetracker.db
+ 
+ Asset Allocations
+    zip:/data/app/com.markuspage.android.atimetracker-1.apk:/resources.arsc: 59K
+
+
+**** apktool b ****
+
+I: Using Apktool 2.0.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+4386 KB/s (275938 bytes in 0.061s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-3.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 5.69 / 3.27 / 1.34
+CPU usage from 10895ms to 5745ms ago:
+  39% 3068/com.markuspage.android.atimetracker: 35% user + 3.8% kernel / faults: 690 minor
+  22% 3025/uiautomator: 19% user + 3.1% kernel / faults: 1976 minor
+  12% 572/system_server: 8.7% user + 3.6% kernel / faults: 164 minor
+  10% 178/surfaceflinger: 6.4% user + 4% kernel / faults: 8051 minor
+  4% 809/com.google.android.inputmethod.latin: 2.9% user + 1.1% kernel / faults: 1530 minor 5 major
+  1.5% 181/mediaserver: 0.7% user + 0.7% kernel
+  1.5% 658/com.android.systemui: 1.3% user + 0.1% kernel / faults: 152 minor
+  0.7% 141/kworker/u:4: 0% user + 0.7% kernel
+  0.7% 3152/kworker/u:5: 0% user + 0.7% kernel
+  0.5% 235/adbd: 0% user + 0.5% kernel / faults: 1 minor
+  0.3% 134/dbs_sync/0: 0% user + 0.3% kernel
+  0.3% 135/dbs_sync/1: 0% user + 0.3% kernel
+  0.3% 189/mpdecision: 0% user + 0.3% kernel
+  0.3% 230/sensors.qcom: 0% user + 0.3% kernel
+  0.1% 19/kworker/0:1: 0% user + 0.1% kernel
+  0.1% 87/msmfb_commit_th: 0% user + 0.1% kernel
+  0% 140/mmcqd/0: 0% user + 0% kernel
+  0.1% 253/kworker/1:1: 0% user + 0.1% kernel
+  0.1% 2971/logcat: 0.1% user + 0% kernel
+  0.1% 3214/kworker/u:7: 0% user + 0.1% kernel
+15% TOTAL: 10% user + 2.8% kernel + 1.4% iowait + 0% softirq
+
+
+**** dumpsys memInfo ****
+
+Applications Memory Usage (kB):
+Uptime: 240074 Realtime: 240070
+
+** MEMINFO in pid 3068 [com.markuspage.android.atimetracker] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     3702     3680        0        0     6936     5559      884
+  Dalvik Heap     2879     2324        0        0    10376    10201      175
+ Dalvik Other     2104     1992        0        0                           
+        Stack       84       84        0        0                           
+    Other dev     3512     3508        4        0                           
+     .so mmap     1443      392       20        0                           
+    .apk mmap      163        0       32        0                           
+    .ttf mmap       21        0        0        0                           
+    .dex mmap     1088       64      344        0                           
+   Other mmap       81        4       28        0                           
+     Graphics     7040     7040        0        0                           
+           GL    12132    12132        0        0                           
+      Unknown       88       88        0        0                           
+        TOTAL    34337    31308      428        0    17312    15760     1059
+ 
+ Objects
+               Views:      201         ViewRootImpl:        3
+         AppContexts:        4           Activities:        2
+              Assets:        2        AssetManagers:        2
+       Local Binders:       14        Proxy Binders:       25
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:       62
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.markuspage.android.atimetracker-1.apk:/resources.arsc: 59K
+
+
+**** apktool b ****
+
+I: Using Apktool 2.0.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+4206 KB/s (275937 bytes in 0.064s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-4.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 6.39 / 3.51 / 1.44
+CPU usage from 10326ms to 5190ms ago:
+  39% 3045/com.markuspage.android.atimetracker: 34% user + 5.4% kernel / faults: 666 minor
+  22% 3000/uiautomator: 19% user + 3.1% kernel / faults: 1462 minor
+  11% 573/system_server: 8.1% user + 3.3% kernel / faults: 154 minor
+  9.5% 180/surfaceflinger: 5.4% user + 4% kernel / faults: 8053 minor
+  3.3% 799/com.google.android.inputmethod.latin: 2.3% user + 0.9% kernel / faults: 1465 minor 5 major
+  1.5% 183/mediaserver: 0% user + 1.5% kernel
+  1.5% 657/com.android.systemui: 1.5% user + 0% kernel / faults: 167 minor
+  0% 108/kworker/u:3: 0% user + 0% kernel
+  0.7% 191/mpdecision: 0% user + 0.7% kernel
+  0.5% 135/dbs_sync/1: 0% user + 0.5% kernel
+  0.5% 141/kworker/u:4: 0% user + 0.5% kernel
+  0.5% 246/adbd: 0% user + 0.5% kernel
+  0.3% 4/kworker/0:0: 0% user + 0.3% kernel
+  0.3% 87/msmfb_commit_th: 0% user + 0.3% kernel
+  0.3% 134/dbs_sync/0: 0% user + 0.3% kernel
+  0.3% 217/sensors.qcom: 0% user + 0.3% kernel
+  0% 59/kworker/u:1: 0% user + 0% kernel
+  0.1% 245/kworker/1:1: 0% user + 0.1% kernel
+  0% 2024/com.google.android.apps.maps: 0% user + 0% kernel / faults: 9 minor
+  0.1% 2954/logcat: 0% user + 0.1% kernel
+54% TOTAL: 37% user + 10% kernel + 5.9% iowait
+
+
+**** dumpsys memInfo ****
+
+Applications Memory Usage (kB):
+Uptime: 240805 Realtime: 240800
+
+** MEMINFO in pid 3045 [com.markuspage.android.atimetracker] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     3623     3600        0        0     6928     5709      655
+  Dalvik Heap     2602     2296        0        0    10396    10167      229
+ Dalvik Other     2221     2112        0        0                           
+        Stack       84       84        0        0                           
+    Other dev     3500     3480        4        0                           
+     .so mmap     1443      392       20        0                           
+    .apk mmap      163        0       32        0                           
+    .ttf mmap       21        0        0        0                           
+    .dex mmap     1091       64      344        0                           
+   Other mmap       81        4       28        0                           
+     Graphics     7040     7040        0        0                           
+           GL    12132    12132        0        0                           
+      Unknown       88       88        0        0                           
+        TOTAL    34089    31292      428        0    17324    15876      884
+ 
+ Objects
+               Views:      167         ViewRootImpl:        2
+         AppContexts:        4           Activities:        2
+              Assets:        2        AssetManagers:        2
+       Local Binders:       14        Proxy Binders:       27
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:      110
+  PAGECACHE_OVERFLOW:       28          MALLOC_SIZE:       62
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4       24             49        47/22/8  /data/data/com.markuspage.android.atimetracker/databases/timetracker.db
+ 
+ Asset Allocations
+    zip:/data/app/com.markuspage.android.atimetracker-1.apk:/resources.arsc: 59K
+
+
+**** apktool b ****
+
+I: Using Apktool 2.0.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+4107 KB/s (275942 bytes in 0.065s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-5.apk
+Success
+
+
+**** dumpsys cpuinfo ****
+
+Load: 6.49 / 3.57 / 1.46
+CPU usage from 12050ms to 6918ms ago with 99% awake:
+  40% 2932/com.markuspage.android.atimetracker: 36% user + 3.7% kernel / faults: 847 minor
+  23% 2886/uiautomator: 20% user + 2.7% kernel / faults: 2097 minor
+  12% 573/system_server: 8.1% user + 4.2% kernel / faults: 151 minor
+  10% 179/surfaceflinger: 6% user + 4% kernel / faults: 8090 minor
+  5.4% 800/com.google.android.inputmethod.latin: 4.8% user + 0.5% kernel / faults: 1181 minor 6 major
+  2.1% 658/com.android.systemui: 1.9% user + 0.1% kernel / faults: 190 minor
+  1.3% 182/mediaserver: 0.5% user + 0.7% kernel
+  0.7% 190/mpdecision: 0% user + 0.7% kernel
+  0% 3006/kworker/u:6: 0% user + 0% kernel
+  0.5% 108/kworker/u:3: 0% user + 0.5% kernel
+  0.5% 134/dbs_sync/1: 0% user + 0.5% kernel
+  0.5% 214/adbd: 0.3% user + 0.1% kernel
+  0.3% 87/msmfb_commit_th: 0% user + 0.3% kernel
+  0.3% 115/kworker/0:2: 0% user + 0.3% kernel
+  0.3% 133/dbs_sync/0: 0% user + 0.3% kernel
+  0.3% 209/sensors.qcom: 0.1% user + 0.1% kernel
+  0.3% 2118/kworker/1:2: 0% user + 0.3% kernel
+  0% 135/dbs_sync/2: 0% user + 0% kernel
+  0% 139/mmcqd/0: 0% user + 0% kernel
+  0.1% 141/kworker/u:5: 0% user + 0.1% kernel
+  0% 685/MC_Thread: 0% user + 0% kernel
+  0.1% 2838/logcat: 0.1% user + 0% kernel
+36% TOTAL: 26% user + 6.2% kernel + 3.4% iowait
+
+
+**** dumpsys memInfo ****
+
+Applications Memory Usage (kB):
+Uptime: 239605 Realtime: 239596
+
+** MEMINFO in pid 2932 [com.markuspage.android.atimetracker] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     3739     3716        0        0     6944     5559      892
+  Dalvik Heap     2613     2312        0        0    10368     9995      373
+ Dalvik Other     2132     2020        0        0                           
+        Stack       84       84        0        0                           
+    Other dev     3576     3572        4        0                           
+     .so mmap     1441      392       16        0                           
+    .apk mmap      162        0       28        0                           
+    .ttf mmap       23        0        0        0                           
+    .dex mmap     1085       64      344        0                           
+   Other mmap       66        4        0        0                           
+     Graphics     7040     7040        0        0                           
+           GL    12132    12132        0        0                           
+      Unknown       88       88        0        0                           
+        TOTAL    34181    31424      392        0    17312    15554     1265
+ 
+ Objects
+               Views:      167         ViewRootImpl:        2
+         AppContexts:        4           Activities:        2
+              Assets:        2        AssetManagers:        2
+       Local Binders:       14        Proxy Binders:       23
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:       62
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.markuspage.android.atimetracker-1.apk:/resources.arsc: 59K
+
+
+**** apktool b ****
+
+I: Using Apktool 2.0.3
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3471 KB/s (275936 bytes in 0.077s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-6.apk
+Success
