@@ -91,6 +91,8 @@ public class MutantsAnalyzer {
 	}
 
 	private void executeAlterated(){
+		int n=3;
+		int n_max = 10;
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		TestManager tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "NewVersionsFailed");
@@ -101,12 +103,12 @@ public class MutantsAnalyzer {
 			alts.addAll(mutants.get(j).getAllAlteration());
 		}
 		Collections.sort(alts);
-		for(int i=0;i<20;i=i+2){
+		for(int i=1;i<=n_max;i=i+n){
 			for(int u=0;u<files.size();u++){
 				for(int z=0;z<alts.size();z++){
 					if(alts.get(z).getFile().equals(files.get(u))){
 						if(!alts.get(z).isStop_change()){
-							alterate((i+1),alts.get(z),files.get(u),z);
+							alterate((i),alts.get(z),files.get(u),z);
 							if(!alts.get(z).isStop_change()){
 								compileApk(version_number);
 								resetApp(new_versions.get(version_number).getApk_name());
@@ -142,7 +144,8 @@ public class MutantsAnalyzer {
 									new_versions_survived.add(new_versions.get(version_number));
 								} else {
 									alts.get(z).setFinal_val(true);
-									alts.get(z).setVal(i-1);
+									alts.get(z).setVal(i-n);
+									alterate((i),alts.get(z),files.get(u),z);
 								}
 								version_number++;
 							}
@@ -205,15 +208,9 @@ public class MutantsAnalyzer {
 						}
 						if(value_original<0){
 							value_original = 0;
-							alts.get(alt_num).setFinal_val(true);
 							alts.get(alt_num).setStop_change(true);
-						} else if((value_original>7)&&(var[1].equals("const/4"))){
+						} else if((value_original>=7)&&(var[1].equals("const/4"))){
 							value_original = 7;
-							alts.get(alt_num).setFinal_val(true);
-							alts.get(alt_num).setStop_change(true);
-						} else if((val==7)&&(var[1].equals("const/4"))){
-							value_original = 7;
-							alts.get(alt_num).setFinal_val(true);
 							alts.get(alt_num).setStop_change(true);
 						}
 						String hex = Integer.toHexString(value_original);
