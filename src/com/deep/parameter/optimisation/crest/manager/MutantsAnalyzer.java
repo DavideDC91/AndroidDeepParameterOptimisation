@@ -87,12 +87,14 @@ public class MutantsAnalyzer {
 		ReportGenerator rg = new ReportGenerator(mutants, original);
 		rg.generateHtmlReport(report_dir);
 		executeAlterated();
+		log.closeLogger();
 		System.out.println("Reports generated");
 	}
 
 	private void executeAlterated(){
+		int init = 1;
 		int n=3;
-		int n_max = 10;
+		int n_max = 50;
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		TestManager tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "NewVersionsFailed");
@@ -103,7 +105,7 @@ public class MutantsAnalyzer {
 			alts.addAll(mutants.get(j).getAllAlteration());
 		}
 		Collections.sort(alts);
-		for(int i=1;i<=n_max;i=i+n){
+		for(int i=init;i<=n_max;i=i+n){
 			for(int u=0;u<files.size();u++){
 				for(int z=0;z<alts.size();z++){
 					if(alts.get(z).getFile().equals(files.get(u))){

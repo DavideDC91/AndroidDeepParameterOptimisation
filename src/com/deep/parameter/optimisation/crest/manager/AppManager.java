@@ -166,7 +166,7 @@ public class AppManager {
 	 */
 	public void mutationAnalysis() throws InterruptedException{
 		survived_mutants = new ArrayList<>();
-		
+
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		String[] apk_mutants;
@@ -195,10 +195,14 @@ public class AppManager {
 				} else {
 					cpu_used = cpu_info.split(" ");
 					mutant.setExecution_time(duration);
-					mutant.setCpu_pct(Double.parseDouble(cpu_used[2]));
-					mutant.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
-					mutant.setUser_pct(Double.parseDouble(cpu_used[4]));
-					mutant.setSystem_pct(Double.parseDouble(cpu_used[7]));
+					try{
+						mutant.setCpu_pct(Double.parseDouble(cpu_used[2]));
+						mutant.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
+						mutant.setUser_pct(Double.parseDouble(cpu_used[4]));
+						mutant.setSystem_pct(Double.parseDouble(cpu_used[7]));
+					} catch(ArrayIndexOutOfBoundsException e){
+
+					}
 					mutant.setHeap_size(Long.parseLong(memory_used[7]));
 					mutant.setHeap_alloc(Long.parseLong(memory_used[8]));
 					mutant.setHeap_free(Long.parseLong(memory_used[9]));
@@ -223,9 +227,12 @@ public class AppManager {
 		prova.setCpu_time(29681);
 		survived_mutants.add(prova);
 		// ELIMINARE
-		**/
+		 **/
 		System.out.println("mutation analysis done");
 		MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, pkg,report_dir, original, device);
+		log.closeLogger();
+		survived_mutants_log.closeLogger();
+		killed_mutants_log.closeLogger();
 		ma.generateSmaliFile();
 	}
 
