@@ -67,9 +67,10 @@ public class MutantsAnalyzer {
 	 */
 	public void generateSmaliFile(){
 		String output;
-		cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", dir+"-instrumented.apk"));
-		output = cmd.executeCommand(dir+"/bin");
-		log.writeLog("apktool d", output);
+		System.out.println("Starting generate Smali File ...");
+		//cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", dir+"-instrumented.apk"));
+		//output = cmd.executeCommand(dir+"/bin");
+		//log.writeLog("apktool d", output);
 		cmd = new CommandManager(new ProcessBuilder("ls"));
 		output = cmd.executeCommand(original_path);
 		String[] lines = output.split(System.getProperty("line.separator"));
@@ -93,8 +94,9 @@ public class MutantsAnalyzer {
 
 	private void executeAlterated(){
 		int init = 1;
-		int n=3;
-		int n_max = 50;
+		int n=2;
+		int n_max = 10;
+		AppManager am = new AppManager(dir, pkg, device);
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		TestManager tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "NewVersionsFailed");
@@ -109,48 +111,53 @@ public class MutantsAnalyzer {
 			for(int u=0;u<files.size();u++){
 				for(int z=0;z<alts.size();z++){
 					if(alts.get(z).getFile().equals(files.get(u))){
-						if(!alts.get(z).isStop_change()){
+						if(!alts.get(z).isFinal_value()){
 							alterate((i),alts.get(z),files.get(u),z);
-							if(!alts.get(z).isStop_change()){
-								compileApk(version_number);
-								resetApp(new_versions.get(version_number).getApk_name());
-								CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
+							compileApk(version_number);
+							resetApp(new_versions.get(version_number).getApk_name());
+							CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
+							output = cmd.executeCommand(dir);
+							while(!output.contains(device)){
+								try {
+									TimeUnit.SECONDS.sleep(20);
+								} catch (InterruptedException e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
+								}
+								cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
 								output = cmd.executeCommand(dir);
-								while(!output.contains(device)){
-									try {
-										TimeUnit.SECONDS.sleep(20);
-									} catch (InterruptedException e) {
-										// TODO Auto-generated catch block
-										e.printStackTrace();
-									}
-									cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
-									output = cmd.executeCommand(dir);
-								}
-								System.out.println("Launching "+new_versions.get(version_number).getApk_name() +" ...");
-								long startTime = System.nanoTime();
-								tl.executeTest(new_versions.get(version_number).getApk_name());
-								long endTime = System.nanoTime();
-								cpu_info = getCpuInfo();
-								memory_used = getMemInfo().split("\\s+");
-								long duration = (endTime - startTime)/1000000;
-								if(tl.getTestFailed()==0){
-									cpu_used = cpu_info.split(" ");
-									new_versions.get(version_number).setExecution_time(duration);
-									new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2]));
-									new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
-									new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
-									new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
-									new_versions.get(version_number).setHeap_size(Long.parseLong(memory_used[7]));
-									new_versions.get(version_number).setHeap_alloc(Long.parseLong(memory_used[8]));
-									new_versions.get(version_number).setHeap_free(Long.parseLong(memory_used[9]));
-									new_versions_survived.add(new_versions.get(version_number));
-								} else {
-									alts.get(z).setFinal_val(true);
-									alts.get(z).setVal(i-n);
-									alterate((i),alts.get(z),files.get(u),z);
-								}
-								version_number++;
 							}
+							System.out.println("Launching new version: "+new_versions.get(version_number).getApk_name() +" ...");
+							long startTime = System.nanoTime();
+							tl.executeTest(new_versions.get(version_number).getApk_name());
+							long endTime = System.nanoTime();
+							cpu_info = am.getCpuInfo();
+							memory_used = am.getMemInfo().split("\\s+");
+							log.writeLog("dumpsys memInfo", memory_used[7]+" "+memory_used[8]+" "+memory_used[9]);
+							log.writeLog("dumpsys cpuInfo", cpu_info.toString());
+							long duration = (endTime - startTime)/1000000;
+							if(tl.getTestFailed()==0){
+								cpu_used = cpu_info.split(" ");
+								new_versions.get(version_number).setExecution_time(duration);
+								new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2]));
+								new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
+								new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
+								new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
+								new_versions.get(version_number).setHeap_size(Long.parseLong(memory_used[7]));
+								new_versions.get(version_number).setHeap_alloc(Long.parseLong(memory_used[8]));
+								new_versions.get(version_number).setHeap_free(Long.parseLong(memory_used[9]));
+								new_versions_survived.add(new_versions.get(version_number));
+								System.out.println("Survived");
+								alts.get(z).setFinal_line(alts.get(z).getCurrent_line());
+							} else {
+								alts.get(z).setFailure(true);
+								if (alts.get(z).getFinal_line()==null) {
+									alts.get(z).setFinal_line(alts.get(z).getMutatedLine());
+								}
+								alterate((i),alts.get(z),files.get(u),z);
+								System.out.println("Killed");
+							}
+							version_number++;
 						}
 					}
 				}
@@ -175,48 +182,38 @@ public class MutantsAnalyzer {
 				line_number++;
 				if(line_number==alt.getLine_number()){
 					if(alt.getAlteration_type().equals("ICR")){
-						String t = "0x";
-						String t_mutated = "0x";
-						String t_original = "0x";
-						String[] var = line.split("\\s+");
-						String[] mut_var = alt.getMutatedLine().split("\\s+");
-						String[] ori_var = alt.getOriginalLine().split("\\s+");
-						if(var[3].contains("-0x")){
-							t="-0x";
-						}
-						if(mut_var[3].contains("-0x")){
-							t_mutated="-0x";
-						}
-						if(ori_var[3].contains("-0x")){
-							t_original="-0x";
-						}
-						int value_mutated = Integer.parseInt(mut_var[3].replace(t_mutated, ""), 16);
-						int value_original = Integer.parseInt(ori_var[3].replace(t_original, ""), 16);
-						int val = Integer.parseInt(var[3].replace(t, ""), 16);
-						if(value_mutated>value_original){
-							if(alts.get(alt_num).isFinal_val()){
-								value_original = val-alts.get(alt_num).getVal();
-								alts.get(alt_num).setStop_change(true);
-							} else {
-								value_original += deep;
-							}
+						if(alt.isFailure()){
+							new_line = alts.get(alt_num).getFinal_line();
+							alts.get(alt_num).setFinal_value(true);
 						} else {
-							if(alts.get(alt_num).isFinal_val()){
-								value_original = val+alts.get(alt_num).getVal();
-								alts.get(alt_num).setStop_change(true);
+							String t_mutated = "0x";
+							String t_original = "0x";
+							String[] mut_var = alt.getMutatedLine().split("\\s+");
+							String[] ori_var = alt.getOriginalLine().split("\\s+");
+							if(mut_var[3].contains("-0x")){
+								t_mutated="-0x";
+							}
+							if(ori_var[3].contains("-0x")){
+								t_original="-0x";
+							}
+							int value_mutated = Integer.parseInt(mut_var[3].replace(t_mutated, ""), 16);
+							int value_original = Integer.parseInt(ori_var[3].replace(t_original, ""), 16);
+							if(value_mutated>value_original){
+								value_original += deep;
 							} else {
 								value_original -= deep;
 							}
+							if(value_original<0){
+								value_original = 0;
+								alts.get(alt_num).setFinal_value(true);
+							} else if((value_original>7)&&(mut_var[1].equals("const/4"))){
+								value_original = 7;
+								alts.get(alt_num).setFinal_value(true);
+							}
+							String hex = Integer.toHexString(value_original);
+							new_line ="    "+mut_var[1]+" "+mut_var[2]+" "+t_mutated+hex;
+							alts.get(alt_num).setCurrent_line(new_line);
 						}
-						if(value_original<0){
-							value_original = 0;
-							alts.get(alt_num).setStop_change(true);
-						} else if((value_original>=7)&&(var[1].equals("const/4"))){
-							value_original = 7;
-							alts.get(alt_num).setStop_change(true);
-						}
-						String hex = Integer.toHexString(value_original);
-						new_line ="    "+var[1]+" "+var[2]+" "+t+hex;
 						System.out.println(alt.getOriginalLine() +" - "+alt.getMutatedLine()+" - "+new_line);
 					}
 				} else {
@@ -235,47 +232,6 @@ public class MutantsAnalyzer {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	/**
-	 * Method that allows to get cpu information from the device
-	 * @return cpu information
-	 */
-	private String getCpuInfo(){
-		String output;
-		String cpu_info = "";
-		CommandManager cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "dumpsys", "cpuinfo", pkg));
-		output = cmd.executeCommand(dir);
-		log.writeLog("dumpsys cpuinfo", output);
-		String[] lines = output.split(System.getProperty("line.separator"));
-		for(int i=0; i<lines.length;i++){
-			if(lines[i].contains(pkg)){
-				cpu_info = lines[i];
-				break;
-			}
-		}
-		cpu_info = cpu_info.replace("%", "");
-		return cpu_info;
-	}
-
-	/**
-	 * Method that allows to get memory information from the device
-	 * @return memory information
-	 */
-	private String getMemInfo(){
-		CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "dumpsys", "meminfo", pkg));
-		String output;
-		String mem_info = "";
-		output = cmd.executeCommand(dir);
-		log.writeLog("dumpsys memInfo", output);
-		String[] lines = output.split(System.getProperty("line.separator"));
-		for(int i=0; i<lines.length;i++){
-			if(lines[i].contains("Native Heap")){
-				mem_info = lines[i];
-				break;
-			}
-		}
-		return mem_info;
 	}
 
 	/**
@@ -371,5 +327,4 @@ public class MutantsAnalyzer {
 			}
 		}
 	}
-
 }

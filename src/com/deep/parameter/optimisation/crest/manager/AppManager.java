@@ -28,6 +28,8 @@ public class AppManager {
 	private static String adb_path = "";
 	private static String ant_path = "";
 	private static String emma_path = "";
+	private static String apktool_path = "";
+	private static String tool_path = "";
 
 	/**
 	 * Constructor of the class
@@ -48,6 +50,14 @@ public class AppManager {
 		tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "TestFailed");
 		loadPath();
 	}
+	
+	public AppManager(String directory, String pkg, String device){
+		this.dir = directory;
+		this.apk = directory+"-instrumented.apk";
+		this.pkg = pkg;
+		this.device = device;
+		loadPath();
+	}
 
 	/**
 	 * Method that allows to setUp the application, ant clean, build.
@@ -55,6 +65,7 @@ public class AppManager {
 	 */
 	public void setUp(){
 		String output;
+		System.out.println("Starting Setup ...");
 		cmd = new CommandManager(new ProcessBuilder(ant_path, "clean"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("ant clean", output);
@@ -73,7 +84,7 @@ public class AppManager {
 				log.writeLog("ant installi", output);
 				if(!output.contains("SUCCESSFUL")) System.out.println("ant installi FAILED");
 				else {
-					System.out.println("setUp Done");
+					System.out.println("Setup Done");
 				}
 			}
 		}
@@ -105,13 +116,32 @@ public class AppManager {
 	public void calculateCoverage(){
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
-		resetApp("bin",false);
+		System.out.println("Starting Coverage calculation");
+		cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", dir+"-instrumented.apk"));
+		output = cmd.executeCommand(dir+"/bin");
+		log.writeLog("apktool d", output);
+		cmd = new CommandManager(new ProcessBuilder(apktool_path, "b", dir+"-instrumented"));
+		output = cmd.executeCommand(dir+"/bin");
+		log.writeLog("apktool b", output);
+		cmd = new CommandManager(new ProcessBuilder("java", "-jar", "signapk.jar", "certificate.pem", "key.pk8", tool_path+
+				"/"+dir+"/bin/"+dir+"-instrumented"+
+				"/dist/"+dir+"-instrumented.apk", tool_path+"/"+dir+"/bin/"+dir+"-instrumented"+
+				"/dist/"+dir+".apk"));
+		output = cmd.executeCommand("SignApk");
+		log.writeLog("Sign apk ", output);
+		cmd = new CommandManager(new ProcessBuilder("rm",dir+"-instrumented.apk"));
+		output = cmd.executeCommand(dir+"/bin/"+dir+"-instrumented/dist");
+		cmd = new CommandManager(new ProcessBuilder("mv",dir+".apk",dir+"-instrumented.apk"));
+		output = cmd.executeCommand(dir+"/bin/"+dir+"-instrumented/dist");
+		resetApp("bin/"+dir+"-instrumented/dist",false);
 		restart();
 		long startTime = System.nanoTime();
 		tl.executeTest("Original apk");
 		long endTime = System.nanoTime();
 		cpu_info = getCpuInfo();
 		memory_used = getMemInfo().split("\\s+");
+		log.writeLog("dumpsys memInfo", memory_used[7]+" "+memory_used[8]+" "+memory_used[9]);
+		log.writeLog("dumpsys cpuInfo", cpu_info.toString());
 		long duration = (endTime - startTime)/1000000;
 		cpu_used = cpu_info.split(" ");
 		original = new Mutant(apk);
@@ -145,10 +175,10 @@ public class AppManager {
 
 	private void restart(){
 		String output;
+		System.out.println("Device Restarting ...");
 		CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
 		output = cmd.executeCommand(dir);
 		while(!output.contains(device)){
-			System.out.println("sono entrato");
 			try {
 				TimeUnit.SECONDS.sleep(20);
 			} catch (InterruptedException e) {
@@ -166,7 +196,7 @@ public class AppManager {
 	 */
 	public void mutationAnalysis() throws InterruptedException{
 		survived_mutants = new ArrayList<>();
-
+		System.out.println("Starting Mutation Analysis ...");
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		String[] apk_mutants;
@@ -181,17 +211,20 @@ public class AppManager {
 				apk=apk_mutants[i];
 				resetApp("mutants",true);
 				restart();
-				System.out.println("Launching "+apk +" ...");
+				System.out.println("Launching mutant "+apk +" ...");
 				long startTime = System.nanoTime();
 				tl.executeTest(apk);
 				long endTime = System.nanoTime();
 				cpu_info = getCpuInfo();
 				memory_used = getMemInfo().split("\\s+");
+				log.writeLog("dumpsys memInfo", memory_used[7]+" "+memory_used[8]+" "+memory_used[9]);
+				log.writeLog("dumpsys cpuInfo", cpu_info.toString());
 				long duration = (endTime - startTime)/1000000;
 				mutant = new Mutant(apk);
 				if(tl.getTestFailed()!=0){
 					killed_mutants.add(mutant);
 					killed_mutants_log.writeLog("Mutant "+(i+1), mutant.getApk_name());
+					System.out.println("Killed");
 				} else {
 					cpu_used = cpu_info.split(" ");
 					mutant.setExecution_time(duration);
@@ -208,27 +241,13 @@ public class AppManager {
 					mutant.setHeap_free(Long.parseLong(memory_used[9]));
 					survived_mutants.add(mutant);
 					survived_mutants_log.writeLog("Mutant "+(i+1), mutant.toString());
+					System.out.println("Survived");
 				}
 			}
 		}
-		/**
-		// ELIMINARE
-		original = new Mutant(apk);
-		Mutant prova = new Mutant("android-timetracker-instrumented_1092.apk");
-		prova.setExecution_time(213501);
-		prova.setCpu_time(11088);
-		survived_mutants.add(prova);
-		prova = new Mutant("android-timetracker-instrumented_1093.apk");
-		prova.setExecution_time(211640);
-		prova.setCpu_time(29680);
-		survived_mutants.add(prova);
-		prova = new Mutant("android-timetracker-instrumented_1094.apk");
-		prova.setExecution_time(211641);
-		prova.setCpu_time(29681);
-		survived_mutants.add(prova);
-		// ELIMINARE
-		 **/
-		System.out.println("mutation analysis done");
+		System.out.println("Mutation analysis done");
+		System.out.println("Mutants Survived: "+survived_mutants.size());
+		System.out.println("Mutants Killed: "+killed_mutants.size());
 		MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, pkg,report_dir, original, device);
 		log.closeLogger();
 		survived_mutants_log.closeLogger();
@@ -240,12 +259,11 @@ public class AppManager {
 	 * Method that allows to get cpu information from the device
 	 * @return cpu information
 	 */
-	private String getCpuInfo(){
-		CommandManager cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "dumpsys", "cpuinfo", pkg));
+	public String getCpuInfo(){
 		String output;
 		String cpu_info = "";
+		CommandManager cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "dumpsys", "cpuinfo", pkg));
 		output = cmd.executeCommand(dir);
-		log.writeLog("dumpsys cpuinfo", output);
 		String[] lines = output.split(System.getProperty("line.separator"));
 		for(int i=0; i<lines.length;i++){
 			if(lines[i].contains(pkg)){
@@ -261,12 +279,11 @@ public class AppManager {
 	 * Method that allows to get memory information from the device
 	 * @return memory information
 	 */
-	private String getMemInfo(){
-		CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "dumpsys", "meminfo", pkg));
+	public String getMemInfo(){
 		String output;
 		String mem_info = "";
+		CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "dumpsys", "meminfo", pkg));
 		output = cmd.executeCommand(dir);
-		log.writeLog("dumpsys memInfo", output);
 		String[] lines = output.split(System.getProperty("line.separator"));
 		for(int i=0; i<lines.length;i++){
 			if(lines[i].contains("Native Heap")){
@@ -285,11 +302,13 @@ public class AppManager {
 		InputStream input = null;
 		try {
 			input = new FileInputStream("config.properties");
-			prop.load(input);			
+			prop.load(input);		
+			apktool_path = prop.getProperty("apktool_path");
 			android_path = prop.getProperty("android_path");
 			adb_path = prop.getProperty("adb_path");
 			ant_path = prop.getProperty("ant_path");
 			emma_path = prop.getProperty("emma_path");
+			tool_path = prop.getProperty("tool_path");
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		} finally {

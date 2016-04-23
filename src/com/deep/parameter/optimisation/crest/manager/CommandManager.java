@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  */
 public class CommandManager {
 
-	private ProcessBuilder pb;
+	public ProcessBuilder pb;
 
 	/**
 	 * Constructor of the class, instantiate the process Builder

@@ -7,32 +7,8 @@ package com.deep.parameter.optimisation.crest.beans;
  */
 public class Alteration implements Comparable<Alteration> {
 	private String file, original_line, mutated_line, alteration_type;
-	private int val;
-	private boolean final_val = false, stop_change = false;
-	public boolean isStop_change() {
-		return stop_change;
-	}
-
-	public void setStop_change(boolean stop_change) {
-		this.stop_change = stop_change;
-	}
-
-	public int getVal() {
-		return val;
-	}
-
-	public void setVal(int val) {
-		this.val = val;
-	}
-
-	public boolean isFinal_val() {
-		return final_val;
-	}
-
-	public void setFinal_val(boolean final_val) {
-		this.final_val = final_val;
-	}
-
+	private String final_line, current_line;
+	private boolean failure = false, final_value = false;
 	private long line_number;
 
 	/**
@@ -49,6 +25,38 @@ public class Alteration implements Comparable<Alteration> {
 		this.alteration_type = alteration_type;
 	}
 
+	public String getCurrent_line() {
+		return current_line;
+	}
+
+	public void setCurrent_line(String current_line) {
+		this.current_line = current_line;
+	}
+
+	public String getFinal_line() {
+		return final_line;
+	}
+
+	public void setFinal_line(String final_line) {
+		this.final_line = final_line;
+	}
+
+	public boolean isFailure() {
+		return failure;
+	}
+
+	public void setFailure(boolean failure) {
+		this.failure = failure;
+	}
+
+	public boolean isFinal_value() {
+		return final_value;
+	}
+
+	public void setFinal_value(boolean final_value) {
+		this.final_value = final_value;
+	}	
+	
 	/**
 	 * This method allows to get the alteration type of the file alterated
 	 * @return
