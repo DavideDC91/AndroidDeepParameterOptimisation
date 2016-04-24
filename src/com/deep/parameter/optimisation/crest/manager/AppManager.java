@@ -1,8 +1,13 @@
 package com.deep.parameter.optimisation.crest.manager;
 
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -18,7 +23,7 @@ import com.deep.parameter.optimisation.crest.utilities.Logger;
  *
  */
 public class AppManager {
-	private String dir, apk, pkg, device, report_dir;
+	private String dir, app_name, apk, pkg, device, report_dir;
 	private Logger log, survived_mutants_log, killed_mutants_log;
 	private CommandManager cmd;
 	private TestManager tl;
@@ -30,6 +35,7 @@ public class AppManager {
 	private static String emma_path = "";
 	private static String apktool_path = "";
 	private static String tool_path = "";
+	private int init, n, n_max;
 
 	/**
 	 * Constructor of the class
@@ -38,10 +44,12 @@ public class AppManager {
 	 * @param device device id 
 	 * @param report_dir Directory where save the reports
 	 */
-	public AppManager(String directory, String pkg, String device, String report_dir){
+	public AppManager(String directory, String device, String report_dir,  int init, int n, int n_max){
+		this.init = init;
+		this.n = n;
+	    this.n_max = n_max;
 		this.dir = directory;
-		this.apk = directory+"-instrumented.apk";
-		this.pkg = pkg;
+		setPackage();
 		this.device = device;
 		this.report_dir = report_dir;
 		log = new Logger(report_dir+"/DeviceConfiguration");
@@ -50,13 +58,56 @@ public class AppManager {
 		tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "TestFailed");
 		loadPath();
 	}
-	
-	public AppManager(String directory, String pkg, String device){
+
+	public AppManager(String directory, String device){
 		this.dir = directory;
-		this.apk = directory+"-instrumented.apk";
-		this.pkg = pkg;
+		setPackage();
 		this.device = device;
 		loadPath();
+	}
+
+	private void setPackage(){
+		Path original_file = Paths.get(dir+"/AndroidManifest.xml");
+		InputStream in;
+		String line = null;
+		String[] arr;
+		try {
+			in = Files.newInputStream(original_file);
+			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+			while ((line = reader.readLine()) != null){
+				if(line.contains("package")){
+					arr = line.split("\"");
+					this.pkg=arr[1];
+					break;
+				}
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	private String getAppName(){
+		Path original_file = Paths.get(dir+"/build.xml");
+		InputStream in;
+		String line = null;
+		String[] arr = null;
+		try {
+			in = Files.newInputStream(original_file);
+			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+			while ((line = reader.readLine()) != null){
+				if(line.contains("project name")){
+					arr = line.split("\"");
+					break;
+				}
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return arr[1];
+
 	}
 
 	/**
@@ -66,14 +117,19 @@ public class AppManager {
 	public void setUp(){
 		String output;
 		System.out.println("Starting Setup ...");
+		cmd = new CommandManager(new ProcessBuilder("find", ".", "-name", "*.apk", "-type", "f", "-delete"));
+		output = cmd.executeCommand("SignApk");
+		log.writeLog("remove apk SignApk dir", output);
+		cmd = new CommandManager(new ProcessBuilder(android_path, "update", "project", "--target", "1", "--path", "./", "--name", dir));
+		output = cmd.executeCommand(dir);
+		log.writeLog("android update", output);
+		this.app_name = getAppName();
+		this.apk = app_name+"-instrumented.apk";
 		cmd = new CommandManager(new ProcessBuilder(ant_path, "clean"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("ant clean", output);
 		if(!output.contains("SUCCESSFUL")) System.out.println("ant clean FAILED");
 		else{
-			cmd = new CommandManager(new ProcessBuilder(android_path, "update", "project", "--target", "1", "--path", "./", "--name", dir));
-			output = cmd.executeCommand(dir);
-			log.writeLog("android update", output);
 			cmd = new CommandManager(new ProcessBuilder(ant_path, "instrument"));
 			output = cmd.executeCommand(dir);
 			log.writeLog("ant instrument", output);
@@ -117,23 +173,23 @@ public class AppManager {
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		System.out.println("Starting Coverage calculation");
-		cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", dir+"-instrumented.apk"));
+		cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", app_name+"-instrumented.apk"));
 		output = cmd.executeCommand(dir+"/bin");
 		log.writeLog("apktool d", output);
-		cmd = new CommandManager(new ProcessBuilder(apktool_path, "b", dir+"-instrumented"));
+		cmd = new CommandManager(new ProcessBuilder(apktool_path, "b", app_name+"-instrumented"));
 		output = cmd.executeCommand(dir+"/bin");
 		log.writeLog("apktool b", output);
 		cmd = new CommandManager(new ProcessBuilder("java", "-jar", "signapk.jar", "certificate.pem", "key.pk8", tool_path+
-				"/"+dir+"/bin/"+dir+"-instrumented"+
-				"/dist/"+dir+"-instrumented.apk", tool_path+"/"+dir+"/bin/"+dir+"-instrumented"+
-				"/dist/"+dir+".apk"));
+				"/"+dir+"/bin/"+app_name+"-instrumented"+
+				"/dist/"+app_name+"-instrumented.apk", tool_path+"/"+dir+"/bin/"+app_name+"-instrumented"+
+						"/dist/"+app_name+".apk"));
 		output = cmd.executeCommand("SignApk");
 		log.writeLog("Sign apk ", output);
-		cmd = new CommandManager(new ProcessBuilder("rm",dir+"-instrumented.apk"));
-		output = cmd.executeCommand(dir+"/bin/"+dir+"-instrumented/dist");
-		cmd = new CommandManager(new ProcessBuilder("mv",dir+".apk",dir+"-instrumented.apk"));
-		output = cmd.executeCommand(dir+"/bin/"+dir+"-instrumented/dist");
-		resetApp("bin/"+dir+"-instrumented/dist",false);
+		cmd = new CommandManager(new ProcessBuilder("rm",app_name+"-instrumented.apk"));
+		output = cmd.executeCommand(dir+"/bin/"+app_name+"-instrumented/dist");
+		cmd = new CommandManager(new ProcessBuilder("mv",app_name+".apk",app_name+"-instrumented.apk"));
+		output = cmd.executeCommand(dir+"/bin/"+app_name+"-instrumented/dist");
+		resetApp("bin/"+app_name+"-instrumented/dist",false);
 		restart();
 		long startTime = System.nanoTime();
 		tl.executeTest("Original apk");
@@ -149,10 +205,14 @@ public class AppManager {
 			killed_mutants_log.writeLog("Original apk", original.toString());
 		} else {
 			original.setExecution_time(duration);
-			original.setCpu_pct(Double.parseDouble(cpu_used[2]));
-			original.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
-			original.setUser_pct(Double.parseDouble(cpu_used[4]));
-			original.setSystem_pct(Double.parseDouble(cpu_used[7]));
+			try{
+				original.setCpu_pct(Double.parseDouble(cpu_used[2]));
+				original.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
+				original.setUser_pct(Double.parseDouble(cpu_used[4]));
+				original.setSystem_pct(Double.parseDouble(cpu_used[7]));
+			} catch(ArrayIndexOutOfBoundsException e){
+
+			}
 			original.setHeap_size(Long.parseLong(memory_used[7]));
 			original.setHeap_alloc(Long.parseLong(memory_used[8]));
 			original.setHeap_free(Long.parseLong(memory_used[9]));
@@ -248,7 +308,7 @@ public class AppManager {
 		System.out.println("Mutation analysis done");
 		System.out.println("Mutants Survived: "+survived_mutants.size());
 		System.out.println("Mutants Killed: "+killed_mutants.size());
-		MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, pkg,report_dir, original, device);
+		MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, app_name, pkg,report_dir, original, device, init, n, n_max);
 		log.closeLogger();
 		survived_mutants_log.closeLogger();
 		killed_mutants_log.closeLogger();

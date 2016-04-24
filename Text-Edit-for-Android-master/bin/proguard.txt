@@ -1,0 +1,34 @@
+# view res/xml/preferences.xml #generated:44
+-keep class org.paulmach.textedit.ClearRecentFileListPreference { <init>(...); }
+
+# view res/xml/preferences.xml #generated:26
+-keep class org.paulmach.textedit.ClearSearchSuggestions { <init>(...); }
+
+# view res/xml/preferences.xml #generated:63
+# view res/xml/preferences.xml #generated:69
+-keep class org.paulmach.textedit.ColorPreference { <init>(...); }
+
+# view res/xml/preferences.xml #generated:33
+-keep class org.paulmach.textedit.DefaultDirPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class org.paulmach.textedit.EditPreferences { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class org.paulmach.textedit.FileBrowser { <init>(...); }
+
+# view res/xml/preferences.xml #generated:57
+-keep class org.paulmach.textedit.FontSizePreference { <init>(...); }
+
+# view res/xml/preferences.xml #generated:51
+-keep class org.paulmach.textedit.FontTypePreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class org.paulmach.textedit.SearchSuggestions { <init>(...); }
+
+# view res/xml/preferences.xml #generated:83
+-keep class org.paulmach.textedit.WarrantyPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class org.paulmach.textedit.pmTextEdit { <init>(...); }
+

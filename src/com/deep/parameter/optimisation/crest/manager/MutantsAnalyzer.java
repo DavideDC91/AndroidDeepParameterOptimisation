@@ -28,7 +28,7 @@ import com.deep.parameter.optimisation.crest.utilities.ReportGenerator;
  */
 public class MutantsAnalyzer {
 
-	private String dir, pkg, report_dir, original_path, device;
+	private String dir, pkg, app_name, report_dir, original_path, device;
 	private ArrayList<String> files;
 	private ArrayList<Alteration> alts;
 	private static String apktool_path = "", tool_path="", adb_path = "";
@@ -36,6 +36,7 @@ public class MutantsAnalyzer {
 	private Logger log;
 	private CommandManager cmd;
 	private Mutant original;
+	private int init, n, n_max;
 
 	/**
 	 * Constructor of the class
@@ -44,9 +45,13 @@ public class MutantsAnalyzer {
 	 * @param pkg package of the app
 	 * @param report_dir path to the reports directory
 	 */
-	public MutantsAnalyzer(ArrayList<Mutant> m, String directory, String pkg, String report_dir, Mutant original, String device){
+	public MutantsAnalyzer(ArrayList<Mutant> m, String directory, String app_name, String pkg, String report_dir, Mutant original, String device, int init, int n, int n_max){
+		this.init = init;
+		this.n= n;
+		this.n_max = n_max;
 		this.mutants = m;
 		this.device = device;
+		this.app_name = app_name;
 		this.dir = directory;
 		this.pkg = pkg;
 		this.report_dir = report_dir;
@@ -54,7 +59,7 @@ public class MutantsAnalyzer {
 		new_versions_survived = new ArrayList<>();
 		log = new Logger(report_dir+"/AnalyzerLogger");
 		String[] pkg_splitted = this.pkg.split("\\.");
-		original_path = dir+"/bin/"+dir+"-instrumented/smali/";
+		original_path = dir+"/bin/"+app_name+"-instrumented/smali/";
 		for(int i=0;i<pkg_splitted.length;i++){
 			original_path=original_path + pkg_splitted[i]+"/";
 		}
@@ -93,11 +98,8 @@ public class MutantsAnalyzer {
 	}
 
 	private void executeAlterated(){
-		int init = 1;
-		int n=2;
-		int n_max = 10;
 		boolean check;
-		AppManager am = new AppManager(dir, pkg, device);
+		AppManager am = new AppManager(dir, device);
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		TestManager tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "NewVersionsFailed");
@@ -147,10 +149,14 @@ public class MutantsAnalyzer {
 								if(tl.getTestFailed()==0){
 									cpu_used = cpu_info.split(" ");
 									new_versions.get(version_number).setExecution_time(duration);
-									new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2]));
-									new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
-									new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
-									new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
+									try{
+										new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2]));
+										new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
+										new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
+										new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
+									} catch(ArrayIndexOutOfBoundsException e){
+
+									}
 									new_versions.get(version_number).setHeap_size(Long.parseLong(memory_used[7]));
 									new_versions.get(version_number).setHeap_alloc(Long.parseLong(memory_used[8]));
 									new_versions.get(version_number).setHeap_free(Long.parseLong(memory_used[9]));
@@ -293,10 +299,10 @@ public class MutantsAnalyzer {
 		log.writeLog("apktool b", output);
 		cmd = new CommandManager(new ProcessBuilder("java", "-jar", "signapk.jar", "certificate.pem", "key.pk8", tool_path+
 				"/"+dir+"/bin/"+original.getApk_name().replace(".apk", "")+
-				"/dist/"+original.getApk_name(), tool_path+"/SignApk/"+dir+"-instrumented-"+n+".apk"));
+				"/dist/"+original.getApk_name(), tool_path+"/SignApk/"+app_name+"-instrumented-"+n+".apk"));
 		output = cmd.executeCommand("SignApk");
 		log.writeLog("Sign apk ", output);
-		new_versions.add(new Mutant(dir+"-instrumented-"+n+".apk"));
+		new_versions.add(new Mutant(app_name+"-instrumented-"+n+".apk"));
 		return ret;
 	}
 
