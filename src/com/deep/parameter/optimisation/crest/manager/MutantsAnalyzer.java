@@ -96,6 +96,7 @@ public class MutantsAnalyzer {
 		int init = 1;
 		int n=2;
 		int n_max = 10;
+		boolean check;
 		AppManager am = new AppManager(dir, pkg, device);
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
@@ -113,49 +114,57 @@ public class MutantsAnalyzer {
 					if(alts.get(z).getFile().equals(files.get(u))){
 						if(!alts.get(z).isFinal_value()){
 							alterate((i),alts.get(z),files.get(u),z);
-							compileApk(version_number);
-							resetApp(new_versions.get(version_number).getApk_name());
-							CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
-							output = cmd.executeCommand(dir);
-							while(!output.contains(device)){
-								try {
-									TimeUnit.SECONDS.sleep(20);
-								} catch (InterruptedException e) {
-									// TODO Auto-generated catch block
-									e.printStackTrace();
-								}
-								cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
-								output = cmd.executeCommand(dir);
-							}
-							System.out.println("Launching new version: "+new_versions.get(version_number).getApk_name() +" ...");
-							long startTime = System.nanoTime();
-							tl.executeTest(new_versions.get(version_number).getApk_name());
-							long endTime = System.nanoTime();
-							cpu_info = am.getCpuInfo();
-							memory_used = am.getMemInfo().split("\\s+");
-							log.writeLog("dumpsys memInfo", memory_used[7]+" "+memory_used[8]+" "+memory_used[9]);
-							log.writeLog("dumpsys cpuInfo", cpu_info.toString());
-							long duration = (endTime - startTime)/1000000;
-							if(tl.getTestFailed()==0){
-								cpu_used = cpu_info.split(" ");
-								new_versions.get(version_number).setExecution_time(duration);
-								new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2]));
-								new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
-								new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
-								new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
-								new_versions.get(version_number).setHeap_size(Long.parseLong(memory_used[7]));
-								new_versions.get(version_number).setHeap_alloc(Long.parseLong(memory_used[8]));
-								new_versions.get(version_number).setHeap_free(Long.parseLong(memory_used[9]));
-								new_versions_survived.add(new_versions.get(version_number));
-								System.out.println("Survived");
-								alts.get(z).setFinal_line(alts.get(z).getCurrent_line());
-							} else {
+							check = compileApk(version_number);
+							if(!check){
 								alts.get(z).setFailure(true);
 								if (alts.get(z).getFinal_line()==null) {
 									alts.get(z).setFinal_line(alts.get(z).getMutatedLine());
 								}
 								alterate((i),alts.get(z),files.get(u),z);
-								System.out.println("Killed");
+							} else {
+								resetApp(new_versions.get(version_number).getApk_name());
+								CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
+								output = cmd.executeCommand(dir);
+								while(!output.contains(device)){
+									try {
+										TimeUnit.SECONDS.sleep(20);
+									} catch (InterruptedException e) {
+										// TODO Auto-generated catch block
+										e.printStackTrace();
+									}
+									cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
+									output = cmd.executeCommand(dir);
+								}
+								System.out.println("Launching new version: "+new_versions.get(version_number).getApk_name() +" ...");
+								long startTime = System.nanoTime();
+								tl.executeTest(new_versions.get(version_number).getApk_name());
+								long endTime = System.nanoTime();
+								cpu_info = am.getCpuInfo();
+								memory_used = am.getMemInfo().split("\\s+");
+								log.writeLog("dumpsys memInfo", memory_used[7]+" "+memory_used[8]+" "+memory_used[9]);
+								log.writeLog("dumpsys cpuInfo", cpu_info.toString());
+								long duration = (endTime - startTime)/1000000;
+								if(tl.getTestFailed()==0){
+									cpu_used = cpu_info.split(" ");
+									new_versions.get(version_number).setExecution_time(duration);
+									new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2]));
+									new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
+									new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
+									new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
+									new_versions.get(version_number).setHeap_size(Long.parseLong(memory_used[7]));
+									new_versions.get(version_number).setHeap_alloc(Long.parseLong(memory_used[8]));
+									new_versions.get(version_number).setHeap_free(Long.parseLong(memory_used[9]));
+									new_versions_survived.add(new_versions.get(version_number));
+									System.out.println("Survived");
+									alts.get(z).setFinal_line(alts.get(z).getCurrent_line());
+								} else {
+									alts.get(z).setFailure(true);
+									if (alts.get(z).getFinal_line()==null) {
+										alts.get(z).setFinal_line(alts.get(z).getMutatedLine());
+									}
+									alterate((i),alts.get(z),files.get(u),z);
+									System.out.println("Killed");
+								}
 							}
 							version_number++;
 						}
@@ -204,11 +213,8 @@ public class MutantsAnalyzer {
 								value_original -= deep;
 							}
 							if(value_original<0){
-								value_original = 0;
-								alts.get(alt_num).setFinal_value(true);
-							} else if((value_original>7)&&(mut_var[1].equals("const/4"))){
-								value_original = 7;
-								alts.get(alt_num).setFinal_value(true);
+								value_original=Math.abs(value_original);
+								t_mutated="-0x";
 							}
 							String hex = Integer.toHexString(value_original);
 							new_line ="    "+mut_var[1]+" "+mut_var[2]+" "+t_mutated+hex;
@@ -276,10 +282,14 @@ public class MutantsAnalyzer {
 		return m;
 	}
 
-	private void compileApk(int n){
+	private boolean compileApk(int n){
 		String output;
+		boolean ret=true;
 		cmd = new CommandManager(new ProcessBuilder(apktool_path, "b", original.getApk_name().replace(".apk", "")));
 		output = cmd.executeCommand(dir+"/bin/");
+		if(output.contains("Exception in thread")){
+			ret =  false;
+		}
 		log.writeLog("apktool b", output);
 		cmd = new CommandManager(new ProcessBuilder("java", "-jar", "signapk.jar", "certificate.pem", "key.pk8", tool_path+
 				"/"+dir+"/bin/"+original.getApk_name().replace(".apk", "")+
@@ -287,6 +297,7 @@ public class MutantsAnalyzer {
 		output = cmd.executeCommand("SignApk");
 		log.writeLog("Sign apk ", output);
 		new_versions.add(new Mutant(dir+"-instrumented-"+n+".apk"));
+		return ret;
 	}
 
 	/**
