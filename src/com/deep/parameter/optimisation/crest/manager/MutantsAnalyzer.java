@@ -143,7 +143,7 @@ public class MutantsAnalyzer {
 								long endTime = System.nanoTime();
 								cpu_info = am.getCpuInfo();
 								memory_used = am.getMemInfo().split("\\s+");
-								log.writeLog("dumpsys memInfo", memory_used[7]+" "+memory_used[8]+" "+memory_used[9]);
+								log.writeLog("dumpsys memInfo", memory_used.toString());
 								log.writeLog("dumpsys cpuInfo", cpu_info.toString());
 								long duration = (endTime - startTime)/1000000;
 								if(tl.getTestFailed()==0){
@@ -155,11 +155,22 @@ public class MutantsAnalyzer {
 										new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
 										new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
 									} catch(ArrayIndexOutOfBoundsException e){
+										new_versions.get(version_number).setCpu_pct(0);
+										new_versions.get(version_number).setCpu_time(0);
+										new_versions.get(version_number).setUser_pct(0);
+										new_versions.get(version_number).setSystem_pct(0);
 
 									}
-									new_versions.get(version_number).setHeap_size(Long.parseLong(memory_used[7]));
-									new_versions.get(version_number).setHeap_alloc(Long.parseLong(memory_used[8]));
-									new_versions.get(version_number).setHeap_free(Long.parseLong(memory_used[9]));
+									try{
+										new_versions.get(version_number).setHeap_size(Long.parseLong(memory_used[7]));
+										new_versions.get(version_number).setHeap_alloc(Long.parseLong(memory_used[8]));
+										new_versions.get(version_number).setHeap_free(Long.parseLong(memory_used[9]));
+									} catch(ArrayIndexOutOfBoundsException e){
+										new_versions.get(version_number).setHeap_size(0);
+										new_versions.get(version_number).setHeap_alloc(0);
+										new_versions.get(version_number).setHeap_free(0);
+
+									}
 									new_versions_survived.add(new_versions.get(version_number));
 									System.out.println("Survived");
 									alts.get(z).setFinal_line(alts.get(z).getCurrent_line());

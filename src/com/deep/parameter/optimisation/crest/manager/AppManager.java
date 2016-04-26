@@ -196,7 +196,7 @@ public class AppManager {
 		long endTime = System.nanoTime();
 		cpu_info = getCpuInfo();
 		memory_used = getMemInfo().split("\\s+");
-		log.writeLog("dumpsys memInfo", memory_used[7]+" "+memory_used[8]+" "+memory_used[9]);
+		log.writeLog("dumpsys memInfo", memory_used.toString());
 		log.writeLog("dumpsys cpuInfo", cpu_info.toString());
 		long duration = (endTime - startTime)/1000000;
 		cpu_used = cpu_info.split(" ");
@@ -211,11 +211,20 @@ public class AppManager {
 				original.setUser_pct(Double.parseDouble(cpu_used[4]));
 				original.setSystem_pct(Double.parseDouble(cpu_used[7]));
 			} catch(ArrayIndexOutOfBoundsException e){
-
+				original.setCpu_pct(0);
+				original.setCpu_time(0);
+				original.setUser_pct(0);
+				original.setSystem_pct(0);
 			}
+			try{
 			original.setHeap_size(Long.parseLong(memory_used[7]));
 			original.setHeap_alloc(Long.parseLong(memory_used[8]));
 			original.setHeap_free(Long.parseLong(memory_used[9]));
+			}catch(ArrayIndexOutOfBoundsException e){
+				original.setHeap_size(0);
+				original.setHeap_alloc(0);
+				original.setHeap_free(0);
+			}
 			survived_mutants_log.writeLog("Original apk", original.toString());
 		}
 		cmd = new CommandManager(new ProcessBuilder(adb_path, "shell", "am", "broadcast", "-a", "com.qa.emma.COLLECT_COVERAGE"));
@@ -277,7 +286,7 @@ public class AppManager {
 				long endTime = System.nanoTime();
 				cpu_info = getCpuInfo();
 				memory_used = getMemInfo().split("\\s+");
-				log.writeLog("dumpsys memInfo", memory_used[7]+" "+memory_used[8]+" "+memory_used[9]);
+				log.writeLog("dumpsys memInfo", memory_used.toString());
 				log.writeLog("dumpsys cpuInfo", cpu_info.toString());
 				long duration = (endTime - startTime)/1000000;
 				mutant = new Mutant(apk);
@@ -294,11 +303,20 @@ public class AppManager {
 						mutant.setUser_pct(Double.parseDouble(cpu_used[4]));
 						mutant.setSystem_pct(Double.parseDouble(cpu_used[7]));
 					} catch(ArrayIndexOutOfBoundsException e){
-
+						mutant.setCpu_pct(0);
+						mutant.setCpu_time(0);
+						mutant.setUser_pct(0);
+						mutant.setSystem_pct(0);
 					}
+					try{
 					mutant.setHeap_size(Long.parseLong(memory_used[7]));
 					mutant.setHeap_alloc(Long.parseLong(memory_used[8]));
 					mutant.setHeap_free(Long.parseLong(memory_used[9]));
+					} catch(ArrayIndexOutOfBoundsException e){
+						mutant.setHeap_size(0);
+						mutant.setHeap_alloc(0);
+						mutant.setHeap_free(0);
+					}
 					survived_mutants.add(mutant);
 					survived_mutants_log.writeLog("Mutant "+(i+1), mutant.toString());
 					System.out.println("Survived");
