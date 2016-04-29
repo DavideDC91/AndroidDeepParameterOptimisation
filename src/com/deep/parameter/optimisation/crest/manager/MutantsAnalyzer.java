@@ -238,6 +238,44 @@ public class MutantsAnalyzer {
 							alts.get(alt_num).setCurrent_line(new_line);
 						}
 						System.out.println(alt.getOriginalLine() +" - "+alt.getMutatedLine()+" - "+new_line);
+					} else if(alt.getAlteration_type().equals("LCR")||alt.getAlteration_type().equals("ROR")){
+						if(alt.isFailure()){
+							new_line = alts.get(alt_num).getFinal_line();
+							alts.get(alt_num).setFinal_value(true);
+						} else {
+							String[] mut_var = alt.getMutatedLine().split("\\s+");
+							String[] ori_var = alt.getOriginalLine().split("\\s+");
+							new_line="    "+mut_var[1];
+							for(int j=2;j<ori_var.length;j++){
+								new_line+=" "+ori_var[j];
+							}
+							alts.get(alt_num).setCurrent_line(new_line);
+							alts.get(alt_num).setFinal_value(true);
+						}
+						System.out.println(alt.getOriginalLine() +" - "+alt.getMutatedLine()+" - "+new_line);
+					} else if(alt.getAlteration_type().equals("AOR")){
+						if(alt.isFailure()){
+							new_line = alts.get(alt_num).getFinal_line();
+							alts.get(alt_num).setFinal_value(true);
+						} else {
+							String t_original = "0x";
+							String[] ori_var = alt.getOriginalLine().split("\\s+");
+							if(line.contains(t_original)){
+								if(ori_var[4].contains("-0x")){
+									t_original="-0x";
+								}
+								int value_original = Integer.parseInt(ori_var[4].replace(t_original, ""), 16);
+								value_original += deep;
+								String hex = Integer.toHexString(value_original);
+								new_line ="    "+ori_var[1]+" "+ori_var[2]+" "+ori_var[3]+" "+t_original+hex;
+								alts.get(alt_num).setCurrent_line(new_line);
+							} else {
+								new_line = line;
+								alts.get(alt_num).setCurrent_line(new_line);
+								alts.get(alt_num).setFinal_value(true);
+							}
+						}
+						System.out.println(alt.getOriginalLine() +" - "+alt.getMutatedLine()+" - "+new_line);
 					}
 				} else {
 					new_line = line;

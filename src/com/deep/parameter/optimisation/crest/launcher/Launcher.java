@@ -20,7 +20,7 @@ public class Launcher {
 		reports_dir.mkdir();
 		File report_dir = new File("Reports/"+report_dir_name);
 		report_dir.mkdirs();
-		AppManager dc= new AppManager("android-timetracker", "0ac20634", "Reports/"+report_dir_name, 1, 3, 30);
+		AppManager dc= new AppManager("android-timetracker", "0ac20634", "Reports/"+report_dir_name, 1, 3, 10);
 		//AppManager dc= new AppManager("Text-Edit-for-Android-master", "0ac20634", "Reports/"+report_dir_name, 1, 2, 10);
 		dc.setUp();
 		dc.calculateCoverage();
