@@ -33,7 +33,7 @@ public class CommandManager {
 		try {
 			//p = Runtime.getRuntime().exec(command, null, new File(working_directory));
 			Process p = pb.start();
-			p.waitFor();
+			//p.waitFor();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
 			String line = "";			
 			while ((line = reader.readLine())!= null) {

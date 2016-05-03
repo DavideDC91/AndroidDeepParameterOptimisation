@@ -1,0 +1,69 @@
+# view res/layout/activity_plot.xml #generated:104
+# view res/layout/activity_plot.xml #generated:127
+# view res/layout/activity_plot.xml #generated:35
+# view res/layout/activity_plot.xml #generated:58
+# view res/layout/activity_plot.xml #generated:81
+-keep class com.androidplot.xy.XYPlot { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.github.wdkapps.fillup.App { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.github.wdkapps.fillup.DateTimeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.github.wdkapps.fillup.FileSelectionActivity { <init>(...); }
+
+# view land/res/layout-land/dialog_mileage_calculation.xml #generated:44
+# view res/layout/dialog_mileage_calculation.xml #generated:46
+-keep class com.github.wdkapps.fillup.GasGauge { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.github.wdkapps.fillup.GasLogListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.github.wdkapps.fillup.GasRecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.github.wdkapps.fillup.HtmlViewerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.github.wdkapps.fillup.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.github.wdkapps.fillup.PlotActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.github.wdkapps.fillup.Settings { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.github.wdkapps.fillup.StartupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.github.wdkapps.fillup.StatisticsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.qa.emma.InstrumentedReceiver { <init>(...); }
+
+# onClick res/layout/activity_date_time.xml #generated:62
+# onClick res/layout/activity_gas_record_calc_cost.xml #generated:34
+# onClick res/layout/activity_gas_record_calc_gallons.xml #generated:34
+# onClick res/layout/activity_gas_record_calc_price.xml #generated:34
+-keepclassmembers class * { *** clickedCancel(...); }
+
+# onClick res/layout/activity_gas_record_calc_cost.xml #generated:65
+# onClick res/layout/activity_gas_record_calc_gallons.xml #generated:65
+# onClick res/layout/activity_gas_record_calc_price.xml #generated:65
+-keepclassmembers class * { *** clickedEditDate(...); }
+
+# onClick res/layout/activity_gas_record_calc_cost.xml #generated:15
+# onClick res/layout/activity_gas_record_calc_gallons.xml #generated:15
+# onClick res/layout/activity_gas_record_calc_price.xml #generated:15
+-keepclassmembers class * { *** clickedMode(...); }
+
+# onClick res/layout/activity_date_time.xml #generated:55
+# onClick res/layout/activity_gas_record_calc_cost.xml #generated:26
+# onClick res/layout/activity_gas_record_calc_gallons.xml #generated:26
+# onClick res/layout/activity_gas_record_calc_price.xml #generated:26
+-keepclassmembers class * { *** clickedOk(...); }
+

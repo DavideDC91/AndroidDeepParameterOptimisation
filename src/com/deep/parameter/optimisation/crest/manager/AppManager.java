@@ -190,7 +190,7 @@ public class AppManager {
 		cmd = new CommandManager(new ProcessBuilder("mv",app_name+".apk",app_name+"-instrumented.apk"));
 		output = cmd.executeCommand(dir+"/bin/"+app_name+"-instrumented/dist");
 		resetApp("bin/"+app_name+"-instrumented/dist",false);
-		restart();
+		//restart();
 		long startTime = System.nanoTime();
 		tl.executeTest("Original apk");
 		long endTime = System.nanoTime();
