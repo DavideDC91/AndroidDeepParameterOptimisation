@@ -23,38 +23,6 @@ public class Alteration implements Comparable<Alteration> {
 		this.original_line = original_line;
 		this.line_number = line_number;
 		this.alteration_type = alteration_type;
-	}
-
-	public String getCurrent_line() {
-		return current_line;
-	}
-
-	public void setCurrent_line(String current_line) {
-		this.current_line = current_line;
-	}
-
-	public String getFinal_line() {
-		return final_line;
-	}
-
-	public void setFinal_line(String final_line) {
-		this.final_line = final_line;
-	}
-
-	public boolean isFailure() {
-		return failure;
-	}
-
-	public void setFailure(boolean failure) {
-		this.failure = failure;
-	}
-
-	public boolean isFinal_value() {
-		return final_value;
-	}
-
-	public void setFinal_value(boolean final_value) {
-		this.final_value = final_value;
 	}	
 	
 	/**
@@ -137,6 +105,70 @@ public class Alteration implements Comparable<Alteration> {
 		this.line_number = line_number;
 	}
 
+	/**
+	 * This method allows to get the last line with a good value alterated
+	 * @return line number
+	 */
+	public String getCurrent_line() {
+		return current_line;
+	}
+
+	/**
+	 * This method allows to set the last line with a good value alterated
+	 * @return line number
+	 */
+	public void setCurrent_line(String current_line) {
+		this.current_line = current_line;
+	}
+
+	/**
+	 * This method allows to get the final line with a good value alterated
+	 * @return line number
+	 */
+	public String getFinal_line() {
+		return final_line;
+	}
+
+	/**
+	 * This method allows to set the final line with a good value alterated
+	 * @return line number
+	 */
+	public void setFinal_line(String final_line) {
+		this.final_line = final_line;
+	}
+
+	/**
+	 * This method allows to get if there is a failure during the test with the last current line
+	 * @return line number
+	 */
+	public boolean isFailure() {
+		return failure;
+	}
+
+	/**
+	 * This method allows to set if there is a failure during the test with the last current line
+	 * @return line number
+	 */
+	public void setFailure(boolean failure) {
+		this.failure = failure;
+	}
+
+	/**
+	 * This method allows to get if there we have to stop with change the value of the line
+	 * @return line number
+	 */
+	public boolean isFinal_value() {
+		return final_value;
+	}
+
+	/**
+	 * This method allows to set if there we have to stop with change the value of the line
+	 * @return line number
+	 */
+	public void setFinal_value(boolean final_value) {
+		this.final_value = final_value;
+	}
+	
 	@Override
 	public int compareTo(Alteration o) {
 		// TODO Auto-generated method stub

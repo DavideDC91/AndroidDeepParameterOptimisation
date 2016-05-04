@@ -97,6 +97,9 @@ public class MutantsAnalyzer {
 		System.out.println("Reports generated");
 	}
 
+	/**
+	 * This method allows to create and manage the alteration of the original files
+	 */
 	private void executeAlterated(){
 		boolean check;
 		AppManager am = new AppManager(dir, device);
@@ -193,6 +196,13 @@ public class MutantsAnalyzer {
 		rg.generateHtmlAlteratedReport(report_dir);
 	}
 
+	/**
+	 * Method that allows to alterate the single mutation of the files
+	 * @param deep value to add
+	 * @param alt alteration to use
+	 * @param file file to modify
+	 * @param alt_num alteration number
+	 */
 	private void alterate(int deep, Alteration alt, String file, int alt_num){
 		String output;
 		try{
@@ -337,6 +347,11 @@ public class MutantsAnalyzer {
 		return m;
 	}
 
+	/**
+	 * method that allows to compile and sign the new apks
+	 * @param n number of the new apk
+	 * @return false if get a failure during the compiling
+	 */
 	private boolean compileApk(int n){
 		String output;
 		boolean ret=true;

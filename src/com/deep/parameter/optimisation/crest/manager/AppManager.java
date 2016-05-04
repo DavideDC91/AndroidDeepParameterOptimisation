@@ -59,6 +59,11 @@ public class AppManager {
 		loadPath();
 	}
 
+	/**
+	 * Constructor of the class
+	 * @param directory name of the directory to be analyzed
+	 * @param device device id 
+	 */
 	public AppManager(String directory, String device){
 		this.dir = directory;
 		setPackage();
@@ -66,6 +71,9 @@ public class AppManager {
 		loadPath();
 	}
 
+	/**
+	 * This method allows to set the package name getted from the AndroidManifest.xml
+	 */
 	private void setPackage(){
 		Path original_file = Paths.get(dir+"/AndroidManifest.xml");
 		InputStream in;
@@ -88,6 +96,9 @@ public class AppManager {
 
 	}
 
+	/**
+	 * This method allows to set the app name getted from the build.xml
+	 */
 	private String getAppName(){
 		Path original_file = Paths.get(dir+"/build.xml");
 		InputStream in;
@@ -242,6 +253,9 @@ public class AppManager {
 		System.out.println("coverage calculated");
 	}
 
+	/**
+	 * This method allows to restart the device
+	 */
 	private void restart(){
 		String output;
 		System.out.println("Device Restarting ...");
