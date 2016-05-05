@@ -10,6 +10,7 @@ public class Alteration implements Comparable<Alteration> {
 	private String final_line, current_line;
 	private boolean failure = false, final_value = false;
 	private long line_number;
+	private int deep=0;
 
 	/**
 	 * Constructor method of Alteration class
@@ -167,6 +168,14 @@ public class Alteration implements Comparable<Alteration> {
 	 */
 	public void setFinal_value(boolean final_value) {
 		this.final_value = final_value;
+	}
+	
+	public int getDeep() {
+		return deep;
+	}
+
+	public void setDeep(int deep) {
+		this.deep = deep;
 	}
 	
 	@Override

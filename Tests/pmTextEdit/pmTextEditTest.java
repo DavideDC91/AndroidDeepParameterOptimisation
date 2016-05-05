@@ -56,6 +56,10 @@ public class pmTextEditTest {
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
 		el = driver.findElement(By.name("Save"));
 		el.click();
+		el = driver.findElement(By.name("Browser"));
+		el.click();
+		el = driver.findElementById("fb_usethisdirbutton");
+		el.click();
 		WebElement edit = driver.findElementById("filename_edit");
 		edit.sendKeys("/sdcard/test");
 		WebElement confirm = driver.findElementById("button1");
@@ -70,6 +74,15 @@ public class pmTextEditTest {
 	public void saveAsTest(){
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
 		WebElement el = driver.findElement(By.name("Save As"));
+		el.click();
+		el = driver.findElement(By.name("Cancel"));
+		el.click();
+		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
+		el = driver.findElement(By.name("Save As"));
+		el.click();
+		el = driver.findElement(By.name("Browser"));
+		el.click();
+		el = driver.findElementById("fb_usethisdirbutton");
 		el.click();
 		WebElement edit = driver.findElementById("filename_edit");
 		edit.sendKeys("/sdcard/test");
@@ -123,6 +136,15 @@ public class pmTextEditTest {
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
 		WebElement el = driver.findElement(By.name("Open"));
 		el.click();
+		el = driver.findElement(By.name("Cancel"));
+		el.click();
+		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
+		el = driver.findElement(By.name("Open"));
+		el.click();
+		el = driver.findElement(By.name("Browser"));
+		el.click();
+		el = driver.findElementById("fb_usethisdirbutton");
+		el.click();
 		WebElement edit = driver.findElementById("filename_edit");
 		edit.sendKeys("/sdcard/test");
 		WebElement confirm = driver.findElementById("button1");
@@ -133,19 +155,6 @@ public class pmTextEditTest {
 			confirm = driver.findElementById("button2");
 			confirm.click();
 		}
-	}
-	
-	@Test
-	public void Browse(){
-		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
-		WebElement el = driver.findElement(By.name("Open"));
-		el.click();
-		WebElement br = driver.findElementById("button3");
-		br.click();
-		el = driver.findElementById("fb_usethisdirbutton");
-		el.click();
-		WebElement ok = driver.findElementById("button2");
-		ok.click();
 	}
 	
 	@Test

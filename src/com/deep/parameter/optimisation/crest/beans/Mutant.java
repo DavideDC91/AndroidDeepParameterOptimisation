@@ -13,6 +13,7 @@ public class Mutant {
 	private String apk_name;
 	private long execution_time, cpu_time, heap_size, heap_alloc, heap_free;
 	private double cpu_pct, user_pct, system_pct;
+	private int deep;
 
 	/**
 	 * Constructor of the Mutant class
@@ -199,6 +200,14 @@ public class Mutant {
 	 */
 	public void setSystem_pct(double system_pct) {
 		this.system_pct = system_pct;
+	}
+	
+	public int getDeep() {
+		return deep;
+	}
+
+	public void setDeep(int deep) {
+		this.deep = deep;
 	}
 
 	@Override

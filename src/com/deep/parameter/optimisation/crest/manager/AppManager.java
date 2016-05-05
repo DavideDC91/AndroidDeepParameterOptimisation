@@ -35,7 +35,7 @@ public class AppManager {
 	private static String emma_path = "";
 	private static String apktool_path = "";
 	private static String tool_path = "";
-	private int init, n, n_max;
+	private int init, increment, maximum, cycles, max;
 
 	/**
 	 * Constructor of the class
@@ -44,11 +44,13 @@ public class AppManager {
 	 * @param device device id 
 	 * @param report_dir Directory where save the reports
 	 */
-	public AppManager(String directory, String device, String report_dir,  int init, int n, int n_max){
+	public AppManager(String directory, String device, String report_dir,  int init, int increment, int maximum, int cycles, int max){
 		this.init = init;
-		this.n = n;
-	    this.n_max = n_max;
+		this.increment = increment;
+	    this.maximum = maximum;
 		this.dir = directory;
+		this.cycles = cycles;
+		this.max = max;
 		setPackage();
 		this.device = device;
 		this.report_dir = report_dir;
@@ -201,7 +203,7 @@ public class AppManager {
 		cmd = new CommandManager(new ProcessBuilder("mv",app_name+".apk",app_name+"-instrumented.apk"));
 		output = cmd.executeCommand(dir+"/bin/"+app_name+"-instrumented/dist");
 		resetApp("bin/"+app_name+"-instrumented/dist",false);
-		//restart();
+		restart();
 		long startTime = System.nanoTime();
 		tl.executeTest("Original apk");
 		long endTime = System.nanoTime();
@@ -277,7 +279,7 @@ public class AppManager {
 	 * Method that allows to execute the mutation analysis and get the survived and killed mutants
 	 * @throws InterruptedException
 	 */
-	public void mutationAnalysis() throws InterruptedException{
+	public void mutationAnalysis(boolean only_mutants, boolean systematic_analysis) throws InterruptedException{
 		survived_mutants = new ArrayList<>();
 		System.out.println("Starting Mutation Analysis ...");
 		String output,cpu_info;
@@ -340,11 +342,16 @@ public class AppManager {
 		System.out.println("Mutation analysis done");
 		System.out.println("Mutants Survived: "+survived_mutants.size());
 		System.out.println("Mutants Killed: "+killed_mutants.size());
-		MutantsAnalyzer ma = new MutantsAnalyzer(survived_mutants,dir, app_name, pkg,report_dir, original, device, init, n, n_max);
 		log.closeLogger();
 		survived_mutants_log.closeLogger();
 		killed_mutants_log.closeLogger();
-		ma.generateSmaliFile();
+		if(systematic_analysis){
+		SystematicAnalyser ma = new SystematicAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, init, increment, maximum);
+		ma.generateSmaliFile(only_mutants);
+		} else {
+			StochasticAnalyser ma = new StochasticAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, cycles, max);
+			ma.generateSmaliFile(only_mutants);
+		}		
 	}
 
 	/**

@@ -45,4 +45,29 @@ public class CommandManager {
 		}
 		return output.toString();
 	}
+	
+	/**
+	 * This method allows to execute the command in the shell
+	 * @param working_directory where the command have to be launched
+	 * @return The output of the command executed
+	 */
+	public String executeCommand() {
+		StringBuffer output = new StringBuffer();
+		pb.redirectErrorStream(true);
+		//pb.redirectOutput(Redirect.appendTo(log));
+		try {
+			//p = Runtime.getRuntime().exec(command, null, new File(working_directory));
+			Process p = pb.start();
+			//p.waitFor();
+			BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+			String line = "";			
+			while ((line = reader.readLine())!= null) {
+				output.append(line + "\n");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return output.toString();
+	}
 }

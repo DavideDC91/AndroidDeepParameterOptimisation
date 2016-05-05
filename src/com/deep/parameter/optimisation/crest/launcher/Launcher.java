@@ -3,8 +3,12 @@ import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 
 import com.deep.parameter.optimisation.crest.manager.AppManager;
+import com.deep.parameter.optimisation.crest.manager.CommandManager;
+
+import sun.util.logging.resources.logging;
 
 /**
  * The main class of the project allows to launch it
@@ -12,18 +16,73 @@ import com.deep.parameter.optimisation.crest.manager.AppManager;
  *
  */
 public class Launcher {
+	private static String adb_path = "";
 	public static void main(String[] args) throws Exception {
-		DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH.mm.ss");
-		Date date = new Date();
-		String report_dir_name = "Report " + dateFormat.format(date);
-		File reports_dir = new File("Reports");
-		reports_dir.mkdir();
-		File report_dir = new File("Reports/"+report_dir_name);
-		report_dir.mkdirs();
-		//AppManager dc= new AppManager("android-timetracker", "0ac20634", "Reports/"+report_dir_name, 1, 3, 10);
-		AppManager dc= new AppManager("pmTextEdit", "0ac20634", "Reports/"+report_dir_name, 1, 2, 10);
-		dc.setUp();
-		dc.calculateCoverage();
-		//dc.mutationAnalysis();
+		loadPath();
+		
+		// CONFIGURABLE PARAMETERS
+		
+		String dir= "android-timetracker"; // app dir
+		String device = "0ac20634"; // device code
+		boolean only_mutants = false; // Set on true to execute only mutants without any analysis
+		boolean systematic_analysis = false; // Set on true for systematic analysis on false for stochastic analysis
+	
+		// SYSTEMATIC PARAMETERS
+		
+		int init = 1; // Starting value per Systematic analysis
+		int increment = 3; // increment value per Systematic analysis
+		int maximum = 10; // maximum value per Systematic
+		
+		// STOCHASTIC PARAMETERS
+		
+		int cycles = 3; // number of cycles to do
+		int max = 80; // maximum value per Stochastic Analysis
+
+		CommandManager cmd = new CommandManager(new ProcessBuilder("ls"));
+		String output = cmd.executeCommand();
+		if(!output.contains(dir)){
+			System.out.println("Directory "+dir+" not found");
+		} else {
+			cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
+			output = cmd.executeCommand(dir);
+			if(!output.contains(device)){
+				System.out.println("Device "+device+" not connected");
+			} else {
+				DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH.mm.ss");
+				Date date = new Date();
+				String report_dir_name = "Report " + dateFormat.format(date);
+				File reports_dir = new File("Reports");
+				reports_dir.mkdir();
+				File report_dir = new File("Reports/"+report_dir_name);
+				report_dir.mkdirs();
+				AppManager dc= new AppManager(dir, device, "Reports/"+report_dir_name, init, increment, maximum, cycles, max);
+				dc.setUp();
+				dc.calculateCoverage();
+				dc.mutationAnalysis(only_mutants,systematic_analysis);
+			}
+		} 
+	}
+	
+	/**
+	 * This method loads the path from the config file
+	 */
+	private static void loadPath(){
+		Properties prop = new Properties();
+		InputStream input = null;
+		try {
+			input = new FileInputStream("config.properties");
+			prop.load(input);		
+			adb_path = prop.getProperty("adb_path");
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		} finally {
+			if (input != null) {
+				try {
+					input.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
 		}
+	}
 }

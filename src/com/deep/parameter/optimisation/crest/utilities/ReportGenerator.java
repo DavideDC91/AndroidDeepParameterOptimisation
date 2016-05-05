@@ -177,6 +177,7 @@ public class ReportGenerator {
 				"<th>Heap size (Kb)</th>" +
 				"<th>Heap allocated (Kb)</th>" +
 				"<th>Heap free (Kb)</th>" +
+				"<th>Deep</th>" +
 				"</tr>";
 
 		for(Mutant m: mutants){
@@ -190,6 +191,7 @@ public class ReportGenerator {
 						"<td  align='center'>"+ m.getHeap_size() +"</td>" +
 						"<td  align='center'>"+ m.getHeap_alloc() +"</td>" +
 						"<td  align='center'>"+ m.getHeap_free() +"</td>" +
+						"<td  align='center'>"+ m.getDeep() +"</td>" +
 						"</tr>";
 		}
 		s+= "</table>";
