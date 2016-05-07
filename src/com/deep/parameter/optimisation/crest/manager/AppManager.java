@@ -201,12 +201,13 @@ public class AppManager {
 		cmd = new CommandManager(new ProcessBuilder("mv",app_name+".apk",app_name+"-instrumented.apk"));
 		output = cmd.executeCommand(dir+"/bin/"+app_name+"-instrumented/dist");
 		resetApp("bin/"+app_name+"-instrumented/dist",false);
-		//restart();
+		restart();
 		long startTime = System.nanoTime();
 		tl.executeTest("Original apk");
 		long endTime = System.nanoTime();
-		cpu_info = getCpuInfo();
+		openApp();
 		memory_used = getMemInfo().split("\\s+");
+		cpu_info = getCpuInfo();
 		log.writeLog("dumpsys memInfo", memory_used.toString());
 		log.writeLog("dumpsys cpuInfo", cpu_info.toString());
 		long duration = (endTime - startTime)/1000000;
@@ -221,7 +222,7 @@ public class AppManager {
 				original.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 				original.setUser_pct(Double.parseDouble(cpu_used[4]));
 				original.setSystem_pct(Double.parseDouble(cpu_used[7]));
-			} catch(ArrayIndexOutOfBoundsException e){
+			} catch(Exception e){
 				original.setCpu_pct(0);
 				original.setCpu_time(0);
 				original.setUser_pct(0);
@@ -231,7 +232,7 @@ public class AppManager {
 			original.setHeap_size(Long.parseLong(memory_used[7]));
 			original.setHeap_alloc(Long.parseLong(memory_used[8]));
 			original.setHeap_free(Long.parseLong(memory_used[9]));
-			}catch(ArrayIndexOutOfBoundsException e){
+			}catch(Exception e){
 				original.setHeap_size(0);
 				original.setHeap_alloc(0);
 				original.setHeap_free(0);
@@ -251,6 +252,13 @@ public class AppManager {
 		output = cmd.executeCommand(dir);
 		log.writeLog("java emma report", output);
 		System.out.println(dir+" coverage calculated");
+	}
+
+	private void openApp() {
+		// TODO Auto-generated method stub
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "monkey", "-p", pkg, "-c", "android.intent.category.LAUNCHER", "1"));
+		String output = cmd.executeCommand(dir);
+		log.writeLog("adb shell monkey ", output);
 	}
 
 	/**
@@ -298,6 +306,7 @@ public class AppManager {
 				long startTime = System.nanoTime();
 				tl.executeTest(apk);
 				long endTime = System.nanoTime();
+				openApp();
 				cpu_info = getCpuInfo();
 				memory_used = getMemInfo().split("\\s+");
 				log.writeLog("dumpsys memInfo", memory_used.toString());
@@ -316,7 +325,7 @@ public class AppManager {
 						mutant.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 						mutant.setUser_pct(Double.parseDouble(cpu_used[4]));
 						mutant.setSystem_pct(Double.parseDouble(cpu_used[7]));
-					} catch(ArrayIndexOutOfBoundsException e){
+					} catch(Exception e){
 						mutant.setCpu_pct(0);
 						mutant.setCpu_time(0);
 						mutant.setUser_pct(0);
@@ -326,7 +335,7 @@ public class AppManager {
 					mutant.setHeap_size(Long.parseLong(memory_used[7]));
 					mutant.setHeap_alloc(Long.parseLong(memory_used[8]));
 					mutant.setHeap_free(Long.parseLong(memory_used[9]));
-					} catch(ArrayIndexOutOfBoundsException e){
+					} catch(Exception e){
 						mutant.setHeap_size(0);
 						mutant.setHeap_alloc(0);
 						mutant.setHeap_free(0);

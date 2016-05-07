@@ -24,8 +24,8 @@ public class Launcher {
 		
 		String dir= "android-timetracker"; // app dir
 		String device = "0ac20634"; // device code
-		String test_pkg= "com.deep.parameter.optimisation.crest.att";
-		boolean only_mutants = false; // Set on true to execute only mutants without any analysis
+		String test_pkg= "com.deep.parameter.optimisation.crest.test.timetracker";
+		boolean only_mutants = true; // Set on true to execute only mutants without any analysis
 		boolean systematic_analysis = false; // Set on true for systematic analysis on false for stochastic analysis
 	
 		// SYSTEMATIC PARAMETERS
@@ -61,7 +61,7 @@ public class Launcher {
 				AppManager dc= new AppManager(dir, device, "Reports/"+report_dir_name, init, increment, maximum, cycles, max, test_pkg);
 				dc.setUp();
 				dc.calculateCoverage();
-				//dc.mutationAnalysis(only_mutants,systematic_analysis);
+				dc.mutationAnalysis(only_mutants,systematic_analysis);
 			}
 		} 
 	}

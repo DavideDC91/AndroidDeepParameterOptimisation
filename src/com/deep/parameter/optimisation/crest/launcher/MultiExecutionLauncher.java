@@ -15,7 +15,7 @@ import sun.util.logging.resources.logging;
  * @author Davide
  *
  */
-public class MultiThreadLauncher {
+public class MultiExecutionLauncher {
 	private static String adb_path = "";
 
 	// CONFIGURABLE PARAMETERS
