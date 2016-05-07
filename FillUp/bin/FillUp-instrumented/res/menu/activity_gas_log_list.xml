@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:icon="@drawable/ic_gas_can" android:id="@id/itemGetGas" android:title="@string/get_gas_label" />
-    <item android:icon="@drawable/ic_menu_upload" android:id="@id/itemImport" android:title="@string/import_label" />
-    <item android:icon="@drawable/ic_menu_save" android:id="@id/itemExport" android:title="@string/export_label" />
-    <item android:icon="@drawable/ic_menu_preferences" android:id="@id/itemSettings" android:orderInCategory="100" android:title="@string/menu_settings" />
-</menu>

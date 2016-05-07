@@ -23,7 +23,7 @@ import com.deep.parameter.optimisation.crest.utilities.Logger;
  *
  */
 public class AppManager {
-	private String dir, app_name, apk, pkg, device, report_dir;
+	private String dir, app_name, apk, pkg, device, report_dir, test_pkg;
 	private Logger log, survived_mutants_log, killed_mutants_log;
 	private CommandManager cmd;
 	private TestManager tl;
@@ -44,7 +44,7 @@ public class AppManager {
 	 * @param device device id 
 	 * @param report_dir Directory where save the reports
 	 */
-	public AppManager(String directory, String device, String report_dir,  int init, int increment, int maximum, int cycles, int max){
+	public AppManager(String directory, String device, String report_dir,  int init, int increment, int maximum, int cycles, int max, String test_pkg){
 		this.init = init;
 		this.increment = increment;
 	    this.maximum = maximum;
@@ -57,7 +57,8 @@ public class AppManager {
 		log = new Logger(report_dir+"/DeviceConfiguration");
 		survived_mutants_log = new Logger(report_dir+"/SurvivedMutants");
 		killed_mutants_log = new Logger(report_dir+"/KilledMutants");
-		tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "TestFailed");
+		this.test_pkg = test_pkg;
+		tl = new TestManager(test_pkg, report_dir, "TestFailed");
 		loadPath();
 	}
 
@@ -129,10 +130,7 @@ public class AppManager {
 	 */
 	public void setUp(){
 		String output;
-		System.out.println("Starting Setup ...");
-		cmd = new CommandManager(new ProcessBuilder("find", ".", "-name", "*.apk", "-type", "f", "-delete"));
-		output = cmd.executeCommand("SignApk");
-		log.writeLog("remove apk SignApk dir", output);
+		System.out.println(dir+" Starting Setup ...");
 		cmd = new CommandManager(new ProcessBuilder(android_path, "update", "project", "--target", "1", "--path", "./", "--name", dir));
 		output = cmd.executeCommand(dir);
 		log.writeLog("android update", output);
@@ -141,19 +139,19 @@ public class AppManager {
 		cmd = new CommandManager(new ProcessBuilder(ant_path, "clean"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("ant clean", output);
-		if(!output.contains("SUCCESSFUL")) System.out.println("ant clean FAILED");
+		if(!output.contains("SUCCESSFUL")) System.out.println(dir+" ant clean FAILED");
 		else{
 			cmd = new CommandManager(new ProcessBuilder(ant_path, "instrument"));
 			output = cmd.executeCommand(dir);
 			log.writeLog("ant instrument", output);
-			if(!output.contains("SUCCESSFUL")) System.out.println("ant instrument FAILED");
+			if(!output.contains("SUCCESSFUL")) System.out.println(dir+" ant instrument FAILED");
 			else {
-				cmd = new CommandManager(new ProcessBuilder(ant_path, "installi"));
+				cmd = new CommandManager(new ProcessBuilder(ant_path, "-Dadb.device.arg=\"-s", device+"\"","installi"));
 				output = cmd.executeCommand(dir);
 				log.writeLog("ant installi", output);
-				if(!output.contains("SUCCESSFUL")) System.out.println("ant installi FAILED");
+				if(!output.contains("SUCCESSFUL")) System.out.println(dir+" ant installi FAILED");
 				else {
-					System.out.println("Setup Done");
+					System.out.println(dir+" Setup Done");
 				}
 			}
 		}
@@ -185,7 +183,7 @@ public class AppManager {
 	public void calculateCoverage(){
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
-		System.out.println("Starting Coverage calculation");
+		System.out.println(dir+" Starting Coverage calculation");
 		cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", app_name+"-instrumented.apk"));
 		output = cmd.executeCommand(dir+"/bin");
 		log.writeLog("apktool d", output);
@@ -203,7 +201,7 @@ public class AppManager {
 		cmd = new CommandManager(new ProcessBuilder("mv",app_name+".apk",app_name+"-instrumented.apk"));
 		output = cmd.executeCommand(dir+"/bin/"+app_name+"-instrumented/dist");
 		resetApp("bin/"+app_name+"-instrumented/dist",false);
-		restart();
+		//restart();
 		long startTime = System.nanoTime();
 		tl.executeTest("Original apk");
 		long endTime = System.nanoTime();
@@ -240,19 +238,19 @@ public class AppManager {
 			}
 			survived_mutants_log.writeLog("Original apk", original.toString());
 		}
-		cmd = new CommandManager(new ProcessBuilder(adb_path, "shell", "am", "broadcast", "-a", "com.qa.emma.COLLECT_COVERAGE"));
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "am", "broadcast", "-a", "com.qa.emma.COLLECT_COVERAGE"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("adb broadcast", output);
-		cmd = new CommandManager(new ProcessBuilder(adb_path, "push", "/mnt/sdcard/coverage.ec"));
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "push", "/mnt/sdcard/coverage.ec"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("adb push", output);
-		cmd = new CommandManager(new ProcessBuilder(adb_path, "pull", "/mnt/sdcard/coverage.ec"));
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "pull", "/mnt/sdcard/coverage.ec"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("adb pull", output);
 		cmd = new CommandManager(new ProcessBuilder("java", "-cp", emma_path, "emma", "report", "-r", "html", "-sourcepath", "src", "-in", "bin/coverage.em,coverage.ec"));
 		output = cmd.executeCommand(dir);
 		log.writeLog("java emma report", output);
-		System.out.println("coverage calculated");
+		System.out.println(dir+" coverage calculated");
 	}
 
 	/**
@@ -260,7 +258,7 @@ public class AppManager {
 	 */
 	private void restart(){
 		String output;
-		System.out.println("Device Restarting ...");
+		System.out.println(dir+" Device Restarting ...");
 		CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
 		output = cmd.executeCommand(dir);
 		while(!output.contains(device)){
@@ -281,7 +279,7 @@ public class AppManager {
 	 */
 	public void mutationAnalysis(boolean only_mutants, boolean systematic_analysis) throws InterruptedException{
 		survived_mutants = new ArrayList<>();
-		System.out.println("Starting Mutation Analysis ...");
+		System.out.println(dir+" Starting Mutation Analysis ...");
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
 		String[] apk_mutants;
@@ -296,7 +294,7 @@ public class AppManager {
 				apk=apk_mutants[i];
 				resetApp("mutants",true);
 				restart();
-				System.out.println("Launching mutant "+apk +" ...");
+				System.out.println(dir+" Launching mutant "+apk +" ...");
 				long startTime = System.nanoTime();
 				tl.executeTest(apk);
 				long endTime = System.nanoTime();
@@ -309,7 +307,7 @@ public class AppManager {
 				if(tl.getTestFailed()!=0){
 					killed_mutants.add(mutant);
 					killed_mutants_log.writeLog("Mutant "+(i+1), mutant.getApk_name());
-					System.out.println("Killed");
+					System.out.println(dir+" Killed");
 				} else {
 					cpu_used = cpu_info.split(" ");
 					mutant.setExecution_time(duration);
@@ -335,21 +333,21 @@ public class AppManager {
 					}
 					survived_mutants.add(mutant);
 					survived_mutants_log.writeLog("Mutant "+(i+1), mutant.toString());
-					System.out.println("Survived");
+					System.out.println(dir+" Survived");
 				}
 			}
 		}
-		System.out.println("Mutation analysis done");
-		System.out.println("Mutants Survived: "+survived_mutants.size());
-		System.out.println("Mutants Killed: "+killed_mutants.size());
+		System.out.println(dir+" Mutation analysis done");
+		System.out.println(dir+" Mutants Survived: "+survived_mutants.size());
+		System.out.println(dir+" Mutants Killed: "+killed_mutants.size());
 		log.closeLogger();
 		survived_mutants_log.closeLogger();
 		killed_mutants_log.closeLogger();
 		if(systematic_analysis){
-		SystematicAnalyser ma = new SystematicAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, init, increment, maximum);
+		SystematicAnalyser ma = new SystematicAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, init, increment, maximum, test_pkg);
 		ma.generateSmaliFile(only_mutants);
 		} else {
-			StochasticAnalyser ma = new StochasticAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, cycles, max);
+			StochasticAnalyser ma = new StochasticAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, cycles, max, test_pkg);
 			ma.generateSmaliFile(only_mutants);
 		}		
 	}

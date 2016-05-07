@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/itemEdit" android:title="@string/menuitem_title_edit" />
-    <item android:id="@id/itemDelete" android:title="@string/menuitem_title_delete" />
-    <item android:id="@id/itemShowEstimate" android:title="@string/menuitem_title_show_estimate" />
-    <item android:id="@id/itemShowCalc" android:title="@string/menuitem_title_show_calculation" />
-    <item android:id="@id/itemHideCalc" android:title="@string/menuitem_title_hide_calculation" android:checkable="true" />
-</menu>

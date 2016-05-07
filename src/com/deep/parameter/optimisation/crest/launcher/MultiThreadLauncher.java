@@ -15,34 +15,61 @@ import sun.util.logging.resources.logging;
  * @author Davide
  *
  */
-public class Launcher {
+public class MultiThreadLauncher {
 	private static String adb_path = "";
+
+	// CONFIGURABLE PARAMETERS
+
+	private static boolean only_mutants = false; // Set on true to execute only mutants without any analysis
+	private static boolean systematic_analysis = false; // Set on true for systematic analysis on false for stochastic analysis
+
+	// SYSTEMATIC PARAMETERS
+
+	private static int init = 1; // Starting value per Systematic analysis
+	private static int increment = 3; // increment value per Systematic analysis
+	private static int maximum = 10; // maximum value per Systematic
+
+	// STOCHASTIC PARAMETERS
+
+	private static int cycles = 3; // number of cycles to do
+	private static int max = 80; // maximum value per Stochastic Analysis
+
 	public static void main(String[] args) throws Exception {
 		loadPath();
-		
-		// CONFIGURABLE PARAMETERS
-		
-		String dir= "android-timetracker"; // app dir
-		String device = "0ac20634"; // device code
-		String test_pkg= "com.deep.parameter.optimisation.crest.att";
-		boolean only_mutants = false; // Set on true to execute only mutants without any analysis
-		boolean systematic_analysis = false; // Set on true for systematic analysis on false for stochastic analysis
-	
-		// SYSTEMATIC PARAMETERS
-		
-		int init = 1; // Starting value per Systematic analysis
-		int increment = 3; // increment value per Systematic analysis
-		int maximum = 10; // maximum value per Systematic
-		
-		// STOCHASTIC PARAMETERS
-		
-		int cycles = 3; // number of cycles to do
-		int max = 80; // maximum value per Stochastic Analysis
 
 		CommandManager cmd = new CommandManager(new ProcessBuilder("find", ".", "-name", "*.apk", "-type", "f", "-delete"));
 		String output = cmd.executeCommand("SignApk");
-		cmd = new CommandManager(new ProcessBuilder("ls"));
-		output = cmd.executeCommand();
+
+
+		Thread thread = new Thread("New Thread") {
+			public void run(){
+				System.out.println("run by: " + getName());
+				String dir= "android-timetracker"; // app dir
+				String device = "0ac20634"; // device code
+				String test_pkg= "com.deep.parameter.optimisation.crest.test";
+				SingleLaunch(dir,device,test_pkg);
+			}
+		};
+
+		Thread thread2 = new Thread("New Thread") {
+			public void run(){
+				System.out.println("run by: " + getName());
+				String dir= "FillUp"; // app dir
+				String device = "0ac20634"; // device code
+				String test_pkg= "com.deep.parameter.optimisation.crest.test";
+				SingleLaunch(dir,device,test_pkg);
+			}
+		};
+
+		thread.start();
+		thread2.start();
+
+
+	}
+
+	private static void SingleLaunch(String dir,String device,String test_pkg){
+		CommandManager cmd = new CommandManager(new ProcessBuilder("ls"));
+		String output = cmd.executeCommand();
 		if(!output.contains(dir)){
 			System.out.println("Directory "+dir+" not found");
 		} else {
@@ -60,12 +87,12 @@ public class Launcher {
 				report_dir.mkdirs();
 				AppManager dc= new AppManager(dir, device, "Reports/"+report_dir_name, init, increment, maximum, cycles, max, test_pkg);
 				dc.setUp();
-				dc.calculateCoverage();
+				//dc.calculateCoverage();
 				//dc.mutationAnalysis(only_mutants,systematic_analysis);
 			}
 		} 
 	}
-	
+
 	/**
 	 * This method loads the path from the config file
 	 */

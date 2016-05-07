@@ -29,7 +29,7 @@ import com.deep.parameter.optimisation.crest.utilities.ReportGenerator;
  */
 public class StochasticAnalyser {
 
-	private String dir, pkg, app_name, report_dir, original_path, device;
+	private String dir, pkg, app_name, report_dir, original_path, device, test_pkg;
 	private ArrayList<String> files;
 	private ArrayList<Alteration> alts;
 	private static String apktool_path = "", tool_path="", adb_path = "";
@@ -46,7 +46,7 @@ public class StochasticAnalyser {
 	 * @param pkg package of the app
 	 * @param report_dir path to the reports directory
 	 */
-	public StochasticAnalyser(ArrayList<Mutant> m, String directory, String app_name, String pkg, String report_dir, Mutant original, String device, int cycles, int max){
+	public StochasticAnalyser(ArrayList<Mutant> m, String directory, String app_name, String pkg, String report_dir, Mutant original, String device, int cycles, int max, String test_pkg){
 		this.maximum = max;
 		this.cycles = cycles;
 		this.mutants = m;
@@ -56,6 +56,7 @@ public class StochasticAnalyser {
 		this.pkg = pkg;
 		this.report_dir = report_dir;
 		this.original = original;
+		this.test_pkg = test_pkg;
 		new_versions_survived = new ArrayList<>();
 		log = new Logger(report_dir+"/AnalyzerLogger");
 		String[] pkg_splitted = this.pkg.split("\\.");
@@ -72,7 +73,7 @@ public class StochasticAnalyser {
 	 */
 	public void generateSmaliFile(boolean only_mutants){
 		String output;
-		System.out.println("Starting generate Smali File ...");
+		System.out.println(dir+" Starting generate Smali File ...");
 		cmd = new CommandManager(new ProcessBuilder("ls"));
 		output = cmd.executeCommand(original_path);
 		String[] lines = output.split(System.getProperty("line.separator"));
@@ -91,7 +92,7 @@ public class StochasticAnalyser {
 			executeAlterated();
 		}
 		log.closeLogger();
-		System.out.println("Reports generated");
+		System.out.println(dir+" Reports generated");
 	}
 
 	/**
@@ -102,7 +103,7 @@ public class StochasticAnalyser {
 		AppManager am = new AppManager(dir, device);
 		String output,cpu_info;
 		String[] cpu_used,memory_used;
-		TestManager tl = new TestManager("com.deep.parameter.optimisation.crest.test", report_dir, "NewVersionsFailed");
+		TestManager tl = new TestManager(test_pkg, report_dir, "NewVersionsFailed");
 		new_versions = new ArrayList<>();
 		int version_number= 0;
 		alts = new ArrayList<>();
@@ -146,7 +147,7 @@ public class StochasticAnalyser {
 							cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
 							output = cmd.executeCommand(dir);
 						}
-						System.out.println("Launching new version: "+new_versions.get(version_number).getApk_name() +" ...");
+						System.out.println(dir+" Launching new version: "+new_versions.get(version_number).getApk_name() +" ...");
 						long startTime = System.nanoTime();
 						tl.executeTest(new_versions.get(version_number).getApk_name());
 						long endTime = System.nanoTime();
@@ -185,7 +186,7 @@ public class StochasticAnalyser {
 								new_versions.get(version_number).setHeap_free(0);
 							}
 							new_versions_survived.add(new_versions.get(version_number));
-							System.out.println("Survived");
+							System.out.println(dir+" Survived");
 							alts.get(z).setFinal_line(alts.get(z).getCurrent_line());
 						} else {
 							alts.get(z).setFailure(true);
@@ -193,7 +194,7 @@ public class StochasticAnalyser {
 								alts.get(z).setFinal_line(alts.get(z).getMutatedLine());
 							}
 							alterate(alts.get(z).getDeep(),alts.get(z),files.get(u),z);
-							System.out.println("Killed");
+							System.out.println(dir+" Killed");
 						}
 						version_number++;
 					}
@@ -220,7 +221,7 @@ public class StochasticAnalyser {
 					cmd = new CommandManager(new ProcessBuilder(adb_path, "devices"));
 					output = cmd.executeCommand(dir);
 				}
-				System.out.println("Launching new version: "+temp_versions.get(j).getApk_name() +" ...");
+				System.out.println(dir+" Launching new version: "+temp_versions.get(j).getApk_name() +" ...");
 				long startTime = System.nanoTime();
 				tl.executeTest(temp_versions.get(j).getApk_name());
 				long endTime = System.nanoTime();
@@ -255,9 +256,9 @@ public class StochasticAnalyser {
 						new_version.setHeap_free(0);
 					}
 					new_versions_survived.add(new_version);
-					System.out.println("Survived");
+					System.out.println(dir+" Survived");
 				} else {
-					System.out.println("Killed");
+					System.out.println(dir+" Killed");
 				}
 			}
 		}
