@@ -169,7 +169,7 @@ public class AppManager {
 		log.writeLog("adb uninstall", output);
 		if(mutations){
 			cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "install", "-reinstall", "./"+apk));
-			output = cmd.executeCommand("mutants");
+			output = cmd.executeCommand("mutants/"+dir);
 		} else {
 			cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "install", "-reinstall", "./"+directory+"/"+apk));
 			output = cmd.executeCommand(dir);
@@ -294,7 +294,7 @@ public class AppManager {
 		Mutant mutant;
 		killed_mutants = new ArrayList<>();
 		cmd = new CommandManager(new ProcessBuilder("ls"));
-		output = cmd.executeCommand("mutants");
+		output = cmd.executeCommand("mutants/"+dir);
 		log.writeLog("ls", output);
 		apk_mutants = output.split("\n");
 		for(int i=0;i<apk_mutants.length;i++){
@@ -378,7 +378,6 @@ public class AppManager {
 			}
 		}
 		cpu_info = cpu_info.replace("%", "");
-		System.out.println(cpu_info);
 		return cpu_info;
 	}
 
@@ -398,7 +397,6 @@ public class AppManager {
 				break;
 			}
 		}
-		System.out.println(mem_info);
 		return mem_info;
 	}
 

@@ -82,7 +82,7 @@ public class SystematicAnalyser {
 		}
 		for(int j=0;j<mutants.size();j++){
 			cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", mutants.get(j).getApk_name()));
-			output = cmd.executeCommand("mutants");
+			output = cmd.executeCommand("mutants/"+dir);
 			log.writeLog("apktool d "+mutants.get(j).getApk_name(), output);
 			mutants.set(j, findDiff(mutants.get(j)));
 		}
@@ -142,7 +142,7 @@ public class SystematicAnalyser {
 								long startTime = System.nanoTime();
 								tl.executeTest(new_versions.get(version_number).getApk_name());
 								long endTime = System.nanoTime();
-								openApp();
+								//openApp();
 								cpu_info = am.getCpuInfo();
 								memory_used = am.getMemInfo().split("\\s+");
 								log.writeLog("dumpsys memInfo", memory_used.toString());
@@ -157,7 +157,7 @@ public class SystematicAnalyser {
 									}
 									new_versions.get(version_number).setExecution_time(duration);
 									try{
-										new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2]));
+										new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2].replace("+", "")));
 										new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 										new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
 										new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
@@ -316,7 +316,7 @@ public class SystematicAnalyser {
 	 */
 	public Mutant findDiff(Mutant m){
 		String[] pkg_splitted = this.pkg.split("\\.");
-		String path = "mutants/"+m.getApk_name().replace(".apk", "")+"/smali/";
+		String path = "mutants/"+dir+"/"+m.getApk_name().replace(".apk", "")+"/smali/";
 		for(int i=0;i<pkg_splitted.length;i++){
 			path=path + pkg_splitted[i]+"/";
 		}

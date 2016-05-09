@@ -61,7 +61,7 @@ public class Launcher {
 				AppManager dc= new AppManager(dir, device, "Reports/"+report_dir_name, init, increment, maximum, cycles, max, test_pkg);
 				dc.setUp();
 				dc.calculateCoverage();
-				dc.mutationAnalysis(only_mutants,systematic_analysis);
+				//dc.mutationAnalysis(only_mutants,systematic_analysis);
 			}
 		} 
 	}

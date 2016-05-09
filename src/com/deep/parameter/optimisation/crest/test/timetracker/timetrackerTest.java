@@ -4,22 +4,14 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-
 import static org.junit.Assert.assertEquals;
-
 import java.io.File;
 import java.net.URL;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
-import com.deep.parameter.optimisation.crest.manager.CommandManager;
 
 public class timetrackerTest {
 	private static AppiumDriver<AndroidElement> driver;
@@ -29,16 +21,12 @@ public class timetrackerTest {
 		// set up appium 
 		File classpathRoot = new File(System.getProperty("user.dir"));
 		File appDir = new File(classpathRoot, "../../../");
-		//File app = new File(appDir, "Documents/workspace/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker.apk");
-		//File app = new File(appDir, "Documents/workspace/android-timetracker/bin/android-timetracker-instrumented.apk");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName","0ac20634");
 		capabilities.setCapability("platformVersion", "4.4");
-		//capabilities.setCapability("app", app.getAbsolutePath());
 		capabilities.setCapability("appPackage", "com.markuspage.android.atimetracker");
 		capabilities.setCapability("appActivity", ".Tasks");
 		capabilities.setCapability("noReset", true);
-		//capabilities.setCapability("fullReset", false);
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 	}
 	
@@ -55,7 +43,7 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement title = driver.findElementById("title");
+		WebElement title = driver.findElementByXPath("//*[@text='Add task']");
 		title.click();
 		WebElement task_name = driver.findElementById("task_edit_name_edit");
 		task_name.sendKeys("Test1");
@@ -74,7 +62,7 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement title = driver.findElementById("title");
+		WebElement title = driver.findElementByXPath("//*[@text='Add task']");
 		title.click();
 		WebElement task_name = driver.findElementById("task_edit_name_edit");
 		task_name.sendKeys("Test2");
@@ -94,7 +82,7 @@ public class timetrackerTest {
 		WebElement confirm1 = driver.findElementById("button1");
 		el1 = driver.findElementByXPath("//*[@text='Test3']");
 		assertEquals(el1.getText(),"Test3");
-		confirm.click();
+		confirm1.click();
 	}
 
 	@Test
@@ -105,7 +93,7 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement title = driver.findElementById("title");
+		WebElement title = driver.findElementByXPath("//*[@text='Add task']");
 		title.click();
 		WebElement task_name = driver.findElementById("task_edit_name_edit");
 		task_name.sendKeys("Test4");
@@ -133,13 +121,13 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement title = driver.findElementById("title");
+		WebElement title = driver.findElementByXPath("//*[@text='Add task']");
 		title.click();
 		WebElement task_name = driver.findElementById("task_edit_name_edit");
-		task_name.sendKeys("Test4");
+		task_name.sendKeys("Test7");
 		WebElement confirm = driver.findElementById("button1");
 		confirm.click();
-		WebElement el = driver.findElementByXPath("//*[@text='Test4']");
+		WebElement el = driver.findElementByXPath("//*[@text='Test7']");
 		TouchAction action = new TouchAction(driver);
 		action.longPress(el).release().perform();
 		WebElement show = driver.findElementByXPath("//*[@text='Delete Task']");

@@ -82,7 +82,7 @@ public class StochasticAnalyser {
 		}
 		for(int j=0;j<mutants.size();j++){
 			cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", mutants.get(j).getApk_name()));
-			output = cmd.executeCommand("mutants");
+			output = cmd.executeCommand("mutants/"+dir);
 			log.writeLog("apktool d "+mutants.get(j).getApk_name(), output);
 			mutants.set(j, findDiff(mutants.get(j)));
 		}
@@ -117,13 +117,19 @@ public class StochasticAnalyser {
 					Random rand = new Random();
 					int rand_num;
 					if((alts.get(z).getOriginalLine().contains("const/4"))&&(maximum>7)){
-						rand_num = rand.nextInt(7) + 1;
+						String t_original = "0x";
+						String[] ori_var = alts.get(z).getOriginalLine().split("\\s+");
+						if(ori_var[3].contains("-0x")){
+							t_original="-0x";
+						}
+						int value_original = Integer.parseInt(ori_var[3].replace(t_original, ""), 16);
+						int v = 7-value_original;
+						rand_num = rand.nextInt(v) + 1;
 						alts.get(z).setDeep(rand_num);
 					} else {
 						rand_num = rand.nextInt(maximum) + 1;
 						alts.get(z).setDeep(rand_num);
 					}
-
 					if(!alts.get(z).isFinal_value()){
 						alterate(alts.get(z).getDeep(),alts.get(z),files.get(u),z);
 						check = compileApk(version_number);
@@ -165,7 +171,7 @@ public class StochasticAnalyser {
 							}
 							new_versions.get(version_number).setExecution_time(duration);
 							try{
-								new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2]));
+								new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2].replace("+", "")));
 								new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 								new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
 								new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
@@ -207,7 +213,6 @@ public class StochasticAnalyser {
 		new_versions = new ArrayList<>();
 		for(int v=1;v<cycles;v++){
 			for(int j=0;j<size;j++){
-				System.out.println("j " +j);
 				resetApp(temp_versions.get(j).getApk_name());
 				CommandManager 	cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
 				output = cmd.executeCommand(dir);
@@ -225,7 +230,7 @@ public class StochasticAnalyser {
 				long startTime = System.nanoTime();
 				tl.executeTest(temp_versions.get(j).getApk_name());
 				long endTime = System.nanoTime();
-				openApp();
+				//openApp();
 				cpu_info = am.getCpuInfo();
 				memory_used = am.getMemInfo().split("\\s+");
 				log.writeLog("dumpsys memInfo", memory_used.toString());
@@ -237,7 +242,7 @@ public class StochasticAnalyser {
 					new_version.setExecution_time(duration);
 					new_version.setDeep(temp_versions.get(j).getDeep());
 					try{
-						new_version.setCpu_pct(Double.parseDouble(cpu_used[2]));
+						new_version.setCpu_pct(Double.parseDouble(cpu_used[2].replace("+", "")));
 						new_version.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 						new_version.setUser_pct(Double.parseDouble(cpu_used[4]));
 						new_version.setSystem_pct(Double.parseDouble(cpu_used[7]));
@@ -383,7 +388,7 @@ public class StochasticAnalyser {
 	 */
 	public Mutant findDiff(Mutant m){
 		String[] pkg_splitted = this.pkg.split("\\.");
-		String path = "mutants/"+m.getApk_name().replace(".apk", "")+"/smali/";
+		String path = "mutants/"+dir+"/"+m.getApk_name().replace(".apk", "")+"/smali/";
 		for(int i=0;i<pkg_splitted.length;i++){
 			path=path + pkg_splitted[i]+"/";
 		}
