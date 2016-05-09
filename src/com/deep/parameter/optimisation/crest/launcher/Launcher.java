@@ -22,10 +22,10 @@ public class Launcher {
 		
 		// CONFIGURABLE PARAMETERS
 		
-		String dir= "android-timetracker"; // app dir
-		String device = "0ac20634"; // device code
-		String test_pkg= "com.deep.parameter.optimisation.crest.test.timetracker";
-		boolean only_mutants = true; // Set on true to execute only mutants without any analysis
+		String dir= "pmTextEdit"; // app dir
+		String device = "091f4245"; // device code
+		String test_pkg= "com.deep.parameter.optimisation.crest.test.pmtextedit";
+		boolean only_mutants = false; // Set on true to execute only mutants without any analysis
 		boolean systematic_analysis = false; // Set on true for systematic analysis on false for stochastic analysis
 	
 		// SYSTEMATIC PARAMETERS

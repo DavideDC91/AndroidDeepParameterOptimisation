@@ -22,12 +22,13 @@ public class timetrackerTest {
 		File classpathRoot = new File(System.getProperty("user.dir"));
 		File appDir = new File(classpathRoot, "../../../");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("deviceName","0ac20634");
+		capabilities.setCapability("deviceName","0a2aa61a");
+		capabilities.setCapability("udid","0a2aa61a");
 		capabilities.setCapability("platformVersion", "4.4");
 		capabilities.setCapability("appPackage", "com.markuspage.android.atimetracker");
 		capabilities.setCapability("appActivity", ".Tasks");
 		capabilities.setCapability("noReset", true);
-		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4395/wd/hub"), capabilities);
 	}
 	
 	@AfterClass

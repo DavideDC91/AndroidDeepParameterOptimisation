@@ -26,12 +26,13 @@ public class fillUpTest {
 		File classpathRoot = new File(System.getProperty("user.dir"));
 		File appDir = new File(classpathRoot, "../../../");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("deviceName","0ac20634");
+		capabilities.setCapability("deviceName","0a6996b3");
+		capabilities.setCapability("udid","0a6996b3");
 		capabilities.setCapability("platformVersion", "4.4");
 		capabilities.setCapability("appPackage", "com.github.wdkapps.fillup");
 		capabilities.setCapability("appActivity", ".StartupActivity");
 		capabilities.setCapability("noReset", true);
-		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4725/wd/hub"), capabilities);
+		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4410/wd/hub"), capabilities);
 	}
 
 
@@ -146,6 +147,12 @@ public class fillUpTest {
 		el1.click();
 		el1 = driver.findElement(By.name("Yes"));
 		el1.click();
+		el1 = driver.findElementById("buttonVehicleAdd");
+		el1.click();
+		el1 = driver.findElementById("textVehicleName");
+		el1.sendKeys("Ferrari");
+		el1 = driver.findElement(By.name("OK"));
+		el1.click();
 	}
 
 	@Test
@@ -163,9 +170,16 @@ public class fillUpTest {
 		el1.click();
 		el1 = driver.findElement(By.name("No"));
 		el1.click();
+		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
 		el1 = driver.findElementByName("Delete Vehicle");
 		el1.click();
 		el1 = driver.findElement(By.name("Yes"));
+		el1.click();
+		el1 = driver.findElementById("buttonVehicleAdd");
+		el1.click();
+		el1 = driver.findElementById("textVehicleName");
+		el1.sendKeys("Ferrari");
+		el1 = driver.findElement(By.name("OK"));
 		el1.click();
 	}
 

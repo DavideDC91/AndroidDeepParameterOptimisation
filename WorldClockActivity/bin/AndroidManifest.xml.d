@@ -1,2 +1,2 @@
-/Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/WorldClockActivity/bin/AndroidManifest.xml : \
-/Users/Davide/Documents/workspace/AndroidDeepParameterOptimisation/WorldClockActivity/AndroidManifest.xml \
+/home/davide/git/AndroidDeepParameterOptimisation/WorldClockActivity/bin/AndroidManifest.xml : \
+/home/davide/git/AndroidDeepParameterOptimisation/WorldClockActivity/AndroidManifest.xml \

@@ -1,17 +1,15 @@
-version: 2.0.3
+!!brut.androlib.meta.MetaInfo
 apkFileName: android-timetracker-instrumented_1991.apk
+compressionType: false
+doNotCompress:
+- arsc
 isFrameworkApk: false
-usesFramework:
-  ids:
-  - 1
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
 sdkInfo:
   minSdkVersion: '4'
   targetSdkVersion: '14'
-packageInfo:
-  forced-package-id: '127'
-versionInfo:
-  versionCode: '21'
-  versionName: '0.21'
 sharedLibrary: false
 unknownFiles:
   emma_ant.properties: '8'
@@ -22,5 +20,11 @@ unknownFiles:
   com/vladium/emma/instr/instr_usage.res: '8'
   com/vladium/emma/report/report_usage.res: '8'
   com/vladium/emma/rt/RTExitHook.closure: '8'
-doNotCompress:
-- arsc
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.1.0
+versionInfo:
+  versionCode: '21'
+  versionName: '0.21'

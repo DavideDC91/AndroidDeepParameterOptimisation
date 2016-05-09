@@ -26,12 +26,13 @@ public class pmTextEditTest {
 		File classpathRoot = new File(System.getProperty("user.dir"));
 		File appDir = new File(classpathRoot, "../../../");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("deviceName","0ac20634");
+		capabilities.setCapability("deviceName","091f4245");
+		capabilities.setCapability("udid","091f4245");
 		capabilities.setCapability("platformVersion", "4.4");
 		capabilities.setCapability("appPackage", "org.paulmach.textedit");
 		capabilities.setCapability("appActivity", ".pmTextEdit");
 		capabilities.setCapability("noReset", true);
-		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4725/wd/hub"), capabilities);
+		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4420/wd/hub"), capabilities);
 	}
 
 
@@ -41,7 +42,7 @@ public class pmTextEditTest {
 	}
 
 	@Test
-	public void saveTextTest(){
+	public void saveTextTest(){ ////rivedere
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
 		WebElement el = driver.findElement(By.name("New File"));
 		el.click();
@@ -56,20 +57,23 @@ public class pmTextEditTest {
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
 		el = driver.findElement(By.name("Save"));
 		el.click();
-		el = driver.findElement(By.name("Browser"));
-		el.click();
-		el = driver.findElementById("fb_usethisdirbutton");
-		el.click();
-		WebElement edit = driver.findElementById("filename_edit");
-		edit.sendKeys("/sdcard/test");
-		WebElement confirm = driver.findElementById("button1");
-		confirm.click();
+		if(!driver.findElementsByName("Browser").isEmpty()) {
+			el = driver.findElement(By.name("Browser"));
+			el.click();
+			el = driver.findElementById("fb_usethisdirbutton");
+			el.click();
+			WebElement edit = driver.findElementById("filename_edit");
+			edit.sendKeys("/sdcard/test");
+			WebElement confirm = driver.findElementById("button1");
+			confirm.click();
+		}
 		if(!driver.findElementsById("button1").isEmpty()) {
 			WebElement ok = driver.findElementById("button1");
 			ok.click();
 		}
 	}
 
+	
 	@Test
 	public void saveAsTest(){
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
@@ -94,7 +98,7 @@ public class pmTextEditTest {
 		}
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
 	}
-	
+
 	@Test
 	public void openRecentTest(){
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
@@ -108,29 +112,6 @@ public class pmTextEditTest {
 		}
 	}
 
-	@Test
-	public void openEmailTest(){
-		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
-		WebElement el = driver.findElement(By.name("More"));
-		el.click();
-		el = driver.findElement(By.name("Email Text"));
-		el.click();
-		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
-	}
-	
-	@Test
-	public void searchTextTest(){
-		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
-		WebElement el = driver.findElement(By.name("More"));
-		el.click();
-		el = driver.findElement(By.name("Search Text"));
-		el.click();
-		WebElement search = driver.findElementById("search_src_text");
-		search.sendKeys("test");
-		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.ENTER);
-		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
-	}
-	
 	@Test
 	public void openTest(){
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
@@ -158,14 +139,37 @@ public class pmTextEditTest {
 	}
 	
 	@Test
+	public void searchTextTest(){
+		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
+		WebElement el = driver.findElement(By.name("More"));
+		el.click();
+		el = driver.findElement(By.name("Search Text"));
+		el.click();
+		WebElement search = driver.findElementById("search_src_text");
+		search.sendKeys("test");
+		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.ENTER);
+		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
+	}
+	
+	@Test
 	public void emailAttachTest(){
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
 		WebElement el = driver.findElement(By.name("More"));
 		el.click();
 		el = driver.findElement(By.name("Email as Attachment"));
 		el.click();
-		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
+		driver.navigate().back();
 	}
+	
+	@Test
+	public void openEmailTest(){
+		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
+		WebElement el = driver.findElement(By.name("More"));
+		el.click();
+		el = driver.findElement(By.name("Email Text"));
+		el.click();
+		driver.navigate().back();
+	}	
 	
 	@Test
 	public void optionsTest(){
@@ -211,11 +215,11 @@ public class pmTextEditTest {
 		el.click();
 		el = driver.findElementById("button1");
 		el.click();
+		driver.scrollTo("Warranty Information");
 		el = driver.findElement(By.name("Font Color"));
 		el.click();
 		el = driver.findElementById("button1");
 		el.click();
-		driver.scrollTo("Warranty Information");
 		el = driver.findElement(By.name("Background Color"));
 		el.click();
 		el = driver.findElementById("button1");
@@ -227,7 +231,7 @@ public class pmTextEditTest {
 		el.click();
 		el = driver.findElementById("button1");
 		el.click();
-		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
+		driver.navigate().back();
 	}
 
 }
