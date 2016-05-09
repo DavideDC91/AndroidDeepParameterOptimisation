@@ -19,6 +19,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.deep.parameter.optimisation.crest.manager.CommandManager;
+
 public class timetrackerTest {
 	private static AppiumDriver<AndroidElement> driver;
 
@@ -37,7 +39,7 @@ public class timetrackerTest {
 		capabilities.setCapability("appActivity", ".Tasks");
 		capabilities.setCapability("noReset", true);
 		//capabilities.setCapability("fullReset", false);
-		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4725/wd/hub"), capabilities);
+		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 	}
 	
 	@AfterClass
@@ -59,11 +61,11 @@ public class timetrackerTest {
 		task_name.sendKeys("Test1");
 		WebElement confirm = driver.findElementById("button1");
 		confirm.click();
-		WebElement el = driver.findElementByXPath("//*[@text='" + "Test1" + "']");
+		WebElement el = driver.findElementByXPath("//*[@text='Test1']");
 		assertEquals(el.getText(),"Test1");
 		el.click();
 	}
-/**
+
 	@Test
 	public void updateTaskTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -78,19 +80,19 @@ public class timetrackerTest {
 		task_name.sendKeys("Test2");
 		WebElement confirm = driver.findElementById("button1");
 		confirm.click();
-		WebElement el = driver.findElement(By.name("Test2"));
+		WebElement el = driver.findElementByXPath("//*[@text='Test2']");
 		assertEquals(el.getText(),"Test2");
 		el.click();
-		WebElement el1 = driver.findElement(By.name("Test2"));
+		WebElement el1 = driver.findElementByXPath("//*[@text='Test2']");
 		TouchAction action = new TouchAction(driver);
 		action.longPress(el1).release().perform();
-		WebElement edit = driver.findElement(By.name("Edit Task"));
+		WebElement edit = driver.findElementByXPath("//*[@text='Edit Task']");
 		edit.click();
 		WebElement task_name1 = driver.findElementById("task_edit_name_edit");
 		task_name1.clear();
 		task_name1.sendKeys("Test3");
 		WebElement confirm1 = driver.findElementById("button1");
-		el1 = driver.findElement(By.name("Test3"));
+		el1 = driver.findElementByXPath("//*[@text='Test3']");
 		assertEquals(el1.getText(),"Test3");
 		confirm.click();
 	}
@@ -109,10 +111,10 @@ public class timetrackerTest {
 		task_name.sendKeys("Test4");
 		WebElement confirm = driver.findElementById("button1");
 		confirm.click();
-		WebElement el = driver.findElement(By.name("Test4"));
+		WebElement el = driver.findElementByXPath("//*[@text='Test4']");
 		TouchAction action = new TouchAction(driver);
 		action.longPress(el).release().perform();
-		WebElement show = driver.findElement(By.name("Show Times"));
+		WebElement show = driver.findElementByXPath("//*[@text='Show Times']");
 		show.click();
 		WebElement opt1 = driver.findElementByClassName("android.widget.ImageButton");
 		opt1.click();
@@ -137,10 +139,10 @@ public class timetrackerTest {
 		task_name.sendKeys("Test4");
 		WebElement confirm = driver.findElementById("button1");
 		confirm.click();
-		WebElement el = driver.findElement(By.name("Test4"));
+		WebElement el = driver.findElementByXPath("//*[@text='Test4']");
 		TouchAction action = new TouchAction(driver);
 		action.longPress(el).release().perform();
-		WebElement show = driver.findElement(By.name("Delete Task"));
+		WebElement show = driver.findElementByXPath("//*[@text='Delete Task']");
 		show.click();
 		WebElement confirm1 = driver.findElementById("button1");
 		confirm1.click();
@@ -154,36 +156,36 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement more = driver.findElement(By.name("More…"));
+		WebElement more = driver.findElementByXPath("//*[@text='More…']");
 		more.click();
-		WebElement cdr = driver.findElement(By.name("Change date range"));
+		WebElement cdr = driver.findElementByXPath("//*[@text='Change date range']");
 		cdr.click();
-		WebElement range = driver.findElement(By.name("Today"));
+		WebElement range = driver.findElementByXPath("//*[@text='Today']");
 		range.click();
 		opt.click();
 		more.click();
 		cdr.click();
-		range = driver.findElement(By.name("This week"));
+		range = driver.findElementByXPath("//*[@text='This week']");
 		range.click();
 		opt.click();
 		more.click();
 		cdr.click();
-		range = driver.findElement(By.name("Yesterday"));
+		range = driver.findElementByXPath("//*[@text='Yesterday']");
 		range.click();
 		opt.click();
 		more.click();
 		cdr.click();
-		range = driver.findElement(By.name("Last week"));
+		range = driver.findElementByXPath("//*[@text='Last week']");
 		range.click();
 		opt.click();
 		more.click();
 		cdr.click();
-		range = driver.findElement(By.name("All"));
+		range = driver.findElementByXPath("//*[@text='All']");
 		range.click();
 		opt.click();
 		more.click();
 		cdr.click();
-		range = driver.findElement(By.name("Select range..."));
+		range = driver.findElementByXPath("//*[@text='Select range...']");
 		range.click();
 		WebElement done = driver.findElementById("button1");
 		done.click();
@@ -201,9 +203,9 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement more = driver.findElement(By.name("More…"));
+		WebElement more = driver.findElementByXPath("//*[@text='More…']");
 		more.click();
-		WebElement cdr = driver.findElement(By.name("Export view to CSV"));
+		WebElement cdr = driver.findElementByXPath("//*[@text='Export view to CSV']");
 		cdr.click();
 		WebElement done = driver.findElementById("button1");
 		done.click();
@@ -217,9 +219,9 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement more = driver.findElement(By.name("More…"));
+		WebElement more = driver.findElementByXPath("//*[@text='More…']");
 		more.click();
-		WebElement cdr = driver.findElement(By.name("Back up to SD card"));
+		WebElement cdr = driver.findElementByXPath("//*[@text='Back up to SD card']");
 		cdr.click();
 		WebElement done = driver.findElementById("button1");
 		done.click();
@@ -233,9 +235,9 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement more = driver.findElement(By.name("More…"));
+		WebElement more = driver.findElementByXPath("//*[@text='More…']");
 		more.click();
-		WebElement cdr = driver.findElement(By.name("Restore from backup"));
+		WebElement cdr = driver.findElementByXPath("//*[@text='Restore from backup']");
 		cdr.click();
 		WebElement done = driver.findElementById("button1");
 		done.click();
@@ -249,9 +251,9 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement more = driver.findElement(By.name("More…"));
+		WebElement more = driver.findElementByXPath("//*[@text='More…']");
 		more.click();
-		WebElement cdr = driver.findElement(By.name("Help"));
+		WebElement cdr = driver.findElementByXPath("//*[@text='Help']");
 		cdr.click();
 		WebElement done = driver.findElementById("button1");
 		done.click();
@@ -265,29 +267,29 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement more = driver.findElement(By.name("More…"));
+		WebElement more = driver.findElementByXPath("//*[@text='More…']");
 		more.click();
-		WebElement cdr = driver.findElement(By.name("Settings"));
+		WebElement cdr = driver.findElementByXPath("//*[@text='Settings']");
 		cdr.click();
-		WebElement e = driver.findElement(By.name("12/24 hour mode"));
+		WebElement e = driver.findElementByXPath("//*[@text='12/24 hour mode']");
 		e.click();
-		WebElement e1 = driver.findElement(By.name("Multiple concurrently running tasks"));
+		WebElement e1 = driver.findElementByXPath("//*[@text='Multiple concurrently running tasks']");
 		e1.click();
-		WebElement e2 = driver.findElement(By.name("Sound"));
+		WebElement e2 = driver.findElementByXPath("//*[@text='Sound']");
 		e2.click();
-		WebElement e3 = driver.findElement(By.name("Vibrate"));
+		WebElement e3 = driver.findElementByXPath("//*[@text='Vibrate']");
 		e3.click();
-		WebElement e4 = driver.findElement(By.name("Font size"));
+		WebElement e4 = driver.findElementByXPath("//*[@text='Font size']");
 		e4.click();
-		WebElement e5 = driver.findElement(By.name("Time display"));
+		WebElement e5 = driver.findElementByXPath("//*[@text='Time display']");
 		e5.click();
-		WebElement e6 = driver.findElement(By.name("Week start day"));
+		WebElement e6 = driver.findElementByXPath("//*[@text='Week start day']");
 		e6.click();
-		WebElement e7 = driver.findElement(By.name("Monday"));
+		WebElement e7 = driver.findElementByXPath("//*[@text='Sunday']");
 		e7.click();
-		WebElement e8 = driver.findElement(By.name("Round report times"));
+		WebElement e8 = driver.findElementByXPath("//*[@text='Round report times']");
 		e8.click();
-		WebElement e9 = driver.findElement(By.name("No"));
+		WebElement e9 = driver.findElementByXPath("//*[@text='No']");
 		e9.click();
 		WebElement done = driver.findElementById("pref_accept");
 		done.click();
@@ -301,7 +303,7 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement report = driver.findElement(By.name("Report"));
+		WebElement report = driver.findElementByXPath("//*[@text='Report']");
 		report.click();
 		WebElement decr = driver.findElementById("decrement_week");
 		decr.click();
@@ -318,7 +320,7 @@ public class timetrackerTest {
 		}
 		WebElement opt = driver.findElementByClassName("android.widget.ImageButton");
 		opt.click();
-		WebElement report = driver.findElement(By.name("Report"));
+		WebElement report = driver.findElementByXPath("//*[@text='Report']");
 		report.click();
 		WebElement decr = driver.findElementById("decrement_week");
 		decr.click();
@@ -326,12 +328,12 @@ public class timetrackerTest {
 		incr.click();
 		WebElement opt1 = driver.findElementByClassName("android.widget.ImageButton");
 		opt1.click();
-		WebElement export = driver.findElement(By.name("Export"));
+		WebElement export = driver.findElementByXPath("//*[@text='Export']");
 		export.click();
 		WebElement ok2 = driver.findElementById("button1");
 		ok2.click();
 		driver.navigate().back();
 	}
-	**/
+
 }
 

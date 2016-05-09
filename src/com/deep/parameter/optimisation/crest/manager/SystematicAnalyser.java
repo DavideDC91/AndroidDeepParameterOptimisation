@@ -142,6 +142,7 @@ public class SystematicAnalyser {
 								long startTime = System.nanoTime();
 								tl.executeTest(new_versions.get(version_number).getApk_name());
 								long endTime = System.nanoTime();
+								openApp();
 								cpu_info = am.getCpuInfo();
 								memory_used = am.getMemInfo().split("\\s+");
 								log.writeLog("dumpsys memInfo", memory_used.toString());
@@ -160,7 +161,7 @@ public class SystematicAnalyser {
 										new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 										new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
 										new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
-									} catch(ArrayIndexOutOfBoundsException e){
+									} catch(Exception e){
 										new_versions.get(version_number).setCpu_pct(0);
 										new_versions.get(version_number).setCpu_time(0);
 										new_versions.get(version_number).setUser_pct(0);
@@ -171,7 +172,7 @@ public class SystematicAnalyser {
 										new_versions.get(version_number).setHeap_size(Long.parseLong(memory_used[7]));
 										new_versions.get(version_number).setHeap_alloc(Long.parseLong(memory_used[8]));
 										new_versions.get(version_number).setHeap_free(Long.parseLong(memory_used[9]));
-									} catch(ArrayIndexOutOfBoundsException e){
+									} catch(Exception e){
 										new_versions.get(version_number).setHeap_size(0);
 										new_versions.get(version_number).setHeap_alloc(0);
 										new_versions.get(version_number).setHeap_free(0);
@@ -387,6 +388,13 @@ public class SystematicAnalyser {
 		log.writeLog("adb install", output);
 	}
 
+	private void openApp() {
+		// TODO Auto-generated method stub
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "monkey", "-p", pkg, "-c", "android.intent.category.LAUNCHER", "1"));
+		String output = cmd.executeCommand(dir);
+		log.writeLog("adb shell monkey ", output);
+	}
+	
 	/**
 	 * This method loads the path from the config file
 	 */

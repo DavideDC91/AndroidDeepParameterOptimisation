@@ -225,6 +225,7 @@ public class StochasticAnalyser {
 				long startTime = System.nanoTime();
 				tl.executeTest(temp_versions.get(j).getApk_name());
 				long endTime = System.nanoTime();
+				openApp();
 				cpu_info = am.getCpuInfo();
 				memory_used = am.getMemInfo().split("\\s+");
 				log.writeLog("dumpsys memInfo", memory_used.toString());
@@ -240,7 +241,7 @@ public class StochasticAnalyser {
 						new_version.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 						new_version.setUser_pct(Double.parseDouble(cpu_used[4]));
 						new_version.setSystem_pct(Double.parseDouble(cpu_used[7]));
-					} catch(ArrayIndexOutOfBoundsException e){
+					} catch(Exception e){
 						new_version.setCpu_pct(0);
 						new_version.setCpu_time(0);
 						new_version.setUser_pct(0);
@@ -250,7 +251,7 @@ public class StochasticAnalyser {
 						new_version.setHeap_size(Long.parseLong(memory_used[7]));
 						new_version.setHeap_alloc(Long.parseLong(memory_used[8]));
 						new_version.setHeap_free(Long.parseLong(memory_used[9]));
-					} catch(ArrayIndexOutOfBoundsException e){
+					} catch(Exception e){
 						new_version.setHeap_size(0);
 						new_version.setHeap_alloc(0);
 						new_version.setHeap_free(0);
@@ -454,6 +455,13 @@ public class StochasticAnalyser {
 		log.writeLog("adb install", output);
 	}
 
+	private void openApp() {
+		// TODO Auto-generated method stub
+		cmd = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "monkey", "-p", pkg, "-c", "android.intent.category.LAUNCHER", "1"));
+		String output = cmd.executeCommand(dir);
+		log.writeLog("adb shell monkey ", output);
+	}
+	
 	/**
 	 * This method loads the path from the config file
 	 */

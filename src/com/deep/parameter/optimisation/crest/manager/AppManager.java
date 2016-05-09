@@ -205,9 +205,9 @@ public class AppManager {
 		long startTime = System.nanoTime();
 		tl.executeTest("Original apk");
 		long endTime = System.nanoTime();
-		openApp();
-		memory_used = getMemInfo().split("\\s+");
+		//openApp();
 		cpu_info = getCpuInfo();
+		memory_used = getMemInfo().split("\\s+");
 		log.writeLog("dumpsys memInfo", memory_used.toString());
 		log.writeLog("dumpsys cpuInfo", cpu_info.toString());
 		long duration = (endTime - startTime)/1000000;
@@ -218,7 +218,7 @@ public class AppManager {
 		} else {
 			original.setExecution_time(duration);
 			try{
-				original.setCpu_pct(Double.parseDouble(cpu_used[2]));
+				original.setCpu_pct(Double.parseDouble(cpu_used[2].replace("+", "")));
 				original.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 				original.setUser_pct(Double.parseDouble(cpu_used[4]));
 				original.setSystem_pct(Double.parseDouble(cpu_used[7]));
@@ -306,7 +306,7 @@ public class AppManager {
 				long startTime = System.nanoTime();
 				tl.executeTest(apk);
 				long endTime = System.nanoTime();
-				openApp();
+				//openApp();
 				cpu_info = getCpuInfo();
 				memory_used = getMemInfo().split("\\s+");
 				log.writeLog("dumpsys memInfo", memory_used.toString());
@@ -321,7 +321,7 @@ public class AppManager {
 					cpu_used = cpu_info.split(" ");
 					mutant.setExecution_time(duration);
 					try{
-						mutant.setCpu_pct(Double.parseDouble(cpu_used[2]));
+						mutant.setCpu_pct(Double.parseDouble(cpu_used[2].replace("+", "")));
 						mutant.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
 						mutant.setUser_pct(Double.parseDouble(cpu_used[4]));
 						mutant.setSystem_pct(Double.parseDouble(cpu_used[7]));
@@ -378,6 +378,7 @@ public class AppManager {
 			}
 		}
 		cpu_info = cpu_info.replace("%", "");
+		System.out.println(cpu_info);
 		return cpu_info;
 	}
 
@@ -397,6 +398,7 @@ public class AppManager {
 				break;
 			}
 		}
+		System.out.println(mem_info);
 		return mem_info;
 	}
 
