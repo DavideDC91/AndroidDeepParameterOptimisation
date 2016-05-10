@@ -271,7 +271,7 @@ public class AppManager {
 		output = cmd.executeCommand(dir);
 		while(!output.contains(device)){
 			try {
-				TimeUnit.SECONDS.sleep(20);
+				TimeUnit.SECONDS.sleep(40);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

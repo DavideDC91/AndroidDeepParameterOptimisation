@@ -41,7 +41,7 @@ public class MultiExecutionLauncher {
 		String output = cmd.executeCommand("SignApk");
 
 
-		Thread thread = new Thread("android-timetracker Thread") {
+		Thread timetracker_thread = new Thread("android-timetracker Thread") {
 			public void run(){
 				System.out.println("run by: " + getName());
 				String dir= "android-timetracker"; // app dir
@@ -53,7 +53,7 @@ public class MultiExecutionLauncher {
 			}
 		};
 
-		Thread thread2 = new Thread("FillUp Thread") {
+		Thread fillup_thread = new Thread("FillUp Thread") {
 			public void run(){
 				System.out.println("run by: " + getName());
 				String dir= "FillUp"; // app dir
@@ -65,7 +65,7 @@ public class MultiExecutionLauncher {
 			}
 		};
 		
-		Thread thread3 = new Thread("WorldClockActivity Thread") {
+		Thread worldclock_thread = new Thread("WorldClockActivity Thread") {
 			public void run(){
 				System.out.println("run by: " + getName());
 				String dir= "WorldClockActivity"; // app dir
@@ -77,7 +77,7 @@ public class MultiExecutionLauncher {
 			}
 		};
 
-		Thread thread4 = new Thread("pmTextEdit Thread") {
+		Thread pmtext_thread = new Thread("pmTextEdit Thread") {
 			public void run(){
 				System.out.println("run by: " + getName());
 				String dir= "pmTextEdit"; // app dir
@@ -89,10 +89,10 @@ public class MultiExecutionLauncher {
 			}
 		};
 		
-		thread.start();
-		thread2.start();
-		thread3.start();
-		//thread4.start();
+		timetracker_thread.start();
+		fillup_thread.start();
+		worldclock_thread.start();
+		pmtext_thread.start();
 
 	}
 
@@ -117,7 +117,12 @@ public class MultiExecutionLauncher {
 				AppManager dc= new AppManager(dir, device, "Reports/"+report_dir_name, init, increment, maximum, cycles, max, test_pkg);
 				dc.setUp();
 				dc.calculateCoverage();
-				//dc.mutationAnalysis(only_mutants,systematic_analysis);
+				try {
+					dc.mutationAnalysis(only_mutants,systematic_analysis);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		} 
 	}

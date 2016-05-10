@@ -145,7 +145,7 @@ public class StochasticAnalyser {
 						output = cmd.executeCommand(dir);
 						while(!output.contains(device)){
 							try {
-								TimeUnit.SECONDS.sleep(20);
+								TimeUnit.SECONDS.sleep(40);
 							} catch (InterruptedException e) {
 								// TODO Auto-generated catch block
 								e.printStackTrace();
@@ -218,7 +218,7 @@ public class StochasticAnalyser {
 				output = cmd.executeCommand(dir);
 				while(!output.contains(device)){
 					try {
-						TimeUnit.SECONDS.sleep(20);
+						TimeUnit.SECONDS.sleep(40);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -416,6 +416,10 @@ public class StochasticAnalyser {
 						m.addAlteration(new Alteration(files.get(j), line, original_line, line_number,alteration_type));
 					}
 				}
+				in.close();
+				original_in.close();
+				reader.close();
+				original_reader.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

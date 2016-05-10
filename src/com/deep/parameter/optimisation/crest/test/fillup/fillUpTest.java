@@ -32,7 +32,7 @@ public class fillUpTest {
 		capabilities.setCapability("appPackage", "com.github.wdkapps.fillup");
 		capabilities.setCapability("appActivity", ".StartupActivity");
 		capabilities.setCapability("noReset", true);
-		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4410/wd/hub"), capabilities);
+		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4737/wd/hub"), capabilities);
 	}
 
 

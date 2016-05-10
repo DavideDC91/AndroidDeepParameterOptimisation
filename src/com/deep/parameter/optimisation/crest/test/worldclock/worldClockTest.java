@@ -32,7 +32,7 @@ public class worldClockTest {
 		capabilities.setCapability("appPackage", "com.irahul.worldclock");
 		capabilities.setCapability("appActivity", ".WorldClockActivity");
 		capabilities.setCapability("noReset", true);
-		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4385/wd/hub"), capabilities);
+		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4725/wd/hub"), capabilities);
 	}
 
 
@@ -60,7 +60,7 @@ public class worldClockTest {
 		el1 = driver.findElement(By.name("Save"));
 		el1.click();
 	}
-	
+
 	@Test
 	public void cancelAddZoneTest(){
 		if(!driver.findElementsById("dialog_filter_text").isEmpty()) {
@@ -80,7 +80,7 @@ public class worldClockTest {
 		el1 = driver.findElement(By.name("Cancel"));
 		el1.click();
 	}
-	
+
 	@Test
 	public void aboutTest(){
 		if(!driver.findElementsById("dialog_filter_text").isEmpty()) {
@@ -97,7 +97,7 @@ public class worldClockTest {
 		el1 = driver.findElement(By.name("OK"));
 		el1.click();
 	}
-	
+
 	@Test
 	public void AddZoneFromMenuTest(){
 		if(!driver.findElementsById("dialog_filter_text").isEmpty()) {
@@ -118,7 +118,7 @@ public class worldClockTest {
 		el1 = driver.findElement(By.name("Save"));
 		el1.click();
 	}
-	
+
 	@Test
 	public void removeZoneTest(){
 		if(!driver.findElementsById("dialog_filter_text").isEmpty()) {
@@ -130,14 +130,14 @@ public class worldClockTest {
 			el.click();
 		}
 		//if(!driver.findElementsByName("Europe/Rome (Central European Standard Time)").isEmpty()) {
-			WebElement el1 = driver.findElement(By.name("Add Zone"));
-			el1.click();
-			el1 = driver.findElementById("dialog_filter_text");
-			el1.sendKeys("rome");
-			el1 = driver.findElementById("dialog_list_icon");
-			el1.click();
-			el1 = driver.findElement(By.name("Save"));
-			el1.click();
+		WebElement el1 = driver.findElement(By.name("Add Zone"));
+		el1.click();
+		el1 = driver.findElementById("dialog_filter_text");
+		el1.sendKeys("rome");
+		el1 = driver.findElementById("dialog_list_icon");
+		el1.click();
+		el1 = driver.findElement(By.name("Save"));
+		el1.click();
 		//}
 		el1 = driver.findElement(By.name("Europe/Rome (Central European Standard Time)"));
 		TouchAction action = new TouchAction(driver);
@@ -145,7 +145,7 @@ public class worldClockTest {
 		el1 = driver.findElement(By.name("Remove"));
 		el1.click();
 	}
-	
+
 	@Test
 	public void editZoneTest(){
 		if(!driver.findElementsById("dialog_filter_text").isEmpty()) {
@@ -157,14 +157,14 @@ public class worldClockTest {
 			el.click();
 		}
 		//if(!driver.findElementsByName("Europe/Rome (Central European Standard Time)").isEmpty()) {
-			WebElement el1 = driver.findElement(By.name("Add Zone"));
-			el1.click();
-			el1 = driver.findElementById("dialog_filter_text");
-			el1.sendKeys("rome");
-			el1 = driver.findElementById("dialog_list_icon");
-			el1.click();
-			el1 = driver.findElement(By.name("Save"));
-			el1.click();
+		WebElement el1 = driver.findElement(By.name("Add Zone"));
+		el1.click();
+		el1 = driver.findElementById("dialog_filter_text");
+		el1.sendKeys("rome");
+		el1 = driver.findElementById("dialog_list_icon");
+		el1.click();
+		el1 = driver.findElement(By.name("Save"));
+		el1.click();
 		//}
 		el1 = driver.findElement(By.name("Europe/Rome (Central European Standard Time)"));
 		TouchAction action = new TouchAction(driver);
@@ -181,7 +181,7 @@ public class worldClockTest {
 		el1.sendKeys("Madrid Time Zone");
 		el1 = driver.findElement(By.name("Save"));
 		el1.click();
-		
+
 	}
 
 }

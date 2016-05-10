@@ -32,7 +32,7 @@ public class pmTextEditTest {
 		capabilities.setCapability("appPackage", "org.paulmach.textedit");
 		capabilities.setCapability("appActivity", ".pmTextEdit");
 		capabilities.setCapability("noReset", true);
-		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4420/wd/hub"), capabilities);
+		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4729/wd/hub"), capabilities);
 	}
 
 

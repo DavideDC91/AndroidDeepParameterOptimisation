@@ -28,14 +28,14 @@ public class timetrackerTest {
 		capabilities.setCapability("appPackage", "com.markuspage.android.atimetracker");
 		capabilities.setCapability("appActivity", ".Tasks");
 		capabilities.setCapability("noReset", true);
-		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4395/wd/hub"), capabilities);
+		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4727/wd/hub"), capabilities);
 	}
-	
+
 	@AfterClass
 	public static void tearDown() throws Exception {
 		driver.quit();
 	}
-	
+
 	@Test
 	public void addTaskTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -183,7 +183,7 @@ public class timetrackerTest {
 		done = driver.findElementById("button1");
 		done.click();
 	}
-	
+
 	@Test
 	public void exportCSVTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -199,7 +199,7 @@ public class timetrackerTest {
 		WebElement done = driver.findElementById("button1");
 		done.click();
 	}
-	
+
 	@Test
 	public void backupTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -215,7 +215,7 @@ public class timetrackerTest {
 		WebElement done = driver.findElementById("button1");
 		done.click();
 	}
-	
+
 	@Test
 	public void restoreBackupTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -231,7 +231,7 @@ public class timetrackerTest {
 		WebElement done = driver.findElementById("button1");
 		done.click();
 	}
-	
+
 	@Test
 	public void helpTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -283,7 +283,7 @@ public class timetrackerTest {
 		WebElement done = driver.findElementById("pref_accept");
 		done.click();
 	}
-	
+
 	@Test
 	public void showReportTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
@@ -300,7 +300,7 @@ public class timetrackerTest {
 		incr.click();
 		driver.navigate().back();
 	}
-	
+
 	@Test
 	public void exportTest(){
 		if(!driver.findElementsById("button1").isEmpty()) {
