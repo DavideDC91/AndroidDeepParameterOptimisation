@@ -1,0 +1,25 @@
+version: 2.0.3
+apkFileName: anstop-instrumented.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '4'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '10'
+  versionName: '1.5'
+sharedLibrary: false
+unknownFiles:
+  emma_ant.properties: '8'
+  emma_default.properties: '8'
+  com/vladium/emma/exceptions.properties: '8'
+  com/vladium/emma/run_usage.res: '8'
+  com/vladium/emma/data/merge_usage.res: '8'
+  com/vladium/emma/instr/instr_usage.res: '8'
+  com/vladium/emma/report/report_usage.res: '8'
+  com/vladium/emma/rt/RTExitHook.closure: '8'
+doNotCompress:
+- arsc

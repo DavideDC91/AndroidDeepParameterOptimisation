@@ -29,6 +29,7 @@ public class pmTextEditTest {
 		capabilities.setCapability("deviceName","091f4245");
 		capabilities.setCapability("udid","091f4245");
 		capabilities.setCapability("platformVersion", "4.4");
+		capabilities.setCapability("newCommandTimeout", "20");
 		capabilities.setCapability("appPackage", "org.paulmach.textedit");
 		capabilities.setCapability("appActivity", ".pmTextEdit");
 		capabilities.setCapability("noReset", true);

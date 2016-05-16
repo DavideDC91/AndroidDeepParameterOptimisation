@@ -29,6 +29,7 @@ public class worldClockTest {
 		capabilities.setCapability("deviceName","0a3500fb");
 		capabilities.setCapability("udid","0a3500fb");
 		capabilities.setCapability("platformVersion", "4.4");
+		capabilities.setCapability("newCommandTimeout", "20");
 		capabilities.setCapability("appPackage", "com.irahul.worldclock");
 		capabilities.setCapability("appActivity", ".WorldClockActivity");
 		capabilities.setCapability("noReset", true);
