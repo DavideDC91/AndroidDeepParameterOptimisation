@@ -25,6 +25,7 @@ public class timetrackerTest {
 		capabilities.setCapability("deviceName","0a2aa61a");
 		capabilities.setCapability("udid","0a2aa61a");
 		capabilities.setCapability("platformVersion", "4.4");
+		capabilities.setCapability("newCommandTimeout", "20");
 		capabilities.setCapability("appPackage", "com.markuspage.android.atimetracker");
 		capabilities.setCapability("appActivity", ".Tasks");
 		capabilities.setCapability("noReset", true);

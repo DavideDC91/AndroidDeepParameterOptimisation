@@ -29,6 +29,7 @@ public class fillUpTest {
 		capabilities.setCapability("deviceName","0a6996b3");
 		capabilities.setCapability("udid","0a6996b3");
 		capabilities.setCapability("platformVersion", "4.4");
+		capabilities.setCapability("newCommandTimeout", "20");
 		capabilities.setCapability("appPackage", "com.github.wdkapps.fillup");
 		capabilities.setCapability("appActivity", ".StartupActivity");
 		capabilities.setCapability("noReset", true);
