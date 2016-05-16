@@ -89,10 +89,10 @@ public class MultiExecutionLauncher {
 			}
 		};
 		
-		timetracker_thread.start();
-		fillup_thread.start();
-		worldclock_thread.start();
+		//timetracker_thread.start();
+		//fillup_thread.start();
 		pmtext_thread.start();
+		//worldclock_thread.start();
 
 	}
 
