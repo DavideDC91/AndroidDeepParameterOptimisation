@@ -29,14 +29,14 @@ public class GMDiceTest {
 		File classpathRoot = new File(System.getProperty("user.dir"));
 		File appDir = new File(classpathRoot, "../../../");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("deviceName","0ac20634");
-		capabilities.setCapability("udid","0ac20634");
+		capabilities.setCapability("deviceName","0a2aae66");
+		capabilities.setCapability("udid","0a2aae66");
 		capabilities.setCapability("platformVersion", "4.4");
 		capabilities.setCapability("newCommandTimeout", "20");
 		capabilities.setCapability("appPackage", "de.duenndns.gmdice");
 		capabilities.setCapability("appActivity", ".GameMasterDice");
 		capabilities.setCapability("noReset", true);
-		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4742/wd/hub"), capabilities);
 	}
 
 

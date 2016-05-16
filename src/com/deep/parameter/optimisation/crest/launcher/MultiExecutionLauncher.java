@@ -47,8 +47,8 @@ public class MultiExecutionLauncher {
 				String dir= "android-timetracker"; // app dir
 				String device = "0a2aa61a"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.timetracker";
-				boolean only_mutants = true;
-				boolean systematic_analysis = false;
+				boolean only_mutants = false;
+				boolean systematic_analysis = true;
 				SingleLaunch(dir,device,test_pkg, only_mutants, systematic_analysis);
 			}
 		};
@@ -71,7 +71,7 @@ public class MultiExecutionLauncher {
 				String dir= "WorldClockActivity"; // app dir
 				String device = "0a3500fb"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.worldclock";
-				boolean only_mutants = true;
+				boolean only_mutants = false;
 				boolean systematic_analysis = false;
 				SingleLaunch(dir,device,test_pkg, only_mutants, systematic_analysis);
 			}
@@ -89,11 +89,36 @@ public class MultiExecutionLauncher {
 			}
 		};
 		
+		Thread gmdice_thread = new Thread("gmdice Thread") {
+			public void run(){
+				System.out.println("run by: " + getName());
+				String dir= "gmdice"; // app dir
+				String device = "0a2aae66"; // device code
+				String test_pkg= "de.duenndns.gmdice";
+				boolean only_mutants = true;
+				boolean systematic_analysis = false;
+				SingleLaunch(dir,device,test_pkg, only_mutants, systematic_analysis);
+			}
+		};
+		
+		Thread sandwichroulette_thread = new Thread("sandwichroulette Thread") {
+			public void run(){
+				System.out.println("run by: " + getName());
+				String dir= "sandwichroulette"; // app dir
+				String device = "0a2a2496"; // device code
+				String test_pkg= "com.deep.parameter.optimisation.crest.test.sandwichroulette";
+				boolean only_mutants = true;
+				boolean systematic_analysis = false;
+				SingleLaunch(dir,device,test_pkg, only_mutants, systematic_analysis);
+			}
+		};
+		
 		//timetracker_thread.start();
 		//fillup_thread.start();
 		pmtext_thread.start();
 		//worldclock_thread.start();
-
+		sandwichroulette_thread.start();
+		gmdice_thread.start();
 	}
 
 	private static void SingleLaunch(String dir,String device,String test_pkg, boolean only_mutants, boolean systematic_analysis){

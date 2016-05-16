@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/widget46" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBox android:id="@id/motionCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/motion_checkbox" android:key="use_motion_sensor" />
-    <CheckBox android:enabled="true" android:id="@id/vibCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vibrate_checkbox" android:key="vibrate" />
-</LinearLayout>

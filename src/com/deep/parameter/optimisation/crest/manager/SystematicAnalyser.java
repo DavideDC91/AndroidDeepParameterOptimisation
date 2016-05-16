@@ -299,6 +299,8 @@ public class SystematicAnalyser {
 				out.write(data, 0, data.length);
 				out.flush();
 			}
+			in.close();
+			reader.close();
 			out.close();
 			cmd = new CommandManager(new ProcessBuilder("rm",file));
 			output = cmd.executeCommand(original_path);

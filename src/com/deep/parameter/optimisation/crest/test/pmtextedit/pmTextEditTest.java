@@ -10,6 +10,8 @@ import static org.junit.Assert.*;
 
 import java.io.File;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -34,6 +36,12 @@ public class pmTextEditTest {
 		capabilities.setCapability("appActivity", ".pmTextEdit");
 		capabilities.setCapability("noReset", true);
 		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4729/wd/hub"), capabilities);
+		try {
+			TimeUnit.SECONDS.sleep(3);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 
@@ -43,7 +51,7 @@ public class pmTextEditTest {
 	}
 
 	@Test
-	public void saveTextTest(){ ////rivedere
+	public void saveTextTest(){
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
 		WebElement el = driver.findElement(By.name("New File"));
 		el.click();

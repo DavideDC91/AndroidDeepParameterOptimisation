@@ -22,9 +22,9 @@ public class Launcher {
 		
 		// CONFIGURABLE PARAMETERS
 		
-		String dir= "gmdice"; // app dir
-		String device = "0ac20634"; // device code
-		String test_pkg= "com.deep.parameter.optimisation.crest.test.gmdice";
+		String dir= "sandwichroulette"; // app dir
+		String device = "0a2a2496"; // device code
+		String test_pkg= "com.deep.parameter.optimisation.crest.test.sandwichroulette";
 		boolean only_mutants = false; // Set on true to execute only mutants without any analysis
 		boolean systematic_analysis = false; // Set on true for systematic analysis on false for stochastic analysis
 	
