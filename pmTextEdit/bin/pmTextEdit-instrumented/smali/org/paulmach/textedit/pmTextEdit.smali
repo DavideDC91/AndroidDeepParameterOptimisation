@@ -1205,7 +1205,7 @@
     :cond_1
     const/16 v4, 0x22
 
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v2, v2, 0x51
 
     invoke-virtual {p0, v4, v2}, Ljava/lang/String;->indexOf(II)I
 
@@ -1590,7 +1590,7 @@
 
     aput-boolean v8, v2, v7
 
-    if-eqz v6, :cond_4
+    if-nez v6, :cond_4
 
     .line 808
     const-string v6, "filename-quotes"
@@ -1754,7 +1754,7 @@
 
     invoke-virtual {v3}, Landroid/widget/EditText;->requestFocus()Z
 
-    const/16 v3, 0x19
+    const/16 v3, 0x1a
 
     const/4 v6, 0x1
 
@@ -1926,7 +1926,7 @@
 
     move-result v3
 
-    add-int/2addr v3, v0
+    sub-int/2addr v3, v0
 
     invoke-virtual {v1, v0, v3}, Landroid/widget/EditText;->setSelection(II)V
 
@@ -2731,7 +2731,7 @@
 
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
-    const/16 v1, 0xd
+    const/16 v1, 0xe
 
     aput-boolean v8, v3, v1
 
@@ -4557,7 +4557,7 @@
 
     aput-boolean v4, v0, v2
 
-    if-eqz v1, :cond_3
+    if-nez v1, :cond_3
 
     .line 1554
     invoke-virtual {p0, v6}, Lorg/paulmach/textedit/pmTextEdit;->showDialog(I)V
@@ -5582,7 +5582,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/EditText;->setSelection(II)V
 
-    const/16 v1, 0x33
+    const/16 v1, 0x34
 
     aput-boolean v4, v0, v1
 
@@ -5722,7 +5722,7 @@
     .line 959
     iput-boolean v5, p0, Lorg/paulmach/textedit/pmTextEdit;->backFromFileBrowser:Z
 
-    const/16 v1, 0x23
+    const/16 v1, 0x24
 
     aput-boolean v4, v0, v1
 
@@ -7131,7 +7131,7 @@
 
     .line 459
     :cond_2
-    const/4 v2, 0x1
+    const/4 v2, -0x5
 
     :try_start_2
     iput v2, p0, Lorg/paulmach/textedit/pmTextEdit;->fileformat:I
@@ -8121,7 +8121,7 @@
     .line 618
     aput-boolean v1, v3, v9
 
-    if-eqz v0, :cond_6
+    if-nez v0, :cond_6
 
     .line 619
     sget-object v0, Lorg/paulmach/textedit/pmTextEdit;->title:Landroid/widget/TextView;

@@ -709,7 +709,7 @@
 
     const-string v2, "AS"
 
-    const/16 v3, 0xb
+    const/16 v3, 0x5b
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -1248,7 +1248,7 @@
 
     const-string v2, "DM"
 
-    const/16 v3, 0x3c
+    const/16 v3, 0x3d
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -1941,7 +1941,7 @@
 
     const-string v2, "KW"
 
-    const/16 v3, 0x7b
+    const/16 v3, 0xbc
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -1963,7 +1963,7 @@
 
     const-string v2, "KZ"
 
-    const/16 v3, 0x7d
+    const/16 v3, 0x7e
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -2315,7 +2315,7 @@
 
     const-string v2, "MX"
 
-    const/16 v3, 0x9d
+    const/16 v3, 0xc4
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -2678,7 +2678,7 @@
 
     const-string v2, "RS"
 
-    const/16 v3, 0xbe
+    const/16 v3, 0xbf
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -3283,7 +3283,7 @@
 
     const-string v2, "YE"
 
-    const/16 v3, 0xf5
+    const/16 v3, 0xf6
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 

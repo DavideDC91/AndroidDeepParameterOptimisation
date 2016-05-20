@@ -496,7 +496,7 @@
     invoke-interface {v4, v5}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 160
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v0, v0, 0x4a
 
     const/4 v1, 0x2
 

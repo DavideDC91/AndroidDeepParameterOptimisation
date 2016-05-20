@@ -37,7 +37,7 @@ public class pmTextEditTest {
 		capabilities.setCapability("noReset", true);
 		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4729/wd/hub"), capabilities);
 		try {
-			TimeUnit.SECONDS.sleep(3);
+			TimeUnit.SECONDS.sleep(10);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -37,6 +37,12 @@ public class GMDiceTest {
 		capabilities.setCapability("appActivity", ".GameMasterDice");
 		capabilities.setCapability("noReset", true);
 		driver = new AndroidDriver<>(new URL("http://0.0.0.0:4742/wd/hub"), capabilities);
+		try {
+			TimeUnit.SECONDS.sleep(10);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 
@@ -109,12 +115,6 @@ public class GMDiceTest {
 	
 	@Test
 	public void devAboutTest(){
-		try {
-			TimeUnit.SECONDS.sleep(5);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.MENU);
 		WebElement el1 = driver.findElementByName("About...");
 		el1.click();

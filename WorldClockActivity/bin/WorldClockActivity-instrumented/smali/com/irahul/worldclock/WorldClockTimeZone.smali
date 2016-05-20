@@ -202,7 +202,7 @@
 
     sget-object v0, Lcom/irahul/worldclock/WorldClockTimeZone;->$VRc:[[Z
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
     invoke-static {}, Lcom/irahul/worldclock/WorldClockTimeZone;->$VRi()[[Z
 

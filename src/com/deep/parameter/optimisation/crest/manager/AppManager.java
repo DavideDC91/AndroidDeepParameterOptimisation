@@ -313,11 +313,11 @@ public class AppManager {
 				log.writeLog("dumpsys cpuInfo", cpu_info.toString());
 				long duration = (endTime - startTime)/1000000;
 				mutant = new Mutant(apk);
-				if(tl.getTestFailed()!=0){
-					killed_mutants.add(mutant);
-					killed_mutants_log.writeLog("Mutant "+(i+1), mutant.getApk_name());
-					System.out.println(dir+" Killed");
-				} else {
+				//if(tl.getTestFailed()!=0){
+					//killed_mutants.add(mutant);
+					//killed_mutants_log.writeLog("Mutant "+(i+1), mutant.getApk_name());
+					//System.out.println(dir+" Killed");
+				//} else {
 					cpu_used = cpu_info.split(" ");
 					mutant.setExecution_time(duration);
 					try{
@@ -343,7 +343,7 @@ public class AppManager {
 					survived_mutants.add(mutant);
 					survived_mutants_log.writeLog("Mutant "+(i+1), mutant.toString());
 					System.out.println(dir+" Survived");
-				}
+				//}
 			}
 		}
 		System.out.println(dir+" Mutation analysis done");

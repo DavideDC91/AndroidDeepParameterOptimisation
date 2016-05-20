@@ -996,7 +996,7 @@
 
     aput-boolean v4, v1, v0
 
-    if-nez v2, :cond_1
+    if-eqz v2, :cond_1
 
     .line 92
     invoke-direct {p0}, Lcom/irahul/worldclock/WorldClockActivity;->invokeAddZoneActivity()V
