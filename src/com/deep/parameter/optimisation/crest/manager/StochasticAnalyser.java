@@ -124,6 +124,9 @@ public class StochasticAnalyser {
 						}
 						int value_original = Integer.parseInt(ori_var[3].replace(t_original, ""), 16);
 						int v = 7-value_original;
+						if(v<=0){
+							v=1;
+						}
 						rand_num = rand.nextInt(v) + 1;
 						alts.get(z).setDeep(rand_num);
 					} else {
