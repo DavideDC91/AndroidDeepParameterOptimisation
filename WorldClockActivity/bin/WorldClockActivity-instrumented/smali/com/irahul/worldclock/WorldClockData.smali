@@ -794,7 +794,7 @@
     .prologue
     sget-object v0, Lcom/irahul/worldclock/WorldClockData;->$VRc:[[Z
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
     invoke-static {}, Lcom/irahul/worldclock/WorldClockData;->$VRi()[[Z
 

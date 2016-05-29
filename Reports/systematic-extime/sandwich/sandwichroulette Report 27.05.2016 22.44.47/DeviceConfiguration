@@ -1,0 +1,2883 @@
+
+
+**** android update ****
+
+Updated project.properties
+Updated local.properties
+Updated file ./build.xml
+Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
+
+
+**** ant clean ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: sandwichroulette
+  [gettype] Project Type: Application
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/gen
+[getlibpath] Library dependencies:
+[getlibpath] No Libraries
+   [subant] No sub-builds to iterate on
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+
+
+**** ant instrument ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: sandwichroulette
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.3
+     [echo] Resolving Build Target for sandwichroulette...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/rsObj
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/rsLibs
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/gen
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/classes
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for sandwichroulette...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'instrument'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 15 source files to /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/classes
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 3 warnings
+     [echo] Instrumenting classes from /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/classes...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/classes
+      [dex] input: /home/davide/android-sdk/tools/lib/emma_device.jar
+      [dex] Pre-Dexing /home/davide/android-sdk/tools/lib/emma_device.jar -> emma_device-c54bd04c2f76e0e56a7ebc2ed6b523ca.jar
+      [dex] Converting compiled files and external libraries into /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/classes.dex...
+       [dx] Merged dex #1 (35 defs/58.5KiB)
+       [dx] Merged dex #2 (297 defs/327.2KiB)
+       [dx] Result is 332 defs/462.8KiB. Took 0.8s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res
+   [crunch] To destination dir: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-hdpi/ic_copyleft.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-hdpi/ic_copyleft.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-hdpi/ic_copyleft.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-hdpi/icon.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-hdpi/icon.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-hdpi/icon.png: 95% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-hdpi/logo.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-hdpi/logo.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-hdpi/logo.png: 99% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-ldpi/ic_copyleft.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-ldpi/ic_copyleft.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-ldpi/ic_copyleft.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-ldpi/icon.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-ldpi/icon.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-ldpi/icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-ldpi/logo.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-ldpi/logo.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-ldpi/logo.png: 92% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-mdpi/ic_copyleft.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-mdpi/ic_copyleft.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-mdpi/ic_copyleft.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-mdpi/icon.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-mdpi/icon.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-mdpi/icon.png: 88% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-mdpi/logo.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-mdpi/logo.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-mdpi/logo.png: 95% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-xhdpi/ic_copyleft.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-xhdpi/ic_copyleft.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-xhdpi/ic_copyleft.png: 49% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-xhdpi/icon.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-xhdpi/icon.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-xhdpi/icon.png: 81% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/res/drawable-xhdpi/logo.png => /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-xhdpi/logo.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/res/drawable-xhdpi/logo.png: 99% size of source)
+   [crunch] Crunched 12 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating sandwichroulette-instrumented-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/sandwichroulette-instrumented.apk
+[propertyfile] Creating new property file: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/build.prop
+
+instrument:
+ [zipalign] Run cancelled: no changes to input file /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/sandwichroulette-instrumented-unaligned.apk
+     [echo] Instrumented Package: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/sandwichroulette-instrumented.apk
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/build.prop
+
+BUILD SUCCESSFUL
+Total time: 44 seconds
+
+
+**** ant installi ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+install:
+     [echo] Installing /home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/bin/sandwichroulette-instrumented.apk onto default emulator or device...
+     [exec] 1950 KB/s (762818 bytes in 0.381s)
+     [exec] 	pkg: /data/local/tmp/sandwichroulette-instrumented.apk
+     [exec] Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
+
+installi:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+
+
+**** apktool d ****
+
+I: Using Apktool 2.1.0 on sandwichroulette-instrumented.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building resources...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3098 KB/s (762643 bytes in 0.240s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@502313f7
+
+**** dumpsys cpuInfo ****
+
+  30 1770/com.maxfierke.sandwichroulette: 24 user + 5.7 kernel / faults: 17785 minor
+
+**** adb broadcast ****
+
+Broadcasting: Intent { act=com.qa.emma.COLLECT_COVERAGE }
+Broadcast completed: result=0
+
+
+**** adb push ****
+
+Android Debug Bridge version 1.0.32
+Revision 09a0d98bebce-android
+
+ -a                            - directs adb to listen on all interfaces for a connection
+ -d                            - directs command to the only connected USB device
+                                 returns an error if more than one USB device is present.
+ -e                            - directs command to the only running emulator.
+                                 returns an error if more than one emulator is running.
+ -s <specific device>          - directs command to the device or emulator with the given
+                                 serial number or qualifier. Overrides ANDROID_SERIAL
+                                 environment variable.
+ -p <product name or path>     - simple product name like 'sooner', or
+                                 a relative/absolute path to a product
+                                 out directory like 'out/target/product/sooner'.
+                                 If -p is not specified, the ANDROID_PRODUCT_OUT
+                                 environment variable is used, which must
+                                 be an absolute path.
+ -H                            - Name of adb server host (default: localhost)
+ -P                            - Port of adb server (default: 5037)
+ devices [-l]                  - list all connected devices
+                                 ('-l' will also list device qualifiers)
+ connect <host>[:<port>]       - connect to a device via TCP/IP
+                                 Port 5555 is used by default if no port number is specified.
+ disconnect [<host>[:<port>]]  - disconnect from a TCP/IP device.
+                                 Port 5555 is used by default if no port number is specified.
+                                 Using this command with no additional arguments
+                                 will disconnect from all connected TCP/IP devices.
+
+device commands:
+  adb push [-p] <local> <remote>
+                               - copy file/dir to device
+                                 ('-p' to display the transfer progress)
+  adb pull [-p] [-a] <remote> [<local>]
+                               - copy file/dir from device
+                                 ('-p' to display the transfer progress)
+                                 ('-a' means copy timestamp and mode)
+  adb sync [ <directory> ]     - copy host->device only if changed
+                                 (-l means list but don't copy)
+  adb shell                    - run remote shell interactively
+  adb shell <command>          - run remote shell command
+  adb emu <command>            - run emulator console command
+  adb logcat [ <filter-spec> ] - View device log
+  adb forward --list           - list all forward socket connections.
+                                 the format is a list of lines with the following format:
+                                    <serial> " " <local> " " <remote> "\n"
+  adb forward <local> <remote> - forward socket connections
+                                 forward specs are one of: 
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+                                   dev:<character device name>
+                                   jdwp:<process pid> (remote only)
+  adb forward --no-rebind <local> <remote>
+                               - same as 'adb forward <local> <remote>' but fails
+                                 if <local> is already forwarded
+  adb forward --remove <local> - remove a specific forward socket connection
+  adb forward --remove-all     - remove all forward socket connections
+  adb reverse --list           - list all reverse socket connections from device
+  adb reverse <remote> <local> - reverse socket connections
+                                 reverse specs are one of:
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+  adb reverse --norebind <remote> <local>
+                               - same as 'adb reverse <remote> <local>' but fails
+                                 if <remote> is already reversed.
+  adb reverse --remove <remote>
+                               - remove a specific reversed socket connection
+  adb reverse --remove-all     - remove all reversed socket connections from device
+  adb jdwp                     - list PIDs of processes hosting a JDWP transport
+  adb install [-lrtsdg] <file>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-g: grant all runtime permissions)
+  adb install-multiple [-lrtsdpg] <file...>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-p: partial application install)
+                                 (-g: grant all runtime permissions)
+  adb uninstall [-k] <package> - remove this app package from the device
+                                 ('-k' means keep the data and cache directories)
+  adb bugreport                - return all information from the device
+                                 that should be included in a bug report.
+
+  adb backup [-f <file>] [-apk|-noapk] [-obb|-noobb] [-shared|-noshared] [-all] [-system|-nosystem] [<packages...>]
+                               - write an archive of the device's data to <file>.
+                                 If no -f option is supplied then the data is written
+                                 to "backup.ab" in the current directory.
+                                 (-apk|-noapk enable/disable backup of the .apks themselves
+                                    in the archive; the default is noapk.)
+                                 (-obb|-noobb enable/disable backup of any installed apk expansion
+                                    (aka .obb) files associated with each application; the default
+                                    is noobb.)
+                                 (-shared|-noshared enable/disable backup of the device's
+                                    shared storage / SD card contents; the default is noshared.)
+                                 (-all means to back up all installed applications)
+                                 (-system|-nosystem toggles whether -all automatically includes
+                                    system applications; the default is to include system apps)
+                                 (<packages...> is the list of applications to be backed up.  If
+                                    the -all or -shared flags are passed, then the package
+                                    list is optional.  Applications explicitly given on the
+                                    command line will be included even if -nosystem would
+                                    ordinarily cause them to be omitted.)
+
+  adb restore <file>           - restore device contents from the <file> backup archive
+
+  adb disable-verity           - disable dm-verity checking on USERDEBUG builds
+  adb enable-verity            - re-enable dm-verity checking on USERDEBUG builds
+  adb keygen <file>            - generate adb public/private key. The private key is stored in <file>,
+                                 and the public key is stored in <file>.pub. Any existing files
+                                 are overwritten.
+  adb help                     - show this help message
+  adb version                  - show version num
+
+scripting:
+  adb wait-for-device          - block until device is online
+  adb start-server             - ensure that there is a server running
+  adb kill-server              - kill the server if it is running
+  adb get-state                - prints: offline | bootloader | device
+  adb get-serialno             - prints: <serial-number>
+  adb get-devpath              - prints: <device-path>
+  adb remount                  - remounts the /system, /vendor (if present) and /oem (if present) partitions on the device read-write
+  adb reboot [bootloader|recovery]
+                               - reboots the device, optionally into the bootloader or recovery program.
+  adb reboot sideload          - reboots the device into the sideload mode in recovery program (adb root required).
+  adb reboot sideload-auto-reboot
+                               - reboots into the sideload mode, then reboots automatically after the sideload regardless of the result.
+  adb sideload <file>          - sideloads the given package
+  adb root                     - restarts the adbd daemon with root permissions
+  adb unroot                   - restarts the adbd daemon without root permissions
+  adb usb                      - restarts the adbd daemon listening on USB
+  adb tcpip <port>             - restarts the adbd daemon listening on TCP on the specified port
+
+networking:
+  adb ppp <tty> [parameters]   - Run PPP over USB.
+ Note: you should not automatically start a PPP connection.
+ <tty> refers to the tty for PPP stream. Eg. dev:/dev/omap_csmi_tty1
+ [parameters] - Eg. defaultroute debug dump local notty usepeerdns
+
+adb sync notes: adb sync [ <directory> ]
+  <localdir> can be interpreted in several ways:
+
+  - If <directory> is not specified, /system, /vendor (if present), /oem (if present) and /data partitions will be updated.
+
+  - If it is "system", "vendor", "oem" or "data", only the corresponding partition
+    is updated.
+
+environment variables:
+  ADB_TRACE                    - Print debug information. A comma separated list of the following values
+                                 1 or all, adb, sockets, packets, rwx, usb, sync, sysdeps, transport, jdwp
+  ANDROID_SERIAL               - The serial number to connect to. -s takes priority over this if given.
+  ANDROID_LOG_TAGS             - When used with the logcat option, only these debug tags are printed.
+
+
+**** adb pull ****
+
+1191 KB/s (66351 bytes in 0.054s)
+
+
+**** java emma report ****
+
+EMMA: processing input files ...
+EMMA: 2 file(s) read and merged in 32 ms
+EMMA: writing [html] report to [/home/davide/git/AndroidDeepParameterOptimisation/sandwichroulette/coverage/index.html] ...
+
+
+**** ls ****
+
+cu
+et
+mem
+sandwichroulette-instrumented-0
+sandwichroulette-instrumented-0.apk
+sandwichroulette-instrumented-1
+sandwichroulette-instrumented-10
+sandwichroulette-instrumented-100
+sandwichroulette-instrumented-100.apk
+sandwichroulette-instrumented-101
+sandwichroulette-instrumented-101.apk
+sandwichroulette-instrumented-102
+sandwichroulette-instrumented-102.apk
+sandwichroulette-instrumented-103
+sandwichroulette-instrumented-103.apk
+sandwichroulette-instrumented-104
+sandwichroulette-instrumented-104.apk
+sandwichroulette-instrumented-105
+sandwichroulette-instrumented-105.apk
+sandwichroulette-instrumented-106
+sandwichroulette-instrumented-106.apk
+sandwichroulette-instrumented-107
+sandwichroulette-instrumented-107.apk
+sandwichroulette-instrumented-108
+sandwichroulette-instrumented-108.apk
+sandwichroulette-instrumented-109
+sandwichroulette-instrumented-109.apk
+sandwichroulette-instrumented-10.apk
+sandwichroulette-instrumented-110
+sandwichroulette-instrumented-110.apk
+sandwichroulette-instrumented-111
+sandwichroulette-instrumented-111.apk
+sandwichroulette-instrumented-112
+sandwichroulette-instrumented-112.apk
+sandwichroulette-instrumented-113
+sandwichroulette-instrumented-113.apk
+sandwichroulette-instrumented-114
+sandwichroulette-instrumented-114.apk
+sandwichroulette-instrumented-115
+sandwichroulette-instrumented-115.apk
+sandwichroulette-instrumented-116
+sandwichroulette-instrumented-116.apk
+sandwichroulette-instrumented-117
+sandwichroulette-instrumented-117.apk
+sandwichroulette-instrumented-12
+sandwichroulette-instrumented-12.apk
+sandwichroulette-instrumented-14
+sandwichroulette-instrumented-14.apk
+sandwichroulette-instrumented-15
+sandwichroulette-instrumented-15.apk
+sandwichroulette-instrumented-16
+sandwichroulette-instrumented-16.apk
+sandwichroulette-instrumented-17
+sandwichroulette-instrumented-17.apk
+sandwichroulette-instrumented-19
+sandwichroulette-instrumented-19.apk
+sandwichroulette-instrumented-1.apk
+sandwichroulette-instrumented-2
+sandwichroulette-instrumented-21
+sandwichroulette-instrumented-21.apk
+sandwichroulette-instrumented-22
+sandwichroulette-instrumented-22.apk
+sandwichroulette-instrumented-23
+sandwichroulette-instrumented-23.apk
+sandwichroulette-instrumented-24
+sandwichroulette-instrumented-24.apk
+sandwichroulette-instrumented-25
+sandwichroulette-instrumented-25.apk
+sandwichroulette-instrumented-26
+sandwichroulette-instrumented-26.apk
+sandwichroulette-instrumented-27
+sandwichroulette-instrumented-27.apk
+sandwichroulette-instrumented-28
+sandwichroulette-instrumented-28.apk
+sandwichroulette-instrumented-29
+sandwichroulette-instrumented-29.apk
+sandwichroulette-instrumented-2.apk
+sandwichroulette-instrumented-3
+sandwichroulette-instrumented-30
+sandwichroulette-instrumented-30.apk
+sandwichroulette-instrumented-31
+sandwichroulette-instrumented-31.apk
+sandwichroulette-instrumented-32
+sandwichroulette-instrumented-32.apk
+sandwichroulette-instrumented-33
+sandwichroulette-instrumented-33.apk
+sandwichroulette-instrumented-34
+sandwichroulette-instrumented-34.apk
+sandwichroulette-instrumented-36
+sandwichroulette-instrumented-36.apk
+sandwichroulette-instrumented-37
+sandwichroulette-instrumented-37.apk
+sandwichroulette-instrumented-38
+sandwichroulette-instrumented-38.apk
+sandwichroulette-instrumented-39
+sandwichroulette-instrumented-39.apk
+sandwichroulette-instrumented-3.apk
+sandwichroulette-instrumented-40
+sandwichroulette-instrumented-40.apk
+sandwichroulette-instrumented-41
+sandwichroulette-instrumented-41.apk
+sandwichroulette-instrumented-42
+sandwichroulette-instrumented-42.apk
+sandwichroulette-instrumented-43
+sandwichroulette-instrumented-43.apk
+sandwichroulette-instrumented-44
+sandwichroulette-instrumented-44.apk
+sandwichroulette-instrumented-45
+sandwichroulette-instrumented-45.apk
+sandwichroulette-instrumented-46
+sandwichroulette-instrumented-46.apk
+sandwichroulette-instrumented-47
+sandwichroulette-instrumented-47.apk
+sandwichroulette-instrumented-48
+sandwichroulette-instrumented-48.apk
+sandwichroulette-instrumented-49
+sandwichroulette-instrumented-49.apk
+sandwichroulette-instrumented-5
+sandwichroulette-instrumented-50
+sandwichroulette-instrumented-50.apk
+sandwichroulette-instrumented-51
+sandwichroulette-instrumented-51.apk
+sandwichroulette-instrumented-52
+sandwichroulette-instrumented-52.apk
+sandwichroulette-instrumented-53
+sandwichroulette-instrumented-53.apk
+sandwichroulette-instrumented-55
+sandwichroulette-instrumented-55.apk
+sandwichroulette-instrumented-56
+sandwichroulette-instrumented-56.apk
+sandwichroulette-instrumented-57
+sandwichroulette-instrumented-57.apk
+sandwichroulette-instrumented-58
+sandwichroulette-instrumented-58.apk
+sandwichroulette-instrumented-59
+sandwichroulette-instrumented-59.apk
+sandwichroulette-instrumented-5.apk
+sandwichroulette-instrumented-6
+sandwichroulette-instrumented-60
+sandwichroulette-instrumented-60.apk
+sandwichroulette-instrumented-61
+sandwichroulette-instrumented-61.apk
+sandwichroulette-instrumented-62
+sandwichroulette-instrumented-62.apk
+sandwichroulette-instrumented-63
+sandwichroulette-instrumented-63.apk
+sandwichroulette-instrumented-64
+sandwichroulette-instrumented-64.apk
+sandwichroulette-instrumented-65
+sandwichroulette-instrumented-65.apk
+sandwichroulette-instrumented-66
+sandwichroulette-instrumented-66.apk
+sandwichroulette-instrumented-67
+sandwichroulette-instrumented-67.apk
+sandwichroulette-instrumented-68
+sandwichroulette-instrumented-68.apk
+sandwichroulette-instrumented-69
+sandwichroulette-instrumented-69.apk
+sandwichroulette-instrumented-6.apk
+sandwichroulette-instrumented-7
+sandwichroulette-instrumented-70
+sandwichroulette-instrumented-70.apk
+sandwichroulette-instrumented-71
+sandwichroulette-instrumented-71.apk
+sandwichroulette-instrumented-72
+sandwichroulette-instrumented-72.apk
+sandwichroulette-instrumented-73
+sandwichroulette-instrumented-73.apk
+sandwichroulette-instrumented-74
+sandwichroulette-instrumented-74.apk
+sandwichroulette-instrumented-75
+sandwichroulette-instrumented-75.apk
+sandwichroulette-instrumented-76
+sandwichroulette-instrumented-76.apk
+sandwichroulette-instrumented-77
+sandwichroulette-instrumented-77.apk
+sandwichroulette-instrumented-78
+sandwichroulette-instrumented-78.apk
+sandwichroulette-instrumented-79
+sandwichroulette-instrumented-79.apk
+sandwichroulette-instrumented-7.apk
+sandwichroulette-instrumented-8
+sandwichroulette-instrumented-80
+sandwichroulette-instrumented-80.apk
+sandwichroulette-instrumented-81
+sandwichroulette-instrumented-81.apk
+sandwichroulette-instrumented-82
+sandwichroulette-instrumented-82.apk
+sandwichroulette-instrumented-83
+sandwichroulette-instrumented-83.apk
+sandwichroulette-instrumented-84
+sandwichroulette-instrumented-84.apk
+sandwichroulette-instrumented-85
+sandwichroulette-instrumented-85.apk
+sandwichroulette-instrumented-86
+sandwichroulette-instrumented-86.apk
+sandwichroulette-instrumented-87
+sandwichroulette-instrumented-87.apk
+sandwichroulette-instrumented-88
+sandwichroulette-instrumented-88.apk
+sandwichroulette-instrumented-89
+sandwichroulette-instrumented-89.apk
+sandwichroulette-instrumented-8.apk
+sandwichroulette-instrumented-9
+sandwichroulette-instrumented-90
+sandwichroulette-instrumented-90.apk
+sandwichroulette-instrumented-91
+sandwichroulette-instrumented-91.apk
+sandwichroulette-instrumented-92
+sandwichroulette-instrumented-92.apk
+sandwichroulette-instrumented-93
+sandwichroulette-instrumented-93.apk
+sandwichroulette-instrumented-94
+sandwichroulette-instrumented-94.apk
+sandwichroulette-instrumented-95
+sandwichroulette-instrumented-95.apk
+sandwichroulette-instrumented-96
+sandwichroulette-instrumented-96.apk
+sandwichroulette-instrumented-97
+sandwichroulette-instrumented-97.apk
+sandwichroulette-instrumented-98
+sandwichroulette-instrumented-98.apk
+sandwichroulette-instrumented-99
+sandwichroulette-instrumented-99.apk
+sandwichroulette-instrumented-9.apk
+systematc
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2774 KB/s (762641 bytes in 0.268s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2c9d74ad
+
+**** dumpsys cpuInfo ****
+
+  28 1769/com.maxfierke.sandwichroulette: 23 user + 4.7 kernel / faults: 17387 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2810 KB/s (762654 bytes in 0.265s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-100.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6200a5ee
+
+**** dumpsys cpuInfo ****
+
+  44 1812/com.maxfierke.sandwichroulette: 41 user + 3.1 kernel / faults: 4144 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2896 KB/s (762655 bytes in 0.257s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-101.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5fbeaf69
+
+**** dumpsys cpuInfo ****
+
+  33 1584/com.maxfierke.sandwichroulette: 30 user + 2.7 kernel / faults: 17371 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2605 KB/s (762656 bytes in 0.285s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-102.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@72d6a8ec
+
+**** dumpsys cpuInfo ****
+
+  28 1557/com.maxfierke.sandwichroulette: 23 user + 4.9 kernel / faults: 17800 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2990 KB/s (762657 bytes in 0.249s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-103.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@21b19257
+
+**** dumpsys cpuInfo ****
+
+  31 1563/com.maxfierke.sandwichroulette: 26 user + 4 kernel / faults: 17769 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2827 KB/s (762651 bytes in 0.263s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-104.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@621c13cb
+
+**** dumpsys cpuInfo ****
+
+  33 1574/com.maxfierke.sandwichroulette: 28 user + 4.4 kernel / faults: 17849 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2850 KB/s (762653 bytes in 0.261s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-105.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3bea848f
+
+**** dumpsys cpuInfo ****
+
+  30 1581/com.maxfierke.sandwichroulette: 25 user + 4.6 kernel / faults: 17777 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2821 KB/s (762655 bytes in 0.263s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-106.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@a8a59e3
+
+**** dumpsys cpuInfo ****
+
+  47 1581/com.maxfierke.sandwichroulette: 43 user + 3.3 kernel / faults: 4141 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2796 KB/s (762656 bytes in 0.266s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-107.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@49ce04d2
+
+**** dumpsys cpuInfo ****
+
+  30 1556/com.maxfierke.sandwichroulette: 26 user + 3.5 kernel / faults: 17814 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2967 KB/s (762654 bytes in 0.251s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-108.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2a868dea
+
+**** dumpsys cpuInfo ****
+
+  28 1579/com.maxfierke.sandwichroulette: 24 user + 3.9 kernel / faults: 12270 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2986 KB/s (762654 bytes in 0.249s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-109.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5822b07d
+
+**** dumpsys cpuInfo ****
+
+  47 1556/com.maxfierke.sandwichroulette: 46 user + 1.3 kernel / faults: 1831 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2824 KB/s (762653 bytes in 0.263s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-10.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1d9d0207
+
+**** dumpsys cpuInfo ****
+
+  29 1574/com.maxfierke.sandwichroulette: 26 user + 3.5 kernel / faults: 17420 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2806 KB/s (762655 bytes in 0.265s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-110.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1666bc82
+
+**** dumpsys cpuInfo ****
+
+  28 1558/com.maxfierke.sandwichroulette: 25 user + 2.9 kernel / faults: 17744 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2860 KB/s (762656 bytes in 0.260s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-111.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@778427df
+
+**** dumpsys cpuInfo ****
+
+  29 1569/com.maxfierke.sandwichroulette: 25 user + 3.8 kernel / faults: 17668 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2667 KB/s (762652 bytes in 0.279s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-112.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@39c702f2
+
+**** dumpsys cpuInfo ****
+
+  29 1555/com.maxfierke.sandwichroulette: 24 user + 4.4 kernel / faults: 17794 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2632 KB/s (762654 bytes in 0.282s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-113.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@429e6a3d
+
+**** dumpsys cpuInfo ****
+
+  36 1583/com.maxfierke.sandwichroulette: 31 user + 4.5 kernel / faults: 10098 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2783 KB/s (762654 bytes in 0.267s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-114.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@612f0384
+
+**** dumpsys cpuInfo ****
+
+  41 1564/com.maxfierke.sandwichroulette: 37 user + 3.8 kernel / faults: 18093 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2617 KB/s (762655 bytes in 0.284s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-115.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5d930f76
+
+**** dumpsys cpuInfo ****
+
+  36 1556/com.maxfierke.sandwichroulette: 32 user + 3.9 kernel / faults: 10103 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2769 KB/s (762655 bytes in 0.268s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-116.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@13c94135
+
+**** dumpsys cpuInfo ****
+
+  30 1557/com.maxfierke.sandwichroulette: 27 user + 3.1 kernel / faults: 17866 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2754 KB/s (762656 bytes in 0.270s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-117.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@14fc469f
+
+**** dumpsys cpuInfo ****
+
+  30 1577/com.maxfierke.sandwichroulette: 26 user + 3.2 kernel / faults: 17725 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2664 KB/s (762656 bytes in 0.279s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-12.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5c3748ab
+
+**** dumpsys cpuInfo ****
+
+  29 1550/com.maxfierke.sandwichroulette: 26 user + 3.6 kernel / faults: 17760 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2828 KB/s (762655 bytes in 0.263s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-14.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@709a2e6b
+
+**** dumpsys cpuInfo ****
+
+  31 1558/com.maxfierke.sandwichroulette: 25 user + 5.4 kernel / faults: 17766 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2538 KB/s (762656 bytes in 0.293s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-15.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6055c8a2
+
+**** dumpsys cpuInfo ****
+
+  38 1587/com.maxfierke.sandwichroulette: 33 user + 4.7 kernel / faults: 10227 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2885 KB/s (762653 bytes in 0.258s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-16.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@48993956
+
+**** dumpsys cpuInfo ****
+
+  30 1570/com.maxfierke.sandwichroulette: 26 user + 4 kernel / faults: 17716 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2676 KB/s (762652 bytes in 0.278s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-17.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@70d8868a
+
+**** dumpsys cpuInfo ****
+
+  31 1574/com.maxfierke.sandwichroulette: 28 user + 3 kernel / faults: 17729 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3101 KB/s (762651 bytes in 0.240s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-19.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4e50d51a
+
+**** dumpsys cpuInfo ****
+
+  30 1554/com.maxfierke.sandwichroulette: 26 user + 4.3 kernel / faults: 17319 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2872 KB/s (762642 bytes in 0.259s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2536ab1e
+
+**** dumpsys cpuInfo ****
+
+  28 1594/com.maxfierke.sandwichroulette: 24 user + 4.5 kernel / faults: 12344 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2770 KB/s (762654 bytes in 0.268s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-21.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@21949f08
+
+**** dumpsys cpuInfo ****
+
+  36 1564/com.maxfierke.sandwichroulette: 33 user + 3.3 kernel / faults: 12486 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2706 KB/s (762654 bytes in 0.275s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-22.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3ab9abd7
+
+**** dumpsys cpuInfo ****
+
+  30 1548/com.maxfierke.sandwichroulette: 26 user + 4.2 kernel / faults: 17770 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2545 KB/s (762653 bytes in 0.292s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-23.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7cdc23d3
+
+**** dumpsys cpuInfo ****
+
+  31 1561/com.maxfierke.sandwichroulette: 27 user + 4.1 kernel / faults: 17715 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2607 KB/s (762652 bytes in 0.285s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-24.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@541c551
+
+**** dumpsys cpuInfo ****
+
+  46 1561/com.maxfierke.sandwichroulette: 43 user + 2.7 kernel / faults: 4212 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2583 KB/s (762655 bytes in 0.288s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-25.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1b072093
+
+**** dumpsys cpuInfo ****
+
+  41 1554/com.maxfierke.sandwichroulette: 38 user + 3 kernel / faults: 18022 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2643 KB/s (762653 bytes in 0.281s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-26.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@416173d1
+
+**** dumpsys cpuInfo ****
+
+  29 1555/com.maxfierke.sandwichroulette: 26 user + 3.2 kernel / faults: 17765 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2804 KB/s (762656 bytes in 0.265s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-27.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@f5cfd11
+
+**** dumpsys cpuInfo ****
+
+  37 1575/com.maxfierke.sandwichroulette: 32 user + 4.1 kernel / faults: 10184 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2564 KB/s (762654 bytes in 0.290s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-28.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7c28c442
+
+**** dumpsys cpuInfo ****
+
+  30 1564/com.maxfierke.sandwichroulette: 27 user + 2.2 kernel / faults: 17634 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2663 KB/s (762655 bytes in 0.279s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-29.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7f9f537f
+
+**** dumpsys cpuInfo ****
+
+  25 1576/com.maxfierke.sandwichroulette: 20 user + 5.2 kernel / faults: 17223 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2636 KB/s (762641 bytes in 0.282s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7648fbed
+
+**** dumpsys cpuInfo ****
+
+  47 1591/com.maxfierke.sandwichroulette: 44 user + 2.5 kernel / faults: 1875 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2805 KB/s (762653 bytes in 0.265s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-30.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@bfa0128
+
+**** dumpsys cpuInfo ****
+
+  31 1589/com.maxfierke.sandwichroulette: 26 user + 4.4 kernel / faults: 17779 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2577 KB/s (762654 bytes in 0.288s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-31.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@514724e4
+
+**** dumpsys cpuInfo ****
+
+  31 1591/com.maxfierke.sandwichroulette: 25 user + 5.1 kernel / faults: 17821 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2735 KB/s (762654 bytes in 0.272s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-32.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7811a200
+
+**** dumpsys cpuInfo ****
+
+  33 1571/com.maxfierke.sandwichroulette: 29 user + 4.1 kernel / faults: 17319 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3017 KB/s (762651 bytes in 0.246s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-33.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1471fc6b
+
+**** dumpsys cpuInfo ****
+
+  31 1567/com.maxfierke.sandwichroulette: 26 user + 4.7 kernel / faults: 17782 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2847 KB/s (762655 bytes in 0.261s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-34.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@bbce44a
+
+**** dumpsys cpuInfo ****
+
+  36 1542/com.maxfierke.sandwichroulette: 33 user + 2.9 kernel / faults: 10099 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2697 KB/s (762653 bytes in 0.276s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-36.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@32b109aa
+
+**** dumpsys cpuInfo ****
+
+  30 1564/com.maxfierke.sandwichroulette: 26 user + 4.4 kernel / faults: 17769 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2676 KB/s (762653 bytes in 0.278s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-37.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@20c30483
+
+**** dumpsys cpuInfo ****
+
+  37 1569/com.maxfierke.sandwichroulette: 34 user + 3.1 kernel / faults: 7057 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2706 KB/s (762655 bytes in 0.275s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-38.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1463a99c
+
+**** dumpsys cpuInfo ****
+
+  30 1572/com.maxfierke.sandwichroulette: 25 user + 4.1 kernel / faults: 17837 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2709 KB/s (762659 bytes in 0.274s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-39.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6ca320ac
+
+**** dumpsys cpuInfo ****
+
+  30 1577/com.maxfierke.sandwichroulette: 26 user + 3.3 kernel / faults: 17824 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2684 KB/s (762643 bytes in 0.277s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@468a4a36
+
+**** dumpsys cpuInfo ****
+
+  40 1580/com.maxfierke.sandwichroulette: 36 user + 3.5 kernel / faults: 18088 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2775 KB/s (762654 bytes in 0.268s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-40.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5c074a44
+
+**** dumpsys cpuInfo ****
+
+  29 1572/com.maxfierke.sandwichroulette: 25 user + 4.3 kernel / faults: 17697 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2622 KB/s (762656 bytes in 0.284s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-41.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@126c2b89
+
+**** dumpsys cpuInfo ****
+
+  40 1561/com.maxfierke.sandwichroulette: 38 user + 2.8 kernel / faults: 7472 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2682 KB/s (762654 bytes in 0.277s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-42.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1baf7faf
+
+**** dumpsys cpuInfo ****
+
+  41 1595/com.maxfierke.sandwichroulette: 38 user + 3.6 kernel / faults: 7071 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2978 KB/s (762654 bytes in 0.250s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-43.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2444e883
+
+**** dumpsys cpuInfo ****
+
+  35 1583/com.maxfierke.sandwichroulette: 30 user + 4.8 kernel / faults: 17874 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2848 KB/s (762652 bytes in 0.261s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-44.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5872289d
+
+**** dumpsys cpuInfo ****
+
+  29 1549/com.maxfierke.sandwichroulette: 25 user + 4 kernel / faults: 17759 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2663 KB/s (762656 bytes in 0.279s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-45.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6811da87
+
+**** dumpsys cpuInfo ****
+
+  29 1590/com.maxfierke.sandwichroulette: 25 user + 3.6 kernel / faults: 17723 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2857 KB/s (762653 bytes in 0.260s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-46.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@29d5cbf6
+
+**** dumpsys cpuInfo ****
+
+  31 1562/com.maxfierke.sandwichroulette: 28 user + 3.3 kernel / faults: 17753 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2868 KB/s (762654 bytes in 0.259s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-47.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@78e1668
+
+**** dumpsys cpuInfo ****
+
+  31 1576/com.maxfierke.sandwichroulette: 27 user + 3 kernel / faults: 17792 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2789 KB/s (762655 bytes in 0.266s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-48.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4bed870d
+
+**** dumpsys cpuInfo ****
+
+  29 1569/com.maxfierke.sandwichroulette: 24 user + 4.8 kernel / faults: 17211 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2862 KB/s (762650 bytes in 0.260s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-49.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@454d6670
+
+**** dumpsys cpuInfo ****
+
+  29 1568/com.maxfierke.sandwichroulette: 26 user + 3.8 kernel / faults: 17779 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3576 KB/s (762651 bytes in 0.208s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-50.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@c0ddc21
+
+**** dumpsys cpuInfo ****
+
+  32 1588/com.maxfierke.sandwichroulette: 28 user + 3.8 kernel / faults: 17404 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3177 KB/s (762654 bytes in 0.234s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-51.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@b29252a
+
+**** dumpsys cpuInfo ****
+
+  32 1560/com.maxfierke.sandwichroulette: 29 user + 3.2 kernel / faults: 17438 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2820 KB/s (762652 bytes in 0.264s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-52.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@60d6a6ca
+
+**** dumpsys cpuInfo ****
+
+  30 1559/com.maxfierke.sandwichroulette: 26 user + 4 kernel / faults: 17745 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3175 KB/s (762656 bytes in 0.234s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-53.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@56a0d325
+
+**** dumpsys cpuInfo ****
+
+  30 1553/com.maxfierke.sandwichroulette: 25 user + 5 kernel / faults: 17770 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2858 KB/s (762654 bytes in 0.260s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-55.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3f8e3b32
+
+**** dumpsys cpuInfo ****
+
+  30 1558/com.maxfierke.sandwichroulette: 26 user + 3.5 kernel / faults: 17736 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2919 KB/s (762653 bytes in 0.255s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-56.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1408c9f0
+
+**** dumpsys cpuInfo ****
+
+  39 1576/com.maxfierke.sandwichroulette: 34 user + 4.6 kernel / faults: 18030 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2790 KB/s (762653 bytes in 0.266s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-57.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@c31bcf9
+
+**** dumpsys cpuInfo ****
+
+  30 1563/com.maxfierke.sandwichroulette: 26 user + 4.1 kernel / faults: 17788 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2620 KB/s (762656 bytes in 0.284s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-58.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2614fd92
+
+**** dumpsys cpuInfo ****
+
+  29 1562/com.maxfierke.sandwichroulette: 27 user + 1.5 kernel / faults: 17272 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2726 KB/s (762651 bytes in 0.273s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-59.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@9c71673
+
+**** dumpsys cpuInfo ****
+
+  41 1574/com.maxfierke.sandwichroulette: 37 user + 4.5 kernel / faults: 18076 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2600 KB/s (762646 bytes in 0.286s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3a462fdb
+
+**** dumpsys cpuInfo ****
+
+  29 1556/com.maxfierke.sandwichroulette: 26 user + 3.2 kernel / faults: 17759 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2799 KB/s (762659 bytes in 0.266s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-60.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6d71af81
+
+**** dumpsys cpuInfo ****
+
+  39 1602/com.maxfierke.sandwichroulette: 36 user + 3.1 kernel / faults: 18048 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2922 KB/s (762653 bytes in 0.254s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-61.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@48f2bb4f
+
+**** dumpsys cpuInfo ****
+
+  29 1559/com.maxfierke.sandwichroulette: 25 user + 4.2 kernel / faults: 17267 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2772 KB/s (762651 bytes in 0.268s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-62.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@519ff70b
+
+**** dumpsys cpuInfo ****
+
+  31 1577/com.maxfierke.sandwichroulette: 25 user + 5.8 kernel / faults: 17776 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2848 KB/s (762654 bytes in 0.261s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-63.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3e454ba4
+
+**** dumpsys cpuInfo ****
+
+  36 1567/com.maxfierke.sandwichroulette: 33 user + 2.9 kernel / faults: 17360 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2676 KB/s (762651 bytes in 0.278s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-64.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7f7e88e8
+
+**** dumpsys cpuInfo ****
+
+  40 1587/com.maxfierke.sandwichroulette: 37 user + 3.5 kernel / faults: 17554 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2877 KB/s (762654 bytes in 0.258s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-65.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@34d9187e
+
+**** dumpsys cpuInfo ****
+
+  27 1566/com.maxfierke.sandwichroulette: 23 user + 3.3 kernel / faults: 17315 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2583 KB/s (762654 bytes in 0.288s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-66.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@612ee781
+
+**** dumpsys cpuInfo ****
+
+  27 1566/com.maxfierke.sandwichroulette: 23 user + 3.9 kernel / faults: 17776 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2806 KB/s (762655 bytes in 0.265s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-67.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2aab6717
+
+**** dumpsys cpuInfo ****
+
+  30 1569/com.maxfierke.sandwichroulette: 26 user + 4 kernel / faults: 17340 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2842 KB/s (762654 bytes in 0.261s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-68.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@67a1be49
+
+**** dumpsys cpuInfo ****
+
+  27 1593/com.maxfierke.sandwichroulette: 24 user + 2.9 kernel / faults: 13691 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2800 KB/s (762654 bytes in 0.265s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-69.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@733acc6d
+
+**** dumpsys cpuInfo ****
+
+  30 1566/com.maxfierke.sandwichroulette: 25 user + 5 kernel / faults: 17319 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2768 KB/s (762654 bytes in 0.269s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-6.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6e21314d
+
+**** dumpsys cpuInfo ****
+
+  44 1570/com.maxfierke.sandwichroulette: 40 user + 4.2 kernel / faults: 7265 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2681 KB/s (762653 bytes in 0.277s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-70.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@47558933
+
+**** dumpsys cpuInfo ****
+
+  28 1566/com.maxfierke.sandwichroulette: 24 user + 4.5 kernel / faults: 17623 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2854 KB/s (762656 bytes in 0.260s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-71.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1c5fb7d8
+
+**** dumpsys cpuInfo ****
+
+  29 1570/com.maxfierke.sandwichroulette: 24 user + 4.5 kernel / faults: 17784 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2975 KB/s (762654 bytes in 0.250s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-72.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7679e9ed
+
+**** dumpsys cpuInfo ****
+
+  30 1574/com.maxfierke.sandwichroulette: 26 user + 3.6 kernel / faults: 17183 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3287 KB/s (762654 bytes in 0.226s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-73.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@76691c91
+
+**** dumpsys cpuInfo ****
+
+  30 1574/com.maxfierke.sandwichroulette: 27 user + 3.7 kernel / faults: 17710 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3238 KB/s (762654 bytes in 0.229s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-74.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2441233f
+
+**** dumpsys cpuInfo ****
+
+  45 1554/com.maxfierke.sandwichroulette: 41 user + 4.4 kernel / faults: 4247 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2540 KB/s (762655 bytes in 0.293s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-75.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6876754c
+
+**** dumpsys cpuInfo ****
+
+  31 1572/com.maxfierke.sandwichroulette: 27 user + 4.2 kernel / faults: 17877 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2859 KB/s (762655 bytes in 0.260s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-76.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2c9ecb5
+
+**** dumpsys cpuInfo ****
+
+  39 1571/com.maxfierke.sandwichroulette: 36 user + 3.3 kernel / faults: 18068 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2949 KB/s (762655 bytes in 0.252s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-77.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@62ea19e6
+
+**** dumpsys cpuInfo ****
+
+  40 1577/com.maxfierke.sandwichroulette: 36 user + 3.8 kernel / faults: 17533 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2913 KB/s (762655 bytes in 0.255s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-78.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1ad9a72f
+
+**** dumpsys cpuInfo ****
+
+  35 1576/com.maxfierke.sandwichroulette: 31 user + 4 kernel / faults: 17858 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2828 KB/s (762656 bytes in 0.263s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-79.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4549c2ad
+
+**** dumpsys cpuInfo ****
+
+  31 1576/com.maxfierke.sandwichroulette: 29 user + 2.7 kernel / faults: 17803 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2648 KB/s (762651 bytes in 0.281s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3bbfd96
+
+**** dumpsys cpuInfo ****
+
+  28 1583/com.maxfierke.sandwichroulette: 24 user + 4.1 kernel / faults: 17788 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2636 KB/s (762653 bytes in 0.282s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-80.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@424df99
+
+**** dumpsys cpuInfo ****
+
+  28 1565/com.maxfierke.sandwichroulette: 24 user + 3.8 kernel / faults: 17654 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2855 KB/s (762654 bytes in 0.260s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-81.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1a80026
+
+**** dumpsys cpuInfo ****
+
+  30 1587/com.maxfierke.sandwichroulette: 27 user + 3.1 kernel / faults: 17818 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3035 KB/s (762654 bytes in 0.245s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-82.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3809c885
+
+**** dumpsys cpuInfo ****
+
+  29 1583/com.maxfierke.sandwichroulette: 25 user + 4.3 kernel / faults: 17397 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3139 KB/s (762657 bytes in 0.237s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-83.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@e23ac2c
+
+**** dumpsys cpuInfo ****
+
+  29 1560/com.maxfierke.sandwichroulette: 25 user + 3.7 kernel / faults: 17818 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3116 KB/s (762654 bytes in 0.238s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-84.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6fb23648
+
+**** dumpsys cpuInfo ****
+
+  38 1557/com.maxfierke.sandwichroulette: 35 user + 3.3 kernel / faults: 10173 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2995 KB/s (762654 bytes in 0.248s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-85.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7584183d
+
+**** dumpsys cpuInfo ****
+
+  29 1586/com.maxfierke.sandwichroulette: 26 user + 3.1 kernel / faults: 17741 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2940 KB/s (762656 bytes in 0.253s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-86.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50a42ed6
+
+**** dumpsys cpuInfo ****
+
+  29 1579/com.maxfierke.sandwichroulette: 26 user + 3.1 kernel / faults: 17770 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2923 KB/s (762655 bytes in 0.254s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-87.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3b907305
+
+**** dumpsys cpuInfo ****
+
+  28 1565/com.maxfierke.sandwichroulette: 24 user + 4.1 kernel / faults: 17692 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2857 KB/s (762655 bytes in 0.260s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-88.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4bbf5424
+
+**** dumpsys cpuInfo ****
+
+  37 1591/com.maxfierke.sandwichroulette: 33 user + 3.5 kernel / faults: 10229 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2782 KB/s (762653 bytes in 0.267s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-89.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5df52839
+
+**** dumpsys cpuInfo ****
+
+  44 1574/com.maxfierke.sandwichroulette: 40 user + 3.6 kernel / faults: 7202 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2683 KB/s (762652 bytes in 0.277s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@42e60567
+
+**** dumpsys cpuInfo ****
+
+  31 1578/com.maxfierke.sandwichroulette: 27 user + 3.9 kernel / faults: 17786 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2778 KB/s (762653 bytes in 0.268s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-90.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1b80cfdc
+
+**** dumpsys cpuInfo ****
+
+  39 1583/com.maxfierke.sandwichroulette: 35 user + 3.8 kernel / faults: 17972 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2900 KB/s (762654 bytes in 0.256s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-91.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5610f69a
+
+**** dumpsys cpuInfo ****
+
+  40 1548/com.maxfierke.sandwichroulette: 36 user + 3.8 kernel / faults: 18095 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2585 KB/s (762654 bytes in 0.288s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-92.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@45b66a0
+
+**** dumpsys cpuInfo ****
+
+  28 1581/com.maxfierke.sandwichroulette: 24 user + 4.5 kernel / faults: 17637 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2986 KB/s (762653 bytes in 0.249s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-93.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@684c3af0
+
+**** dumpsys cpuInfo ****
+
+  28 1693/com.maxfierke.sandwichroulette: 23 user + 4.8 kernel / faults: 17357 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2873 KB/s (762653 bytes in 0.259s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-94.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7785d44e
+
+**** dumpsys cpuInfo ****
+
+  37 1570/com.maxfierke.sandwichroulette: 35 user + 2.9 kernel / faults: 17915 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2633 KB/s (762652 bytes in 0.282s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-95.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@61c909b9
+
+**** dumpsys cpuInfo ****
+
+  40 1557/com.maxfierke.sandwichroulette: 36 user + 3.5 kernel / faults: 17543 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2759 KB/s (762655 bytes in 0.269s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-96.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2fae9d7f
+
+**** dumpsys cpuInfo ****
+
+  44 1590/com.maxfierke.sandwichroulette: 41 user + 3 kernel / faults: 18610 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2937 KB/s (762654 bytes in 0.253s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-97.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@27b1bc29
+
+**** dumpsys cpuInfo ****
+
+  37 1560/com.maxfierke.sandwichroulette: 34 user + 2.7 kernel / faults: 8901 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3021 KB/s (762654 bytes in 0.246s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-98.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@23fbc9b2
+
+**** dumpsys cpuInfo ****
+
+  26 1579/com.maxfierke.sandwichroulette: 22 user + 4.4 kernel / faults: 17259 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2860 KB/s (762655 bytes in 0.260s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-99.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@46cbafa4
+
+**** dumpsys cpuInfo ****
+
+  28 1712/com.maxfierke.sandwichroulette: 24 user + 4.6 kernel / faults: 17271 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2694 KB/s (762653 bytes in 0.276s)
+	pkg: /data/local/tmp/sandwichroulette-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5e2c5eb8
+
+**** dumpsys cpuInfo ****
+
+  30 1666/com.maxfierke.sandwichroulette: 27 user + 2.8 kernel / faults: 17722 minor

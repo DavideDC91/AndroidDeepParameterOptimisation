@@ -1,0 +1,6167 @@
+
+
+**** apktool d FillUp-instrumented_2878.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_2878.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_3156.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_3156.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_3176.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_3176.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_3207.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_3207.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_46.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_46.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_474.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_474.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_4998.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_4998.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_515.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_515.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_597.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_597.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_7182.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_7182.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2878 KB/s (1211843 bytes in 0.411s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@707a8d1f
+
+**** dumpsys cpuInfo ****
+
+  40 1552/com.github.wdkapps.fillup: 37 user + 3.2 kernel / faults: 1083 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3226 KB/s (1211847 bytes in 0.366s)
+	pkg: /data/local/tmp/FillUp-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4c0fb313
+
+**** dumpsys cpuInfo ****
+
+  34 1566/com.github.wdkapps.fillup: 30 user + 3.9 kernel / faults: 1762 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3176 KB/s (1211849 bytes in 0.372s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5bddf63a
+
+**** dumpsys cpuInfo ****
+
+  37 1487/com.github.wdkapps.fillup: 33 user + 4.3 kernel / faults: 924 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3298 KB/s (1211851 bytes in 0.358s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4eeca47
+
+**** dumpsys cpuInfo ****
+
+  38 1565/com.github.wdkapps.fillup: 35 user + 3.6 kernel / faults: 1050 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3344 KB/s (1211838 bytes in 0.353s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@27bae53c
+
+**** dumpsys cpuInfo ****
+
+  39 1508/com.github.wdkapps.fillup: 35 user + 4.1 kernel / faults: 1048 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3155 KB/s (1211838 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@66f4017b
+
+**** dumpsys cpuInfo ****
+
+  39 1674/com.github.wdkapps.fillup: 37 user + 2.6 kernel / faults: 1059 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2926 KB/s (1211838 bytes in 0.404s)
+	pkg: /data/local/tmp/FillUp-instrumented-6.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@662211ca
+
+**** dumpsys cpuInfo ****
+
+  40 1563/com.github.wdkapps.fillup: 34 user + 5.4 kernel / faults: 1081 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3826 KB/s (1211838 bytes in 0.309s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@56788614
+
+**** dumpsys cpuInfo ****
+
+  37 1565/com.github.wdkapps.fillup: 34 user + 2.9 kernel / faults: 1065 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2665 KB/s (1211838 bytes in 0.443s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5785b0c0
+
+**** dumpsys cpuInfo ****
+
+  39 1614/com.github.wdkapps.fillup: 35 user + 3.8 kernel / faults: 1077 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3293 KB/s (1211843 bytes in 0.359s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@296b49a9
+
+**** dumpsys cpuInfo ****
+
+  32 1553/com.github.wdkapps.fillup: 29 user + 3 kernel / faults: 1861 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3320 KB/s (1211847 bytes in 0.356s)
+	pkg: /data/local/tmp/FillUp-instrumented-10.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3469b869
+
+**** dumpsys cpuInfo ****
+
+  39 1519/com.github.wdkapps.fillup: 35 user + 4 kernel / faults: 939 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3093 KB/s (1211844 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-11.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7d6452b5
+
+**** dumpsys cpuInfo ****
+
+  39 1570/com.github.wdkapps.fillup: 35 user + 4.4 kernel / faults: 1048 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3169 KB/s (1211845 bytes in 0.373s)
+	pkg: /data/local/tmp/FillUp-instrumented-12.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2bfbc299
+
+**** dumpsys cpuInfo ****
+
+  38 1585/com.github.wdkapps.fillup: 35 user + 3.2 kernel / faults: 1047 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3469 KB/s (1211850 bytes in 0.341s)
+	pkg: /data/local/tmp/FillUp-instrumented-13.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@742d98
+
+**** dumpsys cpuInfo ****
+
+  38 1546/com.github.wdkapps.fillup: 34 user + 4.4 kernel / faults: 1073 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3120 KB/s (1211850 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-14.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5f1e083e
+
+**** dumpsys cpuInfo ****
+
+  39 1490/com.github.wdkapps.fillup: 36 user + 2.9 kernel / faults: 1060 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3197 KB/s (1211848 bytes in 0.370s)
+	pkg: /data/local/tmp/FillUp-instrumented-15.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@31f7da8b
+
+**** dumpsys cpuInfo ****
+
+  38 1511/com.github.wdkapps.fillup: 34 user + 4.3 kernel / faults: 1039 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3144 KB/s (1211849 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-16.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@49e48822
+
+**** dumpsys cpuInfo ****
+
+  40 1517/com.github.wdkapps.fillup: 35 user + 4.7 kernel / faults: 1059 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3095 KB/s (1211850 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-17.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4dd81c00
+
+**** dumpsys cpuInfo ****
+
+  30 1539/com.github.wdkapps.fillup: 26 user + 3.9 kernel / faults: 1879 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3139 KB/s (1211851 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-18.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@29cb0396
+
+**** dumpsys cpuInfo ****
+
+  31 1509/com.github.wdkapps.fillup: 29 user + 2.1 kernel / faults: 1869 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3274 KB/s (1211852 bytes in 0.361s)
+	pkg: /data/local/tmp/FillUp-instrumented-19.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@625c773a
+
+**** dumpsys cpuInfo ****
+
+  38 1548/com.github.wdkapps.fillup: 34 user + 3.3 kernel / faults: 1085 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3124 KB/s (1211850 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-20.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1b607102
+
+**** dumpsys cpuInfo ****
+
+  42 1513/com.github.wdkapps.fillup: 37 user + 4.6 kernel / faults: 1505 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+FillUp-instrumented/smali/com/github/wdkapps/fillup/MainActivity.smali[1006,4] Invalid literal value: 8. Must be between -8 and 7, inclusive.
+Exception in thread "main" brut.androlib.AndrolibException: Could not smali file: com/github/wdkapps/fillup/MainActivity.smali
+	at brut.androlib.src.SmaliBuilder.buildFile(SmaliBuilder.java:67)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:51)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:38)
+	at brut.androlib.Androlib.buildSourcesSmali(Androlib.java:364)
+	at brut.androlib.Androlib.buildSources(Androlib.java:295)
+	at brut.androlib.Androlib.build(Androlib.java:278)
+	at brut.androlib.Androlib.build(Androlib.java:254)
+	at brut.apktool.Main.cmdBuild(Main.java:224)
+	at brut.apktool.Main.main(Main.java:84)
+
+
+**** Sign apk  ****
+
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3462 KB/s (1211850 bytes in 0.341s)
+	pkg: /data/local/tmp/FillUp-instrumented-22.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1766cacc
+
+**** dumpsys cpuInfo ****
+
+  39 1550/com.github.wdkapps.fillup: 34 user + 4.8 kernel / faults: 1047 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+FillUp-instrumented/smali/com/github/wdkapps/fillup/MainActivity.smali[1266,4] Invalid literal value: 8. Must be between -8 and 7, inclusive.
+Exception in thread "main" brut.androlib.AndrolibException: Could not smali file: com/github/wdkapps/fillup/MainActivity.smali
+	at brut.androlib.src.SmaliBuilder.buildFile(SmaliBuilder.java:67)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:51)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:38)
+	at brut.androlib.Androlib.buildSourcesSmali(Androlib.java:364)
+	at brut.androlib.Androlib.buildSources(Androlib.java:295)
+	at brut.androlib.Androlib.build(Androlib.java:278)
+	at brut.androlib.Androlib.build(Androlib.java:254)
+	at brut.apktool.Main.cmdBuild(Main.java:224)
+	at brut.apktool.Main.main(Main.java:84)
+
+
+**** Sign apk  ****
+
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3128 KB/s (1211854 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-24.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@18346ab8
+
+**** dumpsys cpuInfo ****
+
+  39 1514/com.github.wdkapps.fillup: 35 user + 4.2 kernel / faults: 1065 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3110 KB/s (1211852 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-25.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50f42518
+
+**** dumpsys cpuInfo ****
+
+  38 1514/com.github.wdkapps.fillup: 34 user + 4.1 kernel / faults: 1100 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3080 KB/s (1211853 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-26.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@42b11055
+
+**** dumpsys cpuInfo ****
+
+  37 1551/com.github.wdkapps.fillup: 33 user + 4 kernel / faults: 1039 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+FillUp-instrumented/smali/com/github/wdkapps/fillup/Units.smali[826,4] Invalid literal value: 8. Must be between -8 and 7, inclusive.
+Exception in thread "main" brut.androlib.AndrolibException: Could not smali file: com/github/wdkapps/fillup/Units.smali
+	at brut.androlib.src.SmaliBuilder.buildFile(SmaliBuilder.java:67)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:51)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:38)
+	at brut.androlib.Androlib.buildSourcesSmali(Androlib.java:364)
+	at brut.androlib.Androlib.buildSources(Androlib.java:295)
+	at brut.androlib.Androlib.build(Androlib.java:278)
+	at brut.androlib.Androlib.build(Androlib.java:254)
+	at brut.apktool.Main.cmdBuild(Main.java:224)
+	at brut.apktool.Main.main(Main.java:84)
+
+
+**** Sign apk  ****
+
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2874 KB/s (1211849 bytes in 0.411s)
+	pkg: /data/local/tmp/FillUp-instrumented-28.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@183e1b9a
+
+**** dumpsys cpuInfo ****
+
+  40 1496/com.github.wdkapps.fillup: 37 user + 3 kernel / faults: 1083 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3312 KB/s (1211854 bytes in 0.357s)
+	pkg: /data/local/tmp/FillUp-instrumented-29.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@60444ff9
+
+**** dumpsys cpuInfo ****
+
+  39 1559/com.github.wdkapps.fillup: 36 user + 3.1 kernel / faults: 1078 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3145 KB/s (1211854 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-30.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3478d060
+
+**** dumpsys cpuInfo ****
+
+  38 1534/com.github.wdkapps.fillup: 34 user + 4.2 kernel / faults: 1104 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3429 KB/s (1211853 bytes in 0.345s)
+	pkg: /data/local/tmp/FillUp-instrumented-31.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1a2e4469
+
+**** dumpsys cpuInfo ****
+
+  36 1659/com.github.wdkapps.fillup: 33 user + 3.5 kernel / faults: 956 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2772 KB/s (1211853 bytes in 0.426s)
+	pkg: /data/local/tmp/FillUp-instrumented-32.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@17628374
+
+**** dumpsys cpuInfo ****
+
+  40 1516/com.github.wdkapps.fillup: 34 user + 5.2 kernel / faults: 1048 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3387 KB/s (1211851 bytes in 0.349s)
+	pkg: /data/local/tmp/FillUp-instrumented-33.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@60659ee3
+
+**** dumpsys cpuInfo ****
+
+  39 1537/com.github.wdkapps.fillup: 36 user + 2.9 kernel / faults: 1061 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2799 KB/s (1211852 bytes in 0.422s)
+	pkg: /data/local/tmp/FillUp-instrumented-34.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@38e71621
+
+**** dumpsys cpuInfo ****
+
+  38 1533/com.github.wdkapps.fillup: 32 user + 5.4 kernel / faults: 1129 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3363 KB/s (1211854 bytes in 0.351s)
+	pkg: /data/local/tmp/FillUp-instrumented-35.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@cbc6a1c
+
+**** dumpsys cpuInfo ****
+
+  39 1496/com.github.wdkapps.fillup: 34 user + 5 kernel / faults: 1035 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2738 KB/s (1211854 bytes in 0.432s)
+	pkg: /data/local/tmp/FillUp-instrumented-36.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1078557a
+
+**** dumpsys cpuInfo ****
+
+  37 1540/com.github.wdkapps.fillup: 33 user + 3.6 kernel / faults: 980 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3137 KB/s (1211855 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-37.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@437f3dcc
+
+**** dumpsys cpuInfo ****
+
+  40 1542/com.github.wdkapps.fillup: 36 user + 3.3 kernel / faults: 953 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3101 KB/s (1211853 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-38.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@d5e9a65
+
+**** dumpsys cpuInfo ****
+
+  39 1531/com.github.wdkapps.fillup: 35 user + 3.8 kernel / faults: 962 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3095 KB/s (1211852 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-39.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1f1e86b2
+
+**** dumpsys cpuInfo ****
+
+  37 1483/com.github.wdkapps.fillup: 33 user + 4 kernel / faults: 1074 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3171 KB/s (1211852 bytes in 0.373s)
+	pkg: /data/local/tmp/FillUp-instrumented-40.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@379696ab
+
+**** dumpsys cpuInfo ****
+
+  37 1504/com.github.wdkapps.fillup: 34 user + 3.3 kernel / faults: 1062 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3550 KB/s (1211850 bytes in 0.333s)
+	pkg: /data/local/tmp/FillUp-instrumented-41.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1341743b
+
+**** dumpsys cpuInfo ****
+
+  38 1517/com.github.wdkapps.fillup: 33 user + 4.7 kernel / faults: 1060 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3019 KB/s (1211854 bytes in 0.391s)
+	pkg: /data/local/tmp/FillUp-instrumented-42.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3701aca7
+
+**** dumpsys cpuInfo ****
+
+  36 1623/com.github.wdkapps.fillup: 33 user + 3 kernel / faults: 973 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2964 KB/s (1211855 bytes in 0.399s)
+	pkg: /data/local/tmp/FillUp-instrumented-43.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3899c78
+
+**** dumpsys cpuInfo ****
+
+  37 1569/com.github.wdkapps.fillup: 33 user + 3.4 kernel / faults: 957 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3100 KB/s (1211852 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-44.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@31eea46f
+
+**** dumpsys cpuInfo ****
+
+  32 1551/com.github.wdkapps.fillup: 29 user + 2.8 kernel / faults: 1881 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3057 KB/s (1211852 bytes in 0.387s)
+	pkg: /data/local/tmp/FillUp-instrumented-45.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@a918d73
+
+**** dumpsys cpuInfo ****
+
+  38 1550/com.github.wdkapps.fillup: 34 user + 4.2 kernel / faults: 1057 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3080 KB/s (1211853 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-46.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@34df2158
+
+**** dumpsys cpuInfo ****
+
+  39 1549/com.github.wdkapps.fillup: 35 user + 4.2 kernel / faults: 1049 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2924 KB/s (1211853 bytes in 0.404s)
+	pkg: /data/local/tmp/FillUp-instrumented-47.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2948c407
+
+**** dumpsys cpuInfo ****
+
+  38 1514/com.github.wdkapps.fillup: 33 user + 4.6 kernel / faults: 1060 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3374 KB/s (1211853 bytes in 0.350s)
+	pkg: /data/local/tmp/FillUp-instrumented-48.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7eaa5027
+
+**** dumpsys cpuInfo ****
+
+  35 1513/com.github.wdkapps.fillup: 31 user + 3.6 kernel / faults: 1822 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3119 KB/s (1211851 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-49.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@59ecc9b5
+
+**** dumpsys cpuInfo ****
+
+  38 1507/com.github.wdkapps.fillup: 33 user + 4.3 kernel / faults: 946 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3150 KB/s (1211853 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-50.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1a0170c0
+
+**** dumpsys cpuInfo ****
+
+  31 1494/com.github.wdkapps.fillup: 29 user + 2.3 kernel / faults: 1870 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3160 KB/s (1211853 bytes in 0.374s)
+	pkg: /data/local/tmp/FillUp-instrumented-51.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@c7ad4b
+
+**** dumpsys cpuInfo ****
+
+  46 1655/com.github.wdkapps.fillup: 42 user + 3.8 kernel / faults: 1157 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2955 KB/s (1211854 bytes in 0.400s)
+	pkg: /data/local/tmp/FillUp-instrumented-52.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3cbd6475
+
+**** dumpsys cpuInfo ****
+
+  39 1564/com.github.wdkapps.fillup: 33 user + 5.5 kernel / faults: 1098 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3014 KB/s (1211853 bytes in 0.392s)
+	pkg: /data/local/tmp/FillUp-instrumented-53.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2111bda0
+
+**** dumpsys cpuInfo ****
+
+  38 1520/com.github.wdkapps.fillup: 36 user + 2.6 kernel / faults: 1057 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3326 KB/s (1211852 bytes in 0.355s)
+	pkg: /data/local/tmp/FillUp-instrumented-54.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7e63b8f
+
+**** dumpsys cpuInfo ****
+
+  32 1534/com.github.wdkapps.fillup: 28 user + 4.1 kernel / faults: 1879 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3146 KB/s (1211854 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-55.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5c434f89
+
+**** dumpsys cpuInfo ****
+
+  31 1576/com.github.wdkapps.fillup: 29 user + 2.2 kernel / faults: 1884 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3076 KB/s (1211851 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-56.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2ed2711c
+
+**** dumpsys cpuInfo ****
+
+  40 1545/com.github.wdkapps.fillup: 35 user + 4.2 kernel / faults: 1048 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3325 KB/s (1211854 bytes in 0.355s)
+	pkg: /data/local/tmp/FillUp-instrumented-57.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3371512a
+
+**** dumpsys cpuInfo ****
+
+  37 1542/com.github.wdkapps.fillup: 34 user + 2.6 kernel / faults: 1061 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3148 KB/s (1211854 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-58.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@48de7ae2
+
+**** dumpsys cpuInfo ****
+
+  38 1550/com.github.wdkapps.fillup: 35 user + 2.8 kernel / faults: 991 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3032 KB/s (1211852 bytes in 0.390s)
+	pkg: /data/local/tmp/FillUp-instrumented-59.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4d866602
+
+**** dumpsys cpuInfo ****
+
+  32 1489/com.github.wdkapps.fillup: 30 user + 2.2 kernel / faults: 1932 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3768 KB/s (1211853 bytes in 0.314s)
+	pkg: /data/local/tmp/FillUp-instrumented-60.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3651498e
+
+**** dumpsys cpuInfo ****
+
+  38 1506/com.github.wdkapps.fillup: 36 user + 2.4 kernel / faults: 1083 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3070 KB/s (1211854 bytes in 0.385s)
+	pkg: /data/local/tmp/FillUp-instrumented-61.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@55facd40
+
+**** dumpsys cpuInfo ****
+
+  34 1492/com.github.wdkapps.fillup: 30 user + 4.1 kernel / faults: 1807 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3100 KB/s (1211853 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-62.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4e7c396f
+
+**** dumpsys cpuInfo ****
+
+  32 1618/com.github.wdkapps.fillup: 30 user + 1.7 kernel / faults: 1881 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2787 KB/s (1211851 bytes in 0.424s)
+	pkg: /data/local/tmp/FillUp-instrumented-63.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@367dcdf8
+
+**** dumpsys cpuInfo ****
+
+  37 1583/com.github.wdkapps.fillup: 33 user + 4.2 kernel / faults: 979 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3162 KB/s (1211856 bytes in 0.374s)
+	pkg: /data/local/tmp/FillUp-instrumented-64.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@45252857
+
+**** dumpsys cpuInfo ****
+
+  38 1542/com.github.wdkapps.fillup: 34 user + 3.9 kernel / faults: 1034 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3110 KB/s (1211850 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-65.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3be70eeb
+
+**** dumpsys cpuInfo ****
+
+  33 1526/com.github.wdkapps.fillup: 29 user + 3.7 kernel / faults: 1804 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3148 KB/s (1211851 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-66.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@479ba09f
+
+**** dumpsys cpuInfo ****
+
+  37 1509/com.github.wdkapps.fillup: 34 user + 3 kernel / faults: 1034 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3339 KB/s (1211853 bytes in 0.354s)
+	pkg: /data/local/tmp/FillUp-instrumented-67.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4679d688
+
+**** dumpsys cpuInfo ****
+
+  32 1540/com.github.wdkapps.fillup: 28 user + 4.2 kernel / faults: 2026 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2986 KB/s (1211850 bytes in 0.396s)
+	pkg: /data/local/tmp/FillUp-instrumented-68.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@f3fc2ad
+
+**** dumpsys cpuInfo ****
+
+  39 1508/com.github.wdkapps.fillup: 34 user + 4.7 kernel / faults: 1061 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3130 KB/s (1211854 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-69.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3149452d
+
+**** dumpsys cpuInfo ****
+
+  39 1544/com.github.wdkapps.fillup: 35 user + 3.7 kernel / faults: 930 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3074 KB/s (1211853 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-70.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6ff2dd55
+
+**** dumpsys cpuInfo ****
+
+  39 1553/com.github.wdkapps.fillup: 36 user + 2.9 kernel / faults: 1093 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3148 KB/s (1211854 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-71.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3c2719f8
+
+**** dumpsys cpuInfo ****
+
+  39 1553/com.github.wdkapps.fillup: 36 user + 3.3 kernel / faults: 1058 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3120 KB/s (1211854 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-72.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7c4562c9
+
+**** dumpsys cpuInfo ****
+
+  39 1560/com.github.wdkapps.fillup: 36 user + 3.8 kernel / faults: 1046 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3357 KB/s (1211849 bytes in 0.352s)
+	pkg: /data/local/tmp/FillUp-instrumented-73.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7b076f85
+
+**** dumpsys cpuInfo ****
+
+  38 1517/com.github.wdkapps.fillup: 35 user + 3.6 kernel / faults: 1032 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3182 KB/s (1211850 bytes in 0.371s)
+	pkg: /data/local/tmp/FillUp-instrumented-74.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@55a55214
+
+**** dumpsys cpuInfo ****
+
+  43 1505/com.github.wdkapps.fillup: 39 user + 3.5 kernel / faults: 925 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3067 KB/s (1211851 bytes in 0.385s)
+	pkg: /data/local/tmp/FillUp-instrumented-75.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@82e8e62
+
+**** dumpsys cpuInfo ****
+
+  37 1504/com.github.wdkapps.fillup: 34 user + 2.7 kernel / faults: 1060 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3097 KB/s (1211854 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-76.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@59675adb
+
+**** dumpsys cpuInfo ****
+
+  38 1564/com.github.wdkapps.fillup: 36 user + 2.8 kernel / faults: 963 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3325 KB/s (1211854 bytes in 0.355s)
+	pkg: /data/local/tmp/FillUp-instrumented-77.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4c48f9e1
+
+**** dumpsys cpuInfo ****
+
+  39 1546/com.github.wdkapps.fillup: 35 user + 3.5 kernel / faults: 1043 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3119 KB/s (1211853 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-78.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7feb51e3
+
+**** dumpsys cpuInfo ****
+
+  32 1604/com.github.wdkapps.fillup: 28 user + 3.7 kernel / faults: 1985 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2937 KB/s (1211851 bytes in 0.402s)
+	pkg: /data/local/tmp/FillUp-instrumented-79.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5d6e9e13
+
+**** dumpsys cpuInfo ****
+
+  37 1525/com.github.wdkapps.fillup: 34 user + 2.9 kernel / faults: 1027 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3162 KB/s (1211853 bytes in 0.374s)
+	pkg: /data/local/tmp/FillUp-instrumented-80.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@12a6f868
+
+**** dumpsys cpuInfo ****
+
+  38 1558/com.github.wdkapps.fillup: 34 user + 4 kernel / faults: 1057 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3121 KB/s (1211852 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-81.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@795459ae
+
+**** dumpsys cpuInfo ****
+
+  38 1581/com.github.wdkapps.fillup: 34 user + 3.9 kernel / faults: 1078 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3169 KB/s (1211856 bytes in 0.373s)
+	pkg: /data/local/tmp/FillUp-instrumented-82.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@16bbd24d
+
+**** dumpsys cpuInfo ****
+
+  41 1575/com.github.wdkapps.fillup: 36 user + 4.2 kernel / faults: 1056 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3107 KB/s (1211852 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-83.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@42d11cef
+
+**** dumpsys cpuInfo ****
+
+  37 1562/com.github.wdkapps.fillup: 33 user + 3.4 kernel / faults: 945 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3124 KB/s (1211850 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-84.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5496d46d
+
+**** dumpsys cpuInfo ****
+
+  37 1568/com.github.wdkapps.fillup: 34 user + 3.8 kernel / faults: 986 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3067 KB/s (1211851 bytes in 0.385s)
+	pkg: /data/local/tmp/FillUp-instrumented-85.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5dee415f
+
+**** dumpsys cpuInfo ****
+
+  43 1551/com.github.wdkapps.fillup: 39 user + 4.7 kernel / faults: 1028 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3322 KB/s (1211851 bytes in 0.356s)
+	pkg: /data/local/tmp/FillUp-instrumented-86.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@210612e3
+
+**** dumpsys cpuInfo ****
+
+  38 1572/com.github.wdkapps.fillup: 34 user + 4.1 kernel / faults: 1033 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3155 KB/s (1211852 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-87.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50c14e26
+
+**** dumpsys cpuInfo ****
+
+  39 1546/com.github.wdkapps.fillup: 35 user + 4 kernel / faults: 1110 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3164 KB/s (1211853 bytes in 0.373s)
+	pkg: /data/local/tmp/FillUp-instrumented-88.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6e001cf5
+
+**** dumpsys cpuInfo ****
+
+  35 1569/com.github.wdkapps.fillup: 32 user + 3.7 kernel / faults: 951 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2889 KB/s (1211852 bytes in 0.409s)
+	pkg: /data/local/tmp/FillUp-instrumented-89.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3eab2e7b
+
+**** dumpsys cpuInfo ****
+
+  39 1559/com.github.wdkapps.fillup: 35 user + 4 kernel / faults: 1056 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3119 KB/s (1211851 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-90.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@274254e8
+
+**** dumpsys cpuInfo ****
+
+  39 1585/com.github.wdkapps.fillup: 36 user + 3.1 kernel / faults: 1072 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3078 KB/s (1211853 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-91.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5e3fb9c6
+
+**** dumpsys cpuInfo ****
+
+  39 1539/com.github.wdkapps.fillup: 34 user + 4.3 kernel / faults: 1033 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3146 KB/s (1211855 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-92.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7243346e
+
+**** dumpsys cpuInfo ****
+
+  39 1657/com.github.wdkapps.fillup: 36 user + 3.6 kernel / faults: 1059 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2853 KB/s (1211855 bytes in 0.414s)
+	pkg: /data/local/tmp/FillUp-instrumented-93.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@653a55b6
+
+**** dumpsys cpuInfo ****
+
+  40 1481/com.github.wdkapps.fillup: 37 user + 2.9 kernel / faults: 1058 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3098 KB/s (1211854 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-94.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@201b21ec
+
+**** dumpsys cpuInfo ****
+
+  38 1549/com.github.wdkapps.fillup: 35 user + 2.8 kernel / faults: 968 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3153 KB/s (1211854 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-95.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@555b9524
+
+**** dumpsys cpuInfo ****
+
+  37 1537/com.github.wdkapps.fillup: 33 user + 3.5 kernel / faults: 1034 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3153 KB/s (1211854 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-96.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@16688faf
+
+**** dumpsys cpuInfo ****
+
+  37 1522/com.github.wdkapps.fillup: 33 user + 4.1 kernel / faults: 936 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2942 KB/s (1211852 bytes in 0.402s)
+	pkg: /data/local/tmp/FillUp-instrumented-97.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@34739e8e
+
+**** dumpsys cpuInfo ****
+
+  38 1503/com.github.wdkapps.fillup: 34 user + 3.8 kernel / faults: 1063 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3097 KB/s (1211853 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-98.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7b9ae155
+
+**** dumpsys cpuInfo ****
+
+  39 1512/com.github.wdkapps.fillup: 36 user + 3.8 kernel / faults: 1068 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3155 KB/s (1211851 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-99.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@621d766f
+
+**** dumpsys cpuInfo ****
+
+  39 1542/com.github.wdkapps.fillup: 36 user + 3.5 kernel / faults: 1075 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3128 KB/s (1211855 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-100.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3e7d4bf7
+
+**** dumpsys cpuInfo ****
+
+  39 1516/com.github.wdkapps.fillup: 35 user + 3.3 kernel / faults: 1083 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3100 KB/s (1211855 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-101.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1561e5f7
+
+**** dumpsys cpuInfo ****
+
+  38 1555/com.github.wdkapps.fillup: 34 user + 4.2 kernel / faults: 1046 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3127 KB/s (1211851 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-102.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@469c1222
+
+**** dumpsys cpuInfo ****
+
+  40 1564/com.github.wdkapps.fillup: 37 user + 2.3 kernel / faults: 1068 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2791 KB/s (1211854 bytes in 0.423s)
+	pkg: /data/local/tmp/FillUp-instrumented-103.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4cd8846e
+
+**** dumpsys cpuInfo ****
+
+  38 1496/com.github.wdkapps.fillup: 35 user + 2.8 kernel / faults: 1074 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3141 KB/s (1211851 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-104.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1375e703
+
+**** dumpsys cpuInfo ****
+
+  42 1493/com.github.wdkapps.fillup: 39 user + 3 kernel / faults: 878 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3116 KB/s (1211854 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-105.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@22af5cf
+
+**** dumpsys cpuInfo ****
+
+  38 1523/com.github.wdkapps.fillup: 34 user + 4.5 kernel / faults: 994 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3134 KB/s (1211851 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-106.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@426f6e57
+
+**** dumpsys cpuInfo ****
+
+  40 1530/com.github.wdkapps.fillup: 35 user + 4.1 kernel / faults: 1060 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3143 KB/s (1211853 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-107.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@711691d1
+
+**** dumpsys cpuInfo ****
+
+  39 1561/com.github.wdkapps.fillup: 35 user + 4.2 kernel / faults: 1044 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3151 KB/s (1211852 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-108.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3920dd2d
+
+**** dumpsys cpuInfo ****
+
+  37 1553/com.github.wdkapps.fillup: 34 user + 3.2 kernel / faults: 1035 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3135 KB/s (1211852 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-109.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3b5cab4b
+
+**** dumpsys cpuInfo ****
+
+  31 1630/com.github.wdkapps.fillup: 29 user + 2.2 kernel / faults: 1863 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2834 KB/s (1211852 bytes in 0.417s)
+	pkg: /data/local/tmp/FillUp-instrumented-110.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@859c22e
+
+**** dumpsys cpuInfo ****
+
+  38 1522/com.github.wdkapps.fillup: 34 user + 3.5 kernel / faults: 1098 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2924 KB/s (1211851 bytes in 0.404s)
+	pkg: /data/local/tmp/FillUp-instrumented-111.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4cf57f2c
+
+**** dumpsys cpuInfo ****
+
+  42 1510/com.github.wdkapps.fillup: 38 user + 4.1 kernel / faults: 878 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3201 KB/s (1211854 bytes in 0.369s)
+	pkg: /data/local/tmp/FillUp-instrumented-112.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2ffff5f8
+
+**** dumpsys cpuInfo ****
+
+  38 1536/com.github.wdkapps.fillup: 34 user + 3.8 kernel / faults: 1099 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2952 KB/s (1211854 bytes in 0.400s)
+	pkg: /data/local/tmp/FillUp-instrumented-113.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5ff27e24
+
+**** dumpsys cpuInfo ****
+
+  35 1496/com.github.wdkapps.fillup: 31 user + 3.7 kernel / faults: 1966 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3029 KB/s (1211850 bytes in 0.390s)
+	pkg: /data/local/tmp/FillUp-instrumented-114.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@56b3c188
+
+**** dumpsys cpuInfo ****
+
+  38 1536/com.github.wdkapps.fillup: 34 user + 4.3 kernel / faults: 1047 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3117 KB/s (1211850 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-115.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@36170030
+
+**** dumpsys cpuInfo ****
+
+  38 1487/com.github.wdkapps.fillup: 35 user + 3.3 kernel / faults: 1093 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3143 KB/s (1211853 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-116.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3e4c8365
+
+**** dumpsys cpuInfo ****
+
+  37 1553/com.github.wdkapps.fillup: 34 user + 2.7 kernel / faults: 998 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3144 KB/s (1211853 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-117.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@56e5f997
+
+**** dumpsys cpuInfo ****
+
+  38 1608/com.github.wdkapps.fillup: 33 user + 5.3 kernel / faults: 1051 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2745 KB/s (1211851 bytes in 0.431s)
+	pkg: /data/local/tmp/FillUp-instrumented-118.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4799fd50
+
+**** dumpsys cpuInfo ****
+
+  31 1574/com.github.wdkapps.fillup: 28 user + 3.3 kernel / faults: 1899 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2661 KB/s (1211854 bytes in 0.444s)
+	pkg: /data/local/tmp/FillUp-instrumented-119.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@19e13b77
+
+**** dumpsys cpuInfo ****
+
+  36 1507/com.github.wdkapps.fillup: 33 user + 2.5 kernel / faults: 1233 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3098 KB/s (1211852 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-120.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2852ba3f
+
+**** dumpsys cpuInfo ****
+
+  38 1568/com.github.wdkapps.fillup: 36 user + 2.4 kernel / faults: 1053 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3130 KB/s (1211855 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-121.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7d528ea9
+
+**** dumpsys cpuInfo ****
+
+  40 1534/com.github.wdkapps.fillup: 35 user + 4.2 kernel / faults: 1045 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3109 KB/s (1211851 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-122.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@635672ba
+
+**** dumpsys cpuInfo ****
+
+  39 1545/com.github.wdkapps.fillup: 34 user + 4.7 kernel / faults: 1063 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3064 KB/s (1211854 bytes in 0.386s)
+	pkg: /data/local/tmp/FillUp-instrumented-123.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@34a56d2
+
+**** dumpsys cpuInfo ****
+
+  32 1561/com.github.wdkapps.fillup: 29 user + 3.1 kernel / faults: 1825 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3137 KB/s (1211853 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-124.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@793dd529
+
+**** dumpsys cpuInfo ****
+
+  39 1542/com.github.wdkapps.fillup: 35 user + 3.8 kernel / faults: 1056 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3164 KB/s (1211852 bytes in 0.373s)
+	pkg: /data/local/tmp/FillUp-instrumented-125.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@70508293
+
+**** dumpsys cpuInfo ****
+
+  40 1556/com.github.wdkapps.fillup: 36 user + 3.4 kernel / faults: 1060 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2669 KB/s (1211852 bytes in 0.443s)
+	pkg: /data/local/tmp/FillUp-instrumented-126.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@22b273d
+
+**** dumpsys cpuInfo ****
+
+  37 1558/com.github.wdkapps.fillup: 34 user + 3.6 kernel / faults: 1070 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3032 KB/s (1211854 bytes in 0.390s)
+	pkg: /data/local/tmp/FillUp-instrumented-127.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2e0d0dea
+
+**** dumpsys cpuInfo ****
+
+  37 1538/com.github.wdkapps.fillup: 34 user + 3.8 kernel / faults: 1030 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3135 KB/s (1211850 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-128.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1561422c
+
+**** dumpsys cpuInfo ****
+
+  38 1527/com.github.wdkapps.fillup: 34 user + 3.9 kernel / faults: 1066 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3102 KB/s (1211850 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-129.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1645d37a
+
+**** dumpsys cpuInfo ****
+
+  39 1517/com.github.wdkapps.fillup: 34 user + 4.5 kernel / faults: 925 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3197 KB/s (1211854 bytes in 0.370s)
+	pkg: /data/local/tmp/FillUp-instrumented-130.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@110e8773
+
+**** dumpsys cpuInfo ****
+
+  39 1521/com.github.wdkapps.fillup: 35 user + 3.3 kernel / faults: 945 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3128 KB/s (1211852 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-131.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3cf603e1
+
+**** dumpsys cpuInfo ****
+
+  39 1586/com.github.wdkapps.fillup: 34 user + 4.7 kernel / faults: 1108 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3143 KB/s (1211853 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-132.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2df078e3
+
+**** dumpsys cpuInfo ****
+
+  38 1727/com.github.wdkapps.fillup: 34 user + 3.8 kernel / faults: 984 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3152 KB/s (1211852 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-133.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@315cddd8
+
+**** dumpsys cpuInfo ****
+
+  32 1538/com.github.wdkapps.fillup: 30 user + 2.1 kernel / faults: 1892 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3134 KB/s (1211854 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-134.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6f9b169a
+
+**** dumpsys cpuInfo ****
+
+  38 1545/com.github.wdkapps.fillup: 34 user + 3.7 kernel / faults: 1060 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3142 KB/s (1211852 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-135.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@122e7d10
+
+**** dumpsys cpuInfo ****
+
+  38 1541/com.github.wdkapps.fillup: 34 user + 4 kernel / faults: 950 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3162 KB/s (1211852 bytes in 0.374s)
+	pkg: /data/local/tmp/FillUp-instrumented-136.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@61c13f68
+
+**** dumpsys cpuInfo ****
+
+  39 1497/com.github.wdkapps.fillup: 36 user + 3 kernel / faults: 1040 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3100 KB/s (1211855 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-137.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5e3f6db1
+
+**** dumpsys cpuInfo ****
+
+  38 1555/com.github.wdkapps.fillup: 35 user + 3.8 kernel / faults: 1066 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3042 KB/s (1211850 bytes in 0.388s)
+	pkg: /data/local/tmp/FillUp-instrumented-138.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@21ce32fb
+
+**** dumpsys cpuInfo ****
+
+  31 1571/com.github.wdkapps.fillup: 28 user + 3.2 kernel / faults: 1862 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3149 KB/s (1211852 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-139.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3cc1481a
+
+**** dumpsys cpuInfo ****
+
+  41 1560/com.github.wdkapps.fillup: 38 user + 3.7 kernel / faults: 1036 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3135 KB/s (1211853 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-140.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@92f45ba
+
+**** dumpsys cpuInfo ****
+
+  30 1561/com.github.wdkapps.fillup: 28 user + 2.7 kernel / faults: 1892 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2796 KB/s (1211854 bytes in 0.423s)
+	pkg: /data/local/tmp/FillUp-instrumented-141.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@36ed58d4
+
+**** dumpsys cpuInfo ****
+
+  38 1536/com.github.wdkapps.fillup: 32 user + 5.5 kernel / faults: 1033 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3179 KB/s (1211855 bytes in 0.372s)
+	pkg: /data/local/tmp/FillUp-instrumented-142.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3df8bbc4
+
+**** dumpsys cpuInfo ****
+
+  39 1491/com.github.wdkapps.fillup: 35 user + 3.5 kernel / faults: 1033 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3177 KB/s (1211853 bytes in 0.372s)
+	pkg: /data/local/tmp/FillUp-instrumented-143.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3309cb3b
+
+**** dumpsys cpuInfo ****
+
+  38 1548/com.github.wdkapps.fillup: 34 user + 4.2 kernel / faults: 1110 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3000 KB/s (1211851 bytes in 0.394s)
+	pkg: /data/local/tmp/FillUp-instrumented-144.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@30ee9fe7
+
+**** dumpsys cpuInfo ****
+
+  31 1562/com.github.wdkapps.fillup: 29 user + 2.2 kernel / faults: 1964 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3102 KB/s (1211852 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-145.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2af1265f
+
+**** dumpsys cpuInfo ****
+
+  30 1511/com.github.wdkapps.fillup: 27 user + 2.9 kernel / faults: 1898 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3090 KB/s (1211847 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-146.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@675127a9
+
+**** dumpsys cpuInfo ****
+
+  40 1490/com.github.wdkapps.fillup: 35 user + 4.2 kernel / faults: 1070 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3032 KB/s (1211851 bytes in 0.390s)
+	pkg: /data/local/tmp/FillUp-instrumented-147.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5ffb1c50
+
+**** dumpsys cpuInfo ****
+
+  38 1483/com.github.wdkapps.fillup: 33 user + 5.1 kernel / faults: 1110 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3142 KB/s (1211853 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-148.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4d305936
+
+**** dumpsys cpuInfo ****
+
+  33 1562/com.github.wdkapps.fillup: 29 user + 3.8 kernel / faults: 2001 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3131 KB/s (1211854 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-149.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6d820cb8
+
+**** dumpsys cpuInfo ****
+
+  32 1531/com.github.wdkapps.fillup: 29 user + 3 kernel / faults: 1833 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3077 KB/s (1211854 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-150.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5299d060
+
+**** dumpsys cpuInfo ****
+
+  37 1493/com.github.wdkapps.fillup: 34 user + 3.2 kernel / faults: 1045 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3150 KB/s (1211853 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-151.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@31d2893e
+
+**** dumpsys cpuInfo ****
+
+  40 1518/com.github.wdkapps.fillup: 36 user + 4 kernel / faults: 1071 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3131 KB/s (1211848 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-152.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7f1ef88f
+
+**** dumpsys cpuInfo ****
+
+  39 1520/com.github.wdkapps.fillup: 34 user + 5.1 kernel / faults: 1024 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3119 KB/s (1211853 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-153.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@40b91208
+
+**** dumpsys cpuInfo ****
+
+  37 1573/com.github.wdkapps.fillup: 33 user + 3.3 kernel / faults: 972 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3121 KB/s (1211852 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-154.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@63c9441b
+
+**** dumpsys cpuInfo ****
+
+  37 1551/com.github.wdkapps.fillup: 34 user + 2.8 kernel / faults: 1039 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3193 KB/s (1211851 bytes in 0.370s)
+	pkg: /data/local/tmp/FillUp-instrumented-155.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@8508bc2
+
+**** dumpsys cpuInfo ****
+
+  32 1537/com.github.wdkapps.fillup: 29 user + 3.1 kernel / faults: 1876 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2955 KB/s (1211853 bytes in 0.400s)
+	pkg: /data/local/tmp/FillUp-instrumented-156.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@54086cf4
+
+**** dumpsys cpuInfo ****
+
+  37 1576/com.github.wdkapps.fillup: 33 user + 3.8 kernel / faults: 942 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3069 KB/s (1211850 bytes in 0.385s)
+	pkg: /data/local/tmp/FillUp-instrumented-157.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2ea9f850
+
+**** dumpsys cpuInfo ****
+
+  32 1498/com.github.wdkapps.fillup: 29 user + 2.9 kernel / faults: 1971 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2570 KB/s (1211852 bytes in 0.460s)
+	pkg: /data/local/tmp/FillUp-instrumented-158.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4b6488e6
+
+**** dumpsys cpuInfo ****
+
+  32 1567/com.github.wdkapps.fillup: 29 user + 2.4 kernel / faults: 1912 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3145 KB/s (1211851 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-159.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3e6834d2
+
+**** dumpsys cpuInfo ****
+
+  39 1550/com.github.wdkapps.fillup: 36 user + 3.5 kernel / faults: 1012 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2916 KB/s (1211854 bytes in 0.405s)
+	pkg: /data/local/tmp/FillUp-instrumented-160.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2af33f0
+
+**** dumpsys cpuInfo ****
+
+  38 1499/com.github.wdkapps.fillup: 35 user + 3.5 kernel / faults: 1018 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3128 KB/s (1211854 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-161.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@f25108e
+
+**** dumpsys cpuInfo ****
+
+  38 1564/com.github.wdkapps.fillup: 36 user + 2.4 kernel / faults: 1014 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3087 KB/s (1211853 bytes in 0.383s)
+	pkg: /data/local/tmp/FillUp-instrumented-162.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@207bb5e7
+
+**** dumpsys cpuInfo ****
+
+  30 1511/com.github.wdkapps.fillup: 27 user + 2.4 kernel / faults: 1887 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3107 KB/s (1211852 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-163.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5451e5e7
+
+**** dumpsys cpuInfo ****
+
+  39 1537/com.github.wdkapps.fillup: 37 user + 2.6 kernel / faults: 1081 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3110 KB/s (1211851 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-164.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@52c976df
+
+**** dumpsys cpuInfo ****
+
+  44 1547/com.github.wdkapps.fillup: 41 user + 3 kernel / faults: 1170 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2976 KB/s (1211851 bytes in 0.397s)
+	pkg: /data/local/tmp/FillUp-instrumented-165.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@54c450a3
+
+**** dumpsys cpuInfo ****
+
+  38 1505/com.github.wdkapps.fillup: 32 user + 6.3 kernel / faults: 983 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3104 KB/s (1211852 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-166.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4012a56b
+
+**** dumpsys cpuInfo ****
+
+  32 1556/com.github.wdkapps.fillup: 29 user + 3 kernel / faults: 1894 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3148 KB/s (1211851 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-167.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@73619735
+
+**** dumpsys cpuInfo ****
+
+  33 1564/com.github.wdkapps.fillup: 30 user + 2.6 kernel / faults: 1986 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3150 KB/s (1211856 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-168.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2e6f2af1
+
+**** dumpsys cpuInfo ****
+
+  36 1513/com.github.wdkapps.fillup: 32 user + 3.4 kernel / faults: 1062 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3166 KB/s (1211852 bytes in 0.373s)
+	pkg: /data/local/tmp/FillUp-instrumented-169.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4e8cc177
+
+**** dumpsys cpuInfo ****
+
+  38 1538/com.github.wdkapps.fillup: 35 user + 2.7 kernel / faults: 397 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3076 KB/s (1211855 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-170.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@21c13dd9
+
+**** dumpsys cpuInfo ****
+
+  38 1566/com.github.wdkapps.fillup: 34 user + 3.3 kernel / faults: 1039 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3163 KB/s (1211853 bytes in 0.374s)
+	pkg: /data/local/tmp/FillUp-instrumented-171.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6a47939f
+
+**** dumpsys cpuInfo ****
+
+  39 1498/com.github.wdkapps.fillup: 34 user + 4.6 kernel / faults: 1049 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3102 KB/s (1211851 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-172.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@32aa08d5
+
+**** dumpsys cpuInfo ****
+
+  39 1571/com.github.wdkapps.fillup: 36 user + 3.9 kernel / faults: 1069 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3099 KB/s (1211854 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-173.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@411bc5b
+
+**** dumpsys cpuInfo ****
+
+  39 1554/com.github.wdkapps.fillup: 36 user + 3 kernel / faults: 970 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2792 KB/s (1211849 bytes in 0.423s)
+	pkg: /data/local/tmp/FillUp-instrumented-174.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5c93408f
+
+**** dumpsys cpuInfo ****
+
+  42 1560/com.github.wdkapps.fillup: 37 user + 4.3 kernel / faults: 1086 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2949 KB/s (1211851 bytes in 0.401s)
+	pkg: /data/local/tmp/FillUp-instrumented-175.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7a266280
+
+**** dumpsys cpuInfo ****
+
+  42 1571/com.github.wdkapps.fillup: 37 user + 5.1 kernel / faults: 977 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3098 KB/s (1211851 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-176.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1eb5c9bb
+
+**** dumpsys cpuInfo ****
+
+  39 1516/com.github.wdkapps.fillup: 36 user + 3.5 kernel / faults: 1056 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3171 KB/s (1211853 bytes in 0.373s)
+	pkg: /data/local/tmp/FillUp-instrumented-177.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2355edda
+
+**** dumpsys cpuInfo ****
+
+  38 1496/com.github.wdkapps.fillup: 34 user + 3.5 kernel / faults: 955 minor

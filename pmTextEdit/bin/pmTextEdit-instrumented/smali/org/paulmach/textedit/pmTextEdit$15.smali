@@ -195,7 +195,7 @@
     .line 1329
     iget-object v1, p0, Lorg/paulmach/textedit/pmTextEdit$15;->this$0:Lorg/paulmach/textedit/pmTextEdit;
 
-    const/16 v2, 0xb
+    const/16 v2, 0xc
 
     invoke-virtual {v1, v2}, Lorg/paulmach/textedit/pmTextEdit;->showDialog(I)V
 

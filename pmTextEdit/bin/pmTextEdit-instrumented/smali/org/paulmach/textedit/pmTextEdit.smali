@@ -3368,7 +3368,7 @@
     .locals 7
 
     .prologue
-    const/16 v6, 0xe
+    const/16 v6, 0xd
 
     const/4 v1, 0x0
 
@@ -4540,7 +4540,7 @@
 
     invoke-virtual {p0, v1}, Lorg/paulmach/textedit/pmTextEdit;->saveNote(Ljava/lang/CharSequence;)V
 
-    const/4 v1, 0x7
+    const/4 v1, 0x5
 
     aput-boolean v4, v0, v1
 
@@ -5158,7 +5158,7 @@
     .line 903
     iput-boolean v5, p0, Lorg/paulmach/textedit/pmTextEdit;->backFromFileBrowser:Z
 
-    const/4 v1, 0x4
+    const/4 v1, 0x7
 
     aput-boolean v4, v0, v1
 
@@ -5722,7 +5722,7 @@
     .line 959
     iput-boolean v5, p0, Lorg/paulmach/textedit/pmTextEdit;->backFromFileBrowser:Z
 
-    const/16 v1, 0x2d
+    const/16 v1, 0x23
 
     aput-boolean v4, v0, v1
 
@@ -6150,7 +6150,7 @@
     sput-object v1, Lorg/paulmach/textedit/pmTextEdit;->temp_filename:Ljava/lang/CharSequence;
 
     .line 250
-    const/4 v1, 0x7
+    const/4 v1, 0x0
 
     const/4 v2, 0x1
 
@@ -6728,7 +6728,7 @@
     .line 431
     invoke-virtual {p0, p1, v1}, Lorg/paulmach/textedit/pmTextEdit;->openFile(Ljava/lang/CharSequence;Ljava/lang/StringBuffer;)V
 
-    const/16 v1, 0x12
+    const/16 v1, 0xf
 
     aput-boolean v8, v0, v1
 
@@ -7098,7 +7098,7 @@
 
     move-result-object v0
 
-    const/4 v2, 0x3
+    const/4 v2, 0x5
 
     const/4 v3, 0x1
 
@@ -7119,7 +7119,7 @@
     iput-boolean v5, p0, Lorg/paulmach/textedit/pmTextEdit;->openingError:Z
 
     .line 478
-    const/16 v0, 0x19
+    const/16 v0, 0x8
 
     invoke-virtual {p0, v0}, Lorg/paulmach/textedit/pmTextEdit;->showDialog(I)V
 
@@ -7131,7 +7131,7 @@
 
     .line 459
     :cond_2
-    const/4 v2, 0x1
+    const/4 v2, -0x8
 
     :try_start_2
     iput v2, p0, Lorg/paulmach/textedit/pmTextEdit;->fileformat:I
@@ -7447,7 +7447,7 @@
     invoke-interface {v1, v2, v0}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     .line 1809
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v3, v3, 0x2
 
     const/16 v0, 0x9
 
@@ -7677,7 +7677,7 @@
 
     move-result v1
 
-    const/16 v2, 0xe
+    const/16 v2, 0x14
 
     aput-boolean v5, v0, v2
 
@@ -7759,7 +7759,7 @@
 
     invoke-virtual {v2, v1}, Ljava/io/BufferedWriter;->write(Ljava/lang/String;)V
 
-    const/16 v1, 0xf
+    const/16 v1, 0x9
 
     const/4 v3, 0x1
 
@@ -7859,7 +7859,7 @@
 
     invoke-virtual {v2, v1}, Ljava/io/BufferedWriter;->write(Ljava/lang/String;)V
 
-    const/16 v1, 0xb
+    const/16 v1, 0xd
 
     const/4 v3, 0x1
 
@@ -8168,7 +8168,7 @@
     check-cast v0, Landroid/widget/ScrollView;
 
     .line 630
-    const/16 v6, 0x11
+    const/16 v6, 0x12
 
     aput-boolean v1, v3, v6
 
@@ -8416,7 +8416,7 @@
 
     move-result v0
 
-    const/16 v2, 0x19
+    const/16 v2, 0x18
 
     aput-boolean v1, v3, v2
 
