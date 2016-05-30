@@ -47,7 +47,7 @@ public class AppManager {
 	public AppManager(String directory, String device, String report_dir,  int init, int increment, int maximum, int cycles, int max, String test_pkg){
 		this.init = init;
 		this.increment = increment;
-	    this.maximum = maximum;
+		this.maximum = maximum;
 		this.dir = directory;
 		this.cycles = cycles;
 		this.max = max;
@@ -229,9 +229,9 @@ public class AppManager {
 				original.setSystem_pct(0);
 			}
 			try{
-			original.setHeap_size(Long.parseLong(memory_used[7]));
-			original.setHeap_alloc(Long.parseLong(memory_used[8]));
-			original.setHeap_free(Long.parseLong(memory_used[9]));
+				original.setHeap_size(Long.parseLong(memory_used[7]));
+				original.setHeap_alloc(Long.parseLong(memory_used[8]));
+				original.setHeap_free(Long.parseLong(memory_used[9]));
 			}catch(Exception e){
 				original.setHeap_size(0);
 				original.setHeap_alloc(0);
@@ -285,7 +285,7 @@ public class AppManager {
 	 * Method that allows to execute the mutation analysis and get the survived and killed mutants
 	 * @throws InterruptedException
 	 */
-	public void mutationAnalysis(boolean only_mutants, boolean systematic_analysis) throws InterruptedException{
+	public void mutationAnalysis(boolean only_mutants, int approach) throws InterruptedException{
 		survived_mutants = new ArrayList<>();
 		System.out.println(dir+" Starting Mutation Analysis ...");
 		String output,cpu_info;
@@ -314,35 +314,35 @@ public class AppManager {
 				long duration = (endTime - startTime)/1000000;
 				mutant = new Mutant(apk);
 				//if(tl.getTestFailed()!=0){
-					//killed_mutants.add(mutant);
-					//killed_mutants_log.writeLog("Mutant "+(i+1), mutant.getApk_name());
-					//System.out.println(dir+" Killed");
+				//killed_mutants.add(mutant);
+				//killed_mutants_log.writeLog("Mutant "+(i+1), mutant.getApk_name());
+				//System.out.println(dir+" Killed");
 				//} else {
-					cpu_used = cpu_info.split(" ");
-					mutant.setExecution_time(duration);
-					try{
-						mutant.setCpu_pct(Double.parseDouble(cpu_used[2].replace("+", "")));
-						mutant.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
-						mutant.setUser_pct(Double.parseDouble(cpu_used[4]));
-						mutant.setSystem_pct(Double.parseDouble(cpu_used[7]));
-					} catch(Exception e){
-						mutant.setCpu_pct(0);
-						mutant.setCpu_time(0);
-						mutant.setUser_pct(0);
-						mutant.setSystem_pct(0);
-					}
-					try{
+				cpu_used = cpu_info.split(" ");
+				mutant.setExecution_time(duration);
+				try{
+					mutant.setCpu_pct(Double.parseDouble(cpu_used[2].replace("+", "")));
+					mutant.setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
+					mutant.setUser_pct(Double.parseDouble(cpu_used[4]));
+					mutant.setSystem_pct(Double.parseDouble(cpu_used[7]));
+				} catch(Exception e){
+					mutant.setCpu_pct(0);
+					mutant.setCpu_time(0);
+					mutant.setUser_pct(0);
+					mutant.setSystem_pct(0);
+				}
+				try{
 					mutant.setHeap_size(Long.parseLong(memory_used[7]));
 					mutant.setHeap_alloc(Long.parseLong(memory_used[8]));
 					mutant.setHeap_free(Long.parseLong(memory_used[9]));
-					} catch(Exception e){
-						mutant.setHeap_size(0);
-						mutant.setHeap_alloc(0);
-						mutant.setHeap_free(0);
-					}
-					survived_mutants.add(mutant);
-					survived_mutants_log.writeLog("Mutant "+(i+1), mutant.toString());
-					System.out.println(dir+" Survived");
+				} catch(Exception e){
+					mutant.setHeap_size(0);
+					mutant.setHeap_alloc(0);
+					mutant.setHeap_free(0);
+				}
+				survived_mutants.add(mutant);
+				survived_mutants_log.writeLog("Mutant "+(i+1), mutant.toString());
+				System.out.println(dir+" Survived");
 				//}
 			}
 		}
@@ -352,13 +352,16 @@ public class AppManager {
 		log.closeLogger();
 		survived_mutants_log.closeLogger();
 		killed_mutants_log.closeLogger();
-		if(systematic_analysis){
-		SystematicAnalyser ma = new SystematicAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, init, increment, maximum, test_pkg);
-		ma.generateSmaliFile(only_mutants);
-		} else {
+		if(approach==0){
+			SystematicAnalyser ma = new SystematicAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, init, increment, maximum, test_pkg);
+			ma.generateSmaliFile(only_mutants);
+		} else if(approach==1){
 			StochasticAnalyser ma = new StochasticAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, cycles, max, test_pkg);
 			ma.generateSmaliFile(only_mutants);
-		}		
+		} else if(approach==2){
+			HillClimbing hc = new HillClimbing(survived_mutants,dir, app_name, pkg,report_dir, original, device, max, test_pkg);
+			hc.generateSmaliFile(only_mutants);
+		}
 	}
 
 	/**
