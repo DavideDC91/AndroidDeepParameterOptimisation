@@ -823,7 +823,7 @@
 
     .line 140
     :pswitch_2
-    const/4 v0, 0x7
+    const/4 v0, 0x3
 
     aput-boolean v6, v3, v0
 

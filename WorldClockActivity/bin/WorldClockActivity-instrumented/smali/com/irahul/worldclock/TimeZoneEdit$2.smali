@@ -277,7 +277,7 @@
 
     invoke-virtual {v0}, Lcom/irahul/worldclock/TimeZoneEdit;->finish()V
 
-    const/4 v0, 0x5
+    const/4 v0, 0x4
 
     aput-boolean v5, v1, v0
 

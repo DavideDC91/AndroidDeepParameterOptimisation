@@ -674,7 +674,7 @@
     if-eqz p2, :cond_d
 
     .line 104
-    const/16 v0, 0x22
+    const/16 v0, 0x1a
 
     aput-boolean v6, v3, v0
 
@@ -930,7 +930,7 @@
     .line 85
     const v0, 0x7f020009
 
-    const/16 v1, 0xd
+    const/16 v1, 0xf
 
     aput-boolean v6, v3, v1
 

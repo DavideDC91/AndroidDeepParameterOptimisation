@@ -206,7 +206,7 @@
 
     .line 173
     :cond_1
-    add-int/lit8 v0, v0, -0x51
+    add-int/lit8 v0, v0, -0x1
 
     const/4 v2, 0x4
 

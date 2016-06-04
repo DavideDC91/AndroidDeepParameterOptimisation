@@ -1003,7 +1003,7 @@
 
     invoke-static {p0, v0}, Lcom/github/wdkapps/fillup/Utilities;->toast(Landroid/content/Context;Ljava/lang/String;)V
 
-    const/4 v0, 0x7
+    const/4 v0, 0x4
 
     aput-boolean v2, v1, v0
 
@@ -1103,7 +1103,7 @@
 
     invoke-static {p0, v1}, Lcom/github/wdkapps/fillup/Utilities;->toast(Landroid/content/Context;Ljava/lang/String;)V
 
-    const/16 v1, 0x5a
+    const/16 v1, 0xa
 
     aput-boolean v3, v0, v1
 
@@ -1252,7 +1252,7 @@
 
     .line 540
     :cond_1
-    const/4 v1, 0x2
+    const/4 v1, 0x5
 
     aput-boolean v2, v0, v1
 
@@ -1263,7 +1263,7 @@
 
     invoke-static {p0, v1}, Lcom/github/wdkapps/fillup/Utilities;->toast(Landroid/content/Context;Ljava/lang/String;)V
 
-    const/4 v1, 0x7
+    const/4 v1, 0x4
 
     aput-boolean v2, v0, v1
 
@@ -2367,7 +2367,7 @@
 
     sget-object v0, Lcom/github/wdkapps/fillup/MainActivity;->$VRc:[[Z
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
     invoke-static {}, Lcom/github/wdkapps/fillup/MainActivity;->$VRi()[[Z
 

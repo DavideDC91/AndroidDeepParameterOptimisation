@@ -3481,7 +3481,7 @@
     move-result-object v0
 
     :cond_0
-    const/4 v1, 0x3
+    const/4 v1, 0x7
 
     aget-object v0, v0, v1
 

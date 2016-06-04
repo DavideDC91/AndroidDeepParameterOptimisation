@@ -1,0 +1,2464 @@
+
+
+**** android update ****
+
+Updated project.properties
+Updated local.properties
+Updated file ./build.xml
+Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
+
+
+**** ant clean ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: android-timetracker
+  [gettype] Project Type: Application
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/gen
+[getlibpath] Library dependencies:
+[getlibpath] No Libraries
+   [subant] No sub-builds to iterate on
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+
+
+**** ant instrument ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: android-timetracker
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.3
+     [echo] Resolving Build Target for android-timetracker...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/res
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/rsObj
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/rsLibs
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/gen
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/classes
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for android-timetracker...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'instrument'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 13 source files to /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/classes
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 3 warnings
+     [echo] Instrumenting classes from /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/classes...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/classes
+      [dex] input: /home/davide/android-sdk/tools/lib/emma_device.jar
+      [dex] Pre-Dexing /home/davide/android-sdk/tools/lib/emma_device.jar -> emma_device-c54bd04c2f76e0e56a7ebc2ed6b523ca.jar
+      [dex] Converting compiled files and external libraries into /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/classes.dex...
+       [dx] Merged dex #1 (38 defs/87.8KiB)
+       [dx] Merged dex #2 (297 defs/327.2KiB)
+       [dx] Result is 335 defs/499.4KiB. Took 1.1s
+
+-crunch:
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/res/drawable/ic_check_mark_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] Crunching PNG Files in source dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/res
+   [crunch] To destination dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/res
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/res/drawable/ic_check_mark_dark.png => /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/res/drawable/ic_check_mark_dark.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/res/drawable/ic_check_mark_dark.png: 0% size of source)
+   [crunch] Processing image to cac
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating android-timetracker-instrumented-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented.apk
+[propertyfile] Creating new property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+
+instrument:
+ [zipalign] Run cancelled: no changes to input file /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented-unaligned.apk
+     [echo] Instrumented Package: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented.apk
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+
+BUILD SUCCESSFUL
+Total time: 45 seconds
+
+
+**** ant installi ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+install:
+     [echo] Installing /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented.apk onto default emulator or device...
+     [exec] 1508 KB/s (276503 bytes in 0.178s)
+     [exec] 	pkg: /data/local/tmp/android-timetracker-instrumented.apk
+     [exec] Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
+
+installi:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+
+
+**** apktool d ****
+
+I: Using Apktool 2.1.0 on android-timetracker-instrumented.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building resources...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3239 KB/s (275706 bytes in 0.083s)
+	pkg: /data/local/tmp/android-timetracker-instrumented.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4b9e2f0
+
+**** dumpsys cpuInfo ****
+
+  23 1845/com.markuspage.android.atimetracker: 21 user + 1.5 kernel / faults: 880 minor
+
+**** adb broadcast ****
+
+Broadcasting: Intent { act=com.qa.emma.COLLECT_COVERAGE }
+Broadcast completed: result=0
+
+
+**** adb push ****
+
+Android Debug Bridge version 1.0.32
+Revision 09a0d98bebce-android
+
+ -a                            - directs adb to listen on all interfaces for a connection
+ -d                            - directs command to the only connected USB device
+                                 returns an error if more than one USB device is present.
+ -e                            - directs command to the only running emulator.
+                                 returns an error if more than one emulator is running.
+ -s <specific device>          - directs command to the device or emulator with the given
+                                 serial number or qualifier. Overrides ANDROID_SERIAL
+                                 environment variable.
+ -p <product name or path>     - simple product name like 'sooner', or
+                                 a relative/absolute path to a product
+                                 out directory like 'out/target/product/sooner'.
+                                 If -p is not specified, the ANDROID_PRODUCT_OUT
+                                 environment variable is used, which must
+                                 be an absolute path.
+ -H                            - Name of adb server host (default: localhost)
+ -P                            - Port of adb server (default: 5037)
+ devices [-l]                  - list all connected devices
+                                 ('-l' will also list device qualifiers)
+ connect <host>[:<port>]       - connect to a device via TCP/IP
+                                 Port 5555 is used by default if no port number is specified.
+ disconnect [<host>[:<port>]]  - disconnect from a TCP/IP device.
+                                 Port 5555 is used by default if no port number is specified.
+                                 Using this command with no additional arguments
+                                 will disconnect from all connected TCP/IP devices.
+
+device commands:
+  adb push [-p] <local> <remote>
+                               - copy file/dir to device
+                                 ('-p' to display the transfer progress)
+  adb pull [-p] [-a] <remote> [<local>]
+                               - copy file/dir from device
+                                 ('-p' to display the transfer progress)
+                                 ('-a' means copy timestamp and mode)
+  adb sync [ <directory> ]     - copy host->device only if changed
+                                 (-l means list but don't copy)
+  adb shell                    - run remote shell interactively
+  adb shell <command>          - run remote shell command
+  adb emu <command>            - run emulator console command
+  adb logcat [ <filter-spec> ] - View device log
+  adb forward --list           - list all forward socket connections.
+                                 the format is a list of lines with the following format:
+                                    <serial> " " <local> " " <remote> "\n"
+  adb forward <local> <remote> - forward socket connections
+                                 forward specs are one of: 
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+                                   dev:<character device name>
+                                   jdwp:<process pid> (remote only)
+  adb forward --no-rebind <local> <remote>
+                               - same as 'adb forward <local> <remote>' but fails
+                                 if <local> is already forwarded
+  adb forward --remove <local> - remove a specific forward socket connection
+  adb forward --remove-all     - remove all forward socket connections
+  adb reverse --list           - list all reverse socket connections from device
+  adb reverse <remote> <local> - reverse socket connections
+                                 reverse specs are one of:
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+  adb reverse --norebind <remote> <local>
+                               - same as 'adb reverse <remote> <local>' but fails
+                                 if <remote> is already reversed.
+  adb reverse --remove <remote>
+                               - remove a specific reversed socket connection
+  adb reverse --remove-all     - remove all reversed socket connections from device
+  adb jdwp                     - list PIDs of processes hosting a JDWP transport
+  adb install [-lrtsdg] <file>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-g: grant all runtime permissions)
+  adb install-multiple [-lrtsdpg] <file...>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-p: partial application install)
+                                 (-g: grant all runtime permissions)
+  adb uninstall [-k] <package> - remove this app package from the device
+                                 ('-k' means keep the data and cache directories)
+  adb bugreport                - return all information from the device
+                                 that should be included in a bug report.
+
+  adb backup [-f <file>] [-apk|-noapk] [-obb|-noobb] [-shared|-noshared] [-all] [-system|-nosystem] [<packages...>]
+                               - write an archive of the device's data to <file>.
+                                 If no -f option is supplied then the data is written
+                                 to "backup.ab" in the current directory.
+                                 (-apk|-noapk enable/disable backup of the .apks themselves
+                                    in the archive; the default is noapk.)
+                                 (-obb|-noobb enable/disable backup of any installed apk expansion
+                                    (aka .obb) files associated with each application; the default
+                                    is noobb.)
+                                 (-shared|-noshared enable/disable backup of the device's
+                                    shared storage / SD card contents; the default is noshared.)
+                                 (-all means to back up all installed applications)
+                                 (-system|-nosystem toggles whether -all automatically includes
+                                    system applications; the default is to include system apps)
+                                 (<packages...> is the list of applications to be backed up.  If
+                                    the -all or -shared flags are passed, then the package
+                                    list is optional.  Applications explicitly given on the
+                                    command line will be included even if -nosystem would
+                                    ordinarily cause them to be omitted.)
+
+  adb restore <file>           - restore device contents from the <file> backup archive
+
+  adb disable-verity           - disable dm-verity checking on USERDEBUG builds
+  adb enable-verity            - re-enable dm-verity checking on USERDEBUG builds
+  adb keygen <file>            - generate adb public/private key. The private key is stored in <file>,
+                                 and the public key is stored in <file>.pub. Any existing files
+                                 are overwritten.
+  adb help                     - show this help message
+  adb version                  - show version num
+
+scripting:
+  adb wait-for-device          - block until device is online
+  adb start-server             - ensure that there is a server running
+  adb kill-server              - kill the server if it is running
+  adb get-state                - prints: offline | bootloader | device
+  adb get-serialno             - prints: <serial-number>
+  adb get-devpath              - prints: <device-path>
+  adb remount                  - remounts the /system, /vendor (if present) and /oem (if present) partitions on the device read-write
+  adb reboot [bootloader|recovery]
+                               - reboots the device, optionally into the bootloader or recovery program.
+  adb reboot sideload          - reboots the device into the sideload mode in recovery program (adb root required).
+  adb reboot sideload-auto-reboot
+                               - reboots into the sideload mode, then reboots automatically after the sideload regardless of the result.
+  adb sideload <file>          - sideloads the given package
+  adb root                     - restarts the adbd daemon with root permissions
+  adb unroot                   - restarts the adbd daemon without root permissions
+  adb usb                      - restarts the adbd daemon listening on USB
+  adb tcpip <port>             - restarts the adbd daemon listening on TCP on the specified port
+
+networking:
+  adb ppp <tty> [parameters]   - Run PPP over USB.
+ Note: you should not automatically start a PPP connection.
+ <tty> refers to the tty for PPP stream. Eg. dev:/dev/omap_csmi_tty1
+ [parameters] - Eg. defaultroute debug dump local notty usepeerdns
+
+adb sync notes: adb sync [ <directory> ]
+  <localdir> can be interpreted in several ways:
+
+  - If <directory> is not specified, /system, /vendor (if present), /oem (if present) and /data partitions will be updated.
+
+  - If it is "system", "vendor", "oem" or "data", only the corresponding partition
+    is updated.
+
+environment variables:
+  ADB_TRACE                    - Print debug information. A comma separated list of the following values
+                                 1 or all, adb, sockets, packets, rwx, usb, sync, sysdeps, transport, jdwp
+  ANDROID_SERIAL               - The serial number to connect to. -s takes priority over this if given.
+  ANDROID_LOG_TAGS             - When used with the logcat option, only these debug tags are printed.
+
+
+**** adb pull ****
+
+2528 KB/s (259800 bytes in 0.100s)
+
+
+**** java emma report ****
+
+EMMA: processing input files ...
+EMMA: 2 file(s) read and merged in 90 ms
+EMMA: writing [html] report to [/home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/coverage/index.html] ...
+
+
+**** ls ****
+
+android-timetracker-instrumented-0
+android-timetracker-instrumented-0.apk
+android-timetracker-instrumented-10
+android-timetracker-instrumented-10.apk
+android-timetracker-instrumented-11
+android-timetracker-instrumented-11.apk
+android-timetracker-instrumented-13
+android-timetracker-instrumented-13.apk
+android-timetracker-instrumented-14
+android-timetracker-instrumented-14.apk
+android-timetracker-instrumented-15
+android-timetracker-instrumented-15.apk
+android-timetracker-instrumented-16
+android-timetracker-instrumented-16.apk
+android-timetracker-instrumented-17
+android-timetracker-instrumented-17.apk
+android-timetracker-instrumented-18
+android-timetracker-instrumented-18.apk
+android-timetracker-instrumented-2
+android-timetracker-instrumented-22
+android-timetracker-instrumented-22.apk
+android-timetracker-instrumented-24
+android-timetracker-instrumented-24.apk
+android-timetracker-instrumented-25
+android-timetracker-instrumented-25.apk
+android-timetracker-instrumented-26
+android-timetracker-instrumented-26.apk
+android-timetracker-instrumented-27
+android-timetracker-instrumented-27.apk
+android-timetracker-instrumented-28
+android-timetracker-instrumented-28.apk
+android-timetracker-instrumented-29
+android-timetracker-instrumented-29.apk
+android-timetracker-instrumented-2.apk
+android-timetracker-instrumented-3
+android-timetracker-instrumented-30
+android-timetracker-instrumented-30.apk
+android-timetracker-instrumented-31
+android-timetracker-instrumented-31.apk
+android-timetracker-instrumented-32
+android-timetracker-instrumented-32.apk
+android-timetracker-instrumented-33
+android-timetracker-instrumented-33.apk
+android-timetracker-instrumented-34
+android-timetracker-instrumented-34.apk
+android-timetracker-instrumented-35
+android-timetracker-instrumented-35.apk
+android-timetracker-instrumented-36
+android-timetracker-instrumented-36.apk
+android-timetracker-instrumented-37
+android-timetracker-instrumented-37.apk
+android-timetracker-instrumented-38
+android-timetracker-instrumented-38.apk
+android-timetracker-instrumented-39
+android-timetracker-instrumented-39.apk
+android-timetracker-instrumented-3.apk
+android-timetracker-instrumented-4
+android-timetracker-instrumented-40
+android-timetracker-instrumented-40.apk
+android-timetracker-instrumented-41
+android-timetracker-instrumented-41.apk
+android-timetracker-instrumented-42
+android-timetracker-instrumented-42.apk
+android-timetracker-instrumented-43
+android-timetracker-instrumented-43.apk
+android-timetracker-instrumented-44
+android-timetracker-instrumented-44.apk
+android-timetracker-instrumented-45
+android-timetracker-instrumented-45.apk
+android-timetracker-instrumented-46
+android-timetracker-instrumented-46.apk
+android-timetracker-instrumented-47
+android-timetracker-instrumented-47.apk
+android-timetracker-instrumented-48
+android-timetracker-instrumented-48.apk
+android-timetracker-instrumented-49
+android-timetracker-instrumented-49.apk
+android-timetracker-instrumented-4.apk
+android-timetracker-instrumented-5
+android-timetracker-instrumented-50
+android-timetracker-instrumented-50.apk
+android-timetracker-instrumented-51
+android-timetracker-instrumented-51.apk
+android-timetracker-instrumented-52
+android-timetracker-instrumented-52.apk
+android-timetracker-instrumented-53
+android-timetracker-instrumented-53.apk
+android-timetracker-instrumented-54
+android-timetracker-instrumented-54.apk
+android-timetracker-instrumented-55
+android-timetracker-instrumented-55.apk
+android-timetracker-instrumented-56
+android-timetracker-instrumented-56.apk
+android-timetracker-instrumented-57
+android-timetracker-instrumented-57.apk
+android-timetracker-instrumented-58
+android-timetracker-instrumented-58.apk
+android-timetracker-instrumented-59
+android-timetracker-instrumented-59.apk
+android-timetracker-instrumented-5.apk
+android-timetracker-instrumented-60
+android-timetracker-instrumented-60.apk
+android-timetracker-instrumented-61
+android-timetracker-instrumented-61.apk
+android-timetracker-instrumented-62
+android-timetracker-instrumented-62.apk
+android-timetracker-instrumented-63
+android-timetracker-instrumented-63.apk
+android-timetracker-instrumented-64
+android-timetracker-instrumented-64.apk
+android-timetracker-instrumented-65
+android-timetracker-instrumented-65.apk
+android-timetracker-instrumented-66
+android-timetracker-instrumented-66.apk
+android-timetracker-instrumented-67
+android-timetracker-instrumented-67.apk
+android-timetracker-instrumented-68
+android-timetracker-instrumented-68.apk
+android-timetracker-instrumented-69
+android-timetracker-instrumented-69.apk
+android-timetracker-instrumented-7
+android-timetracker-instrumented-70
+android-timetracker-instrumented-70.apk
+android-timetracker-instrumented-71
+android-timetracker-instrumented-71.apk
+android-timetracker-instrumented-72
+android-timetracker-instrumented-72.apk
+android-timetracker-instrumented-73
+android-timetracker-instrumented-73.apk
+android-timetracker-instrumented-74
+android-timetracker-instrumented-74.apk
+android-timetracker-instrumented-75
+android-timetracker-instrumented-75.apk
+android-timetracker-instrumented-76
+android-timetracker-instrumented-76.apk
+android-timetracker-instrumented-77
+android-timetracker-instrumented-77.apk
+android-timetracker-instrumented-78
+android-timetracker-instrumented-78.apk
+android-timetracker-instrumented-79
+android-timetracker-instrumented-79.apk
+android-timetracker-instrumented-7.apk
+android-timetracker-instrumented-8
+android-timetracker-instrumented-80
+android-timetracker-instrumented-80.apk
+android-timetracker-instrumented-81
+android-timetracker-instrumented-81.apk
+android-timetracker-instrumented-82
+android-timetracker-instrumented-82.apk
+android-timetracker-instrumented-83
+android-timetracker-instrumented-83.apk
+android-timetracker-instrumented-84
+android-timetracker-instrumented-84.apk
+android-timetracker-instrumented-85
+android-timetracker-instrumented-85.apk
+android-timetracker-instrumented-86
+android-timetracker-instrumented-86.apk
+android-timetracker-instrumented-87
+android-timetracker-instrumented-87.apk
+android-timetracker-instrumented-88
+android-timetracker-instrumented-88.apk
+android-timetracker-instrumented-89
+android-timetracker-instrumented-89.apk
+android-timetracker-instrumented-8.apk
+android-timetracker-instrumented-9
+android-timetracker-instrumented-90
+android-timetracker-instrumented-90.apk
+android-timetracker-instrumented-91
+android-timetracker-instrumented-91.apk
+android-timetracker-instrumented-92
+android-timetracker-instrumented-92.apk
+android-timetracker-instrumented-93
+android-timetracker-instrumented-93.apk
+android-timetracker-instrumented-94
+android-timetracker-instrumented-94.apk
+android-timetracker-instrumented-95
+android-timetracker-instrumented-95.apk
+android-timetracker-instrumented-96
+android-timetracker-instrumented-96.apk
+android-timetracker-instrumented-97
+android-timetracker-instrumented-97.apk
+android-timetracker-instrumented-98
+android-timetracker-instrumented-98.apk
+android-timetracker-instrumented-99
+android-timetracker-instrumented-99.apk
+android-timetracker-instrumented-9.apk
+mutants
+systematic
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2680 KB/s (275701 bytes in 0.100s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7b5fe21c
+
+**** dumpsys cpuInfo ****
+
+  28 1822/com.markuspage.android.atimetracker: 26 user + 1.6 kernel / faults: 786 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3047 KB/s (275700 bytes in 0.088s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-10.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@37884e73
+
+**** dumpsys cpuInfo ****
+
+  37 1526/com.markuspage.android.atimetracker: 33 user + 3.1 kernel / faults: 1397 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2469 KB/s (275704 bytes in 0.109s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-11.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@706716f9
+
+**** dumpsys cpuInfo ****
+
+  21 1473/com.markuspage.android.atimetracker: 19 user + 2.4 kernel / faults: 812 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2424 KB/s (275700 bytes in 0.111s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-13.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6c93b198
+
+**** dumpsys cpuInfo ****
+
+  33 1490/com.markuspage.android.atimetracker: 30 user + 2.7 kernel / faults: 691 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2840 KB/s (275703 bytes in 0.094s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-14.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@58741163
+
+**** dumpsys cpuInfo ****
+
+  23 1485/com.markuspage.android.atimetracker: 21 user + 2 kernel / faults: 3484 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2543 KB/s (275701 bytes in 0.105s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-15.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@26e0370b
+
+**** dumpsys cpuInfo ****
+
+  23 1508/com.markuspage.android.atimetracker: 21 user + 1.8 kernel / faults: 639 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2438 KB/s (275699 bytes in 0.110s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-16.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@612a57b6
+
+**** dumpsys cpuInfo ****
+
+  22 1539/com.markuspage.android.atimetracker: 20 user + 1.7 kernel / faults: 1994 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2505 KB/s (275701 bytes in 0.107s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-17.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3532587b
+
+**** dumpsys cpuInfo ****
+
+  21 1508/com.markuspage.android.atimetracker: 19 user + 1.8 kernel / faults: 872 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2516 KB/s (275708 bytes in 0.107s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-18.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7a89b82e
+
+**** dumpsys cpuInfo ****
+
+  27 1505/com.markuspage.android.atimetracker: 25 user + 1.7 kernel / faults: 1042 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2308 KB/s (275703 bytes in 0.116s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-22.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4910d3fe
+
+**** dumpsys cpuInfo ****
+
+  23 1478/com.markuspage.android.atimetracker: 20 user + 2.2 kernel / faults: 820 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2382 KB/s (275702 bytes in 0.113s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-24.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3c34ea4b
+
+**** dumpsys cpuInfo ****
+
+  23 1484/com.markuspage.android.atimetracker: 21 user + 1.8 kernel / faults: 824 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2407 KB/s (275704 bytes in 0.111s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-25.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7cae2b10
+
+**** dumpsys cpuInfo ****
+
+  23 1533/com.markuspage.android.atimetracker: 21 user + 1.6 kernel / faults: 2704 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2388 KB/s (275704 bytes in 0.112s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-26.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@332643b
+
+**** dumpsys cpuInfo ****
+
+  36 1486/com.markuspage.android.atimetracker: 33 user + 2.2 kernel / faults: 563 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2412 KB/s (275702 bytes in 0.111s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-27.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@b704969
+
+**** dumpsys cpuInfo ****
+
+  22 1496/com.markuspage.android.atimetracker: 20 user + 2 kernel / faults: 1351 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2537 KB/s (275701 bytes in 0.106s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-28.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@30cb2003
+
+**** dumpsys cpuInfo ****
+
+  22 1509/com.markuspage.android.atimetracker: 21 user + 1.6 kernel / faults: 858 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1950 KB/s (275702 bytes in 0.138s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-29.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4ae5ceb8
+
+**** dumpsys cpuInfo ****
+
+  29 1538/com.markuspage.android.atimetracker: 27 user + 1.7 kernel / faults: 883 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2232 KB/s (275705 bytes in 0.120s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@304271d1
+
+**** dumpsys cpuInfo ****
+
+  22 1558/com.markuspage.android.atimetracker: 20 user + 2 kernel / faults: 859 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2604 KB/s (275706 bytes in 0.103s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-30.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7f673451
+
+**** dumpsys cpuInfo ****
+
+  22 1516/com.markuspage.android.atimetracker: 20 user + 1.7 kernel / faults: 611 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2361 KB/s (275703 bytes in 0.114s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-31.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1661d0fa
+
+**** dumpsys cpuInfo ****
+
+  22 1505/com.markuspage.android.atimetracker: 20 user + 1.7 kernel / faults: 1606 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2418 KB/s (275705 bytes in 0.111s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-32.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@66cd77b2
+
+**** dumpsys cpuInfo ****
+
+  22 1484/com.markuspage.android.atimetracker: 20 user + 1.8 kernel / faults: 922 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2599 KB/s (275700 bytes in 0.103s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-33.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@15a3aea3
+
+**** dumpsys cpuInfo ****
+
+  27 1550/com.markuspage.android.atimetracker: 25 user + 2.7 kernel / faults: 886 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2410 KB/s (275702 bytes in 0.111s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-34.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@31783462
+
+**** dumpsys cpuInfo ****
+
+  22 1520/com.markuspage.android.atimetracker: 20 user + 1.4 kernel / faults: 871 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2302 KB/s (275702 bytes in 0.116s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-35.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@56f79de1
+
+**** dumpsys cpuInfo ****
+
+  22 1529/com.markuspage.android.atimetracker: 20 user + 2.5 kernel / faults: 849 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2729 KB/s (275703 bytes in 0.098s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-36.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4d959121
+
+**** dumpsys cpuInfo ****
+
+  22 1524/com.markuspage.android.atimetracker: 20 user + 1.6 kernel / faults: 1830 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2545 KB/s (275702 bytes in 0.105s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-37.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@38be8fbf
+
+**** dumpsys cpuInfo ****
+
+  22 1506/com.markuspage.android.atimetracker: 21 user + 1.7 kernel / faults: 1005 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2413 KB/s (275705 bytes in 0.111s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-38.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@66177f98
+
+**** dumpsys cpuInfo ****
+
+  36 1509/com.markuspage.android.atimetracker: 35 user + 1.6 kernel / faults: 697 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2329 KB/s (275701 bytes in 0.115s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-39.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@46f142bb
+
+**** dumpsys cpuInfo ****
+
+  24 1495/com.markuspage.android.atimetracker: 21 user + 2.5 kernel / faults: 3554 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2246 KB/s (275701 bytes in 0.119s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@52b925d
+
+**** dumpsys cpuInfo ****
+
+  21 1490/com.markuspage.android.atimetracker: 20 user + 0.8 kernel / faults: 566 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2392 KB/s (275705 bytes in 0.112s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-40.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@111a7368
+
+**** dumpsys cpuInfo ****
+
+  23 1535/com.markuspage.android.atimetracker: 21 user + 2.1 kernel / faults: 1524 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2434 KB/s (275699 bytes in 0.110s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-41.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7009d18a
+
+**** dumpsys cpuInfo ****
+
+  22 1496/com.markuspage.android.atimetracker: 20 user + 2.1 kernel / faults: 852 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2530 KB/s (275706 bytes in 0.106s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-42.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2c7da99e
+
+**** dumpsys cpuInfo ****
+
+  28 1526/com.markuspage.android.atimetracker: 26 user + 2.3 kernel / faults: 874 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2368 KB/s (275705 bytes in 0.113s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-43.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4ee039d1
+
+**** dumpsys cpuInfo ****
+
+  20 1522/com.markuspage.android.atimetracker: 18 user + 2.2 kernel / faults: 762 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2580 KB/s (275701 bytes in 0.104s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-44.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@184bfd5d
+
+**** dumpsys cpuInfo ****
+
+  22 1540/com.markuspage.android.atimetracker: 20 user + 1.2 kernel / faults: 844 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2442 KB/s (275701 bytes in 0.110s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-45.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6a50cf34
+
+**** dumpsys cpuInfo ****
+
+  23 1515/com.markuspage.android.atimetracker: 21 user + 2.2 kernel / faults: 2001 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2198 KB/s (275705 bytes in 0.122s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-46.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@548d1f82
+
+**** dumpsys cpuInfo ****
+
+  21 1534/com.markuspage.android.atimetracker: 20 user + 1.5 kernel / faults: 832 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2382 KB/s (275702 bytes in 0.113s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-47.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3794b79c
+
+**** dumpsys cpuInfo ****
+
+  28 1537/com.markuspage.android.atimetracker: 26 user + 1.8 kernel / faults: 1101 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2257 KB/s (275702 bytes in 0.119s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-48.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@47751fe9
+
+**** dumpsys cpuInfo ****
+
+  21 1531/com.markuspage.android.atimetracker: 20 user + 1.7 kernel / faults: 848 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2350 KB/s (275704 bytes in 0.114s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-49.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@782c4e89
+
+**** dumpsys cpuInfo ****
+
+  21 1493/com.markuspage.android.atimetracker: 20 user + 1.2 kernel / faults: 865 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2520 KB/s (275704 bytes in 0.106s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@622ecf29
+
+**** dumpsys cpuInfo ****
+
+  24 1486/com.markuspage.android.atimetracker: 22 user + 1.8 kernel / faults: 2673 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2568 KB/s (275705 bytes in 0.104s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-50.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@58c443b1
+
+**** dumpsys cpuInfo ****
+
+  22 1530/com.markuspage.android.atimetracker: 21 user + 1.1 kernel / faults: 835 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2334 KB/s (275705 bytes in 0.115s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-51.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@568c3cdd
+
+**** dumpsys cpuInfo ****
+
+  24 1478/com.markuspage.android.atimetracker: 22 user + 1.8 kernel / faults: 1336 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2413 KB/s (275704 bytes in 0.111s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-52.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@93d3df9
+
+**** dumpsys cpuInfo ****
+
+  22 1501/com.markuspage.android.atimetracker: 21 user + 1.1 kernel / faults: 826 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2275 KB/s (275704 bytes in 0.118s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-53.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5a36e9b5
+
+**** dumpsys cpuInfo ****
+
+  41 1523/com.markuspage.android.atimetracker: 38 user + 3.5 kernel / faults: 556 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2465 KB/s (275706 bytes in 0.109s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-54.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@326c62a7
+
+**** dumpsys cpuInfo ****
+
+  23 1530/com.markuspage.android.atimetracker: 21 user + 1.7 kernel / faults: 2737 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2424 KB/s (275702 bytes in 0.111s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-55.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4228ec04
+
+**** dumpsys cpuInfo ****
+
+  21 1548/com.markuspage.android.atimetracker: 19 user + 1.9 kernel / faults: 777 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2372 KB/s (275706 bytes in 0.113s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-56.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@17076769
+
+**** dumpsys cpuInfo ****
+
+  26 1512/com.markuspage.android.atimetracker: 25 user + 1.1 kernel / faults: 1060 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2896 KB/s (275705 bytes in 0.092s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-57.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@508e4ac8
+
+**** dumpsys cpuInfo ****
+
+  21 1496/com.markuspage.android.atimetracker: 20 user + 1.3 kernel / faults: 857 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2577 KB/s (275701 bytes in 0.104s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-58.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@615fb50f
+
+**** dumpsys cpuInfo ****
+
+  21 1535/com.markuspage.android.atimetracker: 19 user + 1.6 kernel / faults: 827 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2447 KB/s (275703 bytes in 0.110s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-59.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@43e32808
+
+**** dumpsys cpuInfo ****
+
+  24 1529/com.markuspage.android.atimetracker: 22 user + 1.7 kernel / faults: 2570 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2378 KB/s (275705 bytes in 0.113s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6eaba65e
+
+**** dumpsys cpuInfo ****
+
+  19 1529/com.markuspage.android.atimetracker: 17 user + 2 kernel / faults: 845 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2253 KB/s (275702 bytes in 0.119s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-60.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5a5155e0
+
+**** dumpsys cpuInfo ****
+
+  26 1541/com.markuspage.android.atimetracker: 24 user + 1.9 kernel / faults: 1076 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2001 KB/s (275701 bytes in 0.134s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-61.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@14cd8cd4
+
+**** dumpsys cpuInfo ****
+
+  20 1554/com.markuspage.android.atimetracker: 18 user + 1.7 kernel / faults: 822 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2134 KB/s (275705 bytes in 0.126s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-62.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@253fa3d6
+
+**** dumpsys cpuInfo ****
+
+  20 1530/com.markuspage.android.atimetracker: 18 user + 1.9 kernel / faults: 823 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2508 KB/s (275705 bytes in 0.107s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-63.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@73b31278
+
+**** dumpsys cpuInfo ****
+
+  23 1488/com.markuspage.android.atimetracker: 21 user + 1.9 kernel / faults: 2657 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2396 KB/s (275703 bytes in 0.112s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-64.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@f2a45e4
+
+**** dumpsys cpuInfo ****
+
+  20 1490/com.markuspage.android.atimetracker: 18 user + 1.5 kernel / faults: 857 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2454 KB/s (275704 bytes in 0.109s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-65.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1986bd75
+
+**** dumpsys cpuInfo ****
+
+  24 1500/com.markuspage.android.atimetracker: 22 user + 2.3 kernel / faults: 1195 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2392 KB/s (275701 bytes in 0.112s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-66.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@322663f2
+
+**** dumpsys cpuInfo ****
+
+  21 1504/com.markuspage.android.atimetracker: 18 user + 2.5 kernel / faults: 742 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2404 KB/s (275707 bytes in 0.111s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-67.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7fb20680
+
+**** dumpsys cpuInfo ****
+
+  21 1510/com.markuspage.android.atimetracker: 18 user + 2.5 kernel / faults: 832 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2479 KB/s (275702 bytes in 0.108s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-68.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@263125eb
+
+**** dumpsys cpuInfo ****
+
+  22 1546/com.markuspage.android.atimetracker: 20 user + 2.3 kernel / faults: 1639 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2442 KB/s (275703 bytes in 0.110s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-69.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@29a689ca
+
+**** dumpsys cpuInfo ****
+
+  21 1532/com.markuspage.android.atimetracker: 19 user + 1.6 kernel / faults: 995 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2609 KB/s (275701 bytes in 0.103s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-70.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@477b9ff
+
+**** dumpsys cpuInfo ****
+
+  28 1504/com.markuspage.android.atimetracker: 27 user + 1.5 kernel / faults: 915 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2448 KB/s (275703 bytes in 0.109s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-71.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6a16cceb
+
+**** dumpsys cpuInfo ****
+
+  21 1551/com.markuspage.android.atimetracker: 19 user + 1.6 kernel / faults: 834 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2393 KB/s (275703 bytes in 0.112s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-72.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1e436204
+
+**** dumpsys cpuInfo ****
+
+  20 1529/com.markuspage.android.atimetracker: 18 user + 1.4 kernel / faults: 795 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2368 KB/s (275702 bytes in 0.113s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-73.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@71594774
+
+**** dumpsys cpuInfo ****
+
+  24 1506/com.markuspage.android.atimetracker: 22 user + 1.8 kernel / faults: 2624 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2603 KB/s (275702 bytes in 0.103s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-74.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2f06d00f
+
+**** dumpsys cpuInfo ****
+
+  21 1514/com.markuspage.android.atimetracker: 20 user + 1 kernel / faults: 864 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2328 KB/s (275701 bytes in 0.115s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-75.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3202cc75
+
+**** dumpsys cpuInfo ****
+
+  24 1554/com.markuspage.android.atimetracker: 22 user + 1.9 kernel / faults: 1239 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2306 KB/s (275703 bytes in 0.116s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-76.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@18d9a05c
+
+**** dumpsys cpuInfo ****
+
+  23 1505/com.markuspage.android.atimetracker: 21 user + 1.8 kernel / faults: 862 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2436 KB/s (275709 bytes in 0.110s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-77.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@23b88436
+
+**** dumpsys cpuInfo ****
+
+  22 1475/com.markuspage.android.atimetracker: 19 user + 2.4 kernel / faults: 846 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2344 KB/s (275703 bytes in 0.114s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-78.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@639b341a
+
+**** dumpsys cpuInfo ****
+
+  23 1525/com.markuspage.android.atimetracker: 21 user + 1.8 kernel / faults: 2777 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2262 KB/s (275705 bytes in 0.119s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-79.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@22cc3e6c
+
+**** dumpsys cpuInfo ****
+
+  21 1551/com.markuspage.android.atimetracker: 19 user + 1.9 kernel / faults: 828 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2542 KB/s (275700 bytes in 0.105s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2e798047
+
+**** dumpsys cpuInfo ****
+
+  26 1528/com.markuspage.android.atimetracker: 24 user + 1.8 kernel / faults: 1094 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2320 KB/s (275703 bytes in 0.116s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-80.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@71c5d845
+
+**** dumpsys cpuInfo ****
+
+  19 1548/com.markuspage.android.atimetracker: 17 user + 1.8 kernel / faults: 793 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2400 KB/s (275700 bytes in 0.112s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-81.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@714be886
+
+**** dumpsys cpuInfo ****
+
+  20 1522/com.markuspage.android.atimetracker: 17 user + 2.7 kernel / faults: 796 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2638 KB/s (275700 bytes in 0.102s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-82.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2365b319
+
+**** dumpsys cpuInfo ****
+
+  28 1501/com.markuspage.android.atimetracker: 25 user + 3.5 kernel / faults: 1135 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2279 KB/s (275704 bytes in 0.118s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-83.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50339313
+
+**** dumpsys cpuInfo ****
+
+  19 1505/com.markuspage.android.atimetracker: 18 user + 1.3 kernel / faults: 806 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2668 KB/s (275701 bytes in 0.100s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-84.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6fa2cb6e
+
+**** dumpsys cpuInfo ****
+
+  28 1502/com.markuspage.android.atimetracker: 25 user + 2.6 kernel / faults: 1014 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2711 KB/s (275705 bytes in 0.099s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-85.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@51aaee5a
+
+**** dumpsys cpuInfo ****
+
+  19 1493/com.markuspage.android.atimetracker: 17 user + 2.3 kernel / faults: 847 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2156 KB/s (275705 bytes in 0.124s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-86.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@254fe233
+
+**** dumpsys cpuInfo ****
+
+  20 1507/com.markuspage.android.atimetracker: 19 user + 1 kernel / faults: 846 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2353 KB/s (275704 bytes in 0.114s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-87.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@23336832
+
+**** dumpsys cpuInfo ****
+
+  24 1521/com.markuspage.android.atimetracker: 22 user + 1.6 kernel / faults: 2695 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2467 KB/s (275709 bytes in 0.109s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-88.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@15e8a396
+
+**** dumpsys cpuInfo ****
+
+  22 1537/com.markuspage.android.atimetracker: 20 user + 2.1 kernel / faults: 814 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2444 KB/s (275701 bytes in 0.110s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-89.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1dbf2352
+
+**** dumpsys cpuInfo ****
+
+  25 1492/com.markuspage.android.atimetracker: 23 user + 1.6 kernel / faults: 1283 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2561 KB/s (275705 bytes in 0.105s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1effe520
+
+**** dumpsys cpuInfo ****
+
+  19 1548/com.markuspage.android.atimetracker: 17 user + 1.7 kernel / faults: 760 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2225 KB/s (275703 bytes in 0.121s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-90.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@72598fb7
+
+**** dumpsys cpuInfo ****
+
+  21 1524/com.markuspage.android.atimetracker: 19 user + 2 kernel / faults: 874 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2365 KB/s (275701 bytes in 0.113s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-91.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@768cd429
+
+**** dumpsys cpuInfo ****
+
+  23 1480/com.markuspage.android.atimetracker: 21 user + 1.9 kernel / faults: 2750 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2439 KB/s (275700 bytes in 0.110s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-92.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5cd13d20
+
+**** dumpsys cpuInfo ****
+
+  20 1527/com.markuspage.android.atimetracker: 18 user + 1.7 kernel / faults: 847 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2450 KB/s (275708 bytes in 0.109s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-93.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@16524baa
+
+**** dumpsys cpuInfo ****
+
+  25 1540/com.markuspage.android.atimetracker: 23 user + 1.8 kernel / faults: 1237 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2491 KB/s (275704 bytes in 0.108s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-94.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1d7b1c81
+
+**** dumpsys cpuInfo ****
+
+  20 1489/com.markuspage.android.atimetracker: 18 user + 1.6 kernel / faults: 905 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2288 KB/s (275705 bytes in 0.117s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-95.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@484c5861
+
+**** dumpsys cpuInfo ****
+
+  41 1542/com.markuspage.android.atimetracker: 38 user + 3.1 kernel / faults: 559 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2531 KB/s (275700 bytes in 0.106s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-96.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@18747ffd
+
+**** dumpsys cpuInfo ****
+
+  23 1484/com.markuspage.android.atimetracker: 21 user + 1.7 kernel / faults: 2694 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2745 KB/s (275702 bytes in 0.098s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-97.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@33dd97f1
+
+**** dumpsys cpuInfo ****
+
+  21 1479/com.markuspage.android.atimetracker: 19 user + 1.5 kernel / faults: 782 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2410 KB/s (275703 bytes in 0.111s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-98.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1560c01e
+
+**** dumpsys cpuInfo ****
+
+  25 1533/com.markuspage.android.atimetracker: 23 user + 1.8 kernel / faults: 1272 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2764 KB/s (275702 bytes in 0.097s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-99.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6df4dfe
+
+**** dumpsys cpuInfo ****
+
+  22 1517/com.markuspage.android.atimetracker: 20 user + 1.8 kernel / faults: 777 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2241 KB/s (275705 bytes in 0.120s)
+	pkg: /data/local/tmp/android-timetracker-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@fa3f1cd
+
+**** dumpsys cpuInfo ****
+
+  20 1502/com.markuspage.android.atimetracker: 18 user + 1.8 kernel / faults: 656 minor

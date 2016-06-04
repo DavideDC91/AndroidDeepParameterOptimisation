@@ -47,7 +47,7 @@ public class MultiExecutionLauncher {
 				String dir= "android-timetracker"; // app dir
 				String device = "0a2aa61a"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.timetracker";
-				boolean only_mutants = true;
+				boolean only_mutants = false;
 				int approach = 0;
 				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
 			}
@@ -59,7 +59,7 @@ public class MultiExecutionLauncher {
 				String dir= "FillUp"; // app dir
 				String device = "0a6996b3"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.fillup";
-				boolean only_mutants = true;
+				boolean only_mutants = false;
 				int approach = 0;
 				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
 			}
@@ -71,7 +71,7 @@ public class MultiExecutionLauncher {
 				String dir= "WorldClockActivity"; // app dir
 				String device = "0a3500fb"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.worldclock";
-				boolean only_mutants = true;
+				boolean only_mutants = false;
 				int approach = 0;
 				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
 			}
@@ -83,7 +83,7 @@ public class MultiExecutionLauncher {
 				String dir= "pmTextEdit"; // app dir
 				String device = "091f4245"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.pmtextedit";
-				boolean only_mutants = true;
+				boolean only_mutants = false;
 				int approach = 0;
 				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
 			}
@@ -95,7 +95,7 @@ public class MultiExecutionLauncher {
 				String dir= "gmdice"; // app dir
 				String device = "0a2aae66"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.gmdice";
-				boolean only_mutants = true;
+				boolean only_mutants = false;
 				int approach = 0;
 				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
 			}
@@ -107,7 +107,7 @@ public class MultiExecutionLauncher {
 				String dir= "sandwichroulette"; // app dir
 				String device = "0a2a2496"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.sandwichroulette";
-				boolean only_mutants = true;
+				boolean only_mutants = false;
 				int approach = 0;
 				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
 			}

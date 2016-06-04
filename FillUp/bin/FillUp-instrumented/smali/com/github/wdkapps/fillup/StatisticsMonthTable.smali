@@ -307,7 +307,7 @@
 
     int-to-double v4, v3
 
-    div-double/2addr v0, v4
+    add-double/2addr v0, v4
 
     aput-boolean v9, v2, v9
 

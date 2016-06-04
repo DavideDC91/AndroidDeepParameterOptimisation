@@ -166,7 +166,7 @@
 
     aput-boolean v5, v3, v4
 
-    if-nez v0, :cond_1
+    if-eqz v0, :cond_1
 
     .line 1105
     new-instance v0, Ljava/io/File;

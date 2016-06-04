@@ -1,0 +1,1409 @@
+
+
+**** apktool d WorldClockActivity-instrumented_1394.apk ****
+
+I: Using Apktool 2.1.0 on WorldClockActivity-instrumented_1394.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d WorldClockActivity-instrumented_468.apk ****
+
+I: Using Apktool 2.1.0 on WorldClockActivity-instrumented_468.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d WorldClockActivity-instrumented_503.apk ****
+
+I: Using Apktool 2.1.0 on WorldClockActivity-instrumented_503.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d WorldClockActivity-instrumented_530.apk ****
+
+I: Using Apktool 2.1.0 on WorldClockActivity-instrumented_530.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d WorldClockActivity-instrumented_575.apk ****
+
+I: Using Apktool 2.1.0 on WorldClockActivity-instrumented_575.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d WorldClockActivity-instrumented_578.apk ****
+
+I: Using Apktool 2.1.0 on WorldClockActivity-instrumented_578.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d WorldClockActivity-instrumented_644.apk ****
+
+I: Using Apktool 2.1.0 on WorldClockActivity-instrumented_644.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d WorldClockActivity-instrumented_659.apk ****
+
+I: Using Apktool 2.1.0 on WorldClockActivity-instrumented_659.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d WorldClockActivity-instrumented_673.apk ****
+
+I: Using Apktool 2.1.0 on WorldClockActivity-instrumented_673.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d WorldClockActivity-instrumented_675.apk ****
+
+I: Using Apktool 2.1.0 on WorldClockActivity-instrumented_675.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3062 KB/s (1355475 bytes in 0.432s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@412ac854
+
+**** dumpsys cpuInfo ****
+
+  61 1752/com.irahul.worldclock: 56 user + 5.1 kernel / faults: 20800 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3167 KB/s (1355474 bytes in 0.417s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1fd80cff
+
+**** dumpsys cpuInfo ****
+
+  95 1506/com.irahul.worldclock: 93 user + 1.7 kernel / faults: 1606 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2949 KB/s (1355475 bytes in 0.448s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5390ced4
+
+**** dumpsys cpuInfo ****
+
+  57 1750/com.irahul.worldclock: 52 user + 5.4 kernel / faults: 697 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3419 KB/s (1355469 bytes in 0.387s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5a411df2
+
+**** dumpsys cpuInfo ****
+
+  100 1498/com.irahul.worldclock: 98 user + 2.1 kernel / faults: 2420 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2926 KB/s (1355467 bytes in 0.452s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@30528252
+
+**** dumpsys cpuInfo ****
+
+  63 1754/com.irahul.worldclock: 59 user + 4.7 kernel / faults: 3820 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3522 KB/s (1355465 bytes in 0.375s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@15c0c66a
+
+**** dumpsys cpuInfo ****
+
+  100 1500/com.irahul.worldclock: 98 user + 2.7 kernel / faults: 1686 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2948 KB/s (1355463 bytes in 0.449s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-6.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@63e8dbae
+
+**** dumpsys cpuInfo ****
+
+  96 1475/com.irahul.worldclock: 93 user + 3.2 kernel / faults: 2263 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3056 KB/s (1355460 bytes in 0.433s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@11134cd5
+
+**** dumpsys cpuInfo ****
+
+  100 1502/com.irahul.worldclock: 96 user + 3.7 kernel / faults: 2614 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3030 KB/s (1355459 bytes in 0.436s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@713ece67
+
+**** dumpsys cpuInfo ****
+
+  62 1728/com.irahul.worldclock: 56 user + 6 kernel / faults: 25641 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3181 KB/s (1355460 bytes in 0.416s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6fd7c71b
+
+**** dumpsys cpuInfo ****
+
+  61 1725/com.irahul.worldclock: 56 user + 5.6 kernel / faults: 24808 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3168 KB/s (1355461 bytes in 0.417s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-10.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@58286287
+
+**** dumpsys cpuInfo ****
+
+  61 1513/com.irahul.worldclock: 58 user + 3.1 kernel / faults: 980 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3081 KB/s (1355459 bytes in 0.429s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-11.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5da15b1
+
+**** dumpsys cpuInfo ****
+
+  53 1726/com.irahul.worldclock: 49 user + 3.9 kernel / faults: 6143 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3484 KB/s (1355461 bytes in 0.379s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-12.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7af324
+
+**** dumpsys cpuInfo ****
+
+  63 1524/com.irahul.worldclock: 59 user + 3.5 kernel / faults: 1310 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3066 KB/s (1355463 bytes in 0.431s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-13.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@538b3374
+
+**** dumpsys cpuInfo ****
+
+  62 1741/com.irahul.worldclock: 60 user + 2.6 kernel / faults: 5891 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3362 KB/s (1355459 bytes in 0.393s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-14.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@77d0f07c
+
+**** dumpsys cpuInfo ****
+
+  64 1725/com.irahul.worldclock: 59 user + 5.4 kernel / faults: 25661 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3160 KB/s (1355461 bytes in 0.418s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-15.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@e4abf27
+
+**** dumpsys cpuInfo ****
+
+  63 1725/com.irahul.worldclock: 60 user + 3.7 kernel / faults: 4591 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3174 KB/s (1355461 bytes in 0.416s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-16.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6f8d4d8a
+
+**** dumpsys cpuInfo ****
+
+  59 1491/com.irahul.worldclock: 56 user + 3.2 kernel / faults: 3680 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3130 KB/s (1355464 bytes in 0.422s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-17.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@b38de29
+
+**** dumpsys cpuInfo ****
+
+  62 1747/com.irahul.worldclock: 57 user + 4.8 kernel / faults: 5066 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3167 KB/s (1355460 bytes in 0.417s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-18.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@59042e1
+
+**** dumpsys cpuInfo ****
+
+  61 1485/com.irahul.worldclock: 57 user + 4.2 kernel / faults: 4992 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3450 KB/s (1355460 bytes in 0.383s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-19.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3273c11e
+
+**** dumpsys cpuInfo ****
+
+  65 1741/com.irahul.worldclock: 61 user + 4.6 kernel / faults: 5203 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3227 KB/s (1355460 bytes in 0.410s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-20.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@11aaa0bc
+
+**** dumpsys cpuInfo ****
+
+  65 1484/com.irahul.worldclock: 60 user + 4.5 kernel / faults: 3916 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3118 KB/s (1355459 bytes in 0.424s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-21.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@208002ef
+
+**** dumpsys cpuInfo ****
+
+  70 1743/com.irahul.worldclock: 66 user + 4.1 kernel / faults: 2673 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3418 KB/s (1355463 bytes in 0.387s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-22.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7cbdbf2b
+
+**** dumpsys cpuInfo ****
+
+  69 1747/com.irahul.worldclock: 63 user + 5.1 kernel / faults: 26677 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3222 KB/s (1355463 bytes in 0.410s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-23.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1238003a
+
+**** dumpsys cpuInfo ****
+
+  74 1504/com.irahul.worldclock: 69 user + 5 kernel / faults: 16552 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2926 KB/s (1355461 bytes in 0.452s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-24.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6c425551
+
+**** dumpsys cpuInfo ****
+
+  62 1738/com.irahul.worldclock: 56 user + 6 kernel / faults: 26963 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3630 KB/s (1355460 bytes in 0.364s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-25.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1776c68a
+
+**** dumpsys cpuInfo ****
+
+  60 1476/com.irahul.worldclock: 56 user + 4.1 kernel / faults: 1381 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3368 KB/s (1355461 bytes in 0.392s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-26.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@fe1bf96
+
+**** dumpsys cpuInfo ****
+
+  64 1737/com.irahul.worldclock: 59 user + 5.1 kernel / faults: 27035 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3365 KB/s (1355460 bytes in 0.393s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-27.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@d55bbc6
+
+**** dumpsys cpuInfo ****
+
+  72 1733/com.irahul.worldclock: 67 user + 5 kernel / faults: 3468 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+4056 KB/s (1355461 bytes in 0.326s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-28.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@120445e8
+
+**** dumpsys cpuInfo ****
+
+  54 1480/com.irahul.worldclock: 50 user + 4.1 kernel / faults: 9496 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2977 KB/s (1355462 bytes in 0.444s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-29.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@868248f
+
+**** dumpsys cpuInfo ****
+
+  60 1717/com.irahul.worldclock: 55 user + 5.2 kernel / faults: 24420 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3495 KB/s (1355464 bytes in 0.378s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-30.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@278d072c
+
+**** dumpsys cpuInfo ****
+
+  65 1719/com.irahul.worldclock: 61 user + 4 kernel / faults: 27172 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3139 KB/s (1355462 bytes in 0.421s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-31.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3b053a46
+
+**** dumpsys cpuInfo ****
+
+  59 1748/com.irahul.worldclock: 56 user + 3.3 kernel / faults: 1068 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3167 KB/s (1355460 bytes in 0.417s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-32.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@61dae90a
+
+**** dumpsys cpuInfo ****
+
+  60 1483/com.irahul.worldclock: 55 user + 5.7 kernel / faults: 5234 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3013 KB/s (1355462 bytes in 0.439s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-33.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@39ed2dfd
+
+**** dumpsys cpuInfo ****
+
+  59 1714/com.irahul.worldclock: 54 user + 4.4 kernel / faults: 490 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3137 KB/s (1355464 bytes in 0.421s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-34.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6539a9a7
+
+**** dumpsys cpuInfo ****
+
+  68 1725/com.irahul.worldclock: 62 user + 6 kernel / faults: 26879 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3109 KB/s (1355461 bytes in 0.425s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-35.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3edfd0dc
+
+**** dumpsys cpuInfo ****
+
+  58 1731/com.irahul.worldclock: 55 user + 3.2 kernel / faults: 4521 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3158 KB/s (1355461 bytes in 0.419s)
+	pkg: /data/local/tmp/WorldClockActivity-instrumented-36.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2a68f866
+
+**** dumpsys cpuInfo ****
+
+  70 1484/com.irahul.worldclock: 65 user + 5.1 kernel / faults: 11724 minor

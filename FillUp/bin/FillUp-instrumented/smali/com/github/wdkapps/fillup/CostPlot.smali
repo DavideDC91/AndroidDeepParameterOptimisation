@@ -1731,7 +1731,7 @@
     .line 366
     invoke-direct {p0}, Lcom/github/wdkapps/fillup/CostPlot;->redrawPlot()V
 
-    const/4 v1, 0x3
+    const/4 v1, 0x7
 
     aput-boolean v3, v0, v1
 
