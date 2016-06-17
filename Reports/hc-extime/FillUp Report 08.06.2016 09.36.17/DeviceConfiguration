@@ -1,0 +1,2861 @@
+
+
+**** android update ****
+
+Updated project.properties
+Updated local.properties
+Updated file ./build.xml
+Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
+
+
+**** ant clean ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: FillUp
+  [gettype] Project Type: Application
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/FillUp/gen
+[getlibpath] Library dependencies:
+[getlibpath] No Libraries
+   [subant] No sub-builds to iterate on
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+
+
+**** ant instrument ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: FillUp
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.3
+     [echo] Resolving Build Target for FillUp...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/rsObj
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/rsLibs
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/gen
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/classes
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for FillUp...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'instrument'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [aapt] warning: string 'title_file_selection_dialog' has no default translation.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 61 source files to /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/classes
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 3 warnings
+     [echo] Instrumenting classes from /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/classes...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/classes
+      [dex] input: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/libs/android-support-v4.jar
+      [dex] input: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/libs/androidplot-core-0.6.0.jar
+      [dex] input: /home/davide/android-sdk/tools/lib/emma_device.jar
+      [dex] Pre-Dexing /home/davide/git/AndroidDeepParameterOptimisation/FillUp/libs/android-support-v4.jar -> android-support-v4-dc1a8d99014f66aebdbd5bd5fcf3e581.jar
+      [dex] Pre-Dexing /home/davide/git/AndroidDeepParameterOptimisation/FillUp/libs/androidplot-core-0.6.0.jar -> androidplot-core-0.6.0-89aeefc4913e8afe7ccd540d9eb599d6.jar
+      [dex] Pre-Dexing /home/davide/android-sdk/tools/lib/emma_device.jar -> emma_device-c54bd04c2f76e0e56a7ebc2ed6b523ca.jar
+      [dex] Converting compiled files and external libraries into /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/classes.dex...
+       [dx] Merged dex #1 (127 defs/220.9KiB)
+       [dx] Merged dex #2 (283 defs/292.8KiB)
+       [dx] Merged dex #3 (123 defs/150.4KiB)
+       [dx] Merged dex #4 (297 defs/327.2KiB)
+       [dx] Result is 830 defs/1192.9KiB. Took 0.5s
+
+-crunch:
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_action_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] Crunching PNG Files in source dir: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res
+   [crunch] To destination dir: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_folder.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_menu_share.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been editedProcessing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/btn_toggle_off.9.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/btn_toggle_off.9.png
+   [crunch] 
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/btn_toggle_off.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/btn_toggle_on.9.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/btn_toggle_on.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/btn_toggle_on.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_action_search.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_action_search.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_action_search.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_btn_add.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_btn_add.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_btn_add.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_btn_delete.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_btn_delete.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_btn_delete.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_btn_edit.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_btn_edit.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_btn_edit.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_btn_mode.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_btn_mode.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_btn_mode.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_dialog_alert.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_dialog_alert.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_dialog_alert.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_dialog_close.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_dialog_close.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_dialog_close.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_dialog_info.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_dialog_info.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_dialog_info.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_dialog_menu_generic.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_dialog_menu_generic.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_dialog_menu_generic.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_file.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_file.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_file.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_folder.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_folder.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_folder.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_gas_can.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_gas_can.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_gas_can.png: 66% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_launcher.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_launcher.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_launcher.png: 68% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_menu_add.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_add.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_add.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_menu_delete.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_delete.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_delete.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_menu_edit.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_edit.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_edit.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_menu_info_details.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_info_details.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_info_details.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_menu_preferences.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_preferences.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_preferences.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_menu_save.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_save.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_save.png: 0% size of source)
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_folder.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_menu_share.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_share.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_share.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_menu_upload.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_upload.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_menu_upload.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_notepad.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_notepad.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_notepad.png: 57% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_plot.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_plot.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_plot.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-hdpi/ic_stats.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_stats.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-hdpi/ic_stats.png: 71% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/btn_toggle_off.9.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/btn_toggle_off.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/btn_toggle_off.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/btn_toggle_on.9.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/btn_toggle_on.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/btn_toggle_on.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_dialog_alert.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_dialog_alert.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_dialog_alert.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_dialog_close.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_dialog_close.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_dialog_close.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_dialog_info.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_dialog_info.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_dialog_info.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_dialog_menu_generic.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_dialog_menu_generic.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_dialog_menu_generic.png: 0% size of source)
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_menu_share.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_file.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_file.png
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_action_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_file.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_folder.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_folder.png/home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_dialog_alert.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] 
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_folder.png: 0% size of source)/home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_dialog_info.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] 
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_gas_can.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_gas_can.png
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_folder.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_gas_can.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_launcher.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_launcher.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_menu_add.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_add.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_add.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_menu_delete.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_delete.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_delete.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_menu_edit.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_edit.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_edit.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_menu_info_details.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_info_details.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_info_details.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_menu_preferences.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_preferences.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_preferences.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_menu_save.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_save.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_save.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_menu_share.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_share.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_share.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_menu_upload.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_upload.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_menu_upload.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_notepad.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_notepad.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_notepad.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_plot.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_plot.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_plot.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-ldpi/ic_stats.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_stats.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-ldpi/ic_stats.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/btn_toggle_off.9.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/btn_toggle_off.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/btn_toggle_off.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/btn_toggle_on.9.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/btn_toggle_on.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/btn_toggle_on.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_action_search.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_action_search.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_action_search.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_dialog_alert.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_dialog_alert.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_dialog_alert.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_dialog_close.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_dialog_close.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_dialog_close.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_dialog_info.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_dialog_info.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_dialog_info.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_dialog_menu_generic.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_dialog_menu_generic.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_dialog_menu_generic.png: 0% size of source)
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_menu_share.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_file.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_file.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_file.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_folder.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_folder.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_folder.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_gas_can.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_gas_can.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_gas_can.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_launcher.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_launcher.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_launcher.png: 69% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_menu_add.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_add.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_add.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_menu_delete.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_delete.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_delete.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_menu_edit.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_edit.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_edit.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_menu_info_details.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_info_details.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_info_details.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_menu_preferences.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_preferences.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_preferences.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_menu_save.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_save.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_save.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_menu_share.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_share.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_share.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_menu_upload.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_upload.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_menu_upload.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_notepad.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_notepad.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_notepad.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_plot.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_plot.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_plot.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/ic_stats.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_stats.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/ic_stats.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-mdpi/spiral_tile.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/spiral_tile.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-mdpi/spiral_tile.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/btn_toggle_off.9.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/btn_toggle_off.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/btn_toggle_off.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/btn_toggle_on.9.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/btn_toggle_on.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/btn_toggle_on.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_action_search.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_action_search.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_action_search.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_gas_can.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_gas_can.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_gas_can.png: 53% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_launcher.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_launcher.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_launcher.png: 64% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_menu_add.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_add.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_add.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_menu_delete.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_delete.png
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_action_search.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_menu_share.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_delete.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_menu_edit.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_edit.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_edit.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_menu_info_details.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_info_details.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_info_details.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_menu_preferences.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_preferences.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_preferences.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_menu_save.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_save.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_save.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_menu_share.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_share.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_share.png: 41% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_menu_upload.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_upload.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_menu_upload.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_notepad.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_notepad.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_notepad.png: 76% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_plot.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_plot.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_plot.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable-xhdpi/ic_stats.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_stats.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable-xhdpi/ic_stats.png: 51% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable/fuel_gauge.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable/fuel_gauge.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable/fuel_gauge.png: 64% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable/gauge_background.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable/gauge_background.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable/gauge_background.png: 55% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable/gauge_background_question.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable/gauge_background_question.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable/gauge_background_question.png: 58% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/res/drawable/ic_menu_moreoptions.png => /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable/ic_menu_moreoptions.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/res/drawable/ic_menu_moreoptions.png: 0% size of source)
+   [crunch] Crunched 90 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+     [aapt] warning: string 'title_file_selection_dialog' has no default translation.
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating FillUp-instrumented-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/FillUp-instrumented.apk
+[propertyfile] Creating new property file: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/build.prop
+
+instrument:
+ [zipalign] Run cancelled: no changes to input file /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/FillUp-instrumented-unaligned.apk
+     [echo] Instrumented Package: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/FillUp-instrumented.apk
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/build.prop
+
+BUILD SUCCESSFUL
+Total time: 59 seconds
+
+
+**** ant installi ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/FillUp/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+install:
+     [echo] Installing /home/davide/git/AndroidDeepParameterOptimisation/FillUp/bin/FillUp-instrumented.apk onto default emulator or device...
+     [exec] 2158 KB/s (1200219 bytes in 0.543s)
+     [exec] 	pkg: /data/local/tmp/FillUp-instrumented.apk
+     [exec] Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
+
+installi:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+
+
+**** apktool d ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building resources...
+W: warning: string 'title_file_selection_dialog' has no default translation.
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+5667 KB/s (1211843 bytes in 0.208s)
+	pkg: /data/local/tmp/FillUp-instrumented.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5c732e8a
+
+**** dumpsys cpuInfo ****
+
+  38 1686/com.github.wdkapps.fillup: 34 user + 4 kernel / faults: 1087 minor
+
+**** adb broadcast ****
+
+Broadcasting: Intent { act=com.qa.emma.COLLECT_COVERAGE }
+Broadcast completed: result=0
+
+
+**** adb push ****
+
+Android Debug Bridge version 1.0.32
+Revision 09a0d98bebce-android
+
+ -a                            - directs adb to listen on all interfaces for a connection
+ -d                            - directs command to the only connected USB device
+                                 returns an error if more than one USB device is present.
+ -e                            - directs command to the only running emulator.
+                                 returns an error if more than one emulator is running.
+ -s <specific device>          - directs command to the device or emulator with the given
+                                 serial number or qualifier. Overrides ANDROID_SERIAL
+                                 environment variable.
+ -p <product name or path>     - simple product name like 'sooner', or
+                                 a relative/absolute path to a product
+                                 out directory like 'out/target/product/sooner'.
+                                 If -p is not specified, the ANDROID_PRODUCT_OUT
+                                 environment variable is used, which must
+                                 be an absolute path.
+ -H                            - Name of adb server host (default: localhost)
+ -P                            - Port of adb server (default: 5037)
+ devices [-l]                  - list all connected devices
+                                 ('-l' will also list device qualifiers)
+ connect <host>[:<port>]       - connect to a device via TCP/IP
+                                 Port 5555 is used by default if no port number is specified.
+ disconnect [<host>[:<port>]]  - disconnect from a TCP/IP device.
+                                 Port 5555 is used by default if no port number is specified.
+                                 Using this command with no additional arguments
+                                 will disconnect from all connected TCP/IP devices.
+
+device commands:
+  adb push [-p] <local> <remote>
+                               - copy file/dir to device
+                                 ('-p' to display the transfer progress)
+  adb pull [-p] [-a] <remote> [<local>]
+                               - copy file/dir from device
+                                 ('-p' to display the transfer progress)
+                                 ('-a' means copy timestamp and mode)
+  adb sync [ <directory> ]     - copy host->device only if changed
+                                 (-l means list but don't copy)
+  adb shell                    - run remote shell interactively
+  adb shell <command>          - run remote shell command
+  adb emu <command>            - run emulator console command
+  adb logcat [ <filter-spec> ] - View device log
+  adb forward --list           - list all forward socket connections.
+                                 the format is a list of lines with the following format:
+                                    <serial> " " <local> " " <remote> "\n"
+  adb forward <local> <remote> - forward socket connections
+                                 forward specs are one of: 
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+                                   dev:<character device name>
+                                   jdwp:<process pid> (remote only)
+  adb forward --no-rebind <local> <remote>
+                               - same as 'adb forward <local> <remote>' but fails
+                                 if <local> is already forwarded
+  adb forward --remove <local> - remove a specific forward socket connection
+  adb forward --remove-all     - remove all forward socket connections
+  adb reverse --list           - list all reverse socket connections from device
+  adb reverse <remote> <local> - reverse socket connections
+                                 reverse specs are one of:
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+  adb reverse --norebind <remote> <local>
+                               - same as 'adb reverse <remote> <local>' but fails
+                                 if <remote> is already reversed.
+  adb reverse --remove <remote>
+                               - remove a specific reversed socket connection
+  adb reverse --remove-all     - remove all reversed socket connections from device
+  adb jdwp                     - list PIDs of processes hosting a JDWP transport
+  adb install [-lrtsdg] <file>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-g: grant all runtime permissions)
+  adb install-multiple [-lrtsdpg] <file...>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-p: partial application install)
+                                 (-g: grant all runtime permissions)
+  adb uninstall [-k] <package> - remove this app package from the device
+                                 ('-k' means keep the data and cache directories)
+  adb bugreport                - return all information from the device
+                                 that should be included in a bug report.
+
+  adb backup [-f <file>] [-apk|-noapk] [-obb|-noobb] [-shared|-noshared] [-all] [-system|-nosystem] [<packages...>]
+                               - write an archive of the device's data to <file>.
+                                 If no -f option is supplied then the data is written
+                                 to "backup.ab" in the current directory.
+                                 (-apk|-noapk enable/disable backup of the .apks themselves
+                                    in the archive; the default is noapk.)
+                                 (-obb|-noobb enable/disable backup of any installed apk expansion
+                                    (aka .obb) files associated with each application; the default
+                                    is noobb.)
+                                 (-shared|-noshared enable/disable backup of the device's
+                                    shared storage / SD card contents; the default is noshared.)
+                                 (-all means to back up all installed applications)
+                                 (-system|-nosystem toggles whether -all automatically includes
+                                    system applications; the default is to include system apps)
+                                 (<packages...> is the list of applications to be backed up.  If
+                                    the -all or -shared flags are passed, then the package
+                                    list is optional.  Applications explicitly given on the
+                                    command line will be included even if -nosystem would
+                                    ordinarily cause them to be omitted.)
+
+  adb restore <file>           - restore device contents from the <file> backup archive
+
+  adb disable-verity           - disable dm-verity checking on USERDEBUG builds
+  adb enable-verity            - re-enable dm-verity checking on USERDEBUG builds
+  adb keygen <file>            - generate adb public/private key. The private key is stored in <file>,
+                                 and the public key is stored in <file>.pub. Any existing files
+                                 are overwritten.
+  adb help                     - show this help message
+  adb version                  - show version num
+
+scripting:
+  adb wait-for-device          - block until device is online
+  adb start-server             - ensure that there is a server running
+  adb kill-server              - kill the server if it is running
+  adb get-state                - prints: offline | bootloader | device
+  adb get-serialno             - prints: <serial-number>
+  adb get-devpath              - prints: <device-path>
+  adb remount                  - remounts the /system, /vendor (if present) and /oem (if present) partitions on the device read-write
+  adb reboot [bootloader|recovery]
+                               - reboots the device, optionally into the bootloader or recovery program.
+  adb reboot sideload          - reboots the device into the sideload mode in recovery program (adb root required).
+  adb reboot sideload-auto-reboot
+                               - reboots into the sideload mode, then reboots automatically after the sideload regardless of the result.
+  adb sideload <file>          - sideloads the given package
+  adb root                     - restarts the adbd daemon with root permissions
+  adb unroot                   - restarts the adbd daemon without root permissions
+  adb usb                      - restarts the adbd daemon listening on USB
+  adb tcpip <port>             - restarts the adbd daemon listening on TCP on the specified port
+
+networking:
+  adb ppp <tty> [parameters]   - Run PPP over USB.
+ Note: you should not automatically start a PPP connection.
+ <tty> refers to the tty for PPP stream. Eg. dev:/dev/omap_csmi_tty1
+ [parameters] - Eg. defaultroute debug dump local notty usepeerdns
+
+adb sync notes: adb sync [ <directory> ]
+  <localdir> can be interpreted in several ways:
+
+  - If <directory> is not specified, /system, /vendor (if present), /oem (if present) and /data partitions will be updated.
+
+  - If it is "system", "vendor", "oem" or "data", only the corresponding partition
+    is updated.
+
+environment variables:
+  ADB_TRACE                    - Print debug information. A comma separated list of the following values
+                                 1 or all, adb, sockets, packets, rwx, usb, sync, sysdeps, transport, jdwp
+  ANDROID_SERIAL               - The serial number to connect to. -s takes priority over this if given.
+  ANDROID_LOG_TAGS             - When used with the logcat option, only these debug tags are printed.
+
+
+**** adb pull ****
+
+3392 KB/s (624573 bytes in 0.179s)
+
+
+**** java emma report ****
+
+EMMA: processing input files ...
+EMMA: 2 file(s) read and merged in 75 ms
+EMMA: writing [html] report to [/home/davide/git/AndroidDeepParameterOptimisation/FillUp/coverage/index.html] ...
+
+
+**** ls ****
+
+FillUp-instrumented-0
+FillUp-instrumented-0.apk
+FillUp-instrumented-1
+FillUp-instrumented-10
+FillUp-instrumented-100
+FillUp-instrumented-100.apk
+FillUp-instrumented-101
+FillUp-instrumented-101.apk
+FillUp-instrumented-102
+FillUp-instrumented-102.apk
+FillUp-instrumented-103
+FillUp-instrumented-103.apk
+FillUp-instrumented-104
+FillUp-instrumented-104.apk
+FillUp-instrumented-105
+FillUp-instrumented-105.apk
+FillUp-instrumented-106
+FillUp-instrumented-106.apk
+FillUp-instrumented-10.apk
+FillUp-instrumented-11
+FillUp-instrumented-11.apk
+FillUp-instrumented-12
+FillUp-instrumented-12.apk
+FillUp-instrumented-14
+FillUp-instrumented-14.apk
+FillUp-instrumented-15
+FillUp-instrumented-15.apk
+FillUp-instrumented-16
+FillUp-instrumented-16.apk
+FillUp-instrumented-17
+FillUp-instrumented-17.apk
+FillUp-instrumented-18
+FillUp-instrumented-18.apk
+FillUp-instrumented-19
+FillUp-instrumented-19.apk
+FillUp-instrumented-1.apk
+FillUp-instrumented-2
+FillUp-instrumented-20
+FillUp-instrumented-20.apk
+FillUp-instrumented-21
+FillUp-instrumented-21.apk
+FillUp-instrumented-22
+FillUp-instrumented-22.apk
+FillUp-instrumented-23
+FillUp-instrumented-23.apk
+FillUp-instrumented-24
+FillUp-instrumented-24.apk
+FillUp-instrumented-25
+FillUp-instrumented-25.apk
+FillUp-instrumented-26
+FillUp-instrumented-26.apk
+FillUp-instrumented-27
+FillUp-instrumented-27.apk
+FillUp-instrumented-28
+FillUp-instrumented-28.apk
+FillUp-instrumented-2.apk
+FillUp-instrumented-3
+FillUp-instrumented-32
+FillUp-instrumented-32.apk
+FillUp-instrumented-33
+FillUp-instrumented-33.apk
+FillUp-instrumented-34
+FillUp-instrumented-34.apk
+FillUp-instrumented-35
+FillUp-instrumented-35.apk
+FillUp-instrumented-36
+FillUp-instrumented-36.apk
+FillUp-instrumented-37
+FillUp-instrumented-37.apk
+FillUp-instrumented-38
+FillUp-instrumented-38.apk
+FillUp-instrumented-39
+FillUp-instrumented-39.apk
+FillUp-instrumented-3.apk
+FillUp-instrumented-4
+FillUp-instrumented-40
+FillUp-instrumented-40.apk
+FillUp-instrumented-41
+FillUp-instrumented-41.apk
+FillUp-instrumented-42
+FillUp-instrumented-42.apk
+FillUp-instrumented-43
+FillUp-instrumented-43.apk
+FillUp-instrumented-44
+FillUp-instrumented-44.apk
+FillUp-instrumented-45
+FillUp-instrumented-45.apk
+FillUp-instrumented-46
+FillUp-instrumented-46.apk
+FillUp-instrumented-47
+FillUp-instrumented-47.apk
+FillUp-instrumented-48
+FillUp-instrumented-48.apk
+FillUp-instrumented-49
+FillUp-instrumented-49.apk
+FillUp-instrumented-4.apk
+FillUp-instrumented-5
+FillUp-instrumented-50
+FillUp-instrumented-50.apk
+FillUp-instrumented-51
+FillUp-instrumented-51.apk
+FillUp-instrumented-52
+FillUp-instrumented-52.apk
+FillUp-instrumented-53
+FillUp-instrumented-53.apk
+FillUp-instrumented-54
+FillUp-instrumented-54.apk
+FillUp-instrumented-55
+FillUp-instrumented-55.apk
+FillUp-instrumented-56
+FillUp-instrumented-56.apk
+FillUp-instrumented-57
+FillUp-instrumented-57.apk
+FillUp-instrumented-58
+FillUp-instrumented-58.apk
+FillUp-instrumented-59
+FillUp-instrumented-59.apk
+FillUp-instrumented-5.apk
+FillUp-instrumented-6
+FillUp-instrumented-60
+FillUp-instrumented-60.apk
+FillUp-instrumented-61
+FillUp-instrumented-61.apk
+FillUp-instrumented-62
+FillUp-instrumented-62.apk
+FillUp-instrumented-63
+FillUp-instrumented-63.apk
+FillUp-instrumented-64
+FillUp-instrumented-64.apk
+FillUp-instrumented-65
+FillUp-instrumented-65.apk
+FillUp-instrumented-66
+FillUp-instrumented-66.apk
+FillUp-instrumented-67
+FillUp-instrumented-67.apk
+FillUp-instrumented-68
+FillUp-instrumented-68.apk
+FillUp-instrumented-69
+FillUp-instrumented-69.apk
+FillUp-instrumented-6.apk
+FillUp-instrumented-7
+FillUp-instrumented-70
+FillUp-instrumented-70.apk
+FillUp-instrumented-71
+FillUp-instrumented-71.apk
+FillUp-instrumented-72
+FillUp-instrumented-72.apk
+FillUp-instrumented-73
+FillUp-instrumented-73.apk
+FillUp-instrumented-74
+FillUp-instrumented-74.apk
+FillUp-instrumented-75
+FillUp-instrumented-75.apk
+FillUp-instrumented-76
+FillUp-instrumented-76.apk
+FillUp-instrumented-77
+FillUp-instrumented-77.apk
+FillUp-instrumented-78
+FillUp-instrumented-78.apk
+FillUp-instrumented-79
+FillUp-instrumented-79.apk
+FillUp-instrumented-7.apk
+FillUp-instrumented-8
+FillUp-instrumented-80
+FillUp-instrumented-80.apk
+FillUp-instrumented-81
+FillUp-instrumented-81.apk
+FillUp-instrumented-82
+FillUp-instrumented-82.apk
+FillUp-instrumented-83
+FillUp-instrumented-83.apk
+FillUp-instrumented-84
+FillUp-instrumented-84.apk
+FillUp-instrumented-85
+FillUp-instrumented-85.apk
+FillUp-instrumented-86
+FillUp-instrumented-86.apk
+FillUp-instrumented-87
+FillUp-instrumented-87.apk
+FillUp-instrumented-88
+FillUp-instrumented-88.apk
+FillUp-instrumented-89
+FillUp-instrumented-89.apk
+FillUp-instrumented-8.apk
+FillUp-instrumented-90
+FillUp-instrumented-90.apk
+FillUp-instrumented-91
+FillUp-instrumented-91.apk
+FillUp-instrumented-92
+FillUp-instrumented-92.apk
+FillUp-instrumented-93
+FillUp-instrumented-93.apk
+FillUp-instrumented-94
+FillUp-instrumented-94.apk
+FillUp-instrumented-95
+FillUp-instrumented-95.apk
+FillUp-instrumented-96
+FillUp-instrumented-96.apk
+FillUp-instrumented-97
+FillUp-instrumented-97.apk
+FillUp-instrumented-98
+FillUp-instrumented-98.apk
+FillUp-instrumented-99
+FillUp-instrumented-99.apk
+hc
+mutants
+systematic
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2861 KB/s (1211847 bytes in 0.413s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1906a2e2
+
+**** dumpsys cpuInfo ****
+
+  38 1515/com.github.wdkapps.fillup: 34 user + 3.9 kernel / faults: 1100 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3050 KB/s (1211861 bytes in 0.387s)
+	pkg: /data/local/tmp/FillUp-instrumented-100.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4a2f1236
+
+**** dumpsys cpuInfo ****
+
+  42 1538/com.github.wdkapps.fillup: 39 user + 2.9 kernel / faults: 963 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3024 KB/s (1211861 bytes in 0.391s)
+	pkg: /data/local/tmp/FillUp-instrumented-101.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@459363bc
+
+**** dumpsys cpuInfo ****
+
+  34 1523/com.github.wdkapps.fillup: 32 user + 2.2 kernel / faults: 1949 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3275 KB/s (1211861 bytes in 0.361s)
+	pkg: /data/local/tmp/FillUp-instrumented-102.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2ab991bf
+
+**** dumpsys cpuInfo ****
+
+  38 1514/com.github.wdkapps.fillup: 37 user + 1.7 kernel / faults: 1020 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2982 KB/s (1211861 bytes in 0.396s)
+	pkg: /data/local/tmp/FillUp-instrumented-103.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@43a52d30
+
+**** dumpsys cpuInfo ****
+
+  40 1504/com.github.wdkapps.fillup: 36 user + 3.6 kernel / faults: 1035 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3041 KB/s (1211861 bytes in 0.389s)
+	pkg: /data/local/tmp/FillUp-instrumented-104.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@48f6bf4b
+
+**** dumpsys cpuInfo ****
+
+  38 1573/com.github.wdkapps.fillup: 34 user + 3.3 kernel / faults: 1063 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3272 KB/s (1211861 bytes in 0.361s)
+	pkg: /data/local/tmp/FillUp-instrumented-105.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@733a9be5
+
+**** dumpsys cpuInfo ****
+
+  39 1565/com.github.wdkapps.fillup: 36 user + 3.1 kernel / faults: 1043 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2869 KB/s (1211861 bytes in 0.412s)
+	pkg: /data/local/tmp/FillUp-instrumented-106.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@68b49bf7
+
+**** dumpsys cpuInfo ****
+
+  31 1530/com.github.wdkapps.fillup: 27 user + 4.2 kernel / faults: 1882 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3276 KB/s (1211847 bytes in 0.361s)
+	pkg: /data/local/tmp/FillUp-instrumented-10.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@76e46f83
+
+**** dumpsys cpuInfo ****
+
+  38 1549/com.github.wdkapps.fillup: 34 user + 3.2 kernel / faults: 1044 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2920 KB/s (1211848 bytes in 0.405s)
+	pkg: /data/local/tmp/FillUp-instrumented-11.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5dc47fdd
+
+**** dumpsys cpuInfo ****
+
+  37 1561/com.github.wdkapps.fillup: 33 user + 3.8 kernel / faults: 1044 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3018 KB/s (1211849 bytes in 0.392s)
+	pkg: /data/local/tmp/FillUp-instrumented-12.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@46ebdd59
+
+**** dumpsys cpuInfo ****
+
+  39 1569/com.github.wdkapps.fillup: 37 user + 1.6 kernel / faults: 1062 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3081 KB/s (1211850 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-14.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@ba6caf7
+
+**** dumpsys cpuInfo ****
+
+  39 1570/com.github.wdkapps.fillup: 34 user + 4.9 kernel / faults: 1084 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2918 KB/s (1211850 bytes in 0.405s)
+	pkg: /data/local/tmp/FillUp-instrumented-15.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1c3260c5
+
+**** dumpsys cpuInfo ****
+
+  31 1556/com.github.wdkapps.fillup: 27 user + 3.5 kernel / faults: 1916 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2984 KB/s (1211849 bytes in 0.396s)
+	pkg: /data/local/tmp/FillUp-instrumented-16.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2f18c9de
+
+**** dumpsys cpuInfo ****
+
+  31 1562/com.github.wdkapps.fillup: 28 user + 2.3 kernel / faults: 1919 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3502 KB/s (1211848 bytes in 0.337s)
+	pkg: /data/local/tmp/FillUp-instrumented-17.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1a3dc64c
+
+**** dumpsys cpuInfo ****
+
+  36 1503/com.github.wdkapps.fillup: 33 user + 2.9 kernel / faults: 1047 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3378 KB/s (1211852 bytes in 0.350s)
+	pkg: /data/local/tmp/FillUp-instrumented-18.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3216fb93
+
+**** dumpsys cpuInfo ****
+
+  31 1552/com.github.wdkapps.fillup: 27 user + 3.6 kernel / faults: 1861 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2918 KB/s (1211849 bytes in 0.405s)
+	pkg: /data/local/tmp/FillUp-instrumented-19.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7d6452b5
+
+**** dumpsys cpuInfo ****
+
+  38 1558/com.github.wdkapps.fillup: 34 user + 4.3 kernel / faults: 1042 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3036 KB/s (1211851 bytes in 0.389s)
+	pkg: /data/local/tmp/FillUp-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2bfbc299
+
+**** dumpsys cpuInfo ****
+
+  40 1510/com.github.wdkapps.fillup: 36 user + 3.3 kernel / faults: 1060 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2948 KB/s (1211850 bytes in 0.401s)
+	pkg: /data/local/tmp/FillUp-instrumented-20.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@acc924f
+
+**** dumpsys cpuInfo ****
+
+  40 1558/com.github.wdkapps.fillup: 36 user + 3.6 kernel / faults: 1060 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3258 KB/s (1211849 bytes in 0.363s)
+	pkg: /data/local/tmp/FillUp-instrumented-21.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5f1e083e
+
+**** dumpsys cpuInfo ****
+
+  36 1522/com.github.wdkapps.fillup: 32 user + 4.5 kernel / faults: 934 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3003 KB/s (1211852 bytes in 0.394s)
+	pkg: /data/local/tmp/FillUp-instrumented-22.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@31f7da8b
+
+**** dumpsys cpuInfo ****
+
+  37 1571/com.github.wdkapps.fillup: 34 user + 3.3 kernel / faults: 1067 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3032 KB/s (1211852 bytes in 0.390s)
+	pkg: /data/local/tmp/FillUp-instrumented-23.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@49e48822
+
+**** dumpsys cpuInfo ****
+
+  38 1503/com.github.wdkapps.fillup: 33 user + 4.6 kernel / faults: 1032 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3287 KB/s (1211857 bytes in 0.359s)
+	pkg: /data/local/tmp/FillUp-instrumented-24.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4dd81c00
+
+**** dumpsys cpuInfo ****
+
+  40 1576/com.github.wdkapps.fillup: 35 user + 4.3 kernel / faults: 1086 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2919 KB/s (1211852 bytes in 0.405s)
+	pkg: /data/local/tmp/FillUp-instrumented-25.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@60363152
+
+**** dumpsys cpuInfo ****
+
+  39 1568/com.github.wdkapps.fillup: 35 user + 4.1 kernel / faults: 1050 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3318 KB/s (1211852 bytes in 0.356s)
+	pkg: /data/local/tmp/FillUp-instrumented-26.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@525490d6
+
+**** dumpsys cpuInfo ****
+
+  31 1584/com.github.wdkapps.fillup: 27 user + 4.1 kernel / faults: 1900 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3061 KB/s (1211852 bytes in 0.386s)
+	pkg: /data/local/tmp/FillUp-instrumented-27.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@116ac218
+
+**** dumpsys cpuInfo ****
+
+  39 1548/com.github.wdkapps.fillup: 34 user + 4.1 kernel / faults: 972 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3031 KB/s (1211852 bytes in 0.390s)
+	pkg: /data/local/tmp/FillUp-instrumented-28.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@e572bb3
+
+**** dumpsys cpuInfo ****
+
+  39 1509/com.github.wdkapps.fillup: 34 user + 5 kernel / faults: 1032 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3231 KB/s (1211848 bytes in 0.366s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@28c80072
+
+**** dumpsys cpuInfo ****
+
+  39 1562/com.github.wdkapps.fillup: 35 user + 4.1 kernel / faults: 1075 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3195 KB/s (1211858 bytes in 0.370s)
+	pkg: /data/local/tmp/FillUp-instrumented-32.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2b1d8fc0
+
+**** dumpsys cpuInfo ****
+
+  38 1493/com.github.wdkapps.fillup: 34 user + 3.1 kernel / faults: 982 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3055 KB/s (1211858 bytes in 0.387s)
+	pkg: /data/local/tmp/FillUp-instrumented-33.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@37d72d0f
+
+**** dumpsys cpuInfo ****
+
+  38 1547/com.github.wdkapps.fillup: 35 user + 2.9 kernel / faults: 1013 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3215 KB/s (1211860 bytes in 0.368s)
+	pkg: /data/local/tmp/FillUp-instrumented-34.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@747d3801
+
+**** dumpsys cpuInfo ****
+
+  40 1546/com.github.wdkapps.fillup: 37 user + 3.6 kernel / faults: 1047 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3187 KB/s (1211858 bytes in 0.371s)
+	pkg: /data/local/tmp/FillUp-instrumented-35.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@15ad6aa3
+
+**** dumpsys cpuInfo ****
+
+  39 1556/com.github.wdkapps.fillup: 35 user + 3.7 kernel / faults: 1086 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2977 KB/s (1211858 bytes in 0.397s)
+	pkg: /data/local/tmp/FillUp-instrumented-36.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@f8e5a7e
+
+**** dumpsys cpuInfo ****
+
+  38 1524/com.github.wdkapps.fillup: 35 user + 3.2 kernel / faults: 974 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3173 KB/s (1211860 bytes in 0.372s)
+	pkg: /data/local/tmp/FillUp-instrumented-37.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1f5269ad
+
+**** dumpsys cpuInfo ****
+
+  36 1650/com.github.wdkapps.fillup: 31 user + 4 kernel / faults: 343 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3016 KB/s (1211859 bytes in 0.392s)
+	pkg: /data/local/tmp/FillUp-instrumented-38.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@717ec747
+
+**** dumpsys cpuInfo ****
+
+  32 1578/com.github.wdkapps.fillup: 30 user + 2.1 kernel / faults: 1974 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3475 KB/s (1211860 bytes in 0.340s)
+	pkg: /data/local/tmp/FillUp-instrumented-39.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6dccaaf0
+
+**** dumpsys cpuInfo ****
+
+  38 1559/com.github.wdkapps.fillup: 34 user + 3.8 kernel / faults: 1087 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3054 KB/s (1211848 bytes in 0.387s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@38e71621
+
+**** dumpsys cpuInfo ****
+
+  40 1536/com.github.wdkapps.fillup: 36 user + 3.5 kernel / faults: 1097 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2951 KB/s (1211861 bytes in 0.401s)
+	pkg: /data/local/tmp/FillUp-instrumented-40.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@cbc6a1c
+
+**** dumpsys cpuInfo ****
+
+  37 1543/com.github.wdkapps.fillup: 33 user + 3.8 kernel / faults: 938 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2937 KB/s (1211856 bytes in 0.402s)
+	pkg: /data/local/tmp/FillUp-instrumented-41.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1fda1ad8
+
+**** dumpsys cpuInfo ****
+
+  38 1541/com.github.wdkapps.fillup: 35 user + 3.4 kernel / faults: 1064 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3019 KB/s (1211859 bytes in 0.391s)
+	pkg: /data/local/tmp/FillUp-instrumented-42.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6a9b31fd
+
+**** dumpsys cpuInfo ****
+
+  41 1524/com.github.wdkapps.fillup: 39 user + 2.1 kernel / faults: 894 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2883 KB/s (1211858 bytes in 0.410s)
+	pkg: /data/local/tmp/FillUp-instrumented-43.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1c92a18c
+
+**** dumpsys cpuInfo ****
+
+  37 1507/com.github.wdkapps.fillup: 35 user + 2.3 kernel / faults: 980 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3159 KB/s (1211863 bytes in 0.374s)
+	pkg: /data/local/tmp/FillUp-instrumented-44.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7987689d
+
+**** dumpsys cpuInfo ****
+
+  39 1556/com.github.wdkapps.fillup: 35 user + 3.4 kernel / faults: 965 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2873 KB/s (1211858 bytes in 0.411s)
+	pkg: /data/local/tmp/FillUp-instrumented-45.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7f975382
+
+**** dumpsys cpuInfo ****
+
+  40 1530/com.github.wdkapps.fillup: 36 user + 4.4 kernel / faults: 1057 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3078 KB/s (1211861 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-46.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@43fee9c1
+
+**** dumpsys cpuInfo ****
+
+  40 1546/com.github.wdkapps.fillup: 35 user + 4.8 kernel / faults: 1056 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2943 KB/s (1211861 bytes in 0.402s)
+	pkg: /data/local/tmp/FillUp-instrumented-47.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@ce95b21
+
+**** dumpsys cpuInfo ****
+
+  38 1530/com.github.wdkapps.fillup: 34 user + 4 kernel / faults: 1053 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3044 KB/s (1211861 bytes in 0.388s)
+	pkg: /data/local/tmp/FillUp-instrumented-48.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@39da5df9
+
+**** dumpsys cpuInfo ****
+
+  32 1540/com.github.wdkapps.fillup: 28 user + 4 kernel / faults: 1857 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2973 KB/s (1211861 bytes in 0.397s)
+	pkg: /data/local/tmp/FillUp-instrumented-49.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@31eea46f
+
+**** dumpsys cpuInfo ****
+
+  37 1545/com.github.wdkapps.fillup: 35 user + 2.3 kernel / faults: 961 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3092 KB/s (1211851 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@a918d73
+
+**** dumpsys cpuInfo ****
+
+  31 1541/com.github.wdkapps.fillup: 27 user + 3.3 kernel / faults: 1823 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2922 KB/s (1211861 bytes in 0.404s)
+	pkg: /data/local/tmp/FillUp-instrumented-50.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@35ba4f75
+
+**** dumpsys cpuInfo ****
+
+  33 1553/com.github.wdkapps.fillup: 28 user + 4.5 kernel / faults: 1125 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2990 KB/s (1211861 bytes in 0.395s)
+	pkg: /data/local/tmp/FillUp-instrumented-51.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2948c407
+
+**** dumpsys cpuInfo ****
+
+  46 1514/com.github.wdkapps.fillup: 43 user + 3.5 kernel / faults: 1157 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2978 KB/s (1211861 bytes in 0.397s)
+	pkg: /data/local/tmp/FillUp-instrumented-52.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6c1708f2
+
+**** dumpsys cpuInfo ****
+
+  30 1565/com.github.wdkapps.fillup: 29 user + 1.6 kernel / faults: 1856 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2994 KB/s (1211861 bytes in 0.395s)
+	pkg: /data/local/tmp/FillUp-instrumented-53.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@360bc82c
+
+**** dumpsys cpuInfo ****
+
+  39 1555/com.github.wdkapps.fillup: 34 user + 4.5 kernel / faults: 1044 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3170 KB/s (1211861 bytes in 0.373s)
+	pkg: /data/local/tmp/FillUp-instrumented-54.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@c16aeb
+
+**** dumpsys cpuInfo ****
+
+  39 1505/com.github.wdkapps.fillup: 33 user + 5.3 kernel / faults: 1074 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3001 KB/s (1211861 bytes in 0.394s)
+	pkg: /data/local/tmp/FillUp-instrumented-55.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7fc1a7f3
+
+**** dumpsys cpuInfo ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2936 KB/s (1211861 bytes in 0.403s)
+	pkg: /data/local/tmp/FillUp-instrumented-56.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3cbd6475
+
+**** dumpsys cpuInfo ****
+
+  37 1561/com.github.wdkapps.fillup: 35 user + 1.9 kernel / faults: 1076 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3626 KB/s (1211861 bytes in 0.326s)
+	pkg: /data/local/tmp/FillUp-instrumented-57.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2111bda0
+
+**** dumpsys cpuInfo ****
+
+  38 1541/com.github.wdkapps.fillup: 36 user + 2.5 kernel / faults: 948 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2954 KB/s (1211861 bytes in 0.400s)
+	pkg: /data/local/tmp/FillUp-instrumented-58.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3865ca22
+
+**** dumpsys cpuInfo ****
+
+  42 1491/com.github.wdkapps.fillup: 38 user + 3.5 kernel / faults: 883 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3154 KB/s (1211861 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-59.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@a05b9e4
+
+**** dumpsys cpuInfo ****
+
+  32 1564/com.github.wdkapps.fillup: 29 user + 2.4 kernel / faults: 1862 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2961 KB/s (1211848 bytes in 0.399s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6e7f75b7
+
+**** dumpsys cpuInfo ****
+
+  38 1517/com.github.wdkapps.fillup: 33 user + 4.6 kernel / faults: 989 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2988 KB/s (1211861 bytes in 0.396s)
+	pkg: /data/local/tmp/FillUp-instrumented-60.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6bdaaae9
+
+**** dumpsys cpuInfo ****
+
+  38 1552/com.github.wdkapps.fillup: 35 user + 3.2 kernel / faults: 1067 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3092 KB/s (1211861 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-61.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7d9dde2e
+
+**** dumpsys cpuInfo ****
+
+  40 1559/com.github.wdkapps.fillup: 36 user + 4 kernel / faults: 1026 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3129 KB/s (1211861 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-62.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4908662c
+
+**** dumpsys cpuInfo ****
+
+  33 1495/com.github.wdkapps.fillup: 30 user + 2.5 kernel / faults: 1202 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3141 KB/s (1211861 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-63.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1234a843
+
+**** dumpsys cpuInfo ****
+
+  40 1556/com.github.wdkapps.fillup: 36 user + 3.9 kernel / faults: 1066 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3118 KB/s (1211861 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-64.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@65c50ead
+
+**** dumpsys cpuInfo ****
+
+  37 1548/com.github.wdkapps.fillup: 35 user + 2.2 kernel / faults: 1066 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3137 KB/s (1211861 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-65.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@11ff7459
+
+**** dumpsys cpuInfo ****
+
+  40 1534/com.github.wdkapps.fillup: 35 user + 4.6 kernel / faults: 1034 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3056 KB/s (1211861 bytes in 0.387s)
+	pkg: /data/local/tmp/FillUp-instrumented-66.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1aaf6fb6
+
+**** dumpsys cpuInfo ****
+
+  42 1512/com.github.wdkapps.fillup: 38 user + 3.8 kernel / faults: 892 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3108 KB/s (1211861 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-67.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@27eb6645
+
+**** dumpsys cpuInfo ****
+
+  38 1540/com.github.wdkapps.fillup: 33 user + 4.4 kernel / faults: 1083 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3110 KB/s (1211861 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-68.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5bf84b73
+
+**** dumpsys cpuInfo ****
+
+  38 1492/com.github.wdkapps.fillup: 34 user + 4 kernel / faults: 1089 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3092 KB/s (1211861 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-69.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5517652d
+
+**** dumpsys cpuInfo ****
+
+  37 1562/com.github.wdkapps.fillup: 34 user + 2.6 kernel / faults: 1036 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2912 KB/s (1211848 bytes in 0.406s)
+	pkg: /data/local/tmp/FillUp-instrumented-6.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@606dd785
+
+**** dumpsys cpuInfo ****
+
+  38 1621/com.github.wdkapps.fillup: 33 user + 4.9 kernel / faults: 1085 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2935 KB/s (1211861 bytes in 0.403s)
+	pkg: /data/local/tmp/FillUp-instrumented-70.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@31b68feb
+
+**** dumpsys cpuInfo ****
+
+  37 1534/com.github.wdkapps.fillup: 33 user + 4.3 kernel / faults: 974 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3044 KB/s (1211861 bytes in 0.388s)
+	pkg: /data/local/tmp/FillUp-instrumented-71.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@cb7cdf7
+
+**** dumpsys cpuInfo ****
+
+  38 1559/com.github.wdkapps.fillup: 35 user + 3.1 kernel / faults: 1093 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3145 KB/s (1211861 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-72.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@96e319b
+
+**** dumpsys cpuInfo ****
+
+  37 1477/com.github.wdkapps.fillup: 34 user + 3.5 kernel / faults: 1070 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2856 KB/s (1211861 bytes in 0.414s)
+	pkg: /data/local/tmp/FillUp-instrumented-73.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@592ce0b7
+
+**** dumpsys cpuInfo ****
+
+  40 1510/com.github.wdkapps.fillup: 37 user + 3.7 kernel / faults: 1047 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2983 KB/s (1211861 bytes in 0.396s)
+	pkg: /data/local/tmp/FillUp-instrumented-74.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@578b292c
+
+**** dumpsys cpuInfo ****
+
+  39 1546/com.github.wdkapps.fillup: 36 user + 2.3 kernel / faults: 948 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3113 KB/s (1211861 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-75.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@55a55214
+
+**** dumpsys cpuInfo ****
+
+  40 1534/com.github.wdkapps.fillup: 37 user + 2.7 kernel / faults: 1082 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2904 KB/s (1211861 bytes in 0.407s)
+	pkg: /data/local/tmp/FillUp-instrumented-76.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4fd85e18
+
+**** dumpsys cpuInfo ****
+
+  39 1562/com.github.wdkapps.fillup: 36 user + 3.6 kernel / faults: 1053 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3098 KB/s (1211861 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-77.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2c1b1ec3
+
+**** dumpsys cpuInfo ****
+
+  33 1552/com.github.wdkapps.fillup: 30 user + 3.2 kernel / faults: 1907 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2952 KB/s (1211861 bytes in 0.400s)
+	pkg: /data/local/tmp/FillUp-instrumented-78.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@15a5b70c
+
+**** dumpsys cpuInfo ****
+
+  42 1521/com.github.wdkapps.fillup: 37 user + 4.6 kernel / faults: 897 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3132 KB/s (1211861 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-79.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1a00c51a
+
+**** dumpsys cpuInfo ****
+
+  37 1549/com.github.wdkapps.fillup: 34 user + 3.2 kernel / faults: 1039 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2914 KB/s (1211848 bytes in 0.406s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5e82f678
+
+**** dumpsys cpuInfo ****
+
+  38 1555/com.github.wdkapps.fillup: 35 user + 2.9 kernel / faults: 1077 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2908 KB/s (1211861 bytes in 0.406s)
+	pkg: /data/local/tmp/FillUp-instrumented-80.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@435a26df
+
+**** dumpsys cpuInfo ****
+
+  39 1552/com.github.wdkapps.fillup: 36 user + 3.2 kernel / faults: 1068 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3132 KB/s (1211861 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-81.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7019ebd7
+
+**** dumpsys cpuInfo ****
+
+  40 1532/com.github.wdkapps.fillup: 36 user + 3.8 kernel / faults: 1064 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2913 KB/s (1211861 bytes in 0.406s)
+	pkg: /data/local/tmp/FillUp-instrumented-82.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@54197b71
+
+**** dumpsys cpuInfo ****
+
+  35 1614/com.github.wdkapps.fillup: 32 user + 3.2 kernel / faults: 1817 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3141 KB/s (1211861 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-83.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1eb1bf15
+
+**** dumpsys cpuInfo ****
+
+  38 1507/com.github.wdkapps.fillup: 36 user + 2.8 kernel / faults: 952 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3121 KB/s (1211861 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-84.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3b6a81e9
+
+**** dumpsys cpuInfo ****
+
+  37 1559/com.github.wdkapps.fillup: 34 user + 2.9 kernel / faults: 1074 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2904 KB/s (1211861 bytes in 0.407s)
+	pkg: /data/local/tmp/FillUp-instrumented-85.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6fa5b5c8
+
+**** dumpsys cpuInfo ****
+
+  31 1558/com.github.wdkapps.fillup: 28 user + 3 kernel / faults: 1901 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3109 KB/s (1211861 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-86.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@374bc98d
+
+**** dumpsys cpuInfo ****
+
+  39 1532/com.github.wdkapps.fillup: 35 user + 3.1 kernel / faults: 1052 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3126 KB/s (1211861 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-87.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4dd9f0a8
+
+**** dumpsys cpuInfo ****
+
+  39 1532/com.github.wdkapps.fillup: 36 user + 2.7 kernel / faults: 1153 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3084 KB/s (1211861 bytes in 0.383s)
+	pkg: /data/local/tmp/FillUp-instrumented-88.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@75042dab
+
+**** dumpsys cpuInfo ****
+
+  31 1524/com.github.wdkapps.fillup: 29 user + 2 kernel / faults: 1953 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3124 KB/s (1211861 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-89.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5e41fc22
+
+**** dumpsys cpuInfo ****
+
+  39 1548/com.github.wdkapps.fillup: 35 user + 3.9 kernel / faults: 1064 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2958 KB/s (1211849 bytes in 0.400s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4b6bb48c
+
+**** dumpsys cpuInfo ****
+
+  38 1534/com.github.wdkapps.fillup: 35 user + 2.5 kernel / faults: 979 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2969 KB/s (1211861 bytes in 0.398s)
+	pkg: /data/local/tmp/FillUp-instrumented-90.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@58dad289
+
+**** dumpsys cpuInfo ****
+
+  37 1544/com.github.wdkapps.fillup: 34 user + 2.9 kernel / faults: 971 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2973 KB/s (1211861 bytes in 0.398s)
+	pkg: /data/local/tmp/FillUp-instrumented-91.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1504b79a
+
+**** dumpsys cpuInfo ****
+
+  38 1568/com.github.wdkapps.fillup: 34 user + 4.2 kernel / faults: 1052 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3089 KB/s (1211861 bytes in 0.383s)
+	pkg: /data/local/tmp/FillUp-instrumented-92.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@657bfe53
+
+**** dumpsys cpuInfo ****
+
+  38 1563/com.github.wdkapps.fillup: 36 user + 2.6 kernel / faults: 1069 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3096 KB/s (1211861 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-93.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@12e6f945
+
+**** dumpsys cpuInfo ****
+
+  37 1534/com.github.wdkapps.fillup: 32 user + 4.7 kernel / faults: 1034 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3147 KB/s (1211861 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-94.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@21d4b70e
+
+**** dumpsys cpuInfo ****
+
+  40 1519/com.github.wdkapps.fillup: 35 user + 5.1 kernel / faults: 1087 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3133 KB/s (1211861 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-95.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2ac71b20
+
+**** dumpsys cpuInfo ****
+
+  42 1606/com.github.wdkapps.fillup: 39 user + 2.9 kernel / faults: 881 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2912 KB/s (1211861 bytes in 0.406s)
+	pkg: /data/local/tmp/FillUp-instrumented-96.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3d9c082
+
+**** dumpsys cpuInfo ****
+
+  37 1653/com.github.wdkapps.fillup: 33 user + 4.1 kernel / faults: 1040 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3148 KB/s (1211861 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-97.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@638563e3
+
+**** dumpsys cpuInfo ****
+
+  41 1545/com.github.wdkapps.fillup: 37 user + 4.8 kernel / faults: 1091 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3148 KB/s (1211861 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-98.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@28d839fd
+
+**** dumpsys cpuInfo ****
+
+  39 1576/com.github.wdkapps.fillup: 37 user + 2.1 kernel / faults: 1082 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3087 KB/s (1211861 bytes in 0.383s)
+	pkg: /data/local/tmp/FillUp-instrumented-99.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@11ffc64b
+
+**** dumpsys cpuInfo ****
+
+  42 1514/com.github.wdkapps.fillup: 36 user + 5.1 kernel / faults: 1059 minor

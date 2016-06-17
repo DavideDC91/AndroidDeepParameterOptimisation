@@ -105,6 +105,9 @@ public class HillClimbing {
 			}
 			int value_original = Integer.parseInt(ori_var[3].replace(t_original, ""), 16);
 			int v = 7-value_original;
+			if(v<=0){
+				v=1;
+			}
 			rand_num = rand.nextInt(v) + 1;
 		} else {
 			rand_num = rand.nextInt(maximum) + 1;
@@ -218,7 +221,9 @@ public class HillClimbing {
 									}
 									if(current == null){
 										current = new_versions.get(version_number);
-									} else if(current.getExecution_time()>=new_versions.get(version_number).getExecution_time()){
+										//} else if(current.getExecution_time()>=new_versions.get(version_number).getExecution_time()){
+									} else if(current.getHeap_alloc()>=new_versions.get(version_number).getHeap_alloc()){
+
 										current = new_versions.get(version_number);
 									}
 									new_versions_survived.add(new_versions.get(version_number));
@@ -227,13 +232,19 @@ public class HillClimbing {
 									if(best == null){
 										best = new_versions.get(version_number);
 									} 
-									if(best.getExecution_time()>=new_versions.get(version_number).getExecution_time()){
+									//if(best.getExecution_time()>=new_versions.get(version_number).getExecution_time()){
+									if(best.getHeap_alloc()>=new_versions.get(version_number).getHeap_alloc()){
 										best = new_versions.get(version_number);
 									} else {
 										restart++;
 										stop = true;
 									}
 									if((alts.get(z).getAlteration_type().equals("LCR"))||(alts.get(z).getAlteration_type().equals("ROR"))){
+										restart=3;
+										stop=true;
+										y=2;
+									}
+									if(alts.get(z).getAlteration_type().equals("AOR")&&(!(alts.get(z).getOriginalLine().contains("0x")))){
 										restart=3;
 										stop=true;
 										y=2;
@@ -317,17 +328,24 @@ public class HillClimbing {
 											new_versions.get(version_number).setHeap_alloc(0);
 											new_versions.get(version_number).setHeap_free(0);
 										}
-										if(current.getExecution_time()>=new_versions.get(version_number).getExecution_time()){
+										//	if(current.getExecution_time()>=new_versions.get(version_number).getExecution_time()){
+										if(current.getHeap_alloc()>=new_versions.get(version_number).getHeap_alloc()){
 											current = new_versions.get(version_number);
 										}
 										new_versions_survived.add(new_versions.get(version_number));
 										System.out.println(dir+" Survived");
 										alts.get(z).setFinal_line(alts.get(z).getCurrent_line());
-										if(best.getExecution_time()>=new_versions.get(version_number).getExecution_time()){
+										//if(best.getExecution_time()>=new_versions.get(version_number).getExecution_time()){
+										if(best.getHeap_alloc()>=new_versions.get(version_number).getHeap_alloc()){
 											best = new_versions.get(version_number);
 										}  else {
 											restart++;
 											stop = true;
+										}
+										if(alts.get(z).getAlteration_type().equals("AOR")&&(!(alts.get(z).getOriginalLine().contains("0x")))){
+											restart=3;
+											stop=true;
+											y=2;
 										}
 										version_number++;
 									} else {
@@ -353,7 +371,7 @@ public class HillClimbing {
 				}
 			}
 		}
-		System.out.println("END "+current.getApk_name()+" "+current.getExecution_time()+" "+current.getDeep());
+		System.out.println("END "+current.getApk_name()+" "+current.getHeap_alloc()+" "+current.getDeep());
 		ReportGenerator rg = new ReportGenerator(new_versions_survived, original);
 		rg.generateHtmlAlteratedReport(report_dir);
 	}

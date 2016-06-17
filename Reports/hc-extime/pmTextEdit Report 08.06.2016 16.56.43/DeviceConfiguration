@@ -1,0 +1,1857 @@
+
+
+**** android update ****
+
+Updated project.properties
+Updated local.properties
+Updated file ./build.xml
+Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
+
+
+**** ant clean ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: pmTextEdit
+  [gettype] Project Type: Application
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/gen
+[getlibpath] Library dependencies:
+[getlibpath] No Libraries
+   [subant] No sub-builds to iterate on
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
+
+
+**** ant instrument ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: pmTextEdit
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.3
+     [echo] Resolving Build Target for pmTextEdit...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/rsObj
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/rsLibs
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/gen
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/classes
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for pmTextEdit...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'instrument'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 16 source files to /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/classes
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 3 warnings
+     [echo] Instrumenting classes from /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/classes...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/classes
+      [dex] input: /home/davide/android-sdk/tools/lib/emma_device.jar
+      [dex] Pre-Dexing /home/davide/android-sdk/tools/lib/emma_device.jar -> emma_device-c54bd04c2f76e0e56a7ebc2ed6b523ca.jar
+      [dex] Converting compiled files and external libraries into /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/classes.dex...
+       [dx] Merged dex #1 (71 defs/84.2KiB)
+       [dx] Merged dex #2 (297 defs/327.2KiB)
+       [dx] Result is 368 defs/495.1KiB. Took 0.7s
+
+-crunch:
+   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/alert_dialog_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] Crunching PNG Files in source dir: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res
+   [crunch] To destination dir: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/alert_dialog_icon.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/alert_dialog_icon.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/alert_dialog_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/colors.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/colors.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/colors.png: 77% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_c.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_c.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_c.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_cpp.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_cpp.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_cpp.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_default.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_default.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_f.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_f.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_f.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_folder.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_folder.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_folder.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_h.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_h.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_h.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_htm.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_htm.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_htm.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_html.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_html.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_html.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_java.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_java.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_java.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_php.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_php.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_php.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_pl.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_pl.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_pl.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_py.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_py.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_py.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_tex.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_tex.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_tex.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/fileicon_txt.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_txt.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/fileicon_txt.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/ic_dialog_menu_generic.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/ic_dialog_menu_generic.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/ic_dialog_menu_generic.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/icon.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon.png: 50% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/icon_new.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_new.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_new.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/icon_old.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_old.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_old.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/icon_open.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_open.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_open.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/icon_openrecent.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_openrecent.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_openrecent.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/icon_options.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_options.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_options.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/icon_save.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_save.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_save.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/icon_saveas.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_saveas.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/icon_saveas.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/up.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/up.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/up.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/res/drawable/usethisfolder.png => /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/usethisfolder.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/res/drawable/usethisfolder.png: 0% size of source)
+   [crunch] Crunched 27 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating pmTextEdit-instrumented-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/pmTextEdit-instrumented.apk
+[propertyfile] Creating new property file: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/build.prop
+
+instrument:
+ [zipalign] Run cancelled: no changes to input file /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/pmTextEdit-instrumented-unaligned.apk
+     [echo] Instrumented Package: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/pmTextEdit-instrumented.apk
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/build.prop
+
+BUILD SUCCESSFUL
+Total time: 1 minute 3 seconds
+
+
+**** ant installi ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+install:
+     [echo] Installing /home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/bin/pmTextEdit-instrumented.apk onto default emulator or device...
+     [exec] 1247 KB/s (289699 bytes in 0.226s)
+     [exec] 	pkg: /data/local/tmp/pmTextEdit-instrumented.apk
+     [exec] Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
+
+installi:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+
+
+**** apktool d ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building resources...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2718 KB/s (289692 bytes in 0.104s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@51b626c1
+
+**** dumpsys cpuInfo ****
+
+  31 1869/org.paulmach.textedit: 29 user + 2.3 kernel / faults: 10900 minor
+
+**** adb broadcast ****
+
+Broadcasting: Intent { act=com.qa.emma.COLLECT_COVERAGE }
+Broadcast completed: result=0
+
+
+**** adb push ****
+
+Android Debug Bridge version 1.0.32
+Revision 09a0d98bebce-android
+
+ -a                            - directs adb to listen on all interfaces for a connection
+ -d                            - directs command to the only connected USB device
+                                 returns an error if more than one USB device is present.
+ -e                            - directs command to the only running emulator.
+                                 returns an error if more than one emulator is running.
+ -s <specific device>          - directs command to the device or emulator with the given
+                                 serial number or qualifier. Overrides ANDROID_SERIAL
+                                 environment variable.
+ -p <product name or path>     - simple product name like 'sooner', or
+                                 a relative/absolute path to a product
+                                 out directory like 'out/target/product/sooner'.
+                                 If -p is not specified, the ANDROID_PRODUCT_OUT
+                                 environment variable is used, which must
+                                 be an absolute path.
+ -H                            - Name of adb server host (default: localhost)
+ -P                            - Port of adb server (default: 5037)
+ devices [-l]                  - list all connected devices
+                                 ('-l' will also list device qualifiers)
+ connect <host>[:<port>]       - connect to a device via TCP/IP
+                                 Port 5555 is used by default if no port number is specified.
+ disconnect [<host>[:<port>]]  - disconnect from a TCP/IP device.
+                                 Port 5555 is used by default if no port number is specified.
+                                 Using this command with no additional arguments
+                                 will disconnect from all connected TCP/IP devices.
+
+device commands:
+  adb push [-p] <local> <remote>
+                               - copy file/dir to device
+                                 ('-p' to display the transfer progress)
+  adb pull [-p] [-a] <remote> [<local>]
+                               - copy file/dir from device
+                                 ('-p' to display the transfer progress)
+                                 ('-a' means copy timestamp and mode)
+  adb sync [ <directory> ]     - copy host->device only if changed
+                                 (-l means list but don't copy)
+  adb shell                    - run remote shell interactively
+  adb shell <command>          - run remote shell command
+  adb emu <command>            - run emulator console command
+  adb logcat [ <filter-spec> ] - View device log
+  adb forward --list           - list all forward socket connections.
+                                 the format is a list of lines with the following format:
+                                    <serial> " " <local> " " <remote> "\n"
+  adb forward <local> <remote> - forward socket connections
+                                 forward specs are one of: 
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+                                   dev:<character device name>
+                                   jdwp:<process pid> (remote only)
+  adb forward --no-rebind <local> <remote>
+                               - same as 'adb forward <local> <remote>' but fails
+                                 if <local> is already forwarded
+  adb forward --remove <local> - remove a specific forward socket connection
+  adb forward --remove-all     - remove all forward socket connections
+  adb reverse --list           - list all reverse socket connections from device
+  adb reverse <remote> <local> - reverse socket connections
+                                 reverse specs are one of:
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+  adb reverse --norebind <remote> <local>
+                               - same as 'adb reverse <remote> <local>' but fails
+                                 if <remote> is already reversed.
+  adb reverse --remove <remote>
+                               - remove a specific reversed socket connection
+  adb reverse --remove-all     - remove all reversed socket connections from device
+  adb jdwp                     - list PIDs of processes hosting a JDWP transport
+  adb install [-lrtsdg] <file>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-g: grant all runtime permissions)
+  adb install-multiple [-lrtsdpg] <file...>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-p: partial application install)
+                                 (-g: grant all runtime permissions)
+  adb uninstall [-k] <package> - remove this app package from the device
+                                 ('-k' means keep the data and cache directories)
+  adb bugreport                - return all information from the device
+                                 that should be included in a bug report.
+
+  adb backup [-f <file>] [-apk|-noapk] [-obb|-noobb] [-shared|-noshared] [-all] [-system|-nosystem] [<packages...>]
+                               - write an archive of the device's data to <file>.
+                                 If no -f option is supplied then the data is written
+                                 to "backup.ab" in the current directory.
+                                 (-apk|-noapk enable/disable backup of the .apks themselves
+                                    in the archive; the default is noapk.)
+                                 (-obb|-noobb enable/disable backup of any installed apk expansion
+                                    (aka .obb) files associated with each application; the default
+                                    is noobb.)
+                                 (-shared|-noshared enable/disable backup of the device's
+                                    shared storage / SD card contents; the default is noshared.)
+                                 (-all means to back up all installed applications)
+                                 (-system|-nosystem toggles whether -all automatically includes
+                                    system applications; the default is to include system apps)
+                                 (<packages...> is the list of applications to be backed up.  If
+                                    the -all or -shared flags are passed, then the package
+                                    list is optional.  Applications explicitly given on the
+                                    command line will be included even if -nosystem would
+                                    ordinarily cause them to be omitted.)
+
+  adb restore <file>           - restore device contents from the <file> backup archive
+
+  adb disable-verity           - disable dm-verity checking on USERDEBUG builds
+  adb enable-verity            - re-enable dm-verity checking on USERDEBUG builds
+  adb keygen <file>            - generate adb public/private key. The private key is stored in <file>,
+                                 and the public key is stored in <file>.pub. Any existing files
+                                 are overwritten.
+  adb help                     - show this help message
+  adb version                  - show version num
+
+scripting:
+  adb wait-for-device          - block until device is online
+  adb start-server             - ensure that there is a server running
+  adb kill-server              - kill the server if it is running
+  adb get-state                - prints: offline | bootloader | device
+  adb get-serialno             - prints: <serial-number>
+  adb get-devpath              - prints: <device-path>
+  adb remount                  - remounts the /system, /vendor (if present) and /oem (if present) partitions on the device read-write
+  adb reboot [bootloader|recovery]
+                               - reboots the device, optionally into the bootloader or recovery program.
+  adb reboot sideload          - reboots the device into the sideload mode in recovery program (adb root required).
+  adb reboot sideload-auto-reboot
+                               - reboots into the sideload mode, then reboots automatically after the sideload regardless of the result.
+  adb sideload <file>          - sideloads the given package
+  adb root                     - restarts the adbd daemon with root permissions
+  adb unroot                   - restarts the adbd daemon without root permissions
+  adb usb                      - restarts the adbd daemon listening on USB
+  adb tcpip <port>             - restarts the adbd daemon listening on TCP on the specified port
+
+networking:
+  adb ppp <tty> [parameters]   - Run PPP over USB.
+ Note: you should not automatically start a PPP connection.
+ <tty> refers to the tty for PPP stream. Eg. dev:/dev/omap_csmi_tty1
+ [parameters] - Eg. defaultroute debug dump local notty usepeerdns
+
+adb sync notes: adb sync [ <directory> ]
+  <localdir> can be interpreted in several ways:
+
+  - If <directory> is not specified, /system, /vendor (if present), /oem (if present) and /data partitions will be updated.
+
+  - If it is "system", "vendor", "oem" or "data", only the corresponding partition
+    is updated.
+
+environment variables:
+  ADB_TRACE                    - Print debug information. A comma separated list of the following values
+                                 1 or all, adb, sockets, packets, rwx, usb, sync, sysdeps, transport, jdwp
+  ANDROID_SERIAL               - The serial number to connect to. -s takes priority over this if given.
+  ANDROID_LOG_TAGS             - When used with the logcat option, only these debug tags are printed.
+
+
+**** adb pull ****
+
+3098 KB/s (365683 bytes in 0.115s)
+
+
+**** java emma report ****
+
+EMMA: processing input files ...
+EMMA: 2 file(s) read and merged in 68 ms
+EMMA: writing [html] report to [/home/davide/git/AndroidDeepParameterOptimisation/pmTextEdit/coverage/index.html] ...
+
+
+**** ls ****
+
+hc
+mutants
+pmTextEdit-instrumented-0
+pmTextEdit-instrumented-0.apk
+pmTextEdit-instrumented-1
+pmTextEdit-instrumented-11
+pmTextEdit-instrumented-11.apk
+pmTextEdit-instrumented-13
+pmTextEdit-instrumented-13.apk
+pmTextEdit-instrumented-14
+pmTextEdit-instrumented-14.apk
+pmTextEdit-instrumented-15
+pmTextEdit-instrumented-15.apk
+pmTextEdit-instrumented-17
+pmTextEdit-instrumented-17.apk
+pmTextEdit-instrumented-18
+pmTextEdit-instrumented-18.apk
+pmTextEdit-instrumented-1.apk
+pmTextEdit-instrumented-2
+pmTextEdit-instrumented-24
+pmTextEdit-instrumented-24.apk
+pmTextEdit-instrumented-25
+pmTextEdit-instrumented-25.apk
+pmTextEdit-instrumented-26
+pmTextEdit-instrumented-26.apk
+pmTextEdit-instrumented-27
+pmTextEdit-instrumented-27.apk
+pmTextEdit-instrumented-28
+pmTextEdit-instrumented-28.apk
+pmTextEdit-instrumented-2.apk
+pmTextEdit-instrumented-3
+pmTextEdit-instrumented-32
+pmTextEdit-instrumented-32.apk
+pmTextEdit-instrumented-34
+pmTextEdit-instrumented-34.apk
+pmTextEdit-instrumented-35
+pmTextEdit-instrumented-35.apk
+pmTextEdit-instrumented-36
+pmTextEdit-instrumented-36.apk
+pmTextEdit-instrumented-38
+pmTextEdit-instrumented-38.apk
+pmTextEdit-instrumented-3.apk
+pmTextEdit-instrumented-4
+pmTextEdit-instrumented-40
+pmTextEdit-instrumented-40.apk
+pmTextEdit-instrumented-41
+pmTextEdit-instrumented-41.apk
+pmTextEdit-instrumented-42
+pmTextEdit-instrumented-42.apk
+pmTextEdit-instrumented-43
+pmTextEdit-instrumented-43.apk
+pmTextEdit-instrumented-44
+pmTextEdit-instrumented-44.apk
+pmTextEdit-instrumented-45
+pmTextEdit-instrumented-45.apk
+pmTextEdit-instrumented-46
+pmTextEdit-instrumented-46.apk
+pmTextEdit-instrumented-47
+pmTextEdit-instrumented-47.apk
+pmTextEdit-instrumented-48
+pmTextEdit-instrumented-48.apk
+pmTextEdit-instrumented-49
+pmTextEdit-instrumented-49.apk
+pmTextEdit-instrumented-4.apk
+pmTextEdit-instrumented-5
+pmTextEdit-instrumented-50
+pmTextEdit-instrumented-50.apk
+pmTextEdit-instrumented-52
+pmTextEdit-instrumented-52.apk
+pmTextEdit-instrumented-54
+pmTextEdit-instrumented-54.apk
+pmTextEdit-instrumented-59
+pmTextEdit-instrumented-59.apk
+pmTextEdit-instrumented-5.apk
+pmTextEdit-instrumented-6
+pmTextEdit-instrumented-60
+pmTextEdit-instrumented-60.apk
+pmTextEdit-instrumented-62
+pmTextEdit-instrumented-62.apk
+pmTextEdit-instrumented-65
+pmTextEdit-instrumented-65.apk
+pmTextEdit-instrumented-66
+pmTextEdit-instrumented-66.apk
+pmTextEdit-instrumented-67
+pmTextEdit-instrumented-67.apk
+pmTextEdit-instrumented-68
+pmTextEdit-instrumented-68.apk
+pmTextEdit-instrumented-6.apk
+pmTextEdit-instrumented-7
+pmTextEdit-instrumented-70
+pmTextEdit-instrumented-70.apk
+pmTextEdit-instrumented-71
+pmTextEdit-instrumented-71.apk
+pmTextEdit-instrumented-72
+pmTextEdit-instrumented-72.apk
+pmTextEdit-instrumented-73
+pmTextEdit-instrumented-73.apk
+pmTextEdit-instrumented-74
+pmTextEdit-instrumented-74.apk
+pmTextEdit-instrumented-75
+pmTextEdit-instrumented-75.apk
+pmTextEdit-instrumented-76
+pmTextEdit-instrumented-76.apk
+pmTextEdit-instrumented-78
+pmTextEdit-instrumented-78.apk
+pmTextEdit-instrumented-79
+pmTextEdit-instrumented-79.apk
+pmTextEdit-instrumented-7.apk
+pmTextEdit-instrumented-8
+pmTextEdit-instrumented-80
+pmTextEdit-instrumented-80.apk
+pmTextEdit-instrumented-81
+pmTextEdit-instrumented-81.apk
+pmTextEdit-instrumented-82
+pmTextEdit-instrumented-82.apk
+pmTextEdit-instrumented-83
+pmTextEdit-instrumented-83.apk
+pmTextEdit-instrumented-84
+pmTextEdit-instrumented-84.apk
+pmTextEdit-instrumented-85
+pmTextEdit-instrumented-85.apk
+pmTextEdit-instrumented-86
+pmTextEdit-instrumented-86.apk
+pmTextEdit-instrumented-88
+pmTextEdit-instrumented-88.apk
+pmTextEdit-instrumented-8.apk
+pmTextEdit-instrumented-9
+pmTextEdit-instrumented-9.apk
+systematic
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2759 KB/s (289695 bytes in 0.102s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@81f7537
+
+**** dumpsys cpuInfo ****
+
+  40 1726/org.paulmach.textedit: 34 user + 6 kernel / faults: 1629 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2515 KB/s (289693 bytes in 0.112s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-11.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@439ede6d
+
+**** dumpsys cpuInfo ****
+
+  40 1701/org.paulmach.textedit: 36 user + 3.5 kernel / faults: 860 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2479 KB/s (289695 bytes in 0.114s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-13.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3482a15c
+
+**** dumpsys cpuInfo ****
+
+  30 1720/org.paulmach.textedit: 27 user + 3.4 kernel / faults: 10862 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2574 KB/s (289695 bytes in 0.109s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-14.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@30bc9ebc
+
+**** dumpsys cpuInfo ****
+
+  41 1738/org.paulmach.textedit: 35 user + 5.4 kernel / faults: 1732 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2495 KB/s (289698 bytes in 0.113s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-15.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@77468bcc
+
+**** dumpsys cpuInfo ****
+
+  31 1712/org.paulmach.textedit: 27 user + 4.2 kernel / faults: 10991 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2471 KB/s (289695 bytes in 0.114s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-17.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4485ba49
+
+**** dumpsys cpuInfo ****
+
+  39 1721/org.paulmach.textedit: 35 user + 4.7 kernel / faults: 10525 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2312 KB/s (289696 bytes in 0.122s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-18.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@623a64ba
+
+**** dumpsys cpuInfo ****
+
+  41 1697/org.paulmach.textedit: 36 user + 4.4 kernel / faults: 1541 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2830 KB/s (289688 bytes in 0.099s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7ba919d7
+
+**** dumpsys cpuInfo ****
+
+  31 1701/org.paulmach.textedit: 28 user + 3.3 kernel / faults: 10989 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2455 KB/s (289696 bytes in 0.115s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-24.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3e4894c7
+
+**** dumpsys cpuInfo ****
+
+  31 1734/org.paulmach.textedit: 27 user + 3.8 kernel / faults: 3468 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2627 KB/s (289696 bytes in 0.107s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-25.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@13e9cf12
+
+**** dumpsys cpuInfo ****
+
+  40 1681/org.paulmach.textedit: 34 user + 5.4 kernel / faults: 1591 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2580 KB/s (289696 bytes in 0.109s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-26.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@70e7e6fe
+
+**** dumpsys cpuInfo ****
+
+  36 1681/org.paulmach.textedit: 33 user + 3.2 kernel / faults: 10977 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2695 KB/s (289696 bytes in 0.104s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-27.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3e1dbc2e
+
+**** dumpsys cpuInfo ****
+
+  39 1543/org.paulmach.textedit: 35 user + 3.8 kernel / faults: 10566 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2416 KB/s (289696 bytes in 0.117s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-28.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3342ab69
+
+**** dumpsys cpuInfo ****
+
+  30 1538/org.paulmach.textedit: 26 user + 3.8 kernel / faults: 2246 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2461 KB/s (289693 bytes in 0.114s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@63bd8ee9
+
+**** dumpsys cpuInfo ****
+
+  40 1512/org.paulmach.textedit: 35 user + 4.5 kernel / faults: 10722 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2520 KB/s (289697 bytes in 0.112s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-32.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6b5e897d
+
+**** dumpsys cpuInfo ****
+
+  41 1667/org.paulmach.textedit: 36 user + 4.2 kernel / faults: 1361 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2626 KB/s (289697 bytes in 0.107s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-34.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3789496f
+
+**** dumpsys cpuInfo ****
+
+  36 1556/org.paulmach.textedit: 32 user + 3.3 kernel / faults: 2110 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2460 KB/s (289697 bytes in 0.114s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-35.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6c579a79
+
+**** dumpsys cpuInfo ****
+
+  35 1518/org.paulmach.textedit: 32 user + 3.3 kernel / faults: 10519 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2523 KB/s (289697 bytes in 0.112s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-36.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@926b542
+
+**** dumpsys cpuInfo ****
+
+  39 1737/org.paulmach.textedit: 34 user + 4.8 kernel / faults: 1282 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2650 KB/s (289697 bytes in 0.106s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-38.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@59826ba8
+
+**** dumpsys cpuInfo ****
+
+  37 1562/org.paulmach.textedit: 33 user + 4.4 kernel / faults: 10634 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2546 KB/s (289693 bytes in 0.111s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@16c1a6e0
+
+**** dumpsys cpuInfo ****
+
+  37 1514/org.paulmach.textedit: 33 user + 4.1 kernel / faults: 10655 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2588 KB/s (289696 bytes in 0.109s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-40.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7843cb5b
+
+**** dumpsys cpuInfo ****
+
+  35 1523/org.paulmach.textedit: 30 user + 5 kernel / faults: 3000 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2720 KB/s (289697 bytes in 0.104s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-41.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@55133e3
+
+**** dumpsys cpuInfo ****
+
+  37 1553/org.paulmach.textedit: 34 user + 2.7 kernel / faults: 10621 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2620 KB/s (289698 bytes in 0.107s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-42.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6ee1938b
+
+**** dumpsys cpuInfo ****
+
+  35 1525/org.paulmach.textedit: 31 user + 4.5 kernel / faults: 10544 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2710 KB/s (289697 bytes in 0.104s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-43.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@a33d7d
+
+**** dumpsys cpuInfo ****
+
+  27 1565/org.paulmach.textedit: 23 user + 3.6 kernel / faults: 3133 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2422 KB/s (289698 bytes in 0.116s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-44.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@53df7eb
+
+**** dumpsys cpuInfo ****
+
+  37 1557/org.paulmach.textedit: 34 user + 3.6 kernel / faults: 10694 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2440 KB/s (289694 bytes in 0.115s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-45.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4ddd54aa
+
+**** dumpsys cpuInfo ****
+
+  40 1530/org.paulmach.textedit: 37 user + 2.9 kernel / faults: 10507 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2674 KB/s (289697 bytes in 0.105s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-46.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7956b0c5
+
+**** dumpsys cpuInfo ****
+
+  39 1577/org.paulmach.textedit: 34 user + 4.7 kernel / faults: 1018 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2433 KB/s (289697 bytes in 0.116s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-47.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@216be656
+
+**** dumpsys cpuInfo ****
+
+  38 1552/org.paulmach.textedit: 34 user + 3.1 kernel / faults: 10667 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2487 KB/s (289698 bytes in 0.113s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-48.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6b12dbed
+
+**** dumpsys cpuInfo ****
+
+  38 1541/org.paulmach.textedit: 34 user + 3.9 kernel / faults: 10628 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2529 KB/s (289697 bytes in 0.111s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-49.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@19733844
+
+**** dumpsys cpuInfo ****
+
+  36 1518/org.paulmach.textedit: 32 user + 3.7 kernel / faults: 10626 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2759 KB/s (289695 bytes in 0.102s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@361193f9
+
+**** dumpsys cpuInfo ****
+
+  39 1524/org.paulmach.textedit: 35 user + 3.2 kernel / faults: 10637 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2637 KB/s (289696 bytes in 0.107s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-50.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4c72447a
+
+**** dumpsys cpuInfo ****
+
+  38 1516/org.paulmach.textedit: 35 user + 3.5 kernel / faults: 10610 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2665 KB/s (289697 bytes in 0.106s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-52.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1fe94071
+
+**** dumpsys cpuInfo ****
+
+  37 1545/org.paulmach.textedit: 33 user + 4.1 kernel / faults: 10654 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2688 KB/s (289697 bytes in 0.105s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-54.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5cbd11fc
+
+**** dumpsys cpuInfo ****
+
+  36 1547/org.paulmach.textedit: 32 user + 3.8 kernel / faults: 10519 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2394 KB/s (289699 bytes in 0.118s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-59.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6c7d7533
+
+**** dumpsys cpuInfo ****
+
+  40 1544/org.paulmach.textedit: 36 user + 3.8 kernel / faults: 10762 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2705 KB/s (289695 bytes in 0.104s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7c53db7f
+
+**** dumpsys cpuInfo ****
+
+  37 1533/org.paulmach.textedit: 33 user + 3.7 kernel / faults: 10675 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2717 KB/s (289699 bytes in 0.104s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-60.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4d7481ad
+
+**** dumpsys cpuInfo ****
+
+  38 1546/org.paulmach.textedit: 34 user + 3.8 kernel / faults: 10672 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2485 KB/s (289699 bytes in 0.113s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-62.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@199ecbfa
+
+**** dumpsys cpuInfo ****
+
+  38 1520/org.paulmach.textedit: 34 user + 3.8 kernel / faults: 10506 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2696 KB/s (289696 bytes in 0.104s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-65.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3f0a4412
+
+**** dumpsys cpuInfo ****
+
+  35 1547/org.paulmach.textedit: 32 user + 3.1 kernel / faults: 671 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2780 KB/s (289699 bytes in 0.101s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-66.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@755ec4ae
+
+**** dumpsys cpuInfo ****
+
+  37 1517/org.paulmach.textedit: 31 user + 5.9 kernel / faults: 3151 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3009 KB/s (289697 bytes in 0.094s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-67.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@8aaf74c
+
+**** dumpsys cpuInfo ****
+
+  37 1517/org.paulmach.textedit: 31 user + 6.1 kernel / faults: 10622 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2636 KB/s (289695 bytes in 0.107s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-68.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2687ee24
+
+**** dumpsys cpuInfo ****
+
+  38 1543/org.paulmach.textedit: 35 user + 2.8 kernel / faults: 10745 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2756 KB/s (289694 bytes in 0.102s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-6.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4603d55f
+
+**** dumpsys cpuInfo ****
+
+  38 1551/org.paulmach.textedit: 33 user + 4.5 kernel / faults: 10631 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2425 KB/s (289697 bytes in 0.116s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-70.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@12b3e5ec
+
+**** dumpsys cpuInfo ****
+
+  40 1534/org.paulmach.textedit: 36 user + 4.1 kernel / faults: 10713 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2549 KB/s (289698 bytes in 0.110s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-71.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5f457130
+
+**** dumpsys cpuInfo ****
+
+  39 1555/org.paulmach.textedit: 34 user + 4.9 kernel / faults: 10658 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2694 KB/s (289696 bytes in 0.104s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-72.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@124abfad
+
+**** dumpsys cpuInfo ****
+
+  39 1546/org.paulmach.textedit: 35 user + 3.6 kernel / faults: 10630 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2493 KB/s (289697 bytes in 0.113s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-73.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@62f74d9f
+
+**** dumpsys cpuInfo ****
+
+  39 1554/org.paulmach.textedit: 34 user + 4.3 kernel / faults: 10634 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2534 KB/s (289699 bytes in 0.111s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-74.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4cfba93f
+
+**** dumpsys cpuInfo ****
+
+  31 1512/org.paulmach.textedit: 25 user + 5.3 kernel / faults: 3073 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2341 KB/s (289697 bytes in 0.120s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-75.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1bbcd448
+
+**** dumpsys cpuInfo ****
+
+  29 1548/org.paulmach.textedit: 25 user + 3.7 kernel / faults: 3097 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2482 KB/s (289697 bytes in 0.113s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-76.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7572d56a
+
+**** dumpsys cpuInfo ****
+
+  31 1538/org.paulmach.textedit: 27 user + 4.1 kernel / faults: 3329 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2646 KB/s (289697 bytes in 0.106s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-78.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@41c602cd
+
+**** dumpsys cpuInfo ****
+
+  27 1563/org.paulmach.textedit: 23 user + 4 kernel / faults: 3184 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2607 KB/s (289699 bytes in 0.108s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-79.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2a86a971
+
+**** dumpsys cpuInfo ****
+
+  35 1519/org.paulmach.textedit: 30 user + 5.1 kernel / faults: 1982 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2639 KB/s (289695 bytes in 0.107s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50b6ba9b
+
+**** dumpsys cpuInfo ****
+
+  37 1527/org.paulmach.textedit: 35 user + 2.6 kernel / faults: 10598 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2551 KB/s (289694 bytes in 0.110s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-80.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@46825ffa
+
+**** dumpsys cpuInfo ****
+
+  28 1552/org.paulmach.textedit: 24 user + 3.9 kernel / faults: 3150 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2453 KB/s (289694 bytes in 0.115s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-81.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7191d615
+
+**** dumpsys cpuInfo ****
+
+  36 1520/org.paulmach.textedit: 33 user + 3.5 kernel / faults: 10683 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2387 KB/s (289699 bytes in 0.118s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-82.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7e8c0ea5
+
+**** dumpsys cpuInfo ****
+
+  34 1523/org.paulmach.textedit: 30 user + 3.7 kernel / faults: 10586 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2240 KB/s (289698 bytes in 0.126s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-83.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3ef3bc2a
+
+**** dumpsys cpuInfo ****
+
+  38 1553/org.paulmach.textedit: 34 user + 4.2 kernel / faults: 10752 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2653 KB/s (289695 bytes in 0.106s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-84.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@37bcf3f3
+
+**** dumpsys cpuInfo ****
+
+  37 1520/org.paulmach.textedit: 35 user + 2.7 kernel / faults: 10733 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2497 KB/s (289694 bytes in 0.113s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-85.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4b8a7eb2
+
+**** dumpsys cpuInfo ****
+
+  38 1561/org.paulmach.textedit: 35 user + 2.9 kernel / faults: 10544 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2513 KB/s (289699 bytes in 0.112s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-86.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@57053a22
+
+**** dumpsys cpuInfo ****
+
+  27 1538/org.paulmach.textedit: 23 user + 4 kernel / faults: 3022 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2767 KB/s (289699 bytes in 0.102s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-88.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@275cc631
+
+**** dumpsys cpuInfo ****
+
+  28 1549/org.paulmach.textedit: 25 user + 2.6 kernel / faults: 3025 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2649 KB/s (289688 bytes in 0.106s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7ee08355
+
+**** dumpsys cpuInfo ****
+
+  36 1531/org.paulmach.textedit: 31 user + 4.7 kernel / faults: 10635 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2475 KB/s (289696 bytes in 0.114s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4da1b01
+
+**** dumpsys cpuInfo ****
+
+  38 1573/org.paulmach.textedit: 34 user + 3.7 kernel / faults: 10658 minor

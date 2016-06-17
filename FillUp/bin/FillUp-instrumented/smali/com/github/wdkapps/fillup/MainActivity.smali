@@ -1252,7 +1252,7 @@
 
     .line 540
     :cond_1
-    const/4 v1, 0x5
+    const/4 v1, 0x3
 
     aput-boolean v2, v0, v1
 

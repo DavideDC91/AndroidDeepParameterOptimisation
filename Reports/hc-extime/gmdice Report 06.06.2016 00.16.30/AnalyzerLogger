@@ -1,0 +1,3293 @@
+
+
+**** apktool d gmdice-instrumented_103.apk ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented_103.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d gmdice-instrumented_125.apk ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented_125.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d gmdice-instrumented_134.apk ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented_134.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d gmdice-instrumented_1461.apk ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented_1461.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d gmdice-instrumented_198.apk ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented_198.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d gmdice-instrumented_2034.apk ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented_2034.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d gmdice-instrumented_279.apk ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented_279.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d gmdice-instrumented_345.apk ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented_345.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d gmdice-instrumented_419.apk ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented_419.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d gmdice-instrumented_575.apk ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented_575.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2986 KB/s (216569 bytes in 0.070s)
+	pkg: /data/local/tmp/gmdice-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2b92e432
+
+**** dumpsys cpuInfo ****
+
+  37 1521/de.duenndns.gmdice: 35 user + 2.7 kernel / faults: 13496 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+gmdice-instrumented/smali/de/duenndns/gmdice/DSADiceSet.smali[114,4] Invalid literal value: 8. Must be between -8 and 7, inclusive.
+Exception in thread "main" brut.androlib.AndrolibException: Could not smali file: de/duenndns/gmdice/DSADiceSet.smali
+	at brut.androlib.src.SmaliBuilder.buildFile(SmaliBuilder.java:67)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:51)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:38)
+	at brut.androlib.Androlib.buildSourcesSmali(Androlib.java:364)
+	at brut.androlib.Androlib.buildSources(Androlib.java:295)
+	at brut.androlib.Androlib.build(Androlib.java:278)
+	at brut.androlib.Androlib.build(Androlib.java:254)
+	at brut.apktool.Main.cmdBuild(Main.java:224)
+	at brut.apktool.Main.main(Main.java:84)
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2918 KB/s (216569 bytes in 0.072s)
+	pkg: /data/local/tmp/gmdice-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@c17a1d5
+
+**** dumpsys cpuInfo ****
+
+  29 1491/de.duenndns.gmdice: 27 user + 2.3 kernel / faults: 6095 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2866 KB/s (216569 bytes in 0.073s)
+	pkg: /data/local/tmp/gmdice-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@49a9596c
+
+**** dumpsys cpuInfo ****
+
+  57 1556/de.duenndns.gmdice: 53 user + 4.2 kernel / faults: 700 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3160 KB/s (216570 bytes in 0.066s)
+	pkg: /data/local/tmp/gmdice-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7ba98980
+
+**** dumpsys cpuInfo ****
+
+  54 1539/de.duenndns.gmdice: 51 user + 3 kernel / faults: 802 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2953 KB/s (216570 bytes in 0.071s)
+	pkg: /data/local/tmp/gmdice-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3ae2ae03
+
+**** dumpsys cpuInfo ****
+
+  54 1591/de.duenndns.gmdice: 51 user + 3.2 kernel / faults: 919 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2975 KB/s (216570 bytes in 0.071s)
+	pkg: /data/local/tmp/gmdice-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4c8b40bd
+
+**** dumpsys cpuInfo ****
+
+  56 1584/de.duenndns.gmdice: 53 user + 3.7 kernel / faults: 960 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2605 KB/s (216570 bytes in 0.081s)
+	pkg: /data/local/tmp/gmdice-instrumented-6.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@364128f2
+
+**** dumpsys cpuInfo ****
+
+  56 1588/de.duenndns.gmdice: 52 user + 3.5 kernel / faults: 908 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2596 KB/s (216572 bytes in 0.081s)
+	pkg: /data/local/tmp/gmdice-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@574995eb
+
+**** dumpsys cpuInfo ****
+
+  40 1536/de.duenndns.gmdice: 36 user + 3.7 kernel / faults: 13664 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2208 KB/s (216566 bytes in 0.095s)
+	pkg: /data/local/tmp/gmdice-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@74d90a60
+
+**** dumpsys cpuInfo ****
+
+  33 1549/de.duenndns.gmdice: 30 user + 3 kernel / faults: 6279 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2019 KB/s (216570 bytes in 0.104s)
+	pkg: /data/local/tmp/gmdice-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6d51445b
+
+**** dumpsys cpuInfo ****
+
+  57 1570/de.duenndns.gmdice: 55 user + 2 kernel / faults: 725 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2217 KB/s (216570 bytes in 0.095s)
+	pkg: /data/local/tmp/gmdice-instrumented-10.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1161f7ff
+
+**** dumpsys cpuInfo ****
+
+  57 1517/de.duenndns.gmdice: 52 user + 4.8 kernel / faults: 882 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2503 KB/s (216570 bytes in 0.084s)
+	pkg: /data/local/tmp/gmdice-instrumented-11.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@25ce1da7
+
+**** dumpsys cpuInfo ****
+
+  58 1575/de.duenndns.gmdice: 55 user + 3.1 kernel / faults: 860 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2605 KB/s (216571 bytes in 0.081s)
+	pkg: /data/local/tmp/gmdice-instrumented-12.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@9c99364
+
+**** dumpsys cpuInfo ****
+
+  54 1556/de.duenndns.gmdice: 51 user + 3.1 kernel / faults: 867 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2614 KB/s (216572 bytes in 0.080s)
+	pkg: /data/local/tmp/gmdice-instrumented-13.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1b17ba47
+
+**** dumpsys cpuInfo ****
+
+  52 1573/de.duenndns.gmdice: 49 user + 3 kernel / faults: 834 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2448 KB/s (216570 bytes in 0.086s)
+	pkg: /data/local/tmp/gmdice-instrumented-14.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@b12803d
+
+**** dumpsys cpuInfo ****
+
+  38 1587/de.duenndns.gmdice: 35 user + 3.3 kernel / faults: 20510 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3005 KB/s (216571 bytes in 0.070s)
+	pkg: /data/local/tmp/gmdice-instrumented-15.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6c80fdce
+
+**** dumpsys cpuInfo ****
+
+  35 1557/de.duenndns.gmdice: 31 user + 3.2 kernel / faults: 11093 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2818 KB/s (216570 bytes in 0.075s)
+	pkg: /data/local/tmp/gmdice-instrumented-16.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@506b28ae
+
+**** dumpsys cpuInfo ****
+
+  54 1567/de.duenndns.gmdice: 51 user + 2.6 kernel / faults: 855 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2352 KB/s (216572 bytes in 0.089s)
+	pkg: /data/local/tmp/gmdice-instrumented-17.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4492f466
+
+**** dumpsys cpuInfo ****
+
+  58 1493/de.duenndns.gmdice: 55 user + 3.5 kernel / faults: 927 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2742 KB/s (216573 bytes in 0.077s)
+	pkg: /data/local/tmp/gmdice-instrumented-18.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7934bd50
+
+**** dumpsys cpuInfo ****
+
+  54 1568/de.duenndns.gmdice: 52 user + 2.4 kernel / faults: 823 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2257 KB/s (216570 bytes in 0.093s)
+	pkg: /data/local/tmp/gmdice-instrumented-19.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6b3f23b9
+
+**** dumpsys cpuInfo ****
+
+  55 1565/de.duenndns.gmdice: 51 user + 3.6 kernel / faults: 837 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2591 KB/s (216570 bytes in 0.081s)
+	pkg: /data/local/tmp/gmdice-instrumented-20.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2acce15b
+
+**** dumpsys cpuInfo ****
+
+  30 1555/de.duenndns.gmdice: 29 user + 1.2 kernel / faults: 789 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2827 KB/s (216571 bytes in 0.074s)
+	pkg: /data/local/tmp/gmdice-instrumented-21.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@42f1ac14
+
+**** dumpsys cpuInfo ****
+
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2713 KB/s (216570 bytes in 0.077s)
+	pkg: /data/local/tmp/gmdice-instrumented-22.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@562753d4
+
+**** dumpsys cpuInfo ****
+
+  0.1 1581/de.duenndns.gmdice: 0.1 user + 0 kernel / faults: 127 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2772 KB/s (216572 bytes in 0.076s)
+	pkg: /data/local/tmp/gmdice-instrumented-23.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6cb7feda
+
+**** dumpsys cpuInfo ****
+
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2510 KB/s (216573 bytes in 0.084s)
+	pkg: /data/local/tmp/gmdice-instrumented-24.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@16f28ab5
+
+**** dumpsys cpuInfo ****
+
+  55 1577/de.duenndns.gmdice: 51 user + 3.6 kernel / faults: 812 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2930 KB/s (216570 bytes in 0.072s)
+	pkg: /data/local/tmp/gmdice-instrumented-25.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3b010cf
+
+**** dumpsys cpuInfo ****
+
+  0.1 1523/de.duenndns.gmdice: 0.1 user + 0 kernel / faults: 137 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2732 KB/s (216570 bytes in 0.077s)
+	pkg: /data/local/tmp/gmdice-instrumented-26.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@438b469c
+
+**** dumpsys cpuInfo ****
+
+  0.1 1552/de.duenndns.gmdice: 0.1 user + 0 kernel / faults: 118 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2874 KB/s (216568 bytes in 0.073s)
+	pkg: /data/local/tmp/gmdice-instrumented-27.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@66beb8d1
+
+**** dumpsys cpuInfo ****
+
+  38 1585/de.duenndns.gmdice: 35 user + 3.6 kernel / faults: 13543 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2422 KB/s (216573 bytes in 0.087s)
+	pkg: /data/local/tmp/gmdice-instrumented-28.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@45d28376
+
+**** dumpsys cpuInfo ****
+
+  35 1565/de.duenndns.gmdice: 33 user + 2 kernel / faults: 5954 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2591 KB/s (216570 bytes in 0.081s)
+	pkg: /data/local/tmp/gmdice-instrumented-29.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@149cef94
+
+**** dumpsys cpuInfo ****
+
+  0.5 1496/de.duenndns.gmdice: 0.5 user + 0 kernel / faults: 219 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2955 KB/s (216569 bytes in 0.071s)
+	pkg: /data/local/tmp/gmdice-instrumented-30.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2c55c512
+
+**** dumpsys cpuInfo ****
+
+  56 1576/de.duenndns.gmdice: 52 user + 3.9 kernel / faults: 865 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2471 KB/s (216570 bytes in 0.085s)
+	pkg: /data/local/tmp/gmdice-instrumented-31.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@64964108
+
+**** dumpsys cpuInfo ****
+
+  54 1557/de.duenndns.gmdice: 52 user + 2 kernel / faults: 874 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2541 KB/s (216570 bytes in 0.083s)
+	pkg: /data/local/tmp/gmdice-instrumented-32.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@11e6c615
+
+**** dumpsys cpuInfo ****
+
+  0.1 1512/de.duenndns.gmdice: 0.1 user + 0 kernel / faults: 133 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1901 KB/s (216567 bytes in 0.111s)
+	pkg: /data/local/tmp/gmdice-instrumented-33.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7fa43313
+
+**** dumpsys cpuInfo ****
+
+  54 1515/de.duenndns.gmdice: 52 user + 1.8 kernel / faults: 889 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2447 KB/s (216567 bytes in 0.086s)
+	pkg: /data/local/tmp/gmdice-instrumented-34.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@275507eb
+
+**** dumpsys cpuInfo ****
+
+  58 1588/de.duenndns.gmdice: 55 user + 3.2 kernel / faults: 900 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+gmdice-instrumented/smali/de/duenndns/gmdice/GameMasterDice.smali[1347,4] Invalid literal value: 8. Must be between -8 and 7, inclusive.
+Exception in thread "main" brut.androlib.AndrolibException: Could not smali file: de/duenndns/gmdice/GameMasterDice.smali
+	at brut.androlib.src.SmaliBuilder.buildFile(SmaliBuilder.java:67)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:51)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:38)
+	at brut.androlib.Androlib.buildSourcesSmali(Androlib.java:364)
+	at brut.androlib.Androlib.buildSources(Androlib.java:295)
+	at brut.androlib.Androlib.build(Androlib.java:278)
+	at brut.androlib.Androlib.build(Androlib.java:254)
+	at brut.apktool.Main.cmdBuild(Main.java:224)
+	at brut.apktool.Main.main(Main.java:84)
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2006 KB/s (216567 bytes in 0.105s)
+	pkg: /data/local/tmp/gmdice-instrumented-35.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5d6adcf7
+
+**** dumpsys cpuInfo ****
+
+  54 1563/de.duenndns.gmdice: 51 user + 2.9 kernel / faults: 943 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3204 KB/s (216568 bytes in 0.065s)
+	pkg: /data/local/tmp/gmdice-instrumented-36.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@102ab23
+
+**** dumpsys cpuInfo ****
+
+  53 1561/de.duenndns.gmdice: 50 user + 3.3 kernel / faults: 904 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2702 KB/s (216574 bytes in 0.078s)
+	pkg: /data/local/tmp/gmdice-instrumented-37.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@42f39de0
+
+**** dumpsys cpuInfo ****
+
+  53 1560/de.duenndns.gmdice: 49 user + 3.9 kernel / faults: 862 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2998 KB/s (216567 bytes in 0.070s)
+	pkg: /data/local/tmp/gmdice-instrumented-38.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3f26b285
+
+**** dumpsys cpuInfo ****
+
+  41 1546/de.duenndns.gmdice: 37 user + 3.5 kernel / faults: 20785 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+gmdice-instrumented/smali/de/duenndns/gmdice/GameMasterDice.smali[1347,4] Invalid literal value: 8. Must be between -8 and 7, inclusive.
+Exception in thread "main" brut.androlib.AndrolibException: Could not smali file: de/duenndns/gmdice/GameMasterDice.smali
+	at brut.androlib.src.SmaliBuilder.buildFile(SmaliBuilder.java:67)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:51)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:38)
+	at brut.androlib.Androlib.buildSourcesSmali(Androlib.java:364)
+	at brut.androlib.Androlib.buildSources(Androlib.java:295)
+	at brut.androlib.Androlib.build(Androlib.java:278)
+	at brut.androlib.Androlib.build(Androlib.java:254)
+	at brut.apktool.Main.cmdBuild(Main.java:224)
+	at brut.apktool.Main.main(Main.java:84)
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2631 KB/s (216567 bytes in 0.080s)
+	pkg: /data/local/tmp/gmdice-instrumented-39.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2afe5e1c
+
+**** dumpsys cpuInfo ****
+
+  40 1512/de.duenndns.gmdice: 35 user + 4.1 kernel / faults: 13764 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2536 KB/s (216571 bytes in 0.083s)
+	pkg: /data/local/tmp/gmdice-instrumented-40.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@156127f0
+
+**** dumpsys cpuInfo ****
+
+  32 1577/de.duenndns.gmdice: 29 user + 2.3 kernel / faults: 6437 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2673 KB/s (216570 bytes in 0.079s)
+	pkg: /data/local/tmp/gmdice-instrumented-41.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4867f7f4
+
+**** dumpsys cpuInfo ****
+
+  58 1524/de.duenndns.gmdice: 56 user + 2.3 kernel / faults: 921 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3868 KB/s (216569 bytes in 0.054s)
+	pkg: /data/local/tmp/gmdice-instrumented-42.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4a1fe370
+
+**** dumpsys cpuInfo ****
+
+  59 1575/de.duenndns.gmdice: 56 user + 2.5 kernel / faults: 906 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2943 KB/s (216573 bytes in 0.071s)
+	pkg: /data/local/tmp/gmdice-instrumented-43.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7b90fa03
+
+**** dumpsys cpuInfo ****
+
+  55 1554/de.duenndns.gmdice: 53 user + 1.8 kernel / faults: 895 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2887 KB/s (216571 bytes in 0.073s)
+	pkg: /data/local/tmp/gmdice-instrumented-44.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7e214acd
+
+**** dumpsys cpuInfo ****
+
+  54 1500/de.duenndns.gmdice: 50 user + 4 kernel / faults: 921 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2610 KB/s (216571 bytes in 0.081s)
+	pkg: /data/local/tmp/gmdice-instrumented-45.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@37f7512
+
+**** dumpsys cpuInfo ****
+
+  59 1565/de.duenndns.gmdice: 56 user + 3.3 kernel / faults: 907 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2480 KB/s (216573 bytes in 0.085s)
+	pkg: /data/local/tmp/gmdice-instrumented-46.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2370e81
+
+**** dumpsys cpuInfo ****
+
+  38 1557/de.duenndns.gmdice: 34 user + 3.8 kernel / faults: 13656 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2302 KB/s (216575 bytes in 0.091s)
+	pkg: /data/local/tmp/gmdice-instrumented-47.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@70cfe49
+
+**** dumpsys cpuInfo ****
+
+  36 1514/de.duenndns.gmdice: 33 user + 3.6 kernel / faults: 6059 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2678 KB/s (216571 bytes in 0.078s)
+	pkg: /data/local/tmp/gmdice-instrumented-48.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@16105d12
+
+**** dumpsys cpuInfo ****
+
+  59 1570/de.duenndns.gmdice: 55 user + 4.1 kernel / faults: 974 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+gmdice-instrumented/smali/de/duenndns/gmdice/GameMasterDice.smali[1860,4] Invalid literal value: 8. Must be between -8 and 7, inclusive.
+Exception in thread "main" brut.androlib.AndrolibException: Could not smali file: de/duenndns/gmdice/GameMasterDice.smali
+	at brut.androlib.src.SmaliBuilder.buildFile(SmaliBuilder.java:67)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:51)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:38)
+	at brut.androlib.Androlib.buildSourcesSmali(Androlib.java:364)
+	at brut.androlib.Androlib.buildSources(Androlib.java:295)
+	at brut.androlib.Androlib.build(Androlib.java:278)
+	at brut.androlib.Androlib.build(Androlib.java:254)
+	at brut.apktool.Main.cmdBuild(Main.java:224)
+	at brut.apktool.Main.main(Main.java:84)
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2423 KB/s (216571 bytes in 0.087s)
+	pkg: /data/local/tmp/gmdice-instrumented-49.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5b709448
+
+**** dumpsys cpuInfo ****
+
+  59 1566/de.duenndns.gmdice: 55 user + 3 kernel / faults: 929 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2372 KB/s (216573 bytes in 0.089s)
+	pkg: /data/local/tmp/gmdice-instrumented-50.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@38de860b
+
+**** dumpsys cpuInfo ****
+
+  53 1584/de.duenndns.gmdice: 51 user + 2.9 kernel / faults: 958 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2773 KB/s (216572 bytes in 0.076s)
+	pkg: /data/local/tmp/gmdice-instrumented-51.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@23c54a93
+
+**** dumpsys cpuInfo ****
+
+  58 1575/de.duenndns.gmdice: 55 user + 2.8 kernel / faults: 982 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2711 KB/s (216573 bytes in 0.078s)
+	pkg: /data/local/tmp/gmdice-instrumented-52.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5422dfb5
+
+**** dumpsys cpuInfo ****
+
+  54 1496/de.duenndns.gmdice: 51 user + 3.1 kernel / faults: 870 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2406 KB/s (216574 bytes in 0.087s)
+	pkg: /data/local/tmp/gmdice-instrumented-53.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@214c63f0
+
+**** dumpsys cpuInfo ****
+
+  40 1550/de.duenndns.gmdice: 36 user + 3.4 kernel / faults: 13619 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2826 KB/s (216574 bytes in 0.074s)
+	pkg: /data/local/tmp/gmdice-instrumented-54.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6ccd7489
+
+**** dumpsys cpuInfo ****
+
+  30 1563/de.duenndns.gmdice: 28 user + 2.4 kernel / faults: 6430 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2694 KB/s (216572 bytes in 0.078s)
+	pkg: /data/local/tmp/gmdice-instrumented-55.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4361b3f6
+
+**** dumpsys cpuInfo ****
+
+  56 1569/de.duenndns.gmdice: 54 user + 2.4 kernel / faults: 729 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2168 KB/s (216573 bytes in 0.097s)
+	pkg: /data/local/tmp/gmdice-instrumented-56.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@710fa0d0
+
+**** dumpsys cpuInfo ****
+
+  58 1560/de.duenndns.gmdice: 55 user + 3.1 kernel / faults: 965 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2948 KB/s (216573 bytes in 0.071s)
+	pkg: /data/local/tmp/gmdice-instrumented-57.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5b14b585
+
+**** dumpsys cpuInfo ****
+
+  37 1569/de.duenndns.gmdice: 33 user + 4.6 kernel / faults: 1895 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2819 KB/s (216574 bytes in 0.075s)
+	pkg: /data/local/tmp/gmdice-instrumented-58.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@31ecf8d3
+
+**** dumpsys cpuInfo ****
+
+  41 1524/de.duenndns.gmdice: 37 user + 3.6 kernel / faults: 20581 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2902 KB/s (216570 bytes in 0.072s)
+	pkg: /data/local/tmp/gmdice-instrumented-59.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6a3d43a8
+
+**** dumpsys cpuInfo ****
+
+  36 1579/de.duenndns.gmdice: 33 user + 3 kernel / faults: 13323 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2470 KB/s (216570 bytes in 0.085s)
+	pkg: /data/local/tmp/gmdice-instrumented-60.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@54808f63
+
+**** dumpsys cpuInfo ****
+
+  53 1549/de.duenndns.gmdice: 50 user + 3 kernel / faults: 821 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2831 KB/s (216574 bytes in 0.074s)
+	pkg: /data/local/tmp/gmdice-instrumented-61.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@789a4dfc
+
+**** dumpsys cpuInfo ****
+
+  27 1545/de.duenndns.gmdice: 25 user + 2.5 kernel / faults: 682 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3034 KB/s (216572 bytes in 0.069s)
+	pkg: /data/local/tmp/gmdice-instrumented-62.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1576e1b0
+
+**** dumpsys cpuInfo ****
+
+  12 1578/de.duenndns.gmdice: 11 user + 1.7 kernel / faults: 344 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2846 KB/s (216571 bytes in 0.074s)
+	pkg: /data/local/tmp/gmdice-instrumented-63.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2f70c456
+
+**** dumpsys cpuInfo ****
+
+  35 1523/de.duenndns.gmdice: 31 user + 4 kernel / faults: 2418 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2752 KB/s (216577 bytes in 0.076s)
+	pkg: /data/local/tmp/gmdice-instrumented-64.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2d695541
+
+**** dumpsys cpuInfo ****
+
+  28 1571/de.duenndns.gmdice: 26 user + 2.1 kernel / faults: 652 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2966 KB/s (216576 bytes in 0.071s)
+	pkg: /data/local/tmp/gmdice-instrumented-65.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@18c58e88
+
+**** dumpsys cpuInfo ****
+
+  54 1604/de.duenndns.gmdice: 51 user + 3.1 kernel / faults: 829 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2674 KB/s (216576 bytes in 0.079s)
+	pkg: /data/local/tmp/gmdice-instrumented-66.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@13df233b
+
+**** dumpsys cpuInfo ****
+
+  39 1541/de.duenndns.gmdice: 36 user + 3.4 kernel / faults: 13714 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+gmdice-instrumented/smali/de/duenndns/gmdice/GameMasterDice.smali[2532,4] Invalid literal value: 8. Must be between -8 and 7, inclusive.
+Exception in thread "main" brut.androlib.AndrolibException: Could not smali file: de/duenndns/gmdice/GameMasterDice.smali
+	at brut.androlib.src.SmaliBuilder.buildFile(SmaliBuilder.java:67)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:51)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:38)
+	at brut.androlib.Androlib.buildSourcesSmali(Androlib.java:364)
+	at brut.androlib.Androlib.buildSources(Androlib.java:295)
+	at brut.androlib.Androlib.build(Androlib.java:278)
+	at brut.androlib.Androlib.build(Androlib.java:254)
+	at brut.apktool.Main.cmdBuild(Main.java:224)
+	at brut.apktool.Main.main(Main.java:84)
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2665 KB/s (216576 bytes in 0.079s)
+	pkg: /data/local/tmp/gmdice-instrumented-67.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@34e4888d
+
+**** dumpsys cpuInfo ****
+
+  30 1546/de.duenndns.gmdice: 27 user + 2.2 kernel / faults: 6498 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2428 KB/s (216576 bytes in 0.087s)
+	pkg: /data/local/tmp/gmdice-instrumented-68.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3746348c
+
+**** dumpsys cpuInfo ****
+
+  53 1550/de.duenndns.gmdice: 49 user + 4.5 kernel / faults: 787 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+gmdice-instrumented/smali/de/duenndns/gmdice/GameMasterDice.smali[2532,4] Invalid literal value: 8. Must be between -8 and 7, inclusive.
+Exception in thread "main" brut.androlib.AndrolibException: Could not smali file: de/duenndns/gmdice/GameMasterDice.smali
+	at brut.androlib.src.SmaliBuilder.buildFile(SmaliBuilder.java:67)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:51)
+	at brut.androlib.src.SmaliBuilder.build(SmaliBuilder.java:38)
+	at brut.androlib.Androlib.buildSourcesSmali(Androlib.java:364)
+	at brut.androlib.Androlib.buildSources(Androlib.java:295)
+	at brut.androlib.Androlib.build(Androlib.java:278)
+	at brut.androlib.Androlib.build(Androlib.java:254)
+	at brut.apktool.Main.cmdBuild(Main.java:224)
+	at brut.apktool.Main.main(Main.java:84)
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2235 KB/s (216576 bytes in 0.094s)
+	pkg: /data/local/tmp/gmdice-instrumented-69.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@28c81298
+
+**** dumpsys cpuInfo ****
+
+  55 1560/de.duenndns.gmdice: 51 user + 3.2 kernel / faults: 874 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2111 KB/s (216578 bytes in 0.100s)
+	pkg: /data/local/tmp/gmdice-instrumented-70.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@33b03a19
+
+**** dumpsys cpuInfo ****
+
+  54 1598/de.duenndns.gmdice: 51 user + 3.2 kernel / faults: 906 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2936 KB/s (216576 bytes in 0.072s)
+	pkg: /data/local/tmp/gmdice-instrumented-71.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@15c0ba48
+
+**** dumpsys cpuInfo ****
+
+  57 1567/de.duenndns.gmdice: 53 user + 4.2 kernel / faults: 934 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2813 KB/s (216578 bytes in 0.075s)
+	pkg: /data/local/tmp/gmdice-instrumented-72.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@166e840e
+
+**** dumpsys cpuInfo ****
+
+  57 1604/de.duenndns.gmdice: 52 user + 4.7 kernel / faults: 903 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2660 KB/s (216576 bytes in 0.079s)
+	pkg: /data/local/tmp/gmdice-instrumented-73.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@46346d3f
+
+**** dumpsys cpuInfo ****
+
+  41 1585/de.duenndns.gmdice: 38 user + 2.5 kernel / faults: 20800 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2721 KB/s (216576 bytes in 0.077s)
+	pkg: /data/local/tmp/gmdice-instrumented-74.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1e14ec6e
+
+**** dumpsys cpuInfo ****
+
+  37 1526/de.duenndns.gmdice: 33 user + 4.2 kernel / faults: 13456 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2722 KB/s (216578 bytes in 0.077s)
+	pkg: /data/local/tmp/gmdice-instrumented-75.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@295a7dd
+
+**** dumpsys cpuInfo ****
+
+  54 1539/de.duenndns.gmdice: 51 user + 3.4 kernel / faults: 891 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2430 KB/s (216574 bytes in 0.087s)
+	pkg: /data/local/tmp/gmdice-instrumented-76.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2fd8589b
+
+**** dumpsys cpuInfo ****
+
+  53 1520/de.duenndns.gmdice: 50 user + 3.3 kernel / faults: 846 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2608 KB/s (216573 bytes in 0.081s)
+	pkg: /data/local/tmp/gmdice-instrumented-77.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@20c6a503
+
+**** dumpsys cpuInfo ****
+
+  55 1550/de.duenndns.gmdice: 52 user + 3.8 kernel / faults: 880 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2563 KB/s (216574 bytes in 0.082s)
+	pkg: /data/local/tmp/gmdice-instrumented-78.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@244b4fe2
+
+**** dumpsys cpuInfo ****
+
+  58 1543/de.duenndns.gmdice: 55 user + 2.9 kernel / faults: 933 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2506 KB/s (216572 bytes in 0.084s)
+	pkg: /data/local/tmp/gmdice-instrumented-79.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6f7f81ea
+
+**** dumpsys cpuInfo ****
+
+  56 1566/de.duenndns.gmdice: 53 user + 2.7 kernel / faults: 924 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2918 KB/s (216571 bytes in 0.072s)
+	pkg: /data/local/tmp/gmdice-instrumented-80.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1e9b4e71
+
+**** dumpsys cpuInfo ****
+
+  53 1519/de.duenndns.gmdice: 50 user + 2.9 kernel / faults: 886 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3484 KB/s (216572 bytes in 0.060s)
+	pkg: /data/local/tmp/gmdice-instrumented-81.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2c13d626
+
+**** dumpsys cpuInfo ****
+
+  38 1590/de.duenndns.gmdice: 34 user + 3.6 kernel / faults: 13600 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2586 KB/s (216576 bytes in 0.081s)
+	pkg: /data/local/tmp/gmdice-instrumented-82.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7b4dc513
+
+**** dumpsys cpuInfo ****
+
+  28 1538/de.duenndns.gmdice: 25 user + 2.7 kernel / faults: 6323 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2650 KB/s (216575 bytes in 0.079s)
+	pkg: /data/local/tmp/gmdice-instrumented-83.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@32dd120d
+
+**** dumpsys cpuInfo ****
+
+  53 1522/de.duenndns.gmdice: 51 user + 1.9 kernel / faults: 684 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2837 KB/s (216575 bytes in 0.074s)
+	pkg: /data/local/tmp/gmdice-instrumented-84.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6f325064
+
+**** dumpsys cpuInfo ****
+
+  55 1598/de.duenndns.gmdice: 51 user + 3.9 kernel / faults: 926 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2598 KB/s (216574 bytes in 0.081s)
+	pkg: /data/local/tmp/gmdice-instrumented-85.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3bd3cb1d
+
+**** dumpsys cpuInfo ****
+
+  57 1556/de.duenndns.gmdice: 53 user + 4.2 kernel / faults: 912 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1571 KB/s (216574 bytes in 0.134s)
+	pkg: /data/local/tmp/gmdice-instrumented-86.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4556e7be
+
+**** dumpsys cpuInfo ****
+
+  54 1540/de.duenndns.gmdice: 52 user + 2.2 kernel / faults: 882 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2387 KB/s (216572 bytes in 0.088s)
+	pkg: /data/local/tmp/gmdice-instrumented-87.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@9312b0a
+
+**** dumpsys cpuInfo ****
+
+  55 1569/de.duenndns.gmdice: 53 user + 1.7 kernel / faults: 868 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2532 KB/s (216572 bytes in 0.083s)
+	pkg: /data/local/tmp/gmdice-instrumented-88.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@70b5ac36
+
+**** dumpsys cpuInfo ****
+
+  39 1576/de.duenndns.gmdice: 36 user + 3.8 kernel / faults: 20603 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2375 KB/s (216576 bytes in 0.089s)
+	pkg: /data/local/tmp/gmdice-instrumented-89.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@35e9e478
+
+**** dumpsys cpuInfo ****
+
+  37 1568/de.duenndns.gmdice: 32 user + 4.2 kernel / faults: 13305 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2958 KB/s (216575 bytes in 0.071s)
+	pkg: /data/local/tmp/gmdice-instrumented-90.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4a3ef7b5
+
+**** dumpsys cpuInfo ****
+
+  59 1586/de.duenndns.gmdice: 56 user + 3.3 kernel / faults: 963 minor

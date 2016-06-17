@@ -1,0 +1,1895 @@
+
+
+**** android update ****
+
+Updated project.properties
+Updated local.properties
+Updated file ./build.xml
+Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
+
+
+**** ant clean ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: gmdice
+  [gettype] Project Type: Application
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/gmdice/gen
+[getlibpath] Library dependencies:
+[getlibpath] No Libraries
+   [subant] No sub-builds to iterate on
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+
+
+**** ant instrument ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: gmdice
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.3
+     [echo] Resolving Build Target for gmdice...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/rsObj
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/rsLibs
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/gen
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for gmdice...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'instrument'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 12 source files to /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] 3 warnings
+     [echo] Instrumenting classes from /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes
+      [dex] input: /home/davide/android-sdk/tools/lib/emma_device.jar
+      [dex] Pre-Dexing /home/davide/android-sdk/tools/lib/emma_device.jar -> emma_device-c54bd04c2f76e0e56a7ebc2ed6b523ca.jar
+      [dex] Converting compiled files and external libraries into /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes.dex...
+       [dx] Merged dex #1 (33 defs/43.1KiB)
+       [dx] Merged dex #2 (297 defs/327.2KiB)
+       [dx] Result is 330 defs/444.8KiB. Took 1.2s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res
+   [crunch] To destination dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable-hdpi/logo.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable-hdpi/logo.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable-hdpi/logo.png: 54% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/logo.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/logo.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/logo.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_disabled.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_disabled_focused.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled_focused.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled_focused.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_normal.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_normal.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_pressed.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_pressed.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_selected.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_selected.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_disabled.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_disabled.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_normal.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_normal.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_pressed.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_pressed.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_selected.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_selected.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_disabled.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_disabled_focused.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled_focused.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled_focused.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_normal.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_normal.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_pressed.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_pressed.9.png
+   [crunch]   (processed image to cache entry /home/david
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating gmdice-instrumented-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented.apk
+[propertyfile] Creating new property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+
+instrument:
+ [zipalign] Run cancelled: no changes to input file /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented-unaligned.apk
+     [echo] Instrumented Package: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented.apk
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+
+BUILD SUCCESSFUL
+Total time: 1 minute 0 seconds
+
+
+**** ant installi ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+install:
+     [echo] Installing /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented.apk onto default emulator or device...
+     [exec] 1284 KB/s (217105 bytes in 0.165s)
+     [exec] 	pkg: /data/local/tmp/gmdice-instrumented.apk
+     [exec] Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
+
+installi:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+
+
+**** apktool d ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building resources...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3170 KB/s (216568 bytes in 0.066s)
+	pkg: /data/local/tmp/gmdice-instrumented.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6afc7d1f
+
+**** dumpsys cpuInfo ****
+
+  44 1921/de.duenndns.gmdice: 41 user + 2.5 kernel / faults: 14861 minor
+
+**** adb broadcast ****
+
+Broadcasting: Intent { act=com.qa.emma.COLLECT_COVERAGE }
+Broadcast completed: result=0
+
+
+**** adb push ****
+
+Android Debug Bridge version 1.0.32
+Revision 09a0d98bebce-android
+
+ -a                            - directs adb to listen on all interfaces for a connection
+ -d                            - directs command to the only connected USB device
+                                 returns an error if more than one USB device is present.
+ -e                            - directs command to the only running emulator.
+                                 returns an error if more than one emulator is running.
+ -s <specific device>          - directs command to the device or emulator with the given
+                                 serial number or qualifier. Overrides ANDROID_SERIAL
+                                 environment variable.
+ -p <product name or path>     - simple product name like 'sooner', or
+                                 a relative/absolute path to a product
+                                 out directory like 'out/target/product/sooner'.
+                                 If -p is not specified, the ANDROID_PRODUCT_OUT
+                                 environment variable is used, which must
+                                 be an absolute path.
+ -H                            - Name of adb server host (default: localhost)
+ -P                            - Port of adb server (default: 5037)
+ devices [-l]                  - list all connected devices
+                                 ('-l' will also list device qualifiers)
+ connect <host>[:<port>]       - connect to a device via TCP/IP
+                                 Port 5555 is used by default if no port number is specified.
+ disconnect [<host>[:<port>]]  - disconnect from a TCP/IP device.
+                                 Port 5555 is used by default if no port number is specified.
+                                 Using this command with no additional arguments
+                                 will disconnect from all connected TCP/IP devices.
+
+device commands:
+  adb push [-p] <local> <remote>
+                               - copy file/dir to device
+                                 ('-p' to display the transfer progress)
+  adb pull [-p] [-a] <remote> [<local>]
+                               - copy file/dir from device
+                                 ('-p' to display the transfer progress)
+                                 ('-a' means copy timestamp and mode)
+  adb sync [ <directory> ]     - copy host->device only if changed
+                                 (-l means list but don't copy)
+  adb shell                    - run remote shell interactively
+  adb shell <command>          - run remote shell command
+  adb emu <command>            - run emulator console command
+  adb logcat [ <filter-spec> ] - View device log
+  adb forward --list           - list all forward socket connections.
+                                 the format is a list of lines with the following format:
+                                    <serial> " " <local> " " <remote> "\n"
+  adb forward <local> <remote> - forward socket connections
+                                 forward specs are one of: 
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+                                   dev:<character device name>
+                                   jdwp:<process pid> (remote only)
+  adb forward --no-rebind <local> <remote>
+                               - same as 'adb forward <local> <remote>' but fails
+                                 if <local> is already forwarded
+  adb forward --remove <local> - remove a specific forward socket connection
+  adb forward --remove-all     - remove all forward socket connections
+  adb reverse --list           - list all reverse socket connections from device
+  adb reverse <remote> <local> - reverse socket connections
+                                 reverse specs are one of:
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+  adb reverse --norebind <remote> <local>
+                               - same as 'adb reverse <remote> <local>' but fails
+                                 if <remote> is already reversed.
+  adb reverse --remove <remote>
+                               - remove a specific reversed socket connection
+  adb reverse --remove-all     - remove all reversed socket connections from device
+  adb jdwp                     - list PIDs of processes hosting a JDWP transport
+  adb install [-lrtsdg] <file>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-g: grant all runtime permissions)
+  adb install-multiple [-lrtsdpg] <file...>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-p: partial application install)
+                                 (-g: grant all runtime permissions)
+  adb uninstall [-k] <package> - remove this app package from the device
+                                 ('-k' means keep the data and cache directories)
+  adb bugreport                - return all information from the device
+                                 that should be included in a bug report.
+
+  adb backup [-f <file>] [-apk|-noapk] [-obb|-noobb] [-shared|-noshared] [-all] [-system|-nosystem] [<packages...>]
+                               - write an archive of the device's data to <file>.
+                                 If no -f option is supplied then the data is written
+                                 to "backup.ab" in the current directory.
+                                 (-apk|-noapk enable/disable backup of the .apks themselves
+                                    in the archive; the default is noapk.)
+                                 (-obb|-noobb enable/disable backup of any installed apk expansion
+                                    (aka .obb) files associated with each application; the default
+                                    is noobb.)
+                                 (-shared|-noshared enable/disable backup of the device's
+                                    shared storage / SD card contents; the default is noshared.)
+                                 (-all means to back up all installed applications)
+                                 (-system|-nosystem toggles whether -all automatically includes
+                                    system applications; the default is to include system apps)
+                                 (<packages...> is the list of applications to be backed up.  If
+                                    the -all or -shared flags are passed, then the package
+                                    list is optional.  Applications explicitly given on the
+                                    command line will be included even if -nosystem would
+                                    ordinarily cause them to be omitted.)
+
+  adb restore <file>           - restore device contents from the <file> backup archive
+
+  adb disable-verity           - disable dm-verity checking on USERDEBUG builds
+  adb enable-verity            - re-enable dm-verity checking on USERDEBUG builds
+  adb keygen <file>            - generate adb public/private key. The private key is stored in <file>,
+                                 and the public key is stored in <file>.pub. Any existing files
+                                 are overwritten.
+  adb help                     - show this help message
+  adb version                  - show version num
+
+scripting:
+  adb wait-for-device          - block until device is online
+  adb start-server             - ensure that there is a server running
+  adb kill-server              - kill the server if it is running
+  adb get-state                - prints: offline | bootloader | device
+  adb get-serialno             - prints: <serial-number>
+  adb get-devpath              - prints: <device-path>
+  adb remount                  - remounts the /system, /vendor (if present) and /oem (if present) partitions on the device read-write
+  adb reboot [bootloader|recovery]
+                               - reboots the device, optionally into the bootloader or recovery program.
+  adb reboot sideload          - reboots the device into the sideload mode in recovery program (adb root required).
+  adb reboot sideload-auto-reboot
+                               - reboots into the sideload mode, then reboots automatically after the sideload regardless of the result.
+  adb sideload <file>          - sideloads the given package
+  adb root                     - restarts the adbd daemon with root permissions
+  adb unroot                   - restarts the adbd daemon without root permissions
+  adb usb                      - restarts the adbd daemon listening on USB
+  adb tcpip <port>             - restarts the adbd daemon listening on TCP on the specified port
+
+networking:
+  adb ppp <tty> [parameters]   - Run PPP over USB.
+ Note: you should not automatically start a PPP connection.
+ <tty> refers to the tty for PPP stream. Eg. dev:/dev/omap_csmi_tty1
+ [parameters] - Eg. defaultroute debug dump local notty usepeerdns
+
+adb sync notes: adb sync [ <directory> ]
+  <localdir> can be interpreted in several ways:
+
+  - If <directory> is not specified, /system, /vendor (if present), /oem (if present) and /data partitions will be updated.
+
+  - If it is "system", "vendor", "oem" or "data", only the corresponding partition
+    is updated.
+
+environment variables:
+  ADB_TRACE                    - Print debug information. A comma separated list of the following values
+                                 1 or all, adb, sockets, packets, rwx, usb, sync, sysdeps, transport, jdwp
+  ANDROID_SERIAL               - The serial number to connect to. -s takes priority over this if given.
+  ANDROID_LOG_TAGS             - When used with the logcat option, only these debug tags are printed.
+
+
+**** adb pull ****
+
+1758 KB/s (111425 bytes in 0.061s)
+
+
+**** java emma report ****
+
+EMMA: processing input files ...
+EMMA: 2 file(s) read and merged in 40 ms
+EMMA: writing [html] report to [/home/davide/git/AndroidDeepParameterOptimisation/gmdice/coverage/index.html] ...
+
+
+**** ls ****
+
+gmdice-instrumented-0
+gmdice-instrumented-0.apk
+gmdice-instrumented-11
+gmdice-instrumented-11.apk
+gmdice-instrumented-12
+gmdice-instrumented-12.apk
+gmdice-instrumented-13
+gmdice-instrumented-13.apk
+gmdice-instrumented-14
+gmdice-instrumented-14.apk
+gmdice-instrumented-15
+gmdice-instrumented-15.apk
+gmdice-instrumented-16
+gmdice-instrumented-16.apk
+gmdice-instrumented-17
+gmdice-instrumented-17.apk
+gmdice-instrumented-18
+gmdice-instrumented-18.apk
+gmdice-instrumented-19
+gmdice-instrumented-19.apk
+gmdice-instrumented-24
+gmdice-instrumented-24.apk
+gmdice-instrumented-27
+gmdice-instrumented-27.apk
+gmdice-instrumented-28
+gmdice-instrumented-28.apk
+gmdice-instrumented-3
+gmdice-instrumented-30
+gmdice-instrumented-30.apk
+gmdice-instrumented-31
+gmdice-instrumented-31.apk
+gmdice-instrumented-33
+gmdice-instrumented-33.apk
+gmdice-instrumented-34
+gmdice-instrumented-34.apk
+gmdice-instrumented-35
+gmdice-instrumented-35.apk
+gmdice-instrumented-36
+gmdice-instrumented-36.apk
+gmdice-instrumented-37
+gmdice-instrumented-37.apk
+gmdice-instrumented-38
+gmdice-instrumented-38.apk
+gmdice-instrumented-39
+gmdice-instrumented-39.apk
+gmdice-instrumented-3.apk
+gmdice-instrumented-4
+gmdice-instrumented-40
+gmdice-instrumented-40.apk
+gmdice-instrumented-42
+gmdice-instrumented-42.apk
+gmdice-instrumented-43
+gmdice-instrumented-43.apk
+gmdice-instrumented-47
+gmdice-instrumented-47.apk
+gmdice-instrumented-48
+gmdice-instrumented-48.apk
+gmdice-instrumented-49
+gmdice-instrumented-49.apk
+gmdice-instrumented-4.apk
+gmdice-instrumented-5
+gmdice-instrumented-50
+gmdice-instrumented-50.apk
+gmdice-instrumented-51
+gmdice-instrumented-51.apk
+gmdice-instrumented-52
+gmdice-instrumented-52.apk
+gmdice-instrumented-53
+gmdice-instrumented-53.apk
+gmdice-instrumented-54
+gmdice-instrumented-54.apk
+gmdice-instrumented-58
+gmdice-instrumented-58.apk
+gmdice-instrumented-59
+gmdice-instrumented-59.apk
+gmdice-instrumented-5.apk
+gmdice-instrumented-6
+gmdice-instrumented-60
+gmdice-instrumented-60.apk
+gmdice-instrumented-65
+gmdice-instrumented-65.apk
+gmdice-instrumented-66
+gmdice-instrumented-66.apk
+gmdice-instrumented-67
+gmdice-instrumented-67.apk
+gmdice-instrumented-68
+gmdice-instrumented-68.apk
+gmdice-instrumented-69
+gmdice-instrumented-69.apk
+gmdice-instrumented-6.apk
+gmdice-instrumented-7
+gmdice-instrumented-70
+gmdice-instrumented-70.apk
+gmdice-instrumented-71
+gmdice-instrumented-71.apk
+gmdice-instrumented-72
+gmdice-instrumented-72.apk
+gmdice-instrumented-73
+gmdice-instrumented-73.apk
+gmdice-instrumented-74
+gmdice-instrumented-74.apk
+gmdice-instrumented-76
+gmdice-instrumented-76.apk
+gmdice-instrumented-77
+gmdice-instrumented-77.apk
+gmdice-instrumented-78
+gmdice-instrumented-78.apk
+gmdice-instrumented-79
+gmdice-instrumented-79.apk
+gmdice-instrumented-7.apk
+gmdice-instrumented-8
+gmdice-instrumented-81
+gmdice-instrumented-81.apk
+gmdice-instrumented-82
+gmdice-instrumented-82.apk
+gmdice-instrumented-83
+gmdice-instrumented-83.apk
+gmdice-instrumented-84
+gmdice-instrumented-84.apk
+gmdice-instrumented-86
+gmdice-instrumented-86.apk
+gmdice-instrumented-87
+gmdice-instrumented-87.apk
+gmdice-instrumented-88
+gmdice-instrumented-88.apk
+gmdice-instrumented-89
+gmdice-instrumented-89.apk
+gmdice-instrumented-8.apk
+gmdice-instrumented-9
+gmdice-instrumented-90
+gmdice-instrumented-90.apk
+gmdice-instrumented-9.apk
+hc
+mutants
+systematic
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2425 KB/s (216569 bytes in 0.087s)
+	pkg: /data/local/tmp/gmdice-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@728683b1
+
+**** dumpsys cpuInfo ****
+
+  34 1504/de.duenndns.gmdice: 31 user + 2.9 kernel / faults: 6619 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2251 KB/s (216570 bytes in 0.093s)
+	pkg: /data/local/tmp/gmdice-instrumented-11.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@603cae32
+
+**** dumpsys cpuInfo ****
+
+  58 1565/de.duenndns.gmdice: 55 user + 2.9 kernel / faults: 855 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2502 KB/s (216571 bytes in 0.084s)
+	pkg: /data/local/tmp/gmdice-instrumented-12.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1d27ec53
+
+**** dumpsys cpuInfo ****
+
+  57 1514/de.duenndns.gmdice: 53 user + 3.8 kernel / faults: 746 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2116 KB/s (216572 bytes in 0.099s)
+	pkg: /data/local/tmp/gmdice-instrumented-13.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@485fac9e
+
+**** dumpsys cpuInfo ****
+
+  53 1554/de.duenndns.gmdice: 51 user + 1.6 kernel / faults: 801 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2736 KB/s (216570 bytes in 0.077s)
+	pkg: /data/local/tmp/gmdice-instrumented-14.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1aa406f3
+
+**** dumpsys cpuInfo ****
+
+  54 1519/de.duenndns.gmdice: 50 user + 3.4 kernel / faults: 851 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2369 KB/s (216571 bytes in 0.089s)
+	pkg: /data/local/tmp/gmdice-instrumented-15.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6b277c5d
+
+**** dumpsys cpuInfo ****
+
+  54 1546/de.duenndns.gmdice: 51 user + 3.4 kernel / faults: 911 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1866 KB/s (216570 bytes in 0.113s)
+	pkg: /data/local/tmp/gmdice-instrumented-16.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@53981e1f
+
+**** dumpsys cpuInfo ****
+
+  41 1599/de.duenndns.gmdice: 37 user + 3.4 kernel / faults: 17416 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2279 KB/s (216572 bytes in 0.092s)
+	pkg: /data/local/tmp/gmdice-instrumented-17.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@297ac86a
+
+**** dumpsys cpuInfo ****
+
+  58 1557/de.duenndns.gmdice: 55 user + 2.8 kernel / faults: 881 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2714 KB/s (216573 bytes in 0.077s)
+	pkg: /data/local/tmp/gmdice-instrumented-18.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@33cd618
+
+**** dumpsys cpuInfo ****
+
+  56 1565/de.duenndns.gmdice: 52 user + 3.8 kernel / faults: 867 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2159 KB/s (216570 bytes in 0.097s)
+	pkg: /data/local/tmp/gmdice-instrumented-19.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5e461d6b
+
+**** dumpsys cpuInfo ****
+
+  54 1515/de.duenndns.gmdice: 51 user + 3.2 kernel / faults: 858 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2645 KB/s (216573 bytes in 0.079s)
+	pkg: /data/local/tmp/gmdice-instrumented-24.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6a9d291d
+
+**** dumpsys cpuInfo ****
+
+  40 1509/de.duenndns.gmdice: 36 user + 3.2 kernel / faults: 20459 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1815 KB/s (216568 bytes in 0.116s)
+	pkg: /data/local/tmp/gmdice-instrumented-27.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@65a1bc10
+
+**** dumpsys cpuInfo ****
+
+  36 1553/de.duenndns.gmdice: 33 user + 2.8 kernel / faults: 13486 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2693 KB/s (216573 bytes in 0.078s)
+	pkg: /data/local/tmp/gmdice-instrumented-28.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4ca6ef5d
+
+**** dumpsys cpuInfo ****
+
+  32 1564/de.duenndns.gmdice: 28 user + 3.5 kernel / faults: 6469 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2323 KB/s (216569 bytes in 0.091s)
+	pkg: /data/local/tmp/gmdice-instrumented-30.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@a89eef3
+
+**** dumpsys cpuInfo ****
+
+  54 1548/de.duenndns.gmdice: 50 user + 3.5 kernel / faults: 904 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2113 KB/s (216570 bytes in 0.100s)
+	pkg: /data/local/tmp/gmdice-instrumented-31.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@614892e2
+
+**** dumpsys cpuInfo ****
+
+  56 1521/de.duenndns.gmdice: 52 user + 4.1 kernel / faults: 631 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2359 KB/s (216567 bytes in 0.089s)
+	pkg: /data/local/tmp/gmdice-instrumented-33.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7cd0d890
+
+**** dumpsys cpuInfo ****
+
+  55 1561/de.duenndns.gmdice: 52 user + 3.1 kernel / faults: 894 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2463 KB/s (216567 bytes in 0.085s)
+	pkg: /data/local/tmp/gmdice-instrumented-34.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@473d8d5a
+
+**** dumpsys cpuInfo ****
+
+  55 1579/de.duenndns.gmdice: 52 user + 3.2 kernel / faults: 920 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2454 KB/s (216567 bytes in 0.086s)
+	pkg: /data/local/tmp/gmdice-instrumented-35.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50d6467c
+
+**** dumpsys cpuInfo ****
+
+  54 1509/de.duenndns.gmdice: 52 user + 2.7 kernel / faults: 911 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2241 KB/s (216568 bytes in 0.094s)
+	pkg: /data/local/tmp/gmdice-instrumented-36.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@43e82753
+
+**** dumpsys cpuInfo ****
+
+  54 1537/de.duenndns.gmdice: 50 user + 3.7 kernel / faults: 832 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2909 KB/s (216574 bytes in 0.072s)
+	pkg: /data/local/tmp/gmdice-instrumented-37.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@61a879ed
+
+**** dumpsys cpuInfo ****
+
+  54 1515/de.duenndns.gmdice: 51 user + 2.8 kernel / faults: 807 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2617 KB/s (216567 bytes in 0.080s)
+	pkg: /data/local/tmp/gmdice-instrumented-38.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@378b5e1d
+
+**** dumpsys cpuInfo ****
+
+  54 1577/de.duenndns.gmdice: 52 user + 2 kernel / faults: 808 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2624 KB/s (216567 bytes in 0.080s)
+	pkg: /data/local/tmp/gmdice-instrumented-39.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@175dafe9
+
+**** dumpsys cpuInfo ****
+
+  55 1561/de.duenndns.gmdice: 52 user + 3.5 kernel / faults: 865 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2086 KB/s (216570 bytes in 0.101s)
+	pkg: /data/local/tmp/gmdice-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@73e31085
+
+**** dumpsys cpuInfo ****
+
+  54 1560/de.duenndns.gmdice: 51 user + 3 kernel / faults: 906 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2454 KB/s (216571 bytes in 0.086s)
+	pkg: /data/local/tmp/gmdice-instrumented-40.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7f337934
+
+**** dumpsys cpuInfo ****
+
+  40 1559/de.duenndns.gmdice: 37 user + 3.7 kernel / faults: 20498 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2474 KB/s (216569 bytes in 0.085s)
+	pkg: /data/local/tmp/gmdice-instrumented-42.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5009d700
+
+**** dumpsys cpuInfo ****
+
+  37 1595/de.duenndns.gmdice: 34 user + 2.7 kernel / faults: 13498 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2083 KB/s (216573 bytes in 0.101s)
+	pkg: /data/local/tmp/gmdice-instrumented-43.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6d9ac544
+
+**** dumpsys cpuInfo ****
+
+  32 1559/de.duenndns.gmdice: 29 user + 3.2 kernel / faults: 6509 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2120 KB/s (216575 bytes in 0.099s)
+	pkg: /data/local/tmp/gmdice-instrumented-47.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@345ee8f3
+
+**** dumpsys cpuInfo ****
+
+  58 1573/de.duenndns.gmdice: 54 user + 4.2 kernel / faults: 988 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1992 KB/s (216571 bytes in 0.106s)
+	pkg: /data/local/tmp/gmdice-instrumented-48.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@232285f4
+
+**** dumpsys cpuInfo ****
+
+  54 1567/de.duenndns.gmdice: 51 user + 2.8 kernel / faults: 897 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2104 KB/s (216571 bytes in 0.100s)
+	pkg: /data/local/tmp/gmdice-instrumented-49.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@abc3b83
+
+**** dumpsys cpuInfo ****
+
+  53 1524/de.duenndns.gmdice: 50 user + 3.2 kernel / faults: 848 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2268 KB/s (216570 bytes in 0.093s)
+	pkg: /data/local/tmp/gmdice-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@56b284d2
+
+**** dumpsys cpuInfo ****
+
+  58 1552/de.duenndns.gmdice: 54 user + 4.5 kernel / faults: 985 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2314 KB/s (216573 bytes in 0.091s)
+	pkg: /data/local/tmp/gmdice-instrumented-50.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@678979b1
+
+**** dumpsys cpuInfo ****
+
+  57 1555/de.duenndns.gmdice: 54 user + 2.9 kernel / faults: 960 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2673 KB/s (216572 bytes in 0.079s)
+	pkg: /data/local/tmp/gmdice-instrumented-51.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@206194f8
+
+**** dumpsys cpuInfo ****
+
+  54 1558/de.duenndns.gmdice: 50 user + 4.2 kernel / faults: 860 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2084 KB/s (216573 bytes in 0.101s)
+	pkg: /data/local/tmp/gmdice-instrumented-52.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4515d378
+
+**** dumpsys cpuInfo ****
+
+  53 1529/de.duenndns.gmdice: 51 user + 2.5 kernel / faults: 871 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2332 KB/s (216574 bytes in 0.090s)
+	pkg: /data/local/tmp/gmdice-instrumented-53.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@24e9320e
+
+**** dumpsys cpuInfo ****
+
+  54 1536/de.duenndns.gmdice: 50 user + 3.7 kernel / faults: 872 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2273 KB/s (216574 bytes in 0.093s)
+	pkg: /data/local/tmp/gmdice-instrumented-54.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3e9cb144
+
+**** dumpsys cpuInfo ****
+
+  54 1560/de.duenndns.gmdice: 51 user + 2.7 kernel / faults: 874 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2088 KB/s (216574 bytes in 0.101s)
+	pkg: /data/local/tmp/gmdice-instrumented-58.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4a9d506
+
+**** dumpsys cpuInfo ****
+
+  40 1547/de.duenndns.gmdice: 37 user + 3.3 kernel / faults: 20472 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2303 KB/s (216570 bytes in 0.091s)
+	pkg: /data/local/tmp/gmdice-instrumented-59.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5ce56534
+
+**** dumpsys cpuInfo ****
+
+  35 1572/de.duenndns.gmdice: 31 user + 3.3 kernel / faults: 13258 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2374 KB/s (216570 bytes in 0.089s)
+	pkg: /data/local/tmp/gmdice-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@47502abc
+
+**** dumpsys cpuInfo ****
+
+  27 1570/de.duenndns.gmdice: 25 user + 1.8 kernel / faults: 6372 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2411 KB/s (216570 bytes in 0.087s)
+	pkg: /data/local/tmp/gmdice-instrumented-60.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@57355853
+
+**** dumpsys cpuInfo ****
+
+  59 1494/de.duenndns.gmdice: 55 user + 3.9 kernel / faults: 958 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1993 KB/s (216576 bytes in 0.106s)
+	pkg: /data/local/tmp/gmdice-instrumented-65.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1c8d378e
+
+**** dumpsys cpuInfo ****
+
+  60 1534/de.duenndns.gmdice: 55 user + 4 kernel / faults: 985 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1958 KB/s (216576 bytes in 0.107s)
+	pkg: /data/local/tmp/gmdice-instrumented-66.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@792e0cb3
+
+**** dumpsys cpuInfo ****
+
+  55 1538/de.duenndns.gmdice: 50 user + 4.2 kernel / faults: 829 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2294 KB/s (216576 bytes in 0.092s)
+	pkg: /data/local/tmp/gmdice-instrumented-67.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@100d40cd
+
+**** dumpsys cpuInfo ****
+
+  59 1566/de.duenndns.gmdice: 56 user + 3.2 kernel / faults: 970 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2283 KB/s (216576 bytes in 0.092s)
+	pkg: /data/local/tmp/gmdice-instrumented-68.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@175e2e44
+
+**** dumpsys cpuInfo ****
+
+  55 1556/de.duenndns.gmdice: 52 user + 2.2 kernel / faults: 901 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2050 KB/s (216576 bytes in 0.103s)
+	pkg: /data/local/tmp/gmdice-instrumented-69.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4e3cea16
+
+**** dumpsys cpuInfo ****
+
+  54 1508/de.duenndns.gmdice: 52 user + 2.5 kernel / faults: 828 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1607 KB/s (216570 bytes in 0.131s)
+	pkg: /data/local/tmp/gmdice-instrumented-6.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@32bbbbb0
+
+**** dumpsys cpuInfo ****
+
+  59 1544/de.duenndns.gmdice: 54 user + 5 kernel / faults: 988 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2406 KB/s (216578 bytes in 0.087s)
+	pkg: /data/local/tmp/gmdice-instrumented-70.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3900874a
+
+**** dumpsys cpuInfo ****
+
+  53 1549/de.duenndns.gmdice: 50 user + 3.5 kernel / faults: 885 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2423 KB/s (216576 bytes in 0.087s)
+	pkg: /data/local/tmp/gmdice-instrumented-71.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@10b8ab4c
+
+**** dumpsys cpuInfo ****
+
+  41 1523/de.duenndns.gmdice: 37 user + 3.9 kernel / faults: 20828 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2231 KB/s (216578 bytes in 0.094s)
+	pkg: /data/local/tmp/gmdice-instrumented-72.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4c2bfafc
+
+**** dumpsys cpuInfo ****
+
+  39 1546/de.duenndns.gmdice: 36 user + 3.3 kernel / faults: 13768 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2611 KB/s (216576 bytes in 0.080s)
+	pkg: /data/local/tmp/gmdice-instrumented-73.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5e6d0ec1
+
+**** dumpsys cpuInfo ****
+
+  37 1509/de.duenndns.gmdice: 34 user + 3 kernel / faults: 11092 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2507 KB/s (216576 bytes in 0.084s)
+	pkg: /data/local/tmp/gmdice-instrumented-74.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3f4ed96f
+
+**** dumpsys cpuInfo ****
+
+  33 1566/de.duenndns.gmdice: 31 user + 2.6 kernel / faults: 6174 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1671 KB/s (216574 bytes in 0.126s)
+	pkg: /data/local/tmp/gmdice-instrumented-76.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@557f9ed8
+
+**** dumpsys cpuInfo ****
+
+  54 1558/de.duenndns.gmdice: 51 user + 2.8 kernel / faults: 857 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2270 KB/s (216573 bytes in 0.093s)
+	pkg: /data/local/tmp/gmdice-instrumented-77.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@33da77aa
+
+**** dumpsys cpuInfo ****
+
+  57 1570/de.duenndns.gmdice: 54 user + 2.6 kernel / faults: 842 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2286 KB/s (216574 bytes in 0.092s)
+	pkg: /data/local/tmp/gmdice-instrumented-78.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@461ec6c1
+
+**** dumpsys cpuInfo ****
+
+  54 1550/de.duenndns.gmdice: 51 user + 2.6 kernel / faults: 874 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3130 KB/s (216572 bytes in 0.067s)
+	pkg: /data/local/tmp/gmdice-instrumented-79.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@68b3e88
+
+**** dumpsys cpuInfo ****
+
+  54 1563/de.duenndns.gmdice: 51 user + 2.6 kernel / faults: 898 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1808 KB/s (216572 bytes in 0.116s)
+	pkg: /data/local/tmp/gmdice-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@47f1d49e
+
+**** dumpsys cpuInfo ****
+
+  58 1583/de.duenndns.gmdice: 54 user + 4 kernel / faults: 926 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2164 KB/s (216572 bytes in 0.097s)
+	pkg: /data/local/tmp/gmdice-instrumented-81.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3751f00
+
+**** dumpsys cpuInfo ****
+
+  59 1521/de.duenndns.gmdice: 56 user + 3.1 kernel / faults: 881 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2146 KB/s (216576 bytes in 0.098s)
+	pkg: /data/local/tmp/gmdice-instrumented-82.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4c493466
+
+**** dumpsys cpuInfo ****
+
+  53 1516/de.duenndns.gmdice: 50 user + 3 kernel / faults: 836 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2187 KB/s (216575 bytes in 0.096s)
+	pkg: /data/local/tmp/gmdice-instrumented-83.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@13a68558
+
+**** dumpsys cpuInfo ****
+
+  57 1590/de.duenndns.gmdice: 53 user + 3.8 kernel / faults: 875 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2013 KB/s (216575 bytes in 0.105s)
+	pkg: /data/local/tmp/gmdice-instrumented-84.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4c14cb57
+
+**** dumpsys cpuInfo ****
+
+  54 1527/de.duenndns.gmdice: 52 user + 2 kernel / faults: 862 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2332 KB/s (216574 bytes in 0.090s)
+	pkg: /data/local/tmp/gmdice-instrumented-86.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@370fd6dd
+
+**** dumpsys cpuInfo ****
+
+  39 1575/de.duenndns.gmdice: 36 user + 3.5 kernel / faults: 20368 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2135 KB/s (216572 bytes in 0.099s)
+	pkg: /data/local/tmp/gmdice-instrumented-87.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@13770207
+
+**** dumpsys cpuInfo ****
+
+  37 1590/de.duenndns.gmdice: 34 user + 2.7 kernel / faults: 13419 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2510 KB/s (216572 bytes in 0.084s)
+	pkg: /data/local/tmp/gmdice-instrumented-88.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@35cbae1b
+
+**** dumpsys cpuInfo ****
+
+  31 1533/de.duenndns.gmdice: 29 user + 2.7 kernel / faults: 6463 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2255 KB/s (216576 bytes in 0.093s)
+	pkg: /data/local/tmp/gmdice-instrumented-89.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@12d9f907
+
+**** dumpsys cpuInfo ****
+
+  58 1588/de.duenndns.gmdice: 54 user + 3.7 kernel / faults: 895 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2101 KB/s (216566 bytes in 0.100s)
+	pkg: /data/local/tmp/gmdice-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6d2a6ec9
+
+**** dumpsys cpuInfo ****
+
+  55 1560/de.duenndns.gmdice: 52 user + 2.6 kernel / faults: 892 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2193 KB/s (216575 bytes in 0.096s)
+	pkg: /data/local/tmp/gmdice-instrumented-90.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6ba5009f
+
+**** dumpsys cpuInfo ****
+
+  54 1561/de.duenndns.gmdice: 51 user + 3.1 kernel / faults: 906 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2006 KB/s (216570 bytes in 0.105s)
+	pkg: /data/local/tmp/gmdice-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2e2dee40
+
+**** dumpsys cpuInfo ****
+
+  54 1553/de.duenndns.gmdice: 51 user + 3.3 kernel / faults: 863 minor

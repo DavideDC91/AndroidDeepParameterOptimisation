@@ -4540,7 +4540,7 @@
 
     invoke-virtual {p0, v1}, Lorg/paulmach/textedit/pmTextEdit;->saveNote(Ljava/lang/CharSequence;)V
 
-    const/4 v1, 0x6
+    const/4 v1, 0x3
 
     aput-boolean v4, v0, v1
 
@@ -5722,7 +5722,7 @@
     .line 959
     iput-boolean v5, p0, Lorg/paulmach/textedit/pmTextEdit;->backFromFileBrowser:Z
 
-    const/16 v1, 0x35
+    const/16 v1, 0x24
 
     aput-boolean v4, v0, v1
 
@@ -6150,7 +6150,7 @@
     sput-object v1, Lorg/paulmach/textedit/pmTextEdit;->temp_filename:Ljava/lang/CharSequence;
 
     .line 250
-    const/4 v1, 0x4
+    const/4 v1, -0x2
 
     const/4 v2, 0x1
 
@@ -7119,7 +7119,7 @@
     iput-boolean v5, p0, Lorg/paulmach/textedit/pmTextEdit;->openingError:Z
 
     .line 478
-    const/16 v0, 0xb
+    const/16 v0, -0xe
 
     invoke-virtual {p0, v0}, Lorg/paulmach/textedit/pmTextEdit;->showDialog(I)V
 
@@ -7759,7 +7759,7 @@
 
     invoke-virtual {v2, v1}, Ljava/io/BufferedWriter;->write(Ljava/lang/String;)V
 
-    const/16 v1, 0xe
+    const/16 v1, -0x44
 
     const/4 v3, 0x1
 
@@ -8416,7 +8416,7 @@
 
     move-result v0
 
-    const/16 v2, 0x1d
+    const/16 v2, 0x19
 
     aput-boolean v1, v3, v2
 

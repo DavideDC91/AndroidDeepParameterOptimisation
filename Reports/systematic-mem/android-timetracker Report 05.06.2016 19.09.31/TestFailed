@@ -1,0 +1,285 @@
+
+
+**** Original apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-0.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-13.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** failure number: 1 ****
+
+settingsTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 162 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: abb7c291-ee96-4b7b-a5ea-276a10040f78
+*** Element info: {Using=xpath, value=//*[@text='Sunday']}
+
+**** failure number: 2 ****
+
+exportCSVTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: abb7c291-ee96-4b7b-a5ea-276a10040f78
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 3 ****
+
+changeDateTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: abb7c291-ee96-4b7b-a5ea-276a10040f78
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 4 ****
+
+restoreBackupTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: abb7c291-ee96-4b7b-a5ea-276a10040f78
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** android-timetracker-instrumented-14.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-15.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** failure number: 1 ****
+
+settingsTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 165 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 0cc120cc-7634-405d-90fc-aedb47ad3b8e
+*** Element info: {Using=xpath, value=//*[@text='Sunday']}
+
+**** failure number: 2 ****
+
+exportCSVTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 0cc120cc-7634-405d-90fc-aedb47ad3b8e
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 3 ****
+
+changeDateTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 0cc120cc-7634-405d-90fc-aedb47ad3b8e
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 4 ****
+
+restoreBackupTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 75 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 0cc120cc-7634-405d-90fc-aedb47ad3b8e
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** android-timetracker-instrumented-1.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-3.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-5.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-6.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** failure number: 1 ****
+
+settingsTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 150 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: a7c1b35d-f383-4a27-ab9f-dc8d4e7173ee
+*** Element info: {Using=xpath, value=//*[@text='Sunday']}
+
+**** failure number: 2 ****
+
+exportCSVTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 69 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: a7c1b35d-f383-4a27-ab9f-dc8d4e7173ee
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 3 ****
+
+changeDateTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 75 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: a7c1b35d-f383-4a27-ab9f-dc8d4e7173ee
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 4 ****
+
+restoreBackupTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 62 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: a7c1b35d-f383-4a27-ab9f-dc8d4e7173ee
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** android-timetracker-instrumented-7.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** failure number: 1 ****
+
+settingsTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 149 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 627aa71a-e919-419d-a5da-b6fae8ab94f6
+*** Element info: {Using=xpath, value=//*[@text='Sunday']}
+
+**** failure number: 2 ****
+
+exportCSVTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 27 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 627aa71a-e919-419d-a5da-b6fae8ab94f6
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 3 ****
+
+changeDateTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 72 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 627aa71a-e919-419d-a5da-b6fae8ab94f6
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 4 ****
+
+restoreBackupTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 72 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 627aa71a-e919-419d-a5da-b6fae8ab94f6
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** android-timetracker-instrumented-9.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** failure number: 1 ****
+
+settingsTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 159 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 282dfc5c-c3ad-46d6-9230-d5bb051d55ae
+*** Element info: {Using=xpath, value=//*[@text='Sunday']}
+
+**** failure number: 2 ****
+
+exportCSVTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 65 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 282dfc5c-c3ad-46d6-9230-d5bb051d55ae
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 3 ****
+
+changeDateTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 72 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 282dfc5c-c3ad-46d6-9230-d5bb051d55ae
+*** Element info: {Using=class name, value=android.widget.ImageButton}
+
+**** failure number: 4 ****
+
+restoreBackupTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: 282dfc5c-c3ad-46d6-9230-d5bb051d55ae
+*** Element info: {Using=class name, value=android.widget.ImageButton}

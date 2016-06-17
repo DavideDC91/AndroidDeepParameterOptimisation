@@ -1,0 +1,819 @@
+
+
+**** android update ****
+
+Updated project.properties
+Updated local.properties
+Updated file ./build.xml
+Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
+
+
+**** ant clean ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: gmdice
+  [gettype] Project Type: Application
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/gmdice/gen
+[getlibpath] Library dependencies:
+[getlibpath] No Libraries
+   [subant] No sub-builds to iterate on
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+
+
+**** ant instrument ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.3
+ [checkenv] Installed at /home/davide/android-sdk
+
+-setup:
+     [echo] Project Name: gmdice
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.3
+     [echo] Resolving Build Target for gmdice...
+[gettarget] Project Target:   Android 5.1.1
+[gettarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/rsObj
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/rsLibs
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/gen
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for gmdice...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'instrument'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 12 source files to /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] 3 warnings
+     [echo] Instrumenting classes from /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes
+      [dex] input: /home/davide/android-sdk/tools/lib/emma_device.jar
+      [dex] Pre-Dexing /home/davide/android-sdk/tools/lib/emma_device.jar -> emma_device-c54bd04c2f76e0e56a7ebc2ed6b523ca.jar
+      [dex] Converting compiled files and external libraries into /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes.dex...
+       [dx] Merged dex #1 (33 defs/43.1KiB)
+       [dx] Merged dex #2 (297 defs/327.2KiB)
+       [dx] Result is 330 defs/444.8KiB. Took 1.4s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res
+   [crunch] To destination dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable-hdpi/logo.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable-hdpi/logo.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable-hdpi/logo.png: 54% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/logo.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/logo.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/logo.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_disabled.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_disabled_focused.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled_focused.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled_focused.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_normal.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_normal.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_pressed.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_pressed.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_selected.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_selected.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_disabled.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_disabled.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_normal.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_normal.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_pressed.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_pressed.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_selected.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_selected.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_disabled.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_disabled_focused.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled_focused.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled_focused.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_normal.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_normal.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_pressed.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_pressed.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_selected.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_selected.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_selected.9.png: 0% size of source)
+   [crunch] Crunched 16 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating gmdice-instrumented-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented.apk
+[propertyfile] Creating new property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+
+instrument:
+ [zipalign] Run cancelled: no changes to input file /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented-unaligned.apk
+     [echo] Instrumented Package: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented.apk
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+
+BUILD SUCCESSFUL
+Total time: 44 seconds
+
+
+**** ant installi ****
+
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/build.xml
+
+-set-mode-check:
+
+-set-instrumented-mode:
+
+install:
+     [echo] Installing /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented.apk onto default emulator or device...
+     [exec] 1265 KB/s (217105 bytes in 0.167s)
+     [exec] 	pkg: /data/local/tmp/gmdice-instrumented.apk
+     [exec] Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
+
+installi:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+
+
+**** apktool d ****
+
+I: Using Apktool 2.1.0 on gmdice-instrumented.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building resources...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2461 KB/s (216568 bytes in 0.085s)
+	pkg: /data/local/tmp/gmdice-instrumented.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50c56e2
+
+**** dumpsys cpuInfo ****
+
+  40 1782/de.duenndns.gmdice: 36 user + 3.7 kernel / faults: 3678 minor
+
+**** adb broadcast ****
+
+Broadcasting: Intent { act=com.qa.emma.COLLECT_COVERAGE }
+Broadcast completed: result=0
+
+
+**** adb push ****
+
+Android Debug Bridge version 1.0.32
+Revision 09a0d98bebce-android
+
+ -a                            - directs adb to listen on all interfaces for a connection
+ -d                            - directs command to the only connected USB device
+                                 returns an error if more than one USB device is present.
+ -e                            - directs command to the only running emulator.
+                                 returns an error if more than one emulator is running.
+ -s <specific device>          - directs command to the device or emulator with the given
+                                 serial number or qualifier. Overrides ANDROID_SERIAL
+                                 environment variable.
+ -p <product name or path>     - simple product name like 'sooner', or
+                                 a relative/absolute path to a product
+                                 out directory like 'out/target/product/sooner'.
+                                 If -p is not specified, the ANDROID_PRODUCT_OUT
+                                 environment variable is used, which must
+                                 be an absolute path.
+ -H                            - Name of adb server host (default: localhost)
+ -P                            - Port of adb server (default: 5037)
+ devices [-l]                  - list all connected devices
+                                 ('-l' will also list device qualifiers)
+ connect <host>[:<port>]       - connect to a device via TCP/IP
+                                 Port 5555 is used by default if no port number is specified.
+ disconnect [<host>[:<port>]]  - disconnect from a TCP/IP device.
+                                 Port 5555 is used by default if no port number is specified.
+                                 Using this command with no additional arguments
+                                 will disconnect from all connected TCP/IP devices.
+
+device commands:
+  adb push [-p] <local> <remote>
+                               - copy file/dir to device
+                                 ('-p' to display the transfer progress)
+  adb pull [-p] [-a] <remote> [<local>]
+                               - copy file/dir from device
+                                 ('-p' to display the transfer progress)
+                                 ('-a' means copy timestamp and mode)
+  adb sync [ <directory> ]     - copy host->device only if changed
+                                 (-l means list but don't copy)
+  adb shell                    - run remote shell interactively
+  adb shell <command>          - run remote shell command
+  adb emu <command>            - run emulator console command
+  adb logcat [ <filter-spec> ] - View device log
+  adb forward --list           - list all forward socket connections.
+                                 the format is a list of lines with the following format:
+                                    <serial> " " <local> " " <remote> "\n"
+  adb forward <local> <remote> - forward socket connections
+                                 forward specs are one of: 
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+                                   dev:<character device name>
+                                   jdwp:<process pid> (remote only)
+  adb forward --no-rebind <local> <remote>
+                               - same as 'adb forward <local> <remote>' but fails
+                                 if <local> is already forwarded
+  adb forward --remove <local> - remove a specific forward socket connection
+  adb forward --remove-all     - remove all forward socket connections
+  adb reverse --list           - list all reverse socket connections from device
+  adb reverse <remote> <local> - reverse socket connections
+                                 reverse specs are one of:
+                                   tcp:<port>
+                                   localabstract:<unix domain socket name>
+                                   localreserved:<unix domain socket name>
+                                   localfilesystem:<unix domain socket name>
+  adb reverse --norebind <remote> <local>
+                               - same as 'adb reverse <remote> <local>' but fails
+                                 if <remote> is already reversed.
+  adb reverse --remove <remote>
+                               - remove a specific reversed socket connection
+  adb reverse --remove-all     - remove all reversed socket connections from device
+  adb jdwp                     - list PIDs of processes hosting a JDWP transport
+  adb install [-lrtsdg] <file>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-g: grant all runtime permissions)
+  adb install-multiple [-lrtsdpg] <file...>
+                               - push this package file to the device and install it
+                                 (-l: forward lock application)
+                                 (-r: replace existing application)
+                                 (-t: allow test packages)
+                                 (-s: install application on sdcard)
+                                 (-d: allow version code downgrade)
+                                 (-p: partial application install)
+                                 (-g: grant all runtime permissions)
+  adb uninstall [-k] <package> - remove this app package from the device
+                                 ('-k' means keep the data and cache directories)
+  adb bugreport                - return all information from the device
+                                 that should be included in a bug report.
+
+  adb backup [-f <file>] [-apk|-noapk] [-obb|-noobb] [-shared|-noshared] [-all] [-system|-nosystem] [<packages...>]
+                               - write an archive of the device's data to <file>.
+                                 If no -f option is supplied then the data is written
+                                 to "backup.ab" in the current directory.
+                                 (-apk|-noapk enable/disable backup of the .apks themselves
+                                    in the archive; the default is noapk.)
+                                 (-obb|-noobb enable/disable backup of any installed apk expansion
+                                    (aka .obb) files associated with each application; the default
+                                    is noobb.)
+                                 (-shared|-noshared enable/disable backup of the device's
+                                    shared storage / SD card contents; the default is noshared.)
+                                 (-all means to back up all installed applications)
+                                 (-system|-nosystem toggles whether -all automatically includes
+                                    system applications; the default is to include system apps)
+                                 (<packages...> is the list of applications to be backed up.  If
+                                    the -all or -shared flags are passed, then the package
+                                    list is optional.  Applications explicitly given on the
+                                    command line will be included even if -nosystem would
+                                    ordinarily cause them to be omitted.)
+
+  adb restore <file>           - restore device contents from the <file> backup archive
+
+  adb disable-verity           - disable dm-verity checking on USERDEBUG builds
+  adb enable-verity            - re-enable dm-verity checking on USERDEBUG builds
+  adb keygen <file>            - generate adb public/private key. The private key is stored in <file>,
+                                 and the public key is stored in <file>.pub. Any existing files
+                                 are overwritten.
+  adb help                     - show this help message
+  adb version                  - show version num
+
+scripting:
+  adb wait-for-device          - block until device is online
+  adb start-server             - ensure that there is a server running
+  adb kill-server              - kill the server if it is running
+  adb get-state                - prints: offline | bootloader | device
+  adb get-serialno             - prints: <serial-number>
+  adb get-devpath              - prints: <device-path>
+  adb remount                  - remounts the /system, /vendor (if present) and /oem (if present) partitions on the device read-write
+  adb reboot [bootloader|recovery]
+                               - reboots the device, optionally into the bootloader or recovery program.
+  adb reboot sideload          - reboots the device into the sideload mode in recovery program (adb root required).
+  adb reboot sideload-auto-reboot
+                               - reboots into the sideload mode, then reboots automatically after the sideload regardless of the result.
+  adb sideload <file>          - sideloads the given package
+  adb root                     - restarts the adbd daemon with root permissions
+  adb unroot                   - restarts the adbd daemon without root permissions
+  adb usb                      - restarts the adbd daemon listening on USB
+  adb tcpip <port>             - restarts the adbd daemon listening on TCP on the specified port
+
+networking:
+  adb ppp <tty> [parameters]   - Run PPP over USB.
+ Note: you should not automatically start a PPP connection.
+ <tty> refers to the tty for PPP stream. Eg. dev:/dev/omap_csmi_tty1
+ [parameters] - Eg. defaultroute debug dump local notty usepeerdns
+
+adb sync notes: adb sync [ <directory> ]
+  <localdir> can be interpreted in several ways:
+
+  - If <directory> is not specified, /system, /vendor (if present), /oem (if present) and /data partitions will be updated.
+
+  - If it is "system", "vendor", "oem" or "data", only the corresponding partition
+    is updated.
+
+environment variables:
+  ADB_TRACE                    - Print debug information. A comma separated list of the following values
+                                 1 or all, adb, sockets, packets, rwx, usb, sync, sysdeps, transport, jdwp
+  ANDROID_SERIAL               - The serial number to connect to. -s takes priority over this if given.
+  ANDROID_LOG_TAGS             - When used with the logcat option, only these debug tags are printed.
+
+
+**** adb pull ****
+
+1499 KB/s (89062 bytes in 0.058s)
+
+
+**** java emma report ****
+
+EMMA: processing input files ...
+EMMA: 2 file(s) read and merged in 38 ms
+EMMA: writing [html] report to [/home/davide/git/AndroidDeepParameterOptimisation/gmdice/coverage/index.html] ...
+
+
+**** ls ****
+
+gmdice-instrumented-0
+gmdice-instrumented-0.apk
+gmdice-instrumented-1
+gmdice-instrumented-10
+gmdice-instrumented-10.apk
+gmdice-instrumented-14
+gmdice-instrumented-14.apk
+gmdice-instrumented-15
+gmdice-instrumented-15.apk
+gmdice-instrumented-16
+gmdice-instrumented-16.apk
+gmdice-instrumented-17
+gmdice-instrumented-17.apk
+gmdice-instrumented-19
+gmdice-instrumented-19.apk
+gmdice-instrumented-1.apk
+gmdice-instrumented-2
+gmdice-instrumented-20
+gmdice-instrumented-20.apk
+gmdice-instrumented-21
+gmdice-instrumented-21.apk
+gmdice-instrumented-2.apk
+gmdice-instrumented-3
+gmdice-instrumented-3.apk
+gmdice-instrumented-4
+gmdice-instrumented-4.apk
+gmdice-instrumented-5
+gmdice-instrumented-5.apk
+gmdice-instrumented-6
+gmdice-instrumented-6.apk
+gmdice-instrumented-8
+gmdice-instrumented-8.apk
+gmdice-instrumented-9
+gmdice-instrumented-9.apk
+mutants
+systematic
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1779 KB/s (216561 bytes in 0.118s)
+	pkg: /data/local/tmp/gmdice-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@15015302
+
+**** dumpsys cpuInfo ****
+
+  45 1805/de.duenndns.gmdice: 43 user + 1.7 kernel / faults: 2647 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1957 KB/s (216579 bytes in 0.108s)
+	pkg: /data/local/tmp/gmdice-instrumented-10.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@132e72b0
+
+**** dumpsys cpuInfo ****
+
+  57 1562/de.duenndns.gmdice: 54 user + 2.9 kernel / faults: 969 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1972 KB/s (216585 bytes in 0.107s)
+	pkg: /data/local/tmp/gmdice-instrumented-14.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@699e196c
+
+**** dumpsys cpuInfo ****
+
+  54 1563/de.duenndns.gmdice: 53 user + 1.4 kernel / faults: 899 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2229 KB/s (216579 bytes in 0.094s)
+	pkg: /data/local/tmp/gmdice-instrumented-15.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6422ac7e
+
+**** dumpsys cpuInfo ****
+
+  40 1570/de.duenndns.gmdice: 36 user + 3.5 kernel / faults: 18359 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2204 KB/s (216581 bytes in 0.095s)
+	pkg: /data/local/tmp/gmdice-instrumented-16.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@74bcb63
+
+**** dumpsys cpuInfo ****
+
+  37 1563/de.duenndns.gmdice: 33 user + 3.3 kernel / faults: 13336 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2154 KB/s (216582 bytes in 0.098s)
+	pkg: /data/local/tmp/gmdice-instrumented-17.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@783d5e5a
+
+**** dumpsys cpuInfo ****
+
+  30 1555/de.duenndns.gmdice: 28 user + 2.3 kernel / faults: 6139 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1900 KB/s (216581 bytes in 0.111s)
+	pkg: /data/local/tmp/gmdice-instrumented-19.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@66b2ac9c
+
+**** dumpsys cpuInfo ****
+
+  55 1594/de.duenndns.gmdice: 52 user + 3.8 kernel / faults: 776 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2230 KB/s (216572 bytes in 0.094s)
+	pkg: /data/local/tmp/gmdice-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@78dd5596
+
+**** dumpsys cpuInfo ****
+
+  53 1570/de.duenndns.gmdice: 51 user + 1.9 kernel / faults: 869 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1725 KB/s (216584 bytes in 0.122s)
+	pkg: /data/local/tmp/gmdice-instrumented-20.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@544aa77
+
+**** dumpsys cpuInfo ****
+
+  53 1561/de.duenndns.gmdice: 50 user + 3.1 kernel / faults: 894 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1984 KB/s (216585 bytes in 0.106s)
+	pkg: /data/local/tmp/gmdice-instrumented-21.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@33bfcdab
+
+**** dumpsys cpuInfo ****
+
+  58 1594/de.duenndns.gmdice: 54 user + 3.6 kernel / faults: 961 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2101 KB/s (216572 bytes in 0.100s)
+	pkg: /data/local/tmp/gmdice-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@11f354af
+
+**** dumpsys cpuInfo ****
+
+  54 1564/de.duenndns.gmdice: 51 user + 2.4 kernel / faults: 881 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2741 KB/s (216572 bytes in 0.077s)
+	pkg: /data/local/tmp/gmdice-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@46eae12f
+
+**** dumpsys cpuInfo ****
+
+  55 1568/de.duenndns.gmdice: 50 user + 4.4 kernel / faults: 905 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2653 KB/s (216569 bytes in 0.079s)
+	pkg: /data/local/tmp/gmdice-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2497bb98
+
+**** dumpsys cpuInfo ****
+
+  54 1524/de.duenndns.gmdice: 51 user + 3.8 kernel / faults: 925 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1554 KB/s (216575 bytes in 0.136s)
+	pkg: /data/local/tmp/gmdice-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@65e38c66
+
+**** dumpsys cpuInfo ****
+
+  59 1582/de.duenndns.gmdice: 56 user + 3.2 kernel / faults: 937 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2368 KB/s (216574 bytes in 0.089s)
+	pkg: /data/local/tmp/gmdice-instrumented-6.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@19db71db
+
+**** dumpsys cpuInfo ****
+
+  56 1567/de.duenndns.gmdice: 52 user + 4.4 kernel / faults: 930 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2066 KB/s (216579 bytes in 0.102s)
+	pkg: /data/local/tmp/gmdice-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1f91a295
+
+**** dumpsys cpuInfo ****
+
+  39 1564/de.duenndns.gmdice: 36 user + 3 kernel / faults: 20381 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+1994 KB/s (216579 bytes in 0.106s)
+	pkg: /data/local/tmp/gmdice-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4ed99bb5
+
+**** dumpsys cpuInfo ****
+
+  36 1570/de.duenndns.gmdice: 32 user + 4.1 kernel / faults: 13510 minor

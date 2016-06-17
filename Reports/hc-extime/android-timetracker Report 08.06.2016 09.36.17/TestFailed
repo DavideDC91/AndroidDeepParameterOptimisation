@@ -1,0 +1,394 @@
+
+
+**** Original apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-0.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** failure number: 1 ****
+
+removeTaskTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25.36 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+
+**** failure number: 2 ****
+
+showTimesTaskTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 3 ****
+
+addTaskTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 5 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 4 ****
+
+backupTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 5 ****
+
+helpTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 24 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 6 ****
+
+showReportTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 8 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 7 ****
+
+exportTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 5 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 8 ****
+
+updateTaskTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 9 ****
+
+settingsTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 12 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 10 ****
+
+exportCSVTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 3 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 11 ****
+
+changeDateTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 12 ****
+
+restoreBackupTest(com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest): 
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+*** Element info: {Using=id, value=button1}
+
+**** failure number: 13 ****
+
+com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest: 
+Command duration or timeout: 3 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.markuspage.android.atimetracker, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a2aa61a, platform=LINUX, appActivity=.Tasks, desired={appPackage=com.markuspage.android.atimetracker, appActivity=.Tasks, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a2aa61a, platformName=Android, deviceName=0a2aa61a}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a2aa61a, platformName=Android}]
+Session ID: daf405f4-d543-4310-bb5a-9c3410869ee2
+
+**** android-timetracker-instrumented-10.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-11.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-13.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-14.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-15.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-17.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-18.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-1.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-20.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-21.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-23.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-24.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-25.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-26.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-27.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-28.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-29.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-2.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-30.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-35.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-37.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-38.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-39.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-3.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-40.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-41.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-42.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-44.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-49.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-4.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-52.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-53.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-58.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-59.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-5.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-60.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-61.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-62.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-64.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-65.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-66.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-67.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-68.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-69.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-6.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-70.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-71.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-72.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-73.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-74.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-75.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-76.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-77.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-78.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-79.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-7.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-80.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-81.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-82.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-8.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+
+
+
+**** android-timetracker-instrumented-9.apk Class: com.deep.parameter.optimisation.crest.test.timetracker.timetrackerTest ****
+

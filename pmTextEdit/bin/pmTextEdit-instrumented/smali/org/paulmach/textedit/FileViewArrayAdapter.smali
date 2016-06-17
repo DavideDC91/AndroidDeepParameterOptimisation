@@ -930,7 +930,7 @@
     .line 85
     const v0, 0x7f020009
 
-    const/16 v1, 0xf
+    const/16 v1, -0x2c
 
     aput-boolean v6, v3, v1
 

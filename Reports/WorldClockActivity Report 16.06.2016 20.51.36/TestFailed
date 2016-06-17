@@ -1,0 +1,122 @@
+
+
+**** Original apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+
+
+
+**** WorldClockActivity-instrumented_1394.apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+
+
+
+**** WorldClockActivity-instrumented_468.apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+
+
+
+**** WorldClockActivity-instrumented_503.apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+
+
+
+**** WorldClockActivity-instrumented_530.apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+
+
+
+**** WorldClockActivity-instrumented_575.apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+
+
+
+**** failure number: 1 ****
+
+aboutTest(com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.92 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.irahul.worldclock, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a3500fb, platform=LINUX, appActivity=.WorldClockActivity, desired={appPackage=com.irahul.worldclock, appActivity=.WorldClockActivity, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a3500fb, platformName=Android, deviceName=0a3500fb}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a3500fb, platformName=Android}]
+Session ID: 05b29d2a-32ad-415e-a83b-f07be35e7647
+*** Element info: {Using=name, value=Save}
+
+**** failure number: 2 ****
+
+editZoneTest(com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 79 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.irahul.worldclock, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a3500fb, platform=LINUX, appActivity=.WorldClockActivity, desired={appPackage=com.irahul.worldclock, appActivity=.WorldClockActivity, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a3500fb, platformName=Android, deviceName=0a3500fb}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a3500fb, platformName=Android}]
+Session ID: 05b29d2a-32ad-415e-a83b-f07be35e7647
+*** Element info: {Using=name, value=Save}
+
+**** failure number: 3 ****
+
+removeZoneTest(com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest): 
+Command duration or timeout: 8 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.irahul.worldclock, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a3500fb, platform=LINUX, appActivity=.WorldClockActivity, desired={appPackage=com.irahul.worldclock, appActivity=.WorldClockActivity, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a3500fb, platformName=Android, deviceName=0a3500fb}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a3500fb, platformName=Android}]
+Session ID: 05b29d2a-32ad-415e-a83b-f07be35e7647
+*** Element info: {Using=id, value=dialog_list_icon}
+
+**** failure number: 4 ****
+
+addZoneTest(com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest): 
+Command duration or timeout: 5 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.irahul.worldclock, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a3500fb, platform=LINUX, appActivity=.WorldClockActivity, desired={appPackage=com.irahul.worldclock, appActivity=.WorldClockActivity, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a3500fb, platformName=Android, deviceName=0a3500fb}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a3500fb, platformName=Android}]
+Session ID: 05b29d2a-32ad-415e-a83b-f07be35e7647
+*** Element info: {Using=id, value=dialog_filter_text}
+
+**** failure number: 5 ****
+
+AddZoneFromMenuTest(com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest): 
+Command duration or timeout: 5 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.irahul.worldclock, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a3500fb, platform=LINUX, appActivity=.WorldClockActivity, desired={appPackage=com.irahul.worldclock, appActivity=.WorldClockActivity, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a3500fb, platformName=Android, deviceName=0a3500fb}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a3500fb, platformName=Android}]
+Session ID: 05b29d2a-32ad-415e-a83b-f07be35e7647
+*** Element info: {Using=id, value=dialog_filter_text}
+
+**** failure number: 6 ****
+
+cancelAddZoneTest(com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest): 
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.irahul.worldclock, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a3500fb, platform=LINUX, appActivity=.WorldClockActivity, desired={appPackage=com.irahul.worldclock, appActivity=.WorldClockActivity, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a3500fb, platformName=Android, deviceName=0a3500fb}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a3500fb, platformName=Android}]
+Session ID: 05b29d2a-32ad-415e-a83b-f07be35e7647
+*** Element info: {Using=id, value=dialog_filter_text}
+
+**** failure number: 7 ****
+
+com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest: 
+Command duration or timeout: 5 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.irahul.worldclock, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=0a3500fb, platform=LINUX, appActivity=.WorldClockActivity, desired={appPackage=com.irahul.worldclock, appActivity=.WorldClockActivity, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=0a3500fb, platformName=Android, deviceName=0a3500fb}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=0a3500fb, platformName=Android}]
+Session ID: 05b29d2a-32ad-415e-a83b-f07be35e7647
+
+**** WorldClockActivity-instrumented_578.apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+
+
+
+**** WorldClockActivity-instrumented_644.apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+
+
+
+**** WorldClockActivity-instrumented_659.apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+
+
+
+**** WorldClockActivity-instrumented_673.apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+
+
+
+**** WorldClockActivity-instrumented_675.apk Class: com.deep.parameter.optimisation.crest.test.worldclock.worldClockTest ****
+

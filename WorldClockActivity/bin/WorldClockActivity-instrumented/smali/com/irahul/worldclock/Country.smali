@@ -764,7 +764,7 @@
 
     const-string v2, "AZ"
 
-    const/16 v3, 0x14
+    const/16 v3, 0x11
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -1149,7 +1149,7 @@
 
     const-string v2, "CU"
 
-    const/16 v3, 0x34
+    const/16 v3, -0x5
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -1446,7 +1446,7 @@
 
     const-string v2, "GD"
 
-    const/16 v3, 0x63
+    const/16 v3, 0x35
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -1974,7 +1974,7 @@
 
     const-string v2, "LA"
 
-    const/16 v3, 0x80
+    const/16 v3, 0x7f
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -2700,7 +2700,7 @@
 
     const-string v2, "RW"
 
-    const/16 v3, 0xc1
+    const/16 v3, 0x96
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -2865,7 +2865,7 @@
 
     const-string v2, "SR"
 
-    const/16 v3, 0xd0
+    const/16 v3, 0x90
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -3019,7 +3019,7 @@
 
     const-string v2, "TL"
 
-    const/16 v3, 0xde
+    const/16 v3, 0xa1
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 
@@ -3041,7 +3041,7 @@
 
     const-string v2, "TN"
 
-    const/16 v3, 0xe0
+    const/16 v3, 0xc7
 
     invoke-direct {v1, v2, v3}, Lcom/irahul/worldclock/Country;-><init>(Ljava/lang/String;I)V
 

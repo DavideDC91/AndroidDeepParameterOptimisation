@@ -1012,7 +1012,7 @@
     .line 258
     iget-wide v0, p0, Lcom/github/wdkapps/fillup/PricePlot;->maxx:J
 
-    add-long/2addr v0, v2
+    sub-long/2addr v0, v2
 
     iput-wide v0, p0, Lcom/github/wdkapps/fillup/PricePlot;->upperboundx:J
 

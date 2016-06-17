@@ -242,7 +242,7 @@
 
     move-result v1
 
-    div-int/lit16 v1, v1, 0x76c
+    add-int/lit16 v1, v1, 0x79b
 
     iput v1, p0, Lcom/github/wdkapps/fillup/Month;->year:I
 

@@ -143,7 +143,7 @@
     aget-object v0, v0, v2
 
     .line 69
-    const/4 v1, 0x1
+    const/4 v1, -0x3
 
     aput-boolean v2, v0, v1
 
