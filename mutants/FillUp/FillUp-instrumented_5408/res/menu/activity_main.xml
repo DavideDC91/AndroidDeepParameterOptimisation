@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_add" android:id="@id/itemVehicleAdd" android:title="@string/vehicle_add_label" />
+    <item android:icon="@drawable/ic_menu_edit" android:id="@id/itemVehicleEdit" android:title="@string/vehicle_edit_label" />
+    <item android:icon="@drawable/ic_menu_delete" android:id="@id/itemVehicleDelete" android:title="@string/vehicle_delete_label" />
+    <item android:icon="@drawable/ic_menu_info_details" android:id="@id/itemHelp" android:title="@string/menuitem_title_help" />
+    <item android:icon="@drawable/ic_menu_preferences" android:id="@id/itemSettings" android:orderInCategory="100" android:title="@string/menu_settings" />
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/scrollViewMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/sammichNameTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/sammichNameTitleStr" android:layout_weight="1.0" />
+        <EditText android:id="@id/sammichNameField" android:visibility="visible" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="" android:layout_weight="1.0" android:inputType="text" />
+        <TextView android:id="@id/baseLbl" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/baseTxtStr" android:layout_weight="1.0" />
+        <Spinner android:id="@id/baseSelect" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:prompt="@string/basePromptStr" android:layout_weight="1.0" />
+        <TextView android:id="@id/breadLbl" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/breadTxtStr" android:layout_weight="1.0" />
+        <Spinner android:id="@id/breadSelect" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:prompt="@string/breadPromptStr" android:layout_weight="1.0" />
+        <TextView android:id="@id/cheeseLbl" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/cheeseTxtStr" android:layout_weight="1.0" />
+        <Spinner android:id="@id/cheeseSelect" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:prompt="@string/cheesePromptStr" android:layout_weight="1.0" />
+        <TableLayout android:id="@id/ingredientsTable" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TableRow android:layout_gravity="left" android:id="@id/veggieRow0" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@id/veggieLbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veggieStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/veggieRow1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/picklesBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/picklesStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/onionsBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/onionsStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/veggieRow2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/lettuceBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lettuceStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/tomatoBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tomatoStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/veggieRow3" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/grnPepBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/grnPepperStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/spinachBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/spinachStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/veggieRow4" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/cucumberBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cucumberStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/bananaPepBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bananaPeppersStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/veggieRow5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/oliveBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/oliveStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/jalapenoBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/jalapenoStr" android:layout_weight="1.0" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout android:id="@id/saucesTable" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TableRow android:id="@id/sauceRow0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@id/saucesLbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/saucesStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/sauceRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="true">
+                <CheckBox android:id="@id/chipotleBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/chipotleStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/honeyMustardBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/honeyMustardStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/sauceRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/sweetOnionBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sweetOnionStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/mayoBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mayoStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/sauceRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/mustardBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mustardStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/oilBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/oilStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/sauceRow4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/vinaigretteBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vinaigretteStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/vinegarBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vinegarStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/sauceRow5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/italianDrsngBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/italianDressingStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/ranchBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ranchStr" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:gravity="center" android:id="@id/sauceRow6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/caesarDrsngBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/caesarDressingStr" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/hummusBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/hummusStr" android:layout_weight="1.0" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

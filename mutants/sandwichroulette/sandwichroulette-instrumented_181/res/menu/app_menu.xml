@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@android:drawable/ic_menu_set_as" android:enabled="true" android:id="@id/opnSwItem" android:visible="true" android:title="Open Sandwich" android:titleCondensed="Open" />
+    <item android:icon="@android:drawable/ic_menu_save" android:enabled="true" android:id="@id/saveSwItem" android:visible="true" android:title="Save Sandwich" android:titleCondensed="Save" />
+    <item android:icon="@android:drawable/ic_menu_delete" android:enabled="true" android:id="@id/rmSwItem" android:visible="true" android:title="Remove Sandwich" android:titleCondensed="Remove" />
+    <item android:icon="@android:drawable/ic_menu_rotate" android:enabled="true" android:id="@id/rndSwItem" android:visible="true" android:title="Random Sandwich" android:titleCondensed="Randomize" />
+    <item android:icon="@android:drawable/ic_menu_info_details" android:enabled="true" android:id="@id/aboutItem" android:visible="true" android:title="About Sandwich Roulette" android:titleCondensed="About" />
+    <item android:icon="@android:drawable/ic_menu_preferences" android:enabled="true" android:id="@id/prefItem" android:visible="true" android:title="Preferences" android:titleCondensed="Settings" />
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.maxfierke.sandwichroulette" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:allowBackup="true" android:allowClearUserData="true" android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name=".SandwichRoulette">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SandwichListView"/>
+        <activity android:name=".SandwichRouletteSettings"/>
+        <activity android:label="@string/aboutTitleStr" android:name=".SandwichRouletteAbout"/>
+        <activity android:name=".SandwichRouletteAboutApp"/>
+        <activity android:name=".SandwichRouletteAboutIdea"/>
+        <activity android:name=".SandwichRouletteAboutLicense"/>
+        <receiver android:name="com.qa.emma.InstrumentedReceiver">
+            <intent-filter>
+                <action android:name="com.qa.emma.COLLECT_COVERAGE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

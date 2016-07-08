@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/notetitle" android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/newFileName" />
+    <ScrollView android:orientation="vertical" android:id="@id/scroll" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText android:gravity="top" android:id="@id/note" android:background="@android:color/white" android:padding="5.0dip" android:scrollbars="horizontal|vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:capitalize="sentences" class="org.paulmach.textedit.pmTextEdit$CustomEditText"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </ScrollView>
+</LinearLayout>

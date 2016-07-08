@@ -1,0 +1,135 @@
+
+
+**** Original apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+
+
+
+**** pmTextEdit-instrumented_1970.apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+
+
+
+**** pmTextEdit-instrumented_2100.apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+
+
+
+**** pmTextEdit-instrumented_2179.apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+
+
+
+**** pmTextEdit-instrumented_2255.apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+
+
+
+**** pmTextEdit-instrumented_2471.apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+
+
+
+**** pmTextEdit-instrumented_2758.apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+
+
+
+**** pmTextEdit-instrumented_2943.apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+
+
+
+**** failure number: 1 ****
+
+saveTextTest(com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest): An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25.33 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.paulmach.textedit, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=091f4245, platform=LINUX, appActivity=.pmTextEdit, desired={appPackage=org.paulmach.textedit, appActivity=.pmTextEdit, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=091f4245, platformName=Android, deviceName=091f4245}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=091f4245, platformName=Android}]
+Session ID: 4db7b2f8-a01b-442f-a55f-e4aef74afb23
+
+**** failure number: 2 ****
+
+openRecentTest(com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest): 
+Command duration or timeout: 21 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.paulmach.textedit, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=091f4245, platform=LINUX, appActivity=.pmTextEdit, desired={appPackage=org.paulmach.textedit, appActivity=.pmTextEdit, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=091f4245, platformName=Android, deviceName=091f4245}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=091f4245, platformName=Android}]
+Session ID: 4db7b2f8-a01b-442f-a55f-e4aef74afb23
+
+**** failure number: 3 ****
+
+openTest(com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest): 
+Command duration or timeout: 3 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.paulmach.textedit, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=091f4245, platform=LINUX, appActivity=.pmTextEdit, desired={appPackage=org.paulmach.textedit, appActivity=.pmTextEdit, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=091f4245, platformName=Android, deviceName=091f4245}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=091f4245, platformName=Android}]
+Session ID: 4db7b2f8-a01b-442f-a55f-e4aef74afb23
+
+**** failure number: 4 ****
+
+optionsTest(com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest): 
+Command duration or timeout: 3 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.paulmach.textedit, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=091f4245, platform=LINUX, appActivity=.pmTextEdit, desired={appPackage=org.paulmach.textedit, appActivity=.pmTextEdit, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=091f4245, platformName=Android, deviceName=091f4245}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=091f4245, platformName=Android}]
+Session ID: 4db7b2f8-a01b-442f-a55f-e4aef74afb23
+
+**** failure number: 5 ****
+
+emailAttachTest(com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest): 
+Command duration or timeout: 3 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.paulmach.textedit, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=091f4245, platform=LINUX, appActivity=.pmTextEdit, desired={appPackage=org.paulmach.textedit, appActivity=.pmTextEdit, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=091f4245, platformName=Android, deviceName=091f4245}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=091f4245, platformName=Android}]
+Session ID: 4db7b2f8-a01b-442f-a55f-e4aef74afb23
+
+**** failure number: 6 ****
+
+saveAsTest(com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest): 
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.paulmach.textedit, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=091f4245, platform=LINUX, appActivity=.pmTextEdit, desired={appPackage=org.paulmach.textedit, appActivity=.pmTextEdit, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=091f4245, platformName=Android, deviceName=091f4245}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=091f4245, platformName=Android}]
+Session ID: 4db7b2f8-a01b-442f-a55f-e4aef74afb23
+
+**** failure number: 7 ****
+
+searchTextTest(com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest): 
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.paulmach.textedit, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=091f4245, platform=LINUX, appActivity=.pmTextEdit, desired={appPackage=org.paulmach.textedit, appActivity=.pmTextEdit, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=091f4245, platformName=Android, deviceName=091f4245}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=091f4245, platformName=Android}]
+Session ID: 4db7b2f8-a01b-442f-a55f-e4aef74afb23
+
+**** failure number: 8 ****
+
+openEmailTest(com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest): 
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.paulmach.textedit, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=091f4245, platform=LINUX, appActivity=.pmTextEdit, desired={appPackage=org.paulmach.textedit, appActivity=.pmTextEdit, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=091f4245, platformName=Android, deviceName=091f4245}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=091f4245, platformName=Android}]
+Session ID: 4db7b2f8-a01b-442f-a55f-e4aef74afb23
+
+**** failure number: 9 ****
+
+com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest: 
+Command duration or timeout: 3 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'yue-ucl-dell', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-48-generic', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.paulmach.textedit, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=091f4245, platform=LINUX, appActivity=.pmTextEdit, desired={appPackage=org.paulmach.textedit, appActivity=.pmTextEdit, noReset=true, newCommandTimeout=20, platformVersion=4.4, udid=091f4245, platformName=Android, deviceName=091f4245}, newCommandTimeout=20, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=091f4245, platformName=Android}]
+Session ID: 4db7b2f8-a01b-442f-a55f-e4aef74afb23
+
+**** pmTextEdit-instrumented_2965.apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+
+
+
+**** pmTextEdit-instrumented_3227.apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+
+
+
+**** pmTextEdit-instrumented_3437.apk Class: com.deep.parameter.optimisation.crest.test.pmtextedit.pmTextEditTest ****
+

@@ -1,0 +1,1491 @@
+
+
+**** apktool d pmTextEdit-instrumented_1970.apk ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented_1970.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d pmTextEdit-instrumented_2100.apk ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented_2100.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d pmTextEdit-instrumented_2179.apk ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented_2179.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d pmTextEdit-instrumented_2255.apk ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented_2255.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d pmTextEdit-instrumented_2471.apk ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented_2471.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d pmTextEdit-instrumented_2758.apk ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented_2758.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d pmTextEdit-instrumented_2943.apk ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented_2943.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d pmTextEdit-instrumented_2965.apk ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented_2965.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d pmTextEdit-instrumented_3227.apk ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented_3227.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d pmTextEdit-instrumented_3437.apk ****
+
+I: Using Apktool 2.1.0 on pmTextEdit-instrumented_3437.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2915 KB/s (289696 bytes in 0.097s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@208002ef
+
+**** dumpsys cpuInfo ****
+
+  39 1684/org.paulmach.textedit: 34 user + 5.2 kernel / faults: 1622 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3116 KB/s (289697 bytes in 0.090s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@641df4b6
+
+**** dumpsys cpuInfo ****
+
+  40 1679/org.paulmach.textedit: 36 user + 3.5 kernel / faults: 935 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3010 KB/s (289697 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6ecf23e2
+
+**** dumpsys cpuInfo ****
+
+  42 1692/org.paulmach.textedit: 38 user + 3.5 kernel / faults: 8830 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3275 KB/s (289697 bytes in 0.086s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3c8c9be4
+
+**** dumpsys cpuInfo ****
+
+  42 1672/org.paulmach.textedit: 36 user + 5.8 kernel / faults: 2757 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3080 KB/s (289697 bytes in 0.091s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7bc1e372
+
+**** dumpsys cpuInfo ****
+
+  38 1650/org.paulmach.textedit: 35 user + 2.5 kernel / faults: 874 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2898 KB/s (289699 bytes in 0.097s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@e52cda0
+
+**** dumpsys cpuInfo ****
+
+  39 1647/org.paulmach.textedit: 36 user + 3.6 kernel / faults: 10723 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2716 KB/s (289700 bytes in 0.104s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-6.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50eb38cb
+
+**** dumpsys cpuInfo ****
+
+  0.7 1687/org.paulmach.textedit: 0.5 user + 0.1 kernel / faults: 190 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3276 KB/s (289698 bytes in 0.086s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@d55bbc6
+
+**** dumpsys cpuInfo ****
+
+  20 1708/org.paulmach.textedit: 18 user + 2 kernel / faults: 7308 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3043 KB/s (289698 bytes in 0.092s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@12b1f48f
+
+**** dumpsys cpuInfo ****
+
+  35 1700/org.paulmach.textedit: 30 user + 5.2 kernel / faults: 3051 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3218 KB/s (289697 bytes in 0.087s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1fdfca1c
+
+**** dumpsys cpuInfo ****
+
+  38 1670/org.paulmach.textedit: 33 user + 4.3 kernel / faults: 10652 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3097 KB/s (289696 bytes in 0.091s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@55727c0f
+
+**** dumpsys cpuInfo ****
+
+  40 1695/org.paulmach.textedit: 35 user + 4.8 kernel / faults: 1845 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3136 KB/s (289697 bytes in 0.090s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@496bb240
+
+**** dumpsys cpuInfo ****
+
+  32 1641/org.paulmach.textedit: 28 user + 3.1 kernel / faults: 10837 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3352 KB/s (289697 bytes in 0.084s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@45752aa1
+
+**** dumpsys cpuInfo ****
+
+  39 1677/org.paulmach.textedit: 36 user + 3.6 kernel / faults: 10719 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3327 KB/s (289697 bytes in 0.085s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@41928c4e
+
+**** dumpsys cpuInfo ****
+
+  40 1641/org.paulmach.textedit: 37 user + 3.3 kernel / faults: 1780 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3331 KB/s (289699 bytes in 0.084s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4e0312ef
+
+**** dumpsys cpuInfo ****
+
+  34 1680/org.paulmach.textedit: 29 user + 4.8 kernel / faults: 11114 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3021 KB/s (289697 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5fb717f1
+
+**** dumpsys cpuInfo ****
+
+  37 1684/org.paulmach.textedit: 34 user + 3.2 kernel / faults: 10594 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2978 KB/s (289696 bytes in 0.094s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6539a9a7
+
+**** dumpsys cpuInfo ****
+
+  42 1638/org.paulmach.textedit: 38 user + 3.3 kernel / faults: 641 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3301 KB/s (289697 bytes in 0.085s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@76b32e1
+
+**** dumpsys cpuInfo ****
+
+  33 1694/org.paulmach.textedit: 29 user + 4.1 kernel / faults: 10841 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3225 KB/s (289697 bytes in 0.087s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@c07949
+
+**** dumpsys cpuInfo ****
+
+  31 1628/org.paulmach.textedit: 27 user + 3.8 kernel / faults: 10886 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2631 KB/s (289697 bytes in 0.107s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@353b9eb0
+
+**** dumpsys cpuInfo ****
+
+  33 1696/org.paulmach.textedit: 30 user + 3.1 kernel / faults: 10985 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3033 KB/s (289699 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@469fa2dc
+
+**** dumpsys cpuInfo ****
+
+  39 1687/org.paulmach.textedit: 34 user + 5.3 kernel / faults: 10617 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2956 KB/s (289697 bytes in 0.095s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@73bdc5ad
+
+**** dumpsys cpuInfo ****
+
+  39 1690/org.paulmach.textedit: 36 user + 3.1 kernel / faults: 10598 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2995 KB/s (289696 bytes in 0.094s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@424ba86
+
+**** dumpsys cpuInfo ****
+
+  35 1681/org.paulmach.textedit: 32 user + 3.7 kernel / faults: 10869 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3016 KB/s (289697 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@76d936e1
+
+**** dumpsys cpuInfo ****
+
+  44 1677/org.paulmach.textedit: 39 user + 4.2 kernel / faults: 2100 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2900 KB/s (289697 bytes in 0.097s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@576a5ebe
+
+**** dumpsys cpuInfo ****
+
+  39 1652/org.paulmach.textedit: 35 user + 3.9 kernel / faults: 10596 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3248 KB/s (289697 bytes in 0.087s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5eb9f65c
+
+**** dumpsys cpuInfo ****
+
+  33 1651/org.paulmach.textedit: 31 user + 1.7 kernel / faults: 10835 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3016 KB/s (289699 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6e2d9d3c
+
+**** dumpsys cpuInfo ****
+
+  34 1680/org.paulmach.textedit: 30 user + 3.3 kernel / faults: 11042 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2979 KB/s (289697 bytes in 0.094s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1fac57aa
+
+**** dumpsys cpuInfo ****
+
+  37 1635/org.paulmach.textedit: 33 user + 3.7 kernel / faults: 10594 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3151 KB/s (289696 bytes in 0.089s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@173c4d09
+
+**** dumpsys cpuInfo ****
+
+  41 1689/org.paulmach.textedit: 38 user + 3 kernel / faults: 1246 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2973 KB/s (289697 bytes in 0.095s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7bbf0594
+
+**** dumpsys cpuInfo ****
+
+  38 1661/org.paulmach.textedit: 34 user + 4.3 kernel / faults: 10644 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3074 KB/s (289697 bytes in 0.092s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@48e59c3
+
+**** dumpsys cpuInfo ****
+
+  40 1636/org.paulmach.textedit: 35 user + 4.6 kernel / faults: 1596 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3405 KB/s (289697 bytes in 0.083s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2d01fe9d
+
+**** dumpsys cpuInfo ****
+
+  40 1640/org.paulmach.textedit: 36 user + 4.1 kernel / faults: 1211 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3055 KB/s (289699 bytes in 0.092s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@53f645f7
+
+**** dumpsys cpuInfo ****
+
+  38 1666/org.paulmach.textedit: 34 user + 4.7 kernel / faults: 10677 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3035 KB/s (289697 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7f6bcf73
+
+**** dumpsys cpuInfo ****
+
+  38 1699/org.paulmach.textedit: 34 user + 3.7 kernel / faults: 10605 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3100 KB/s (289696 bytes in 0.091s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2602c1d2
+
+**** dumpsys cpuInfo ****
+
+  39 1669/org.paulmach.textedit: 35 user + 3.8 kernel / faults: 1644 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2918 KB/s (289697 bytes in 0.096s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@394e57cb
+
+**** dumpsys cpuInfo ****
+
+  28 1657/org.paulmach.textedit: 25 user + 3.8 kernel / faults: 3141 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3031 KB/s (289697 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6a8f05ef
+
+**** dumpsys cpuInfo ****
+
+  32 1699/org.paulmach.textedit: 28 user + 4.2 kernel / faults: 10875 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2918 KB/s (289697 bytes in 0.096s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@65caeee3
+
+**** dumpsys cpuInfo ****
+
+  41 1691/org.paulmach.textedit: 36 user + 5.1 kernel / faults: 1589 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3036 KB/s (289699 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2f13339b
+
+**** dumpsys cpuInfo ****
+
+  31 1627/org.paulmach.textedit: 26 user + 4.9 kernel / faults: 3120 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3069 KB/s (289697 bytes in 0.092s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@752bf249
+
+**** dumpsys cpuInfo ****
+
+  38 1664/org.paulmach.textedit: 35 user + 2.9 kernel / faults: 10522 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3396 KB/s (289696 bytes in 0.083s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@465ce204
+
+**** dumpsys cpuInfo ****
+
+  38 1682/org.paulmach.textedit: 33 user + 5.6 kernel / faults: 877 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3065 KB/s (289697 bytes in 0.092s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1ae07620
+
+**** dumpsys cpuInfo ****
+
+  40 1669/org.paulmach.textedit: 36 user + 4.5 kernel / faults: 1578 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2569 KB/s (289697 bytes in 0.110s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@14b37859
+
+**** dumpsys cpuInfo ****
+
+  39 1631/org.paulmach.textedit: 35 user + 4.1 kernel / faults: 10618 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3011 KB/s (289697 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@68eb82e4
+
+**** dumpsys cpuInfo ****
+
+  42 1668/org.paulmach.textedit: 36 user + 5.7 kernel / faults: 2169 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3358 KB/s (289699 bytes in 0.084s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@49b8031f
+
+**** dumpsys cpuInfo ****
+
+  39 1679/org.paulmach.textedit: 35 user + 3.9 kernel / faults: 10515 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3075 KB/s (289697 bytes in 0.091s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3d01cac6
+
+**** dumpsys cpuInfo ****
+
+  33 1649/org.paulmach.textedit: 28 user + 4.3 kernel / faults: 11281 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3227 KB/s (289696 bytes in 0.087s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6150e58c
+
+**** dumpsys cpuInfo ****
+
+  39 1697/org.paulmach.textedit: 35 user + 3.5 kernel / faults: 10627 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3383 KB/s (289697 bytes in 0.083s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5ede7753
+
+**** dumpsys cpuInfo ****
+
+  41 1661/org.paulmach.textedit: 37 user + 4.9 kernel / faults: 1598 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3040 KB/s (289697 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@57149b37
+
+**** dumpsys cpuInfo ****
+
+  40 1703/org.paulmach.textedit: 34 user + 5.9 kernel / faults: 917 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2997 KB/s (289697 bytes in 0.094s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6c5e2d81
+
+**** dumpsys cpuInfo ****
+
+  40 1698/org.paulmach.textedit: 34 user + 5.3 kernel / faults: 1237 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3033 KB/s (289699 bytes in 0.093s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50e1306c
+
+**** dumpsys cpuInfo ****
+
+  39 1712/org.paulmach.textedit: 35 user + 4.1 kernel / faults: 10788 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3054 KB/s (289696 bytes in 0.092s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@590dd020
+
+**** dumpsys cpuInfo ****
+
+  32 1698/org.paulmach.textedit: 29 user + 3.3 kernel / faults: 10872 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3055 KB/s (289697 bytes in 0.092s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6cc5dafe
+
+**** dumpsys cpuInfo ****
+
+  33 1617/org.paulmach.textedit: 29 user + 3.8 kernel / faults: 10934 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2854 KB/s (289697 bytes in 0.099s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6c7c1e2d
+
+**** dumpsys cpuInfo ****
+
+  39 1657/org.paulmach.textedit: 34 user + 4.6 kernel / faults: 3204 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3093 KB/s (289697 bytes in 0.091s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@8476c31
+
+**** dumpsys cpuInfo ****
+
+  39 1646/org.paulmach.textedit: 34 user + 4.2 kernel / faults: 10589 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3086 KB/s (289699 bytes in 0.091s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7d8b0158
+
+**** dumpsys cpuInfo ****
+
+  32 1592/org.paulmach.textedit: 28 user + 3.9 kernel / faults: 11000 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3252 KB/s (289696 bytes in 0.086s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5ace8285
+
+**** dumpsys cpuInfo ****
+
+  41 1657/org.paulmach.textedit: 36 user + 4.7 kernel / faults: 2089 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2762 KB/s (289697 bytes in 0.102s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3d483bad
+
+**** dumpsys cpuInfo ****
+
+  41 1621/org.paulmach.textedit: 35 user + 5.8 kernel / faults: 1664 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3065 KB/s (289697 bytes in 0.092s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3f07ca0f
+
+**** dumpsys cpuInfo ****
+
+  37 1613/org.paulmach.textedit: 34 user + 3.2 kernel / faults: 10620 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3062 KB/s (289699 bytes in 0.092s)
+	pkg: /data/local/tmp/pmTextEdit-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@21c27611
+
+**** dumpsys cpuInfo ****
+
+  39 1687/org.paulmach.textedit: 36 user + 3.2 kernel / faults: 10580 minor

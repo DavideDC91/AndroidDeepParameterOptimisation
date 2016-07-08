@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="22.0dip" android:id="@id/aboutHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/app_name" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="14.0dip" android:id="@id/aboutSubHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/app_tagline" android:layout_below="@id/aboutHeader" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0dip" android:id="@id/aboutVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/app_version" android:layout_below="@id/aboutSubHeader" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:id="@id/aboutText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/aboutTextStr" android:layout_below="@id/aboutVersion" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:id="@id/aboutCopyrightLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/app_copyright" android:layout_below="@id/aboutText" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0dip" android:id="@id/aboutLicenseLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/app_license_tag" android:layout_below="@id/aboutCopyrightLine" android:layout_centerHorizontal="true" />
+</RelativeLayout>

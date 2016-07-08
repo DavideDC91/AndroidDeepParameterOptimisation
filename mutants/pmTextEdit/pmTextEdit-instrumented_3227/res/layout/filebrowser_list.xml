@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black" android:id="@id/filepath" android:paddingLeft="5.0dip" android:paddingTop="0.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Location: /sdcard/" android:singleLine="true" />
+    <ListView android:orientation="vertical" android:id="@id/filelist" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@android:drawable/divider_horizontal_bright" android:color="@android:color/white"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <View android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/nofilemessage" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/nofilesindirectory" />
+    <View android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

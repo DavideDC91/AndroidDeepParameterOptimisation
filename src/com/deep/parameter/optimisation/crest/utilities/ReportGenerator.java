@@ -93,7 +93,7 @@ public class ReportGenerator {
 				"</tr>";
 
 		for(Mutant m: mutants){
-			//for(Alteration a: m.getAllAlteration()){
+			for(Alteration a: m.getAllAlteration()){
 				s += "<tr>"+
 						"<td  align='center'>"+ m.getApk_name() +"</td>" +
 						"<td  align='center'>"+ m.getExecution_time() +"</td>" +
@@ -104,20 +104,13 @@ public class ReportGenerator {
 						"<td  align='center'>"+ m.getHeap_size() +"</td>" +
 						"<td  align='center'>"+ m.getHeap_alloc() +"</td>" +
 						"<td  align='center'>"+ m.getHeap_free() +"</td>" +
-						"<td  align='center'></td>" +
-						"<td  align='center'></td>" +
-						"<td  align='center'></td>" +
-						"<td  align='center'></td>" +
-						"<td  align='center'></td>" +
-						"</tr>";
-						/**
 						"<td  align='center'>"+ a.getFile() +"</td>" +
 						"<td  align='center'>"+ a.getAlteration_type() +"</td>" +
 						"<td  align='center'>"+ a.getOriginalLine() +"</td>" +
 						"<td  align='center'>"+ a.getMutatedLine() +"</td>" +
 						"<td  align='center'>"+ a.getLine_number() +"</td>" +
-						"</tr>";**/
-			//}
+						"</tr>";
+			}
 		}
 		s+= "</table>";
 		byte data[] = s.getBytes();

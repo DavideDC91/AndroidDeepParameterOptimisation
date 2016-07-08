@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import com.deep.parameter.optimisation.crest.manager.AppManager;
 import com.deep.parameter.optimisation.crest.manager.CommandManager;
@@ -48,8 +49,8 @@ public class MultiExecutionLauncher {
 				String device = "0a2aa61a"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.timetracker";
 				boolean only_mutants = false;
-				int approach = 2;
-				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
+				int approach = 1;
+				SingleLaunch(dir,device,test_pkg, only_mutants, approach, 169951);
 			}
 		};
 
@@ -60,8 +61,8 @@ public class MultiExecutionLauncher {
 				String device = "0a6996b3"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.fillup";
 				boolean only_mutants = false;
-				int approach = 2;
-				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
+				int approach = 1;
+				SingleLaunch(dir,device,test_pkg, only_mutants, approach, 191934);
 			}
 		};
 		
@@ -72,8 +73,8 @@ public class MultiExecutionLauncher {
 				String device = "0a3500fb"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.worldclock";
 				boolean only_mutants = false;
-				int approach = 2;
-				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
+				int approach = 1;
+				SingleLaunch(dir,device,test_pkg, only_mutants, approach, 126689);
 			}
 		};
 
@@ -84,8 +85,8 @@ public class MultiExecutionLauncher {
 				String device = "091f4245"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.pmtextedit";
 				boolean only_mutants = false;
-				int approach = 2;
-				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
+				int approach = 1;
+				SingleLaunch(dir,device,test_pkg, only_mutants, approach, 163736);
 			}
 		};
 		
@@ -96,8 +97,8 @@ public class MultiExecutionLauncher {
 				String device = "0a2aae66"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.gmdice";
 				boolean only_mutants = false;
-				int approach = 2;
-				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
+				int approach = 1;
+				SingleLaunch(dir,device,test_pkg, only_mutants, approach, 83053);
 			}
 		};
 		
@@ -108,20 +109,20 @@ public class MultiExecutionLauncher {
 				String device = "0a2a2496"; // device code
 				String test_pkg= "com.deep.parameter.optimisation.crest.test.sandwichroulette";
 				boolean only_mutants = false;
-				int approach = 2;
-				SingleLaunch(dir,device,test_pkg, only_mutants, approach);
+				int approach = 1;
+				SingleLaunch(dir,device,test_pkg, only_mutants, approach, 120910);
 			}
 		};
-		                                                                                     
+		
 		timetracker_thread.start();
-		fillup_thread.start();
-		pmtext_thread.start();                                                                                           
-		worldclock_thread.start();
-		sandwichroulette_thread.start();
-		gmdice_thread.start();
+		//fillup_thread.start();
+		//pmtext_thread.start();                                                                                           
+		//worldclock_thread.start();
+		//sandwichroulette_thread.start();
+		//gmdice_thread.start();
 	}
 
-	private static void SingleLaunch(String dir,String device,String test_pkg, boolean only_mutants, int approach){
+	private static void SingleLaunch(String dir,String device,String test_pkg, boolean only_mutants, int approach, int ex){
 		CommandManager cmd = new CommandManager(new ProcessBuilder("ls"));
 		String output = cmd.executeCommand();
 		if(!output.contains(dir)){
@@ -142,6 +143,7 @@ public class MultiExecutionLauncher {
 				AppManager dc= new AppManager(dir, device, "Reports/"+report_dir_name, init, increment, maximum, cycles, max, test_pkg);
 				dc.setUp();
 				dc.calculateCoverage();
+				dc.setOriginal(ex, 0, 0);
 				try {
 					dc.mutationAnalysis(only_mutants,approach);
 				} catch (InterruptedException e) {

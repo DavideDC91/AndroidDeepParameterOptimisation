@@ -1,0 +1,1931 @@
+
+
+**** apktool d FillUp-instrumented_10232.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_10232.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_2886.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_2886.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_3055.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_3055.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_3073.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_3073.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_515.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_515.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_5378.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_5378.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_5402.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_5402.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_5408.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_5408.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_7282.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_7282.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool d FillUp-instrumented_8254.apk ****
+
+I: Using Apktool 2.1.0 on FillUp-instrumented_8254.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /home/davide/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2979 KB/s (1211851 bytes in 0.397s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3dd73841
+
+**** dumpsys cpuInfo ****
+
+  31 1479/com.github.wdkapps.fillup: 29 user + 2.1 kernel / faults: 2054 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3152 KB/s (1211849 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-1.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@27bae53c
+
+**** dumpsys cpuInfo ****
+
+  32 1530/com.github.wdkapps.fillup: 29 user + 2.7 kernel / faults: 1554 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3162 KB/s (1211851 bytes in 0.374s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@66f4017b
+
+**** dumpsys cpuInfo ****
+
+  42 1524/com.github.wdkapps.fillup: 37 user + 4.5 kernel / faults: 1040 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3166 KB/s (1211859 bytes in 0.373s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4aa52ebd
+
+**** dumpsys cpuInfo ****
+
+  40 1532/com.github.wdkapps.fillup: 37 user + 2.7 kernel / faults: 936 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3133 KB/s (1211859 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5a77be4d
+
+**** dumpsys cpuInfo ****
+
+  39 1567/com.github.wdkapps.fillup: 35 user + 4.4 kernel / faults: 963 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3508 KB/s (1211859 bytes in 0.337s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6b282e10
+
+**** dumpsys cpuInfo ****
+
+  40 1496/com.github.wdkapps.fillup: 37 user + 2.9 kernel / faults: 1051 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3115 KB/s (1211863 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-6.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4d811c24
+
+**** dumpsys cpuInfo ****
+
+  35 1512/com.github.wdkapps.fillup: 32 user + 2.5 kernel / faults: 14638 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3275 KB/s (1211866 bytes in 0.361s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@38ed7578
+
+**** dumpsys cpuInfo ****
+
+  38 1519/com.github.wdkapps.fillup: 34 user + 4.2 kernel / faults: 1065 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3231 KB/s (1211870 bytes in 0.366s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2bfbc299
+
+**** dumpsys cpuInfo ****
+
+  37 1554/com.github.wdkapps.fillup: 32 user + 4.5 kernel / faults: 1051 minor
+
+**** apktool b ****
+
+I: Using Apktool 2.1.0
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building apk file...
+I: Copying unknown files/dir...
+
+
+**** Sign apk  ****
+
+
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3296 KB/s (1211870 bytes in 0.358s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@742d98
+
+**** dumpsys cpuInfo ****
+
+  39 1534/com.github.wdkapps.fillup: 34 user + 4.8 kernel / faults: 1047 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3072 KB/s (1211851 bytes in 0.385s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5291c2a1
+
+**** dumpsys cpuInfo ****
+
+  39 1517/com.github.wdkapps.fillup: 35 user + 3.6 kernel / faults: 1027 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3102 KB/s (1211851 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5d57e53c
+
+**** dumpsys cpuInfo ****
+
+  38 1512/com.github.wdkapps.fillup: 35 user + 2.9 kernel / faults: 1334 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3046 KB/s (1211859 bytes in 0.388s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@a64bee2
+
+**** dumpsys cpuInfo ****
+
+  38 1543/com.github.wdkapps.fillup: 35 user + 3 kernel / faults: 1072 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3159 KB/s (1211859 bytes in 0.374s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4da22b74
+
+**** dumpsys cpuInfo ****
+
+  37 1734/com.github.wdkapps.fillup: 31 user + 5.6 kernel / faults: 1077 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3144 KB/s (1211859 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5d6d20e2
+
+**** dumpsys cpuInfo ****
+
+  39 1640/com.github.wdkapps.fillup: 36 user + 3.5 kernel / faults: 1087 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3273 KB/s (1211866 bytes in 0.361s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@74f37fb
+
+**** dumpsys cpuInfo ****
+
+  37 1560/com.github.wdkapps.fillup: 34 user + 3.6 kernel / faults: 978 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3114 KB/s (1211870 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@35865bfd
+
+**** dumpsys cpuInfo ****
+
+  38 1574/com.github.wdkapps.fillup: 34 user + 3.9 kernel / faults: 1053 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3356 KB/s (1211870 bytes in 0.352s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@49400221
+
+**** dumpsys cpuInfo ****
+
+  40 1559/com.github.wdkapps.fillup: 36 user + 4.3 kernel / faults: 1081 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3297 KB/s (1211851 bytes in 0.358s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@18346ab8
+
+**** dumpsys cpuInfo ****
+
+  39 1551/com.github.wdkapps.fillup: 36 user + 3 kernel / faults: 1053 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3046 KB/s (1211851 bytes in 0.388s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50f42518
+
+**** dumpsys cpuInfo ****
+
+  39 1506/com.github.wdkapps.fillup: 33 user + 5.4 kernel / faults: 1047 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3073 KB/s (1211859 bytes in 0.385s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7195e10
+
+**** dumpsys cpuInfo ****
+
+  32 1518/com.github.wdkapps.fillup: 28 user + 3.9 kernel / faults: 1864 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3078 KB/s (1211859 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7265671c
+
+**** dumpsys cpuInfo ****
+
+  37 1509/com.github.wdkapps.fillup: 34 user + 3.1 kernel / faults: 979 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3042 KB/s (1211859 bytes in 0.388s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1f26a6f1
+
+**** dumpsys cpuInfo ****
+
+  36 1553/com.github.wdkapps.fillup: 31 user + 4.3 kernel / faults: 874 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3084 KB/s (1211866 bytes in 0.383s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3fe549a8
+
+**** dumpsys cpuInfo ****
+
+  38 1538/com.github.wdkapps.fillup: 35 user + 2.7 kernel / faults: 994 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3126 KB/s (1211870 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6b23d8c3
+
+**** dumpsys cpuInfo ****
+
+  37 1537/com.github.wdkapps.fillup: 33 user + 3.7 kernel / faults: 1000 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3255 KB/s (1211870 bytes in 0.363s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2f593473
+
+**** dumpsys cpuInfo ****
+
+  39 1503/com.github.wdkapps.fillup: 35 user + 3.5 kernel / faults: 1045 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3054 KB/s (1211851 bytes in 0.387s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@d001493
+
+**** dumpsys cpuInfo ****
+
+  38 1501/com.github.wdkapps.fillup: 34 user + 3.9 kernel / faults: 1054 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3042 KB/s (1211851 bytes in 0.389s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2eda4fbe
+
+**** dumpsys cpuInfo ****
+
+  31 1545/com.github.wdkapps.fillup: 29 user + 2.4 kernel / faults: 1901 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3265 KB/s (1211859 bytes in 0.362s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7c18bc03
+
+**** dumpsys cpuInfo ****
+
+  30 1537/com.github.wdkapps.fillup: 27 user + 3.1 kernel / faults: 1889 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3097 KB/s (1211859 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@58406cf2
+
+**** dumpsys cpuInfo ****
+
+  43 1538/com.github.wdkapps.fillup: 38 user + 4.8 kernel / faults: 987 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3127 KB/s (1211859 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6bd060ee
+
+**** dumpsys cpuInfo ****
+
+  32 1528/com.github.wdkapps.fillup: 29 user + 3 kernel / faults: 1898 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3097 KB/s (1211866 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@13205fb5
+
+**** dumpsys cpuInfo ****
+
+  38 1570/com.github.wdkapps.fillup: 34 user + 3.7 kernel / faults: 1056 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3360 KB/s (1211870 bytes in 0.352s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2d6972ce
+
+**** dumpsys cpuInfo ****
+
+  40 1554/com.github.wdkapps.fillup: 37 user + 3.3 kernel / faults: 1111 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3098 KB/s (1211870 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@69e4035e
+
+**** dumpsys cpuInfo ****
+
+  39 1544/com.github.wdkapps.fillup: 36 user + 3.2 kernel / faults: 1048 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3048 KB/s (1211851 bytes in 0.388s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@13e860e2
+
+**** dumpsys cpuInfo ****
+
+  37 1622/com.github.wdkapps.fillup: 33 user + 3.4 kernel / faults: 1050 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3080 KB/s (1211851 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@174582c4
+
+**** dumpsys cpuInfo ****
+
+  37 1503/com.github.wdkapps.fillup: 34 user + 2.9 kernel / faults: 1059 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3086 KB/s (1211859 bytes in 0.383s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@412f78c8
+
+**** dumpsys cpuInfo ****
+
+  38 1545/com.github.wdkapps.fillup: 34 user + 3.8 kernel / faults: 1066 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3314 KB/s (1211859 bytes in 0.357s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7f770480
+
+**** dumpsys cpuInfo ****
+
+  37 1540/com.github.wdkapps.fillup: 34 user + 3 kernel / faults: 1076 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3054 KB/s (1211859 bytes in 0.387s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@760932d7
+
+**** dumpsys cpuInfo ****
+
+  40 1538/com.github.wdkapps.fillup: 36 user + 3.5 kernel / faults: 1044 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3422 KB/s (1211866 bytes in 0.345s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@480bc96
+
+**** dumpsys cpuInfo ****
+
+  39 1542/com.github.wdkapps.fillup: 34 user + 4.6 kernel / faults: 1095 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2955 KB/s (1211870 bytes in 0.400s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@630f8b15
+
+**** dumpsys cpuInfo ****
+
+  39 1552/com.github.wdkapps.fillup: 35 user + 3.9 kernel / faults: 1092 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3090 KB/s (1211870 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@61f54232
+
+**** dumpsys cpuInfo ****
+
+  40 1528/com.github.wdkapps.fillup: 36 user + 4.4 kernel / faults: 1042 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3072 KB/s (1211851 bytes in 0.385s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@f57232
+
+**** dumpsys cpuInfo ****
+
+  30 1562/com.github.wdkapps.fillup: 28 user + 2.7 kernel / faults: 1873 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3132 KB/s (1211851 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@252563a4
+
+**** dumpsys cpuInfo ****
+
+  38 1541/com.github.wdkapps.fillup: 34 user + 3.6 kernel / faults: 1042 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3095 KB/s (1211859 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@554fd33e
+
+**** dumpsys cpuInfo ****
+
+  35 1578/com.github.wdkapps.fillup: 31 user + 3.6 kernel / faults: 1409 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3034 KB/s (1211859 bytes in 0.390s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3a5af715
+
+**** dumpsys cpuInfo ****
+
+  40 1549/com.github.wdkapps.fillup: 37 user + 2.7 kernel / faults: 1056 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3116 KB/s (1211859 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@205bbd2b
+
+**** dumpsys cpuInfo ****
+
+  39 1612/com.github.wdkapps.fillup: 36 user + 3.7 kernel / faults: 1098 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3151 KB/s (1211866 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@77bd71a4
+
+**** dumpsys cpuInfo ****
+
+  40 1550/com.github.wdkapps.fillup: 36 user + 4 kernel / faults: 998 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3025 KB/s (1211870 bytes in 0.391s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@36125b59
+
+**** dumpsys cpuInfo ****
+
+  32 1567/com.github.wdkapps.fillup: 29 user + 2.3 kernel / faults: 1881 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3144 KB/s (1211870 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@52667cfe
+
+**** dumpsys cpuInfo ****
+
+  38 1549/com.github.wdkapps.fillup: 35 user + 3.4 kernel / faults: 1048 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3327 KB/s (1211851 bytes in 0.355s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@9ba6b47
+
+**** dumpsys cpuInfo ****
+
+  43 1545/com.github.wdkapps.fillup: 37 user + 5.4 kernel / faults: 941 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3091 KB/s (1211851 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6b2a8edb
+
+**** dumpsys cpuInfo ****
+
+  39 1584/com.github.wdkapps.fillup: 34 user + 4.7 kernel / faults: 1059 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3236 KB/s (1211859 bytes in 0.365s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4973bf64
+
+**** dumpsys cpuInfo ****
+
+  39 1556/com.github.wdkapps.fillup: 34 user + 5.1 kernel / faults: 1072 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3080 KB/s (1211859 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@53e53912
+
+**** dumpsys cpuInfo ****
+
+  39 1514/com.github.wdkapps.fillup: 35 user + 3.5 kernel / faults: 1121 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3341 KB/s (1211859 bytes in 0.354s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@582e4509
+
+**** dumpsys cpuInfo ****
+
+  40 1541/com.github.wdkapps.fillup: 36 user + 3.7 kernel / faults: 1068 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3081 KB/s (1211866 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@11338877
+
+**** dumpsys cpuInfo ****
+
+  39 1490/com.github.wdkapps.fillup: 36 user + 3.3 kernel / faults: 1015 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3345 KB/s (1211870 bytes in 0.353s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@78174ea8
+
+**** dumpsys cpuInfo ****
+
+  42 1484/com.github.wdkapps.fillup: 38 user + 3.9 kernel / faults: 999 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3074 KB/s (1211870 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4178bf98
+
+**** dumpsys cpuInfo ****
+
+  39 1533/com.github.wdkapps.fillup: 35 user + 4.9 kernel / faults: 1097 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3063 KB/s (1211851 bytes in 0.386s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@27eb6645
+
+**** dumpsys cpuInfo ****
+
+  38 1676/com.github.wdkapps.fillup: 35 user + 3 kernel / faults: 952 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3103 KB/s (1211851 bytes in 0.381s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5bf84b73
+
+**** dumpsys cpuInfo ****
+
+  40 1576/com.github.wdkapps.fillup: 36 user + 4.2 kernel / faults: 1032 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3081 KB/s (1211859 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5517652d
+
+**** dumpsys cpuInfo ****
+
+  32 1532/com.github.wdkapps.fillup: 29 user + 2.3 kernel / faults: 1984 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2993 KB/s (1211859 bytes in 0.395s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@606dd785
+
+**** dumpsys cpuInfo ****
+
+  40 1509/com.github.wdkapps.fillup: 36 user + 3.8 kernel / faults: 1024 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3033 KB/s (1211859 bytes in 0.390s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@31b68feb
+
+**** dumpsys cpuInfo ****
+
+  37 1509/com.github.wdkapps.fillup: 32 user + 4.7 kernel / faults: 969 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3154 KB/s (1211866 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@44ed254b
+
+**** dumpsys cpuInfo ****
+
+  39 1492/com.github.wdkapps.fillup: 36 user + 2.7 kernel / faults: 1050 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3120 KB/s (1211870 bytes in 0.379s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@4029569c
+
+**** dumpsys cpuInfo ****
+
+  32 1556/com.github.wdkapps.fillup: 30 user + 2.5 kernel / faults: 1929 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3096 KB/s (1211870 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@25065fb3
+
+**** dumpsys cpuInfo ****
+
+  31 1544/com.github.wdkapps.fillup: 28 user + 3.1 kernel / faults: 1949 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3049 KB/s (1211851 bytes in 0.388s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@50c3fa90
+
+**** dumpsys cpuInfo ****
+
+  40 1491/com.github.wdkapps.fillup: 36 user + 3.2 kernel / faults: 1063 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3107 KB/s (1211851 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@47fb6220
+
+**** dumpsys cpuInfo ****
+
+  39 1585/com.github.wdkapps.fillup: 34 user + 5 kernel / faults: 1053 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3131 KB/s (1211859 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@6b75888f
+
+**** dumpsys cpuInfo ****
+
+  33 1541/com.github.wdkapps.fillup: 29 user + 4 kernel / faults: 2064 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3112 KB/s (1211859 bytes in 0.380s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@273a4662
+
+**** dumpsys cpuInfo ****
+
+  32 1561/com.github.wdkapps.fillup: 29 user + 2.7 kernel / faults: 1971 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3147 KB/s (1211859 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@2ad39601
+
+**** dumpsys cpuInfo ****
+
+  38 1564/com.github.wdkapps.fillup: 34 user + 3.6 kernel / faults: 1114 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3073 KB/s (1211866 bytes in 0.385s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1e231f08
+
+**** dumpsys cpuInfo ****
+
+  39 1559/com.github.wdkapps.fillup: 36 user + 3.8 kernel / faults: 1068 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3129 KB/s (1211870 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@5d6e9e13
+
+**** dumpsys cpuInfo ****
+
+  36 1541/com.github.wdkapps.fillup: 32 user + 4.2 kernel / faults: 1959 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3055 KB/s (1211870 bytes in 0.387s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@42d9b4a2
+
+**** dumpsys cpuInfo ****
+
+  37 1545/com.github.wdkapps.fillup: 34 user + 3.4 kernel / faults: 933 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3145 KB/s (1211851 bytes in 0.376s)
+	pkg: /data/local/tmp/FillUp-instrumented-0.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@3226f4b
+
+**** dumpsys cpuInfo ****
+
+  38 1601/com.github.wdkapps.fillup: 34 user + 3.5 kernel / faults: 1044 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+2842 KB/s (1211851 bytes in 0.416s)
+	pkg: /data/local/tmp/FillUp-instrumented-2.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@326be9c8
+
+**** dumpsys cpuInfo ****
+
+  33 1516/com.github.wdkapps.fillup: 30 user + 3.2 kernel / faults: 2007 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3079 KB/s (1211859 bytes in 0.384s)
+	pkg: /data/local/tmp/FillUp-instrumented-3.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@650eaf26
+
+**** dumpsys cpuInfo ****
+
+  39 1561/com.github.wdkapps.fillup: 35 user + 4 kernel / faults: 961 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3150 KB/s (1211859 bytes in 0.375s)
+	pkg: /data/local/tmp/FillUp-instrumented-4.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@1175a32f
+
+**** dumpsys cpuInfo ****
+
+  31 1553/com.github.wdkapps.fillup: 28 user + 2.8 kernel / faults: 1903 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3096 KB/s (1211859 bytes in 0.382s)
+	pkg: /data/local/tmp/FillUp-instrumented-5.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@17a2f7a9
+
+**** dumpsys cpuInfo ****
+
+  38 1562/com.github.wdkapps.fillup: 36 user + 2.5 kernel / faults: 1074 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3088 KB/s (1211866 bytes in 0.383s)
+	pkg: /data/local/tmp/FillUp-instrumented-7.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@7ec773d5
+
+**** dumpsys cpuInfo ****
+
+  37 1557/com.github.wdkapps.fillup: 34 user + 3.2 kernel / faults: 1067 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3126 KB/s (1211870 bytes in 0.378s)
+	pkg: /data/local/tmp/FillUp-instrumented-8.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@304c28c0
+
+**** dumpsys cpuInfo ****
+
+  37 1630/com.github.wdkapps.fillup: 34 user + 3.6 kernel / faults: 964 minor
+
+**** adb uninstall ****
+
+Success
+
+
+**** adb install ****
+
+3131 KB/s (1211870 bytes in 0.377s)
+	pkg: /data/local/tmp/FillUp-instrumented-9.apk
+Success
+
+
+**** dumpsys memInfo ****
+
+[Ljava.lang.String;@15449edf
+
+**** dumpsys cpuInfo ****
+
+  37 1521/com.github.wdkapps.fillup: 34 user + 3.7 kernel / faults: 1042 minor

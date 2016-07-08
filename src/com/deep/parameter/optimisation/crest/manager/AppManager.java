@@ -177,6 +177,19 @@ public class AppManager {
 		log.writeLog("adb install", output);
 	}
 
+	public void setOriginal(int ex, int cpu, int heap){
+		original = new Mutant(apk);
+		original.setExecution_time(ex);
+		original.setCpu_pct(0);
+		original.setCpu_time(cpu);
+		original.setUser_pct(0);
+		original.setSystem_pct(0);
+		original.setHeap_size(0);
+		original.setHeap_alloc(heap);
+		original.setHeap_free(0);
+
+	}
+
 	/**
 	 * Method that allows to calculate the coverage
 	 */
@@ -356,7 +369,8 @@ public class AppManager {
 			SystematicAnalyser ma = new SystematicAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, init, increment, maximum, test_pkg);
 			ma.generateSmaliFile(only_mutants);
 		} else if(approach==1){
-			StochasticAnalyser ma = new StochasticAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, cycles, max, test_pkg);
+			RandomAnalyserSingleMutants ma = new RandomAnalyserSingleMutants(survived_mutants,dir, app_name, pkg,report_dir, original, device, cycles, max, test_pkg);
+			//StochasticAnalyser ma = new StochasticAnalyser(survived_mutants,dir, app_name, pkg,report_dir, original, device, cycles, max, test_pkg);
 			ma.generateSmaliFile(only_mutants);
 		} else if(approach==2){
 			HillClimbing hc = new HillClimbing(survived_mutants,dir, app_name, pkg,report_dir, original, device, max, test_pkg);

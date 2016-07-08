@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="true" android:enabled="true" android:title="SandwichRoulette Settings" android:key="swRSettings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:enabled="true" android:title="Application Behavior" android:key="appSet" android:defaultValue="true">
+        <CheckBoxPreference android:persistent="true" android:title="Randomize Sandwich Base" android:key="baseRandom" android:summary="Check the box if would like the sandwich base to be randomized in recipes." android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="true" android:title="Randomize Bread" android:key="breadRandom" android:summary="Check the box if would like bread to be randomized in recipes." android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="true" android:title="Randomize Cheese" android:key="cheeseRandom" android:summary="Check the box if would like cheese to be randomized in recipes." android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="true" android:title="Randomize by Shake" android:key="shakeRandom" android:summary="Check the box if you would like sandwiches to randomized at the shake of the device." android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="true" android:enabled="true" android:title="User Preferences" android:key="usrSet">
+        <PreferenceScreen android:persistent="true" android:enabled="true" android:title="Ingredients" android:key="ingredientsSettings" android:summary="Exclude certain ingredients from recipes by unchecking their checkbox.">
+            <CheckBoxPreference android:persistent="true" android:title="@string/bananaPeppersStr" android:key="@string/bananaPeppersStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/cucumberStr" android:key="@string/cucumberStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/grnPepperStr" android:key="@string/grnPepperStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/jalapenoStr" android:key="@string/jalapenoStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/lettuceStr" android:key="@string/lettuceStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/oliveStr" android:key="@string/oliveStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/onionsStr" android:key="@string/onionsStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/picklesStr" android:key="@string/picklesStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/spinachStr" android:key="@string/spinachStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/tomatoStr" android:key="@string/tomatoStr" android:defaultValue="true" />
+        </PreferenceScreen>
+        <PreferenceScreen android:persistent="true" android:enabled="true" android:title="Sauce Settings" android:key="sauceSettings" android:summary="Exclude certain sauces from recipes by unchecking their checkbox.">
+            <CheckBoxPreference android:persistent="true" android:title="@string/chipotleStr" android:key="@string/chipotleStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/honeyMustardStr" android:key="@string/honeyMustardStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/italianDressingStr" android:key="@string/italianDressingStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/mayoStr" android:key="@string/mayoStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/mustardStr" android:key="@string/mustardStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/oilStr" android:key="@string/oilStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/ranchStr" android:key="@string/ranchStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/sweetOnionStr" android:key="@string/sweetOnionStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/vinaigretteStr" android:key="@string/vinaigretteStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/vinegarStr" android:key="@string/vinegarStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/caesarDressingStr" android:key="@string/caesarDressingStr" android:defaultValue="true" />
+            <CheckBoxPreference android:persistent="true" android:title="@string/hummusStr" android:key="@string/hummusStr" android:defaultValue="true" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

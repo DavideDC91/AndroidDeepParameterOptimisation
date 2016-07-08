@@ -1,0 +1,29 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: WorldClockActivity-instrumented_642.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '10'
+sharedLibrary: false
+unknownFiles:
+  emma_default.properties: '8'
+  emma_ant.properties: '8'
+  com/vladium/emma/run_usage.res: '8'
+  com/vladium/emma/exceptions.properties: '8'
+  com/vladium/emma/data/merge_usage.res: '8'
+  com/vladium/emma/report/report_usage.res: '8'
+  com/vladium/emma/rt/RTExitHook.closure: '8'
+  com/vladium/emma/instr/instr_usage.res: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.1.0
+versionInfo:
+  versionCode: '2'
+  versionName: '0.6'
