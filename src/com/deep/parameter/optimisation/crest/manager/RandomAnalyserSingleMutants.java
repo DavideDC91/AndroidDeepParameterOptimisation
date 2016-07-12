@@ -233,7 +233,7 @@ public class RandomAnalyserSingleMutants {
 		for(int u=0;u<files.size();u++){
 			for(int z=0;z<alts.size();z++){
 				if(alts.get(z).getFile().equals(files.get(u))){
-						alterate(alts.get(z).getDeep(),alts.get(z),files.get(u),z);
+					alterate(alts.get(z).getDeep(),alts.get(z),files.get(u),z);
 				}
 			}
 		}
@@ -294,9 +294,96 @@ public class RandomAnalyserSingleMutants {
 		version_number++;
 		System.out.println("FINE ALTERAZIONE");
 		// EXECUTION
-		System.out.println("PULIZIA");
-		cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", app_name+"-instrumented.apk"));
-		output = cmd.executeCommand(dir+"/bin");
+
+		// PARTE 3
+		System.out.println("INIZIO ALTERAZIONE PARTE 3");
+		
+		for(int p=0;p<30;p++){
+			Random rand2 = new Random();
+			int M = rand2.nextInt((9 - 2) + 1) + 2;
+			System.out.println("STAMPO M: "+ M);
+			ArrayList<Integer> values = new ArrayList<Integer>();
+			for(int u=0;u<M;u++){
+				boolean ck = false;
+				while(!ck){
+					int val = rand2.nextInt((9 - 0) + 1) + 0;
+					if(!values.contains(val)){
+						values.add(val);
+						ck = true;
+					}
+				}
+			}
+			System.out.println("PULIZIA");
+			cmd = new CommandManager(new ProcessBuilder(apktool_path, "-f", "d", app_name+"-instrumented.apk"));
+			output = cmd.executeCommand(dir+"/bin");
+			for(int u=0;u<files.size();u++){
+				for(int z=0;z<alts.size();z++){
+					if(values.contains(z)){
+						if(alts.get(z).getFile().equals(files.get(u))){
+							alterate(alts.get(z).getDeep(),alts.get(z),files.get(u),z);
+						}
+					}
+				}
+			}
+			check = compileApk(version_number);
+			resetApp(new_versions.get(version_number).getApk_name());
+			CommandManager 	cmd4 = new CommandManager(new ProcessBuilder(adb_path, "-s", device, "shell", "reboot"));
+			output = cmd4.executeCommand(dir);
+			while(!output.contains(device)){
+				try {
+					TimeUnit.SECONDS.sleep(40);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				cmd4 = new CommandManager(new ProcessBuilder(adb_path, "devices"));
+				output = cmd4.executeCommand(dir);
+			}
+			System.out.println(dir+" Launching new version: "+new_versions.get(version_number).getApk_name() +" ...");
+			long startTime3 = System.nanoTime();
+			tl.executeTest(new_versions.get(version_number).getApk_name());
+			long endTime3 = System.nanoTime();
+			cpu_info = am.getCpuInfo();
+			memory_used = am.getMemInfo().split("\\s+");
+			log.writeLog("dumpsys memInfo", memory_used.toString());
+			log.writeLog("dumpsys cpuInfo", cpu_info.toString());
+			long duration3 = (endTime3 - startTime3)/1000000;
+			if(tl.getTestFailed()==0){
+				cpu_used = cpu_info.split(" ");
+				new_versions.get(version_number).setExecution_time(duration3);
+				try{
+					new_versions.get(version_number).setCpu_pct(Double.parseDouble(cpu_used[2].replace("+", "")));
+					new_versions.get(version_number).setCpu_time(Long.parseLong(cpu_used[3].split("/")[0]));
+					new_versions.get(version_number).setUser_pct(Double.parseDouble(cpu_used[4]));
+					new_versions.get(version_number).setSystem_pct(Double.parseDouble(cpu_used[7]));
+				} catch(ArrayIndexOutOfBoundsException e){
+					new_versions.get(version_number).setCpu_pct(0);
+					new_versions.get(version_number).setCpu_time(0);
+					new_versions.get(version_number).setUser_pct(0);
+					new_versions.get(version_number).setSystem_pct(0);
+				}
+				try{
+					new_versions.get(version_number).setHeap_size(Long.parseLong(memory_used[7]));
+					new_versions.get(version_number).setHeap_alloc(Long.parseLong(memory_used[8]));
+					new_versions.get(version_number).setHeap_free(Long.parseLong(memory_used[9]));
+				} catch(ArrayIndexOutOfBoundsException e){
+					new_versions.get(version_number).setHeap_size(0);
+					new_versions.get(version_number).setHeap_alloc(0);
+					new_versions.get(version_number).setHeap_free(0);
+				}
+				new_versions_survived.add(new_versions.get(version_number));
+				ArrayList<String> re = new ArrayList<>();
+				re.add(getResult(new_versions.get(version_number)));
+				results.put(new_versions.get(version_number).getApk_name(),re);
+				System.out.println(dir+" Survived");
+			} else {
+				System.out.println(dir+" Killed");
+			}
+			version_number++;
+		}
+		System.out.println("FINE ALTERAZIONE PARTE 3");
+		// EXECUTION
+
 		System.out.println("ESECUZIONE");
 		ArrayList<Mutant> temp_versions = new ArrayList<>();
 		temp_versions = new_versions_survived;

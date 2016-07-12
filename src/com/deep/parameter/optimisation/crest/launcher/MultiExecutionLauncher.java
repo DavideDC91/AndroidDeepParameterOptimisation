@@ -115,11 +115,11 @@ public class MultiExecutionLauncher {
 		};
 		
 		timetracker_thread.start();
-		//fillup_thread.start();
-		//pmtext_thread.start();                                                                                           
-		//worldclock_thread.start();
-		//sandwichroulette_thread.start();
-		//gmdice_thread.start();
+		fillup_thread.start();
+		pmtext_thread.start();                                                                                           
+		worldclock_thread.start();
+		sandwichroulette_thread.start();
+		gmdice_thread.start();
 	}
 
 	private static void SingleLaunch(String dir,String device,String test_pkg, boolean only_mutants, int approach, int ex){

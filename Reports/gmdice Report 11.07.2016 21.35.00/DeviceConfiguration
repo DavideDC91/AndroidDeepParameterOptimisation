@@ -6,23 +6,27 @@ Updated project.properties
 Updated local.properties
 Updated file ./build.xml
 Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
 
 
 **** ant clean ****
 
-Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/build.xml
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/build.xml
 
 -check-env:
  [checkenv] Android SDK Tools Revision 25.1.3
  [checkenv] Installed at /home/davide/android-sdk
 
 -setup:
-     [echo] Project Name: android-timetracker
+     [echo] Project Name: gmdice
   [gettype] Project Type: Application
 
 -pre-clean:
 
 clean:
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin
+   [delete] Deleting directory /home/davide/git/AndroidDeepParameterOptimisation/gmdice/gen
 [getlibpath] Library dependencies:
 [getlibpath] No Libraries
    [subant] No sub-builds to iterate on
@@ -33,7 +37,7 @@ Total time: 0 seconds
 
 **** ant instrument ****
 
-Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/build.xml
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/build.xml
 
 -set-mode-check:
 
@@ -44,7 +48,7 @@ Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker
  [checkenv] Installed at /home/davide/android-sdk
 
 -setup:
-     [echo] Project Name: android-timetracker
+     [echo] Project Name: gmdice
   [gettype] Project Type: Application
 
 -set-debug-mode:
@@ -55,20 +59,20 @@ Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker
 
 -build-setup:
 [getbuildtools] Using latest Build Tools: 23.0.3
-     [echo] Resolving Build Target for android-timetracker...
+     [echo] Resolving Build Target for gmdice...
 [gettarget] Project Target:   Android 5.1.1
 [gettarget] API level:        22
      [echo] ----------
      [echo] Creating output directories if needed...
-    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin
-    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/res
-    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/rsObj
-    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/rsLibs
-    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/gen
-    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/classes
-    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/dexedLibs
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/rsObj
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/rsLibs
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/gen
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes
+    [mkdir] Created dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/dexedLibs
      [echo] ----------
-     [echo] Resolving Dependencies for android-timetracker...
+     [echo] Resolving Dependencies for gmdice...
 [dependency] Library dependencies:
 [dependency] No Libraries
 [dependency] 
@@ -94,79 +98,104 @@ Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker
 -pre-compile:
 
 -compile:
-    [javac] Compiling 13 source files to /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/classes
+    [javac] Compiling 12 source files to /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes
     [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
     [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
     [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-    [javac] Note: Some input files use or override a deprecated API.
-    [javac] Note: Recompile with -Xlint:deprecation for details.
     [javac] 3 warnings
-     [echo] Instrumenting classes from /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/classes...
+     [echo] Instrumenting classes from /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes...
 
 -post-compile:
 
 -obfuscate:
 
 -dex:
-      [dex] input: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/classes
+      [dex] input: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes
       [dex] input: /home/davide/android-sdk/tools/lib/emma_device.jar
       [dex] Pre-Dexing /home/davide/android-sdk/tools/lib/emma_device.jar -> emma_device-c54bd04c2f76e0e56a7ebc2ed6b523ca.jar
-      [dex] Converting compiled files and external libraries into /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/classes.dex...
-       [dx] Merged dex #1 (38 defs/87.8KiB)
+      [dex] Converting compiled files and external libraries into /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/classes.dex...
+       [dx] Merged dex #1 (33 defs/43.1KiB)
        [dx] Merged dex #2 (297 defs/327.2KiB)
-       [dx] Result is 335 defs/499.4KiB. Took 0.3s
+       [dx] Result is 330 defs/444.8KiB. Took 0.2s
 
 -crunch:
-   [crunch] Crunching PNG Files in source dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/res
-   [crunch] To destination dir: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/res
-   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/res/drawable/ic_check_mark_dark.png => /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/res/drawable/ic_check_mark_dark.png
-   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/res/drawable/ic_check_mark_dark.png: 0% size of source)
-   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/res/drawable/icon.png => /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/res/drawable/icon.png
-   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/res/drawable/icon.png: 92% size of source)
-   [crunch] Crunched 2 PNG files to update cache
-   [crunch] /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/res/drawable/ic_check_mark_dark.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+   [crunch] Crunching PNG Files in source dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res
+   [crunch] To destination dir: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable-hdpi/logo.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable-hdpi/logo.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable-hdpi/logo.png: 54% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/logo.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/logo.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/logo.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_disabled.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_disabled_focused.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled_focused.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_disabled_focused.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_normal.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_normal.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_pressed.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_pressed.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_down_selected.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_selected.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_down_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_disabled.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_disabled.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_normal.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_normal.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_pressed.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_pressed.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_input_selected.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_selected.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_input_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_disabled.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_disabled_focused.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled_focused.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_disabled_focused.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_normal.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_normal.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_pressed.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_pressed.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/res/drawable/timepicker_up_selected.9.png => /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_selected.9.png
+   [crunch]   (processed image to cache entry /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/res/drawable/timepicker_up_selected.9.png: 0% size of source)
+   [crunch] Crunched 16 PNG files to update cache
 
 -package-resources:
      [aapt] Creating full resource package...
 
 -package:
 [apkbuilder] Current build type is different than previous build: forced apkbuilder run.
-[apkbuilder] Creating android-timetracker-instrumented-unaligned.apk and signing it with a debug key...
+[apkbuilder] Creating gmdice-instrumented-unaligned.apk and signing it with a debug key...
 
 -post-package:
 
 -do-debug:
  [zipalign] Running zip align on final apk...
-     [echo] Debug Package: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented.apk
-[propertyfile] Creating new property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
-[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
-[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
-[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+     [echo] Debug Package: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented.apk
+[propertyfile] Creating new property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
 
 instrument:
- [zipalign] Run cancelled: no changes to input file /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented-unaligned.apk
-     [echo] Instrumented Package: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented.apk
-[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
-[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
-[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
-[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/build.prop
+ [zipalign] Run cancelled: no changes to input file /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented-unaligned.apk
+     [echo] Instrumented Package: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented.apk
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
+[propertyfile] Updating property file: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/build.prop
 
 BUILD SUCCESSFUL
-Total time: 8 seconds
+Total time: 7 seconds
 
 
 **** ant installi ****
 
-Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/build.xml
+Buildfile: /home/davide/git/AndroidDeepParameterOptimisation/gmdice/build.xml
 
 -set-mode-check:
 
 -set-instrumented-mode:
 
 install:
-     [echo] Installing /home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/bin/android-timetracker-instrumented.apk onto default emulator or device...
-     [exec] 1927 KB/s (276503 bytes in 0.140s)
-     [exec] 	pkg: /data/local/tmp/android-timetracker-instrumented.apk
+     [echo] Installing /home/davide/git/AndroidDeepParameterOptimisation/gmdice/bin/gmdice-instrumented.apk onto default emulator or device...
+     [exec] 2091 KB/s (217105 bytes in 0.101s)
+     [exec] 	pkg: /data/local/tmp/gmdice-instrumented.apk
      [exec] Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
 
 installi:
@@ -177,7 +206,7 @@ Total time: 1 second
 
 **** apktool d ****
 
-I: Using Apktool 2.1.0 on android-timetracker-instrumented.apk
+I: Using Apktool 2.1.0 on gmdice-instrumented.apk
 I: Loading resource table...
 I: Decoding AndroidManifest.xml with resources...
 I: Loading resource table from file: /home/davide/apktool/framework/1.apk
@@ -212,18 +241,18 @@ Success
 
 **** adb install ****
 
-2995 KB/s (275706 bytes in 0.089s)
-	pkg: /data/local/tmp/android-timetracker-instrumented.apk
+3073 KB/s (216568 bytes in 0.068s)
+	pkg: /data/local/tmp/gmdice-instrumented.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@7cee92e2
+[Ljava.lang.String;@4f52c896
 
 **** dumpsys cpuInfo ****
 
-  32 1812/com.markuspage.android.atimetracker: 29 user + 2.2 kernel / faults: 662 minor
+  47 1749/de.duenndns.gmdice: 43 user + 3.8 kernel / faults: 2649 minor
 
 **** adb broadcast ****
 
@@ -399,38 +428,38 @@ environment variables:
 
 **** adb pull ****
 
-2606 KB/s (443492 bytes in 0.166s)
+2182 KB/s (180547 bytes in 0.080s)
 
 
 **** java emma report ****
 
 EMMA: processing input files ...
-EMMA: 2 file(s) read and merged in 46 ms
-EMMA: writing [html] report to [/home/davide/git/AndroidDeepParameterOptimisation/android-timetracker/coverage/index.html] ...
+EMMA: 2 file(s) read and merged in 26 ms
+EMMA: writing [html] report to [/home/davide/git/AndroidDeepParameterOptimisation/gmdice/coverage/index.html] ...
 
 
 **** ls ****
 
-android-timetracker-instrumented_1028
-android-timetracker-instrumented_1028.apk
-android-timetracker-instrumented_3285
-android-timetracker-instrumented_3285.apk
-android-timetracker-instrumented_3319
-android-timetracker-instrumented_3319.apk
-android-timetracker-instrumented_3745
-android-timetracker-instrumented_3745.apk
-android-timetracker-instrumented_3774
-android-timetracker-instrumented_3774.apk
-android-timetracker-instrumented_4088
-android-timetracker-instrumented_4088.apk
-android-timetracker-instrumented_4252
-android-timetracker-instrumented_4252.apk
-android-timetracker-instrumented_777
-android-timetracker-instrumented_777.apk
-android-timetracker-instrumented_853
-android-timetracker-instrumented_853.apk
-android-timetracker-instrumented_951
-android-timetracker-instrumented_951.apk
+gmdice-instrumented_103
+gmdice-instrumented_103.apk
+gmdice-instrumented_125
+gmdice-instrumented_125.apk
+gmdice-instrumented_134
+gmdice-instrumented_134.apk
+gmdice-instrumented_1461
+gmdice-instrumented_1461.apk
+gmdice-instrumented_198
+gmdice-instrumented_198.apk
+gmdice-instrumented_2034
+gmdice-instrumented_2034.apk
+gmdice-instrumented_279
+gmdice-instrumented_279.apk
+gmdice-instrumented_345
+gmdice-instrumented_345.apk
+gmdice-instrumented_419
+gmdice-instrumented_419.apk
+gmdice-instrumented_575
+gmdice-instrumented_575.apk
 hc
 mutants
 systematic
@@ -443,18 +472,18 @@ Success
 
 **** adb install ****
 
-2996 KB/s (277035 bytes in 0.090s)
-	pkg: /data/local/tmp/android-timetracker-instrumented_1028.apk
+2795 KB/s (218304 bytes in 0.076s)
+	pkg: /data/local/tmp/gmdice-instrumented_103.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@17d85eb0
+[Ljava.lang.String;@1a1677ef
 
 **** dumpsys cpuInfo ****
 
-  25 1722/com.markuspage.android.atimetracker: 22 user + 2.3 kernel / faults: 864 minor
+  43 1673/de.duenndns.gmdice: 40 user + 3.4 kernel / faults: 2452 minor
 
 **** adb uninstall ****
 
@@ -463,18 +492,18 @@ Success
 
 **** adb install ****
 
-2514 KB/s (277044 bytes in 0.107s)
-	pkg: /data/local/tmp/android-timetracker-instrumented_3285.apk
+1773 KB/s (218308 bytes in 0.120s)
+	pkg: /data/local/tmp/gmdice-instrumented_125.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@b0fee05
+[Ljava.lang.String;@69223f4e
 
 **** dumpsys cpuInfo ****
 
-  21 1525/com.markuspage.android.atimetracker: 19 user + 1 kernel / faults: 740 minor
+  53 1555/de.duenndns.gmdice: 50 user + 2.9 kernel / faults: 870 minor
 
 **** adb uninstall ****
 
@@ -483,18 +512,18 @@ Success
 
 **** adb install ****
 
-2650 KB/s (277045 bytes in 0.102s)
-	pkg: /data/local/tmp/android-timetracker-instrumented_3319.apk
+2452 KB/s (218304 bytes in 0.086s)
+	pkg: /data/local/tmp/gmdice-instrumented_134.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@697d444b
+[Ljava.lang.String;@e117fbd
 
 **** dumpsys cpuInfo ****
 
-  23 1500/com.markuspage.android.atimetracker: 21 user + 2 kernel / faults: 2691 minor
+  55 1516/de.duenndns.gmdice: 51 user + 3.9 kernel / faults: 961 minor
 
 **** adb uninstall ****
 
@@ -503,18 +532,18 @@ Success
 
 **** adb install ****
 
-2659 KB/s (277037 bytes in 0.101s)
-	pkg: /data/local/tmp/android-timetracker-instrumented_3745.apk
+1747 KB/s (218302 bytes in 0.121s)
+	pkg: /data/local/tmp/gmdice-instrumented_1461.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@bc0787c
+[Ljava.lang.String;@5ce53e46
 
 **** dumpsys cpuInfo ****
 
-  22 1508/com.markuspage.android.atimetracker: 21 user + 1.7 kernel / faults: 854 minor
+  57 1573/de.duenndns.gmdice: 54 user + 2.9 kernel / faults: 872 minor
 
 **** adb uninstall ****
 
@@ -523,18 +552,18 @@ Success
 
 **** adb install ****
 
-2746 KB/s (277041 bytes in 0.098s)
-	pkg: /data/local/tmp/android-timetracker-instrumented_3774.apk
+2648 KB/s (218305 bytes in 0.080s)
+	pkg: /data/local/tmp/gmdice-instrumented_198.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@58ee539c
+[Ljava.lang.String;@175e0e84
 
 **** dumpsys cpuInfo ****
 
-  22 1535/com.markuspage.android.atimetracker: 21 user + 1.5 kernel / faults: 1300 minor
+  55 1568/de.duenndns.gmdice: 53 user + 2.7 kernel / faults: 966 minor
 
 **** adb uninstall ****
 
@@ -543,18 +572,18 @@ Success
 
 **** adb install ****
 
-2673 KB/s (277039 bytes in 0.101s)
-	pkg: /data/local/tmp/android-timetracker-instrumented_4088.apk
+1917 KB/s (218305 bytes in 0.111s)
+	pkg: /data/local/tmp/gmdice-instrumented_2034.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@77e462c8
+[Ljava.lang.String;@5fba3421
 
 **** dumpsys cpuInfo ****
 
-  22 1527/com.markuspage.android.atimetracker: 20 user + 1.6 kernel / faults: 1251 minor
+  58 1513/de.duenndns.gmdice: 55 user + 3.4 kernel / faults: 956 minor
 
 **** adb uninstall ****
 
@@ -563,18 +592,18 @@ Success
 
 **** adb install ****
 
-2921 KB/s (277040 bytes in 0.092s)
-	pkg: /data/local/tmp/android-timetracker-instrumented_4252.apk
+2854 KB/s (218308 bytes in 0.074s)
+	pkg: /data/local/tmp/gmdice-instrumented_279.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@d227354
+[Ljava.lang.String;@16b62cc
 
 **** dumpsys cpuInfo ****
 
-  30 1532/com.markuspage.android.atimetracker: 27 user + 3.1 kernel / faults: 814 minor
+  40 1542/de.duenndns.gmdice: 37 user + 3.2 kernel / faults: 20813 minor
 
 **** adb uninstall ****
 
@@ -583,18 +612,18 @@ Success
 
 **** adb install ****
 
-2685 KB/s (277038 bytes in 0.100s)
-	pkg: /data/local/tmp/android-timetracker-instrumented_777.apk
+2713 KB/s (218305 bytes in 0.078s)
+	pkg: /data/local/tmp/gmdice-instrumented_345.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@78daf721
+[Ljava.lang.String;@3ba6b59d
 
 **** dumpsys cpuInfo ****
 
-  22 1539/com.markuspage.android.atimetracker: 19 user + 2.2 kernel / faults: 842 minor
+  40 1492/de.duenndns.gmdice: 37 user + 3.1 kernel / faults: 18220 minor
 
 **** adb uninstall ****
 
@@ -603,18 +632,18 @@ Success
 
 **** adb install ****
 
-2912 KB/s (277040 bytes in 0.092s)
-	pkg: /data/local/tmp/android-timetracker-instrumented_853.apk
+2393 KB/s (218303 bytes in 0.089s)
+	pkg: /data/local/tmp/gmdice-instrumented_419.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@3b7c2ea3
+[Ljava.lang.String;@5d2c477e
 
 **** dumpsys cpuInfo ****
 
-  22 1510/com.markuspage.android.atimetracker: 21 user + 1.7 kernel / faults: 811 minor
+  37 1606/de.duenndns.gmdice: 34 user + 2.8 kernel / faults: 13505 minor
 
 **** adb uninstall ****
 
@@ -623,15 +652,15 @@ Success
 
 **** adb install ****
 
-2708 KB/s (277039 bytes in 0.099s)
-	pkg: /data/local/tmp/android-timetracker-instrumented_951.apk
+2873 KB/s (218305 bytes in 0.074s)
+	pkg: /data/local/tmp/gmdice-instrumented_575.apk
 Success
 
 
 **** dumpsys memInfo ****
 
-[Ljava.lang.String;@63b18997
+[Ljava.lang.String;@581d7af6
 
 **** dumpsys cpuInfo ****
 
-  23 1529/com.markuspage.android.atimetracker: 21 user + 1.8 kernel / faults: 2866 minor
+  23 1565/de.duenndns.gmdice: 20 user + 3.2 kernel / faults: 6245 minor
